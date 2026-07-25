@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/></linearGradient>
+    <linearGradient id="cop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C97F5E"/><stop offset=".5" stop-color="#B4694E"/><stop offset="1" stop-color="#8C4E38"/></linearGradient>
+    <radialGradient id="head" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#F0CBC0"/><stop offset="1" stop-color="#D99AA0"/></radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
+  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="6" fill="#C9962E">AANAND</text>
+  <ellipse cx="400" cy="640" rx="120" ry="20" fill="#241419" opacity=".12"/>
+  <!-- wand: handle + rounded head -->
+  <rect x="374" y="316" width="52" height="312" rx="26" fill="url(#cop)"/>
+  <rect x="384" y="330" width="12" height="270" rx="6" fill="#F7EFDF" opacity=".22"/>
+  <circle cx="400" cy="296" r="60" fill="url(#head)"/>
+  <circle cx="400" cy="296" r="60" fill="none" stroke="#B4694E" stroke-width="3" opacity=".5"/>
+  <circle cx="400" cy="610" r="9" fill="#DDB967"/>
+  <text x="400" y="690" text-anchor="middle" font-family="Georgia,serif" font-size="27" font-weight="bold" letter-spacing="1" fill="#5E1F30">TARANG</text>
+  <text x="400" y="716" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12.5" letter-spacing="2" fill="#7A5C46">PERSONAL WAND · तरंग</text>
+  <text x="400" y="758" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+</svg>

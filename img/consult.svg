@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
+  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
+  <ellipse cx="400" cy="690" rx="150" ry="20" fill="#241419" opacity=".14"/>
+
+  <!-- phone -->
+  <rect x="270" y="110" width="260" height="560" rx="38" fill="#241419"/>
+  <rect x="282" y="122" width="236" height="536" rx="28" fill="#5E1F30"/>
+  <rect x="360" y="132" width="80" height="10" rx="5" fill="#241419"/>
+
+  <!-- live pill -->
+  <rect x="316" y="160" width="168" height="30" rx="15" fill="#4A1826" stroke="#C9962E"/>
+  <circle cx="336" cy="175" r="6" fill="#2F9D5C"/>
+  <text x="410" y="180" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12.5" font-weight="bold" letter-spacing="1" fill="#DDB967">PRIVATE CALL</text>
+
+  <!-- doctor avatar -->
+  <circle cx="400" cy="312" r="74" fill="#F7EFDF"/>
+  <circle cx="400" cy="290" r="26" fill="#5E1F30"/>
+  <path d="M352 360 q48 -40 96 0 l0 12 q-48 22 -96 0 Z" fill="#5E1F30"/>
+  <path d="M376 352 q24 16 48 0" stroke="#C9962E" stroke-width="4" fill="none"/>
+  <circle cx="400" cy="312" r="74" fill="none" stroke="#C9962E" stroke-width="3"/>
+
+  <text x="400" y="428" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#F7EFDF">Dr. — वैद्य</text>
+  <text x="400" y="452" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" fill="#DDB967">Registered practitioner</text>
+
+  <!-- chat bubbles -->
+  <rect x="304" y="480" width="150" height="36" rx="12" fill="#F7EFDF"/>
+  <text x="318" y="503" font-family="Verdana,sans-serif" font-size="12" fill="#241419">Khul ke puchiye…</text>
+  <rect x="368" y="526" width="128" height="36" rx="12" fill="#C9962E"/>
+  <text x="382" y="549" font-family="Verdana,sans-serif" font-size="12" font-weight="bold" fill="#241419">Plan in 24 hrs</text>
+
+  <!-- call controls -->
+  <circle cx="352" cy="614" r="24" fill="#F7EFDF"/><path d="M344 610 q8 10 16 0 l0 10 -16 0 Z" fill="#5E1F30"/>
+  <circle cx="448" cy="614" r="24" fill="#A63A2A"/><rect x="438" y="610" width="20" height="8" rx="4" fill="#F7EFDF"/>
+
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#EFE3CC"/>
+  <circle cx="150" cy="150" r="96" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".4"/>
+  <g fill="none" stroke="#5E1F30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 96 C132 112 132 138 150 152 C168 138 168 112 150 96 Z"/>
+    <path d="M150 152 L150 196"/>
+    <path d="M150 176 C138 190 120 194 108 198"/>
+    <path d="M150 176 C162 190 180 194 192 198"/>
+  </g>
+  <circle cx="120" cy="120" r="7" fill="#C9962E"/>
+  <text x="150" y="240" text-anchor="middle" font-family="Verdana,sans-serif" font-size="15" letter-spacing="1" fill="#7A5C46">Named ingredients</text>
+</svg>

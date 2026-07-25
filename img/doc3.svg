@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs><radialGradient id="bg3" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#356B4F"/><stop offset="1" stop-color="#2F5D46"/></radialGradient></defs>
+  <rect width="400" height="400" fill="#EFE3CC"/>
+  <circle cx="200" cy="200" r="150" fill="url(#bg3)"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#C9962E" stroke-width="2" opacity=".6"/>
+  <path d="M110 360 Q112 288 176 268 L224 268 Q288 288 290 360 Z" fill="#F7EFDF"/>
+  <path d="M176 268 L200 316 L224 268 Z" fill="#EBDBC8"/>
+  <path d="M196 270 L200 316 L204 270 Z" fill="#5E1F30"/>
+  <path d="M182 272 q-14 60 20 78 q34 -18 22 -78" fill="none" stroke="#C9962E" stroke-width="4"/>
+  <circle cx="224" cy="352" r="8" fill="#C9962E"/>
+  <rect x="186" y="240" width="28" height="40" rx="12" fill="#C99B72"/>
+  <circle cx="200" cy="204" r="46" fill="#D9A97F"/>
+  <!-- beard -->
+  <path d="M158 210 Q160 258 200 262 Q240 258 242 210 Q240 236 200 240 Q160 236 158 210 Z" fill="#3A281E"/>
+  <!-- hair -->
+  <path d="M156 198 Q152 148 200 146 Q248 148 244 198 Q236 174 200 172 Q164 174 156 198 Z" fill="#3A281E"/>
+  <text x="200" y="392" text-anchor="middle" font-family="Verdana,sans-serif" font-size="15" letter-spacing="2" fill="#7A5C46">वैद्य</text>
+</svg>
