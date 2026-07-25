@@ -25,7 +25,7 @@ After editing `product.html`, regenerate the 17 product pages:
 # from repo root
 $root='.\funnel'; $src=[IO.File]::ReadAllText("$root\product.html")
 $needle="var key = /*KKP_KEY*/ new URLSearchParams(location.search).get('p');"
-$map=[ordered]@{urja='super-urja.html';shilajit='shilajit.html';oil='paurush-oil.html';kit='complete-care-kit.html';pme='pme-course.html';ed='ed-course.html';yoga='yoga-course.html';consult='consultation.html';yugal='yugal.html';tarang='tarang.html';bindu='bindu.html';bandhan='bandhan.html';snigdha='snigdha.html';sparsh='sparsh.html';jyoti='jyoti.html';milan='milan-kit.html';khulibaat='khuli-baat.html'}
+$map=[ordered]@{urja='shukra.html';shilajit='shilajit.html';oil='paurush-oil.html';kit='complete-care-kit.html';pme='pme-course.html';ed='ed-course.html';yoga='yoga-course.html';consult='consultation.html';yugal='yugal.html';tarang='tarang.html';bindu='bindu.html';bandhan='bandhan.html';snigdha='snigdha.html';sparsh='sparsh.html';jyoti='jyoti.html';milan='milan-kit.html';khulibaat='khuli-baat.html'}
 $enc=New-Object System.Text.UTF8Encoding($false)
 foreach($k in $map.Keys){[IO.File]::WriteAllText("$root\$($map[$k])",$src.Replace($needle,"var key = '$k';"),$enc)}
 ```
