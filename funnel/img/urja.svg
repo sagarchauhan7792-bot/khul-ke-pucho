@@ -29,8 +29,8 @@
     <path d="M400 410 C396 398 396 386 400 376 C404 386 404 398 400 410 Z"/>
     <circle cx="400" cy="366" r="3" fill="#C9962E" stroke="none"/>
   </g>
-  <text x="400" y="452" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#7A5C46">शुक्र ऊर्जा</text>
-  <text x="400" y="488" text-anchor="middle" font-family="Georgia,serif" font-size="31" font-weight="bold" letter-spacing="2" fill="#5E1F30">SUKRA URJA</text>
+  <text x="400" y="452" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#7A5C46">शुक्र</text>
+  <text x="400" y="488" text-anchor="middle" font-family="Georgia,serif" font-size="31" font-weight="bold" letter-spacing="2" fill="#5E1F30">SHUKRA</text>
   <rect x="330" y="504" width="140" height="2" fill="#C9962E"/>
   <text x="400" y="530" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="3" fill="#7A5C46">VITALITY FORMULATION</text>
   <text x="400" y="556" text-anchor="middle" font-family="Verdana,sans-serif" font-size="13" fill="#7A5C46">60 capsules · 60-day course</text>
