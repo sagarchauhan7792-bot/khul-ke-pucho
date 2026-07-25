@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": { "type": "main-article", "settings": {} },
+    "consult": { "type": "consult-cta", "settings": {} },
+    "newsletter": { "type": "newsletter", "settings": {} }
+  },
+  "order": ["main", "consult", "newsletter"]
+}

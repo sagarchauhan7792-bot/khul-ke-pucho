@@ -1,0 +1,96 @@
+{
+  "sections": {
+    "hero": { "type": "hero-shloka", "settings": {} },
+    "trust": { "type": "trust-strip", "settings": {} },
+    "featured": { "type": "featured-products", "settings": {} },
+    "journey": {
+      "type": "journey-steps",
+      "blocks": {
+        "s1": { "type": "step", "settings": { "title": "Ask privately", "text": "Book a ₹99 phone or video consult. No clinic visit, no waiting room, nobody watching." } },
+        "s2": { "type": "step", "settings": { "title": "Get a real diagnosis", "text": "A registered doctor looks at the causes — sleep, sugar, stress, circulation — not just the symptom." } },
+        "s3": { "type": "step", "settings": { "title": "Receive your plan", "text": "Classical formulations, lifestyle steps and courses, matched to your case and posted in plain packaging." } },
+        "s4": { "type": "step", "settings": { "title": "Improve with follow-up", "text": "Scheduled follow-ups track progress. We adjust the plan until it works." } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {}
+    },
+    "shloka1": { "type": "shloka-divider", "settings": {} },
+    "ingredients": {
+      "type": "ingredient-story",
+      "blocks": {
+        "i1": { "type": "ingredient", "settings": { "sanskrit_name": "शिलाजतु", "name": "Shilajit", "text": "Himalayan mineral resin, purified per classical method; standardised for fulvic acid in the lab." } },
+        "i2": { "type": "ingredient", "settings": { "sanskrit_name": "अश्वगन्धा", "name": "Ashwagandha", "text": "Classical rasayana for strength and calm; studied today for stress and vitality support." } },
+        "i3": { "type": "ingredient", "settings": { "sanskrit_name": "श्वेत मूसली", "name": "Safed Musli", "text": "Traditional vajikarana herb for vigour, named in the Bhavaprakasha." } },
+        "i4": { "type": "ingredient", "settings": { "sanskrit_name": "गोक्षुर", "name": "Gokshura", "text": "Classical support for vitality and urinary health, cited across the samhitas." } }
+      },
+      "block_order": ["i1", "i2", "i3", "i4"],
+      "settings": {}
+    },
+    "consult": { "type": "consult-cta", "settings": {} },
+    "doctors": {
+      "type": "doctor-panel",
+      "blocks": {
+        "d1": { "type": "doctor", "settings": {} },
+        "d2": { "type": "doctor", "settings": {} },
+        "d3": { "type": "doctor", "settings": {} },
+        "d4": { "type": "doctor", "settings": {} }
+      },
+      "block_order": ["d1", "d2", "d3", "d4"],
+      "settings": {}
+    },
+    "courses": {
+      "type": "course-cards",
+      "blocks": {
+        "c1": { "type": "course", "settings": { "badge": "Timing", "title": "PME Course", "text": "A structured, doctor-designed program for early discharge — technique, practice and tracking, step by step." } },
+        "c2": { "type": "course", "settings": { "badge": "Erection health", "title": "ED Course", "text": "Understand the causes — circulation, sugar, stress — and follow a guided plan that addresses them." } },
+        "c3": { "type": "course", "settings": { "badge": "Foundation", "title": "Yoga for Vitality", "text": "Classical asana and breath practice for stamina, sleep and calm — the foundation every plan stands on." } }
+      },
+      "block_order": ["c1", "c2", "c3"],
+      "settings": {}
+    },
+    "stats": {
+      "type": "stats-band",
+      "blocks": {
+        "st1": { "type": "stat", "settings": { "value": "TODO", "label": "consultations completed — use real numbers only" } },
+        "st2": { "type": "stat", "settings": { "value": "TODO", "label": "orders delivered discreetly" } },
+        "st3": { "type": "stat", "settings": { "value": "100%", "label": "lab-tested batches" } },
+        "st4": { "type": "stat", "settings": { "value": "COD", "label": "available across India" } }
+      },
+      "block_order": ["st1", "st2", "st3", "st4"],
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": { "type": "quote", "settings": {} },
+        "t2": { "type": "quote", "settings": {} },
+        "t3": { "type": "quote", "settings": {} }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Will anyone know what I ordered?", "answer": "No. Every order ships in a plain brown parcel with no product name outside. The courier sees only a parcel. Your invoice says only the company's legal name." } },
+        "q2": { "type": "qa", "settings": { "question": "Is this real Ayurveda or bus-stand medicine?", "answer": "Every formulation is AYUSH-licensed and every batch is lab-tested, with reports you can download from the product page. We name every ingredient and cite the classical source. We never promise miracles — and we put that in writing." } },
+        "q3": { "type": "qa", "settings": { "question": "Can I pay on delivery?", "answer": "Yes. Cash on Delivery is available across India, along with UPI, cards and netbanking at checkout." } },
+        "q4": { "type": "qa", "settings": { "question": "How does the consultation work?", "answer": "Buy a consultation like any product. After checkout you receive a booking link on WhatsApp and email — choose phone or video, and a time that suits you. It is 100% private and with a registered practitioner." } },
+        "q5": { "type": "qa", "settings": { "question": "Can my wife/husband join the consultation?", "answer": "Yes — and we encourage it. Our doctors and counsellors regularly see couples. Intimacy is a shared health matter, and there is no judgment here." } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "settings": {}
+    },
+    "blogteasers": { "type": "blog-teasers", "settings": {} },
+    "shloka2": {
+      "type": "shloka-divider",
+      "settings": {
+        "shloka": "सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः",
+        "translation": "May all be happy; may all be free of disease.",
+        "source": "Traditional mangala shloka"
+      }
+    },
+    "newsletter": { "type": "newsletter", "settings": {} }
+  },
+  "order": ["hero", "trust", "featured", "journey", "shloka1", "ingredients", "consult", "doctors", "courses", "stats", "testimonials", "faq", "blogteasers", "shloka2", "newsletter"]
+}

@@ -1,0 +1,9 @@
+{% comment %}
+  Styled placeholder shown wherever a real image is not yet uploaded.
+  TODO: replace by uploading real product/doctor photos in the Shopify admin.
+  Accepts: label (string)
+{% endcomment %}
+<div class="ph" role="img" aria-label="{{ label | default: 'Image coming soon' }}">
+  <span class="sanskrit">&#2380;</span>
+  <small>{{ label | default: 'Image placeholder — upload in Shopify admin' }}</small>
+</div>

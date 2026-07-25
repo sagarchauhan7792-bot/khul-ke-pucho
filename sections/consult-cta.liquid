@@ -1,0 +1,30 @@
+<section class="section-pad--tight" style="padding-inline:0">
+  <div class="page-width">
+    <div class="consult-cta">
+      <div>
+        <div class="eyebrow" style="color:var(--c-couples)">{{ section.settings.eyebrow }}</div>
+        <h2 style="margin-top:6px">{{ section.settings.heading }}</h2>
+        <p>{{ section.settings.text }}</p>
+      </div>
+      <div class="center">
+        <a href="{{ section.settings.cta_link }}" class="btn btn--dark">{{ section.settings.cta_label }}</a>
+        <p style="font-size:13px;margin-top:10px;color:#7A5C46">{{ section.settings.note }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Consult CTA",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "For you — and for you both" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "A private consultation, together or alone" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Intimacy concerns are health concerns — his, hers, and the marriage's. Our doctors and counsellors see couples too, with the same privacy and the same respect." },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Book a private consult" },
+    { "type": "url", "id": "cta_link", "label": "Button link" },
+    { "type": "text", "id": "note", "label": "Note under button", "default": "Phone or video · 100% private · from ₹99" }
+  ],
+  "presets": [{ "name": "Consult CTA" }]
+}
+{% endschema %}

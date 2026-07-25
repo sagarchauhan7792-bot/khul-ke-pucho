@@ -1,0 +1,17 @@
+{% if section.settings.show %}
+<div class="announcement">
+  <span class="sanskrit">{{ section.settings.sanskrit }}</span>
+  {% if section.settings.text != blank %}&nbsp;·&nbsp;{{ section.settings.text }}{% endif %}
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "settings": [
+    { "type": "checkbox", "id": "show", "label": "Show announcement", "default": true },
+    { "type": "text", "id": "sanskrit", "label": "Sanskrit line", "default": "आरोग्यं मूलमुत्तमम्" },
+    { "type": "text", "id": "text", "label": "Announcement text", "default": "Free discreet delivery on orders above ₹999 · COD available" }
+  ]
+}
+{% endschema %}

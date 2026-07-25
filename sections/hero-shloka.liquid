@@ -1,0 +1,36 @@
+<section class="hero-shloka">
+  <div class="page-width hero-shloka__inner">
+    <div class="shloka">{{ section.settings.shloka }}</div>
+    <div class="shloka-tr">{{ section.settings.shloka_translation }}</div>
+    <h1>{{ section.settings.heading }}</h1>
+    <p class="lede">{{ section.settings.subheading }}</p>
+    {% if section.settings.cta_label != blank %}
+      <a href="{{ section.settings.cta_link }}" class="btn btn--primary">{{ section.settings.cta_label }}</a>
+    {% endif %}
+    {% if section.settings.secondary_label != blank %}
+      <div style="margin-top:14px">
+        <a href="{{ section.settings.secondary_link }}" style="color:var(--c-accent-light);font-weight:700;font-size:14.5px">{{ section.settings.secondary_label }} &rarr;</a>
+      </div>
+    {% endif %}
+    <div class="rule"></div>
+    <div style="font:italic 500 15px/1.5 'EB Garamond',serif;color:#D8BFA8">{{ section.settings.tagline }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero with shloka",
+  "settings": [
+    { "type": "text", "id": "shloka", "label": "Sanskrit shloka", "default": "धर्मार्थकामेभ्यो नमः" },
+    { "type": "text", "id": "shloka_translation", "label": "Translation + source", "default": "Salutations to dharma, artha and kama — Kamasutra 1.1.1" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Ask openly. Heal properly." },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Our shastras honoured desire as one of life's three aims. Classical Ayurvedic formulations, qualified doctors and structured courses — with lab-tested proof and complete privacy." },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Talk to a doctor privately" },
+    { "type": "url", "id": "cta_link", "label": "Button link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary link label", "default": "See our formulations" },
+    { "type": "url", "id": "secondary_link", "label": "Secondary link" },
+    { "type": "text", "id": "tagline", "label": "Tagline", "default": "Kama is not a secret. It is a science." }
+  ],
+  "presets": [{ "name": "Hero with shloka" }]
+}
+{% endschema %}

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
+  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
+  <ellipse cx="400" cy="690" rx="150" ry="20" fill="#241419" opacity=".14"/>
+
+  <!-- phone -->
+  <rect x="270" y="110" width="260" height="560" rx="38" fill="#241419"/>
+  <rect x="282" y="122" width="236" height="536" rx="28" fill="#F7EFDF"/>
+  <rect x="360" y="132" width="80" height="10" rx="5" fill="#241419" opacity=".8"/>
+
+  <!-- screen: course UI -->
+  <rect x="282" y="154" width="236" height="74" fill="#5E1F30"/>
+  <text x="400" y="184" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#DDB967">सवाल आधा इलाज है</text>
+  <text x="400" y="210" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="bold" letter-spacing="2" fill="#F7EFDF">PME COURSE</text>
+
+  <!-- progress ring -->
+  <circle cx="400" cy="316" r="58" fill="none" stroke="#EFE3CC" stroke-width="12"/>
+  <path d="M400 258 A58 58 0 1 1 344.9 336" fill="none" stroke="#C9962E" stroke-width="12" stroke-linecap="round"/>
+  <text x="400" y="312" text-anchor="middle" font-family="Verdana,sans-serif" font-size="22" font-weight="bold" fill="#5E1F30">W3</text>
+  <text x="400" y="334" text-anchor="middle" font-family="Verdana,sans-serif" font-size="11" fill="#7A5C46">of 6 weeks</text>
+
+  <!-- module rows -->
+  <g font-family="Verdana,sans-serif" font-size="12.5">
+    <rect x="300" y="402" width="200" height="44" rx="9" fill="#FFFDF8" stroke="#DCCBB0"/>
+    <circle cx="322" cy="424" r="9" fill="#2F5D46"/><path d="M318 424 l3 3 6 -7" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="340" y="429" fill="#241419">Breath &amp; control</text>
+    <rect x="300" y="454" width="200" height="44" rx="9" fill="#FFFDF8" stroke="#DCCBB0"/>
+    <circle cx="322" cy="476" r="9" fill="#2F5D46"/><path d="M318 476 l3 3 6 -7" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="340" y="481" fill="#241419">Technique week 1</text>
+    <rect x="300" y="506" width="200" height="44" rx="9" fill="#FFFDF8" stroke="#C9962E" stroke-width="1.5"/>
+    <circle cx="322" cy="528" r="10" fill="#C9962E"/><path d="M319 522 l9 6 -9 6 Z" fill="#241419"/>
+    <text x="340" y="533" fill="#241419" font-weight="bold">Technique week 2</text>
+  </g>
+
+  <rect x="300" y="576" width="200" height="46" rx="10" fill="#C9962E"/>
+  <text x="400" y="605" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" font-weight="bold" fill="#241419">Continue practice</text>
+
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+</svg>

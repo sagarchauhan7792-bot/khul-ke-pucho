@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Discreet Delivery Works — Khul Ke Pucho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--kumkum:#5E1F30;--kanchan:#C9962E;--gold-l:#DDB967;--ivory:#F7EFDF;--surface:#FFFDF8;--vana:#2F5D46;--tamra:#B4694E;--ink:#241419;--line:#DCCBB0;--chip:#EFE3CC}
+*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.7 'Mukta','Segoe UI',system-ui,sans-serif;overflow-x:clip}
+a{color:var(--kumkum)}
+h1,h2,h3{font-family:'EB Garamond',Georgia,serif;color:var(--kumkum);line-height:1.15;margin:0 0 .4em}
+h1{font-size:clamp(28px,4vw,42px);font-weight:600}h2{font-size:22px;font-weight:600;margin-top:1.4em}
+.sanskrit{font-family:'Tiro Devanagari Sanskrit',serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.announce{background:var(--kumkum);color:var(--ivory);text-align:center;padding:7px 14px;font-size:13px}.announce b{color:var(--gold-l)}
+.hd{background:var(--ivory);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hd-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1}.logo .sanskrit{font-size:24px;color:var(--kumkum)}.logo small{font:600 8px/1 'EB Garamond',serif;letter-spacing:.3em;text-transform:uppercase;color:var(--kanchan);margin-top:4px}
+.hd-row a.home{font:700 14px/1 'Mukta',sans-serif;text-decoration:none}
+.doc{max-width:900px;margin:0 auto;padding:34px 20px 50px}
+.eyebrow{font:700 12px/1 'Mukta',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--kanchan)}
+.lede{font-size:18px;color:#5C4030;max-width:60ch}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:26px 0;counter-reset:s}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 20px 20px 56px;position:relative}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;left:16px;top:18px;font:600 20px/1 'EB Garamond',serif;color:var(--kanchan)}
+.step h3{font-size:17px;margin:0 0 4px}.step p{font-size:14px;margin:0}
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;margin:22px 0}
+@media(max-width:700px){.showcase{grid-template-columns:1fr}}
+.showcase img{width:100%;border-radius:12px}
+.promises{list-style:none;padding:0;margin:8px 0}
+.promises li{padding:8px 0 8px 30px;position:relative;font-size:15.5px}
+.promises li::before{content:'✓';position:absolute;left:2px;color:var(--vana);font-weight:700}
+.todo{color:#A63A2A;font-weight:700}
+.cta{display:inline-block;margin-top:8px;background:var(--kanchan);color:var(--ink);border-radius:9px;padding:13px 26px;font:700 15px/1 'Mukta',sans-serif;text-decoration:none}
+footer{background:var(--ink);color:#D8BFA8;margin-top:40px}
+.frow{display:flex;flex-wrap:wrap;gap:8px 22px;padding:26px 0 8px;justify-content:center}
+.frow a{color:var(--ivory);text-decoration:none;font-size:14px}.frow a:hover{text-decoration:underline}
+.seal{text-align:center;font-size:12px;padding:8px 0 26px;opacity:.85}.seal .sanskrit{color:var(--gold-l);font-size:14px}
+</style>
+</head>
+<body>
+<div class="announce"><b>KKP99</b> — first doctor consult at ₹99 · Free discreet delivery above ₹999 · <b>COD across India</b></div>
+<header class="hd"><div class="wrap hd-row"><a class="logo" href="index.html"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a><a class="home" href="index.html">← Back to shop</a></div></header>
+
+<main class="doc">
+  <div class="eyebrow">Our promise</div>
+  <h1>How discreet delivery works</h1>
+  <p class="lede">Privacy isn't a feature we added — it's engineered into every order. Here's exactly what arrives at your door, and what doesn't.</p>
+
+  <div class="showcase">
+    <img src="img/t-parcel.svg" alt="A plain brown parcel with no branding">
+    <div>
+      <h2 style="margin-top:0">Just a plain brown parcel</h2>
+      <ul class="promises">
+        <li>No product name, no brand name, nothing category-revealing outside</li>
+        <li>Shipping label &amp; invoice show only our neutral legal entity name</li>
+        <li>The courier sees only an ordinary parcel</li>
+        <li>For COD, only the amount is shown — never the contents</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Step by step</h2>
+  <div class="steps">
+    <div class="step"><h3>You order</h3><p>Checkout is private and secure. Choose prepaid or Cash on Delivery.</p></div>
+    <div class="step"><h3>We pack plain</h3><p>Sealed in an unmarked brown box — inner product boxes never show through.</p></div>
+    <div class="step"><h3>Neutral label</h3><p>Sender and invoice carry only our legal name, nothing about the category.</p></div>
+    <div class="step"><h3>It reaches you</h3><p>Track by SMS/WhatsApp. Pay on delivery if you chose COD. That's it.</p></div>
+  </div>
+
+  <h2>Your inbox stays private too</h2>
+  <p>Order and marketing emails come from a neutral sender name, and our WhatsApp messages never name products in previews. You control what you receive.</p>
+
+  <p><a class="cta" href="index.html">Shop with confidence →</a></p>
+</main>
+
+<footer><div class="wrap">
+  <div class="frow"><a href="index.html">Home</a><a href="shipping.html">Shipping</a><a href="refund.html">Returns &amp; Refunds</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="discreet-delivery.html">Discreet delivery</a></div>
+  <div class="seal"><span class="sanskrit">सर्वे भवन्तु सुखिनः</span> · For adults 18+ · © 2026 Khul Ke Pucho<br><span class="todo">TODO</span>: legal entity name · GST no. · registered address · support email &amp; phone</div>
+</div></footer>
+</body>
+</html>

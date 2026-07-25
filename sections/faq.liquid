@@ -1,0 +1,48 @@
+<section class="section-pad">
+  <div class="page-width" style="max-width:820px">
+    <div class="section-intro">
+      <div class="eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="faq">
+      {% for block in section.blocks %}
+        <details {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.question }}</summary>
+          <div class="faq__a">{{ block.settings.answer }}</div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Khul ke pucho" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "The questions everyone asks" }
+  ],
+  "blocks": [
+    {
+      "type": "qa",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "Will anyone know what I ordered?" },
+        { "type": "textarea", "id": "answer", "label": "Answer", "default": "No. Every order ships in a plain brown parcel with no product name, no brand name and no category hint outside. The courier sees only a parcel." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        { "type": "qa", "settings": { "question": "Will anyone know what I ordered?", "answer": "No. Every order ships in a plain brown parcel with no product name outside. The courier sees only a parcel. Your invoice says only the company's legal name." } },
+        { "type": "qa", "settings": { "question": "Is this real Ayurveda or bus-stand medicine?", "answer": "Every formulation is AYUSH-licensed and every batch is lab-tested, with reports you can download from the product page. We name every ingredient and cite the classical source of each formulation. We never promise miracles — and we put that in writing." } },
+        { "type": "qa", "settings": { "question": "Can I pay on delivery?", "answer": "Yes. Cash on Delivery is available across India, along with UPI, cards and netbanking at checkout." } },
+        { "type": "qa", "settings": { "question": "How does the consultation work?", "answer": "Buy a consultation like any product. After checkout you receive a booking link on WhatsApp and email — choose phone or video, and a time that suits you. It is 100% private and with a registered practitioner." } },
+        { "type": "qa", "settings": { "question": "Can my wife/husband join the consultation?", "answer": "Yes — and we encourage it. Our doctors and counsellors regularly see couples. Intimacy is a shared health matter, and there is no judgment here." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

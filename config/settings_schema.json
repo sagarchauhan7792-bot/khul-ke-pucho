@@ -1,0 +1,31 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Khul Ke Pucho — Aarogya",
+    "theme_version": "1.0.0",
+    "theme_author": "Khul Ke Pucho",
+    "theme_documentation_url": "https://khulkepucho.com",
+    "theme_support_url": "https://khulkepucho.com"
+  },
+  {
+    "name": "Brand colors",
+    "settings": [
+      { "type": "color", "id": "color_primary", "label": "Primary (Kumkum maroon)", "default": "#5E1F30" },
+      { "type": "color", "id": "color_accent", "label": "Accent (Kanchan gold)", "default": "#C9962E" },
+      { "type": "color", "id": "color_accent_light", "label": "Accent light (gold on dark)", "default": "#DDB967" },
+      { "type": "color", "id": "color_bg", "label": "Background (Manuscript ivory)", "default": "#F7EFDF" },
+      { "type": "color", "id": "color_surface", "label": "Card surface", "default": "#FFFDF8" },
+      { "type": "color", "id": "color_herbal", "label": "Herbal (Vana green)", "default": "#2F5D46" },
+      { "type": "color", "id": "color_couples", "label": "Couples (Tamra copper)", "default": "#B4694E" },
+      { "type": "color", "id": "color_ink", "label": "Text (Ink)", "default": "#241419" }
+    ]
+  },
+  {
+    "name": "Trust & compliance",
+    "settings": [
+      { "type": "text", "id": "ayush_license", "label": "AYUSH license number", "info": "TODO: enter the real license number — it appears in the footer and trust strip." },
+      { "type": "text", "id": "whatsapp_number", "label": "WhatsApp number (with country code)", "default": "+919999999999" },
+      { "type": "textarea", "id": "medical_disclaimer", "label": "Medical disclaimer", "default": "Ayurvedic proprietary medicine. Results vary by individual. Consult a physician if symptoms persist. Consultations are with registered practitioners and are not a substitute for emergency care." }
+    ]
+  }
+]

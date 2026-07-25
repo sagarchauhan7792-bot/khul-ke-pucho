@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#EFE3CC"/>
+  <path d="M96 116 L150 96 L204 116 L204 188 Q204 196 196 199 L154 214 L146 214 L104 199 Q96 196 96 188 Z" fill="#C9A06A"/>
+  <path d="M96 116 L150 136 L204 116" fill="none" stroke="#8C6A3A" stroke-width="3"/>
+  <path d="M150 136 L150 214" stroke="#8C6A3A" stroke-width="3"/>
+  <path d="M132 210 L168 210 L168 150 L132 150 Z" fill="#B4694E" opacity=".25"/>
+  <path d="M150 150 L150 210" stroke="#8C6A3A" stroke-width="2" opacity=".5"/>
+  <text x="150" y="252" text-anchor="middle" font-family="Verdana,sans-serif" font-size="15" letter-spacing="1" fill="#7A5C46">Plain, discreet parcel</text>
+</svg>

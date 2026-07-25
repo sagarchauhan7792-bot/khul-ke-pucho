@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{ page_title }}{% if current_tags %} &ndash; {{ current_tags | join: ', ' }}{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+  {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+
+  {{ content_for_header }}
+
+  <style>
+    :root {
+      --c-primary: {{ settings.color_primary | default: '#5E1F30' }};
+      --c-accent: {{ settings.color_accent | default: '#C9962E' }};
+      --c-accent-light: {{ settings.color_accent_light | default: '#DDB967' }};
+      --c-bg: {{ settings.color_bg | default: '#F7EFDF' }};
+      --c-surface: {{ settings.color_surface | default: '#FFFDF8' }};
+      --c-herbal: {{ settings.color_herbal | default: '#2F5D46' }};
+      --c-couples: {{ settings.color_couples | default: '#B4694E' }};
+      --c-couples-tint: #E7C3B4;
+      --c-ink: {{ settings.color_ink | default: '#241419' }};
+      --c-line: #DCCBB0;
+      --c-chip: #EFE3CC;
+      --c-error: #A63A2A;
+    }
+  </style>
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+</head>
+<body class="template-{{ template | split: '.' | first }}">
+
+  {% section 'announcement-bar' %}
+  {% section 'header' %}
+
+  <main id="MainContent" role="main">
+    {{ content_for_layout }}
+  </main>
+
+  {% section 'footer' %}
+
+  {% if settings.whatsapp_number != blank %}
+  <a class="whatsapp-float" href="https://wa.me/{{ settings.whatsapp_number | remove: '+' | remove: ' ' }}?text={{ 'Namaste, I have a question.' | url_encode }}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5a1.8 1.8 0 0 0 .3-.4.5.5 0 0 0 0-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.5 14.5 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></svg>
+  </a>
+  {% endif %}
+
+</body>
+</html>

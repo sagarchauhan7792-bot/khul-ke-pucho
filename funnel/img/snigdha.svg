@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/></linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F0CBC0"/><stop offset=".5" stop-color="#E8B4B8"/><stop offset="1" stop-color="#D99AA0"/></linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
+  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="6" fill="#C9962E">AANAND · INTIMATE CARE</text>
+  <ellipse cx="400" cy="642" rx="110" ry="20" fill="#241419" opacity=".12"/>
+  <!-- lube tube -->
+  <rect x="358" y="238" width="84" height="30" rx="6" fill="#C9962E"/>
+  <path d="M360 268 L440 268 L452 300 Q452 620 400 620 Q348 620 348 300 Z" fill="url(#tube)"/>
+  <rect x="372" y="330" width="56" height="200" rx="10" fill="#F7EFDF" opacity=".55"/>
+  <g fill="none" stroke="#B4694E" stroke-width="3" stroke-linecap="round">
+    <path d="M400 388 C392 388 386 382 384 374 C390 376 396 379 400 385 C404 379 410 376 416 374 C414 382 408 388 400 388 Z"/>
+    <path d="M400 385 C397 377 397 369 400 362 C403 369 403 377 400 385 Z"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-weight="bold" letter-spacing="1" fill="#5E1F30">SNIGDHA</text>
+  <text x="400" y="462" text-anchor="middle" font-family="Verdana,sans-serif" font-size="9.5" letter-spacing="1" fill="#7A5C46">WATER-BASED GEL</text>
+  <text x="400" y="694" text-anchor="middle" font-family="Georgia,serif" font-size="23" font-weight="bold" letter-spacing="1" fill="#5E1F30">SNIGDHA</text>
+  <text x="400" y="718" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" letter-spacing="2" fill="#7A5C46">INTIMATE GEL · स्निग्ध</text>
+  <text x="400" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+</svg>

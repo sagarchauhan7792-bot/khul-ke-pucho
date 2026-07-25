@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs><radialGradient id="bg2" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#C07A5C"/><stop offset="1" stop-color="#8C4E38"/></radialGradient></defs>
+  <rect width="400" height="400" fill="#EFE3CC"/>
+  <circle cx="200" cy="200" r="150" fill="url(#bg2)"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#C9962E" stroke-width="2" opacity=".6"/>
+  <path d="M110 360 Q112 288 176 268 L224 268 Q288 288 290 360 Z" fill="#F7EFDF"/>
+  <path d="M176 268 L200 316 L224 268 Z" fill="#EBDBC8"/>
+  <path d="M196 270 L200 316 L204 270 Z" fill="#5E1F30"/>
+  <path d="M182 272 q-14 60 20 78 q34 -18 22 -78" fill="none" stroke="#C9962E" stroke-width="4"/>
+  <circle cx="224" cy="352" r="8" fill="#C9962E"/>
+  <!-- long hair behind -->
+  <path d="M150 200 Q146 300 172 336 L150 340 Q120 300 130 210 Z" fill="#2A1A14"/>
+  <path d="M250 200 Q254 300 228 336 L250 340 Q280 300 270 210 Z" fill="#2A1A14"/>
+  <rect x="186" y="240" width="28" height="40" rx="12" fill="#DCB089"/>
+  <circle cx="200" cy="206" r="46" fill="#EBC79C"/>
+  <!-- hair top + bun -->
+  <path d="M154 202 Q150 148 200 146 Q250 148 246 202 Q238 176 200 174 Q162 176 154 202 Z" fill="#2A1A14"/>
+  <circle cx="200" cy="150" r="15" fill="#2A1A14"/>
+  <!-- bindi -->
+  <circle cx="200" cy="182" r="4" fill="#5E1F30"/>
+  <text x="200" y="392" text-anchor="middle" font-family="Verdana,sans-serif" font-size="15" letter-spacing="2" fill="#7A5C46">वैद्या</text>
+</svg>

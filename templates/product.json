@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": { "type": "main-product", "settings": {} },
+    "trust": { "type": "trust-strip", "settings": {} },
+    "related": {
+      "type": "featured-products",
+      "settings": {
+        "eyebrow": "Pairs well with",
+        "heading": "Complete the plan",
+        "text": "Formulations work best alongside a consult and a course — that is how causes get treated.",
+        "cta_label": ""
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Will anyone know what I ordered?", "answer": "No. Plain brown parcel, no product name outside, neutral invoice." } },
+        "q2": { "type": "qa", "settings": { "question": "Can I pay on delivery?", "answer": "Yes — COD is available across India, along with UPI, cards and netbanking." } }
+      },
+      "block_order": ["q1", "q2"],
+      "settings": { "eyebrow": "Before you order", "heading": "Common questions" }
+    }
+  },
+  "order": ["main", "trust", "related", "faq"]
+}

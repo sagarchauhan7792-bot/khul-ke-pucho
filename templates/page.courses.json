@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": {} },
+    "courses": {
+      "type": "course-cards",
+      "blocks": {
+        "c1": { "type": "course", "settings": { "badge": "Timing", "title": "PME Course", "text": "A structured, doctor-designed program for early discharge — technique, practice and tracking, step by step." } },
+        "c2": { "type": "course", "settings": { "badge": "Erection health", "title": "ED Course", "text": "Understand the causes — circulation, sugar, stress — and follow a guided plan that addresses them." } },
+        "c3": { "type": "course", "settings": { "badge": "Foundation", "title": "Yoga for Vitality", "text": "Classical asana and breath practice for stamina, sleep and calm — the foundation every plan stands on." } }
+      },
+      "block_order": ["c1", "c2", "c3"],
+      "settings": {}
+    },
+    "shloka": {
+      "type": "shloka-divider",
+      "settings": {
+        "shloka": "समदोषः समाग्निश्च समधातुमलक्रियः। प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते॥",
+        "translation": "Balanced in doshas, digestion, tissues and elimination; serene in soul, senses and mind — such a person is called healthy.",
+        "source": "Sushruta Samhita · Sutrasthana 15.41"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "How do I access a course after buying?", "answer": "Access details arrive on WhatsApp and email right after checkout. Courses are self-paced — start tonight, privately." } }
+      },
+      "block_order": ["q1"],
+      "settings": { "eyebrow": "Before you enroll", "heading": "Common questions" }
+    }
+  },
+  "order": ["main", "courses", "shloka", "faq"]
+}

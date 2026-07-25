@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": {} },
+    "shloka": { "type": "shloka-divider", "settings": {} },
+    "doctors": {
+      "type": "doctor-panel",
+      "blocks": {
+        "d1": { "type": "doctor", "settings": {} },
+        "d2": { "type": "doctor", "settings": {} },
+        "d3": { "type": "doctor", "settings": {} },
+        "d4": { "type": "doctor", "settings": {} }
+      },
+      "block_order": ["d1", "d2", "d3", "d4"],
+      "settings": {}
+    },
+    "trust": { "type": "trust-strip", "settings": {} }
+  },
+  "order": ["main", "shloka", "doctors", "trust"]
+}

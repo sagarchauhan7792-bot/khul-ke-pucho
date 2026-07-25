@@ -1,0 +1,95 @@
+<div class="page-width">
+  <div class="product-layout">
+    <div class="product-gallery">
+      {% if product.featured_image %}
+        {{ product.featured_image | image_url: width: 900 | image_tag: alt: product.featured_image.alt | default: product.title }}
+      {% else %}
+        {% render 'placeholder-image', label: 'TODO: upload product photos for this product' %}
+      {% endif %}
+      {% if product.images.size > 1 %}
+        <div class="grid grid--4" style="margin-top:12px">
+          {% for image in product.images offset: 1 limit: 4 %}
+            {{ image | image_url: width: 300 | image_tag: loading: 'lazy', alt: image.alt | default: product.title }}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="product-info">
+      {% if section.settings.shloka != blank %}
+        <div class="shloka-open">
+          {{ section.settings.shloka }}
+          <small>{{ section.settings.shloka_translation }}</small>
+        </div>
+      {% endif %}
+      <h1 style="margin-top:12px">{{ product.title }}</h1>
+      {% if product.type != blank %}<span class="badge">{{ product.type }}</span>{% endif %}
+
+      <div>{% render 'price', product: product %}</div>
+      <p class="tax-note">Inclusive of all taxes · COD available · Plain packaging</p>
+
+      <div style="font-size:15.5px">{{ product.description }}</div>
+
+      {% form 'product', product %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <div class="qty-row">
+          <button type="button" class="btn btn--outline" data-qty-minus aria-label="Decrease quantity">&minus;</button>
+          <input class="qty-input" type="number" name="quantity" value="1" min="1" aria-label="Quantity">
+          <button type="button" class="btn btn--outline" data-qty-plus aria-label="Increase quantity">+</button>
+        </div>
+        {% if product.selected_or_first_available_variant.available %}
+          <button type="submit" class="btn btn--primary">Add to cart</button>
+        {% else %}
+          <button type="submit" class="btn btn--primary" disabled>Sold out</button>
+        {% endif %}
+      {% endform %}
+
+      {% if section.settings.lab_report != blank %}
+        <a class="lab-link" href="{{ section.settings.lab_report }}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3h6M10 3v6L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18L14 9V3"/></svg>
+          Download this batch's lab report (PDF)
+        </a>
+      {% else %}
+        <div class="lab-link" style="opacity:.65">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3h6M10 3v6L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18L14 9V3"/></svg>
+          TODO: link this batch's NABL lab report in the section settings
+        </div>
+      {% endif %}
+
+      <div class="product-accordion">
+        <details>
+          <summary>Ingredients &amp; classical source</summary>
+          <div class="acc-body">{{ section.settings.ingredients_text | default: 'TODO: list every ingredient with quantity and its classical citation (e.g., Bhavaprakasha, Sharangadhara Samhita).' }}</div>
+        </details>
+        <details>
+          <summary>How to use</summary>
+          <div class="acc-body">{{ section.settings.usage_text | default: 'TODO: dosage, timing, duration, and what to pair it with (sleep, diet). Written by the doctor panel.' }}</div>
+        </details>
+        <details>
+          <summary>Doctor's note</summary>
+          <div class="acc-body">{{ section.settings.doctor_note | default: 'TODO: a short, honest note from a named doctor — who this is for, who should consult first (diabetes, BP, heart conditions).' }}</div>
+        </details>
+        <details>
+          <summary>Shipping &amp; privacy</summary>
+          <div class="acc-body">Ships in 24–48 hours in a plain brown parcel — no product or brand name outside. COD available across India. Invoice carries only the company's legal name.</div>
+        </details>
+      </div>
+
+      <p style="font-size:12px;color:#7A5C46;margin-top:16px">{{ settings.medical_disclaimer }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product page",
+  "settings": [
+    { "type": "text", "id": "shloka", "label": "Opening shloka", "default": "शरीरमाद्यं खलु धर्मसाधनम्" },
+    { "type": "text", "id": "shloka_translation", "label": "Shloka translation", "default": "The body is truly the first instrument of every right endeavour — Kumarasambhava 5.33" },
+    { "type": "url", "id": "lab_report", "label": "Lab report PDF link" },
+    { "type": "textarea", "id": "ingredients_text", "label": "Ingredients & classical source" },
+    { "type": "textarea", "id": "usage_text", "label": "How to use" },
+    { "type": "textarea", "id": "doctor_note", "label": "Doctor's note" }
+  ]
+}
+{% endschema %}

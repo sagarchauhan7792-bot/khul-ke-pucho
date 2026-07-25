@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
+  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
+  <ellipse cx="400" cy="690" rx="150" ry="20" fill="#241419" opacity=".14"/>
+
+  <!-- phone -->
+  <rect x="270" y="110" width="260" height="560" rx="38" fill="#241419"/>
+  <rect x="282" y="122" width="236" height="536" rx="28" fill="#F7EFDF"/>
+  <rect x="360" y="132" width="80" height="10" rx="5" fill="#241419" opacity=".8"/>
+
+  <rect x="282" y="154" width="236" height="74" fill="#5E1F30"/>
+  <text x="400" y="184" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#DDB967">कारण समझो, इलाज करो</text>
+  <text x="400" y="210" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="bold" letter-spacing="2" fill="#F7EFDF">ED COURSE</text>
+
+  <!-- four causes grid -->
+  <g font-family="Verdana,sans-serif" font-size="11.5" text-anchor="middle">
+    <rect x="300" y="248" width="94" height="86" rx="10" fill="#FFFDF8" stroke="#DCCBB0"/>
+    <circle cx="347" cy="280" r="16" fill="none" stroke="#5E1F30" stroke-width="3"/><path d="M347 270 l0 10 7 5" stroke="#5E1F30" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="347" y="322" fill="#241419">Sleep</text>
+    <rect x="406" y="248" width="94" height="86" rx="10" fill="#FFFDF8" stroke="#DCCBB0"/>
+    <path d="M438 288 l8 -12 8 18 8 -22 8 16" stroke="#5E1F30" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="453" y="322" fill="#241419">Sugar</text>
+    <rect x="300" y="344" width="94" height="86" rx="10" fill="#FFFDF8" stroke="#DCCBB0"/>
+    <path d="M347 366 c-9 -10 -25 -2 -22 10 c2 10 22 22 22 22 c0 0 20 -12 22 -22 c3 -12 -13 -20 -22 -10 Z" fill="none" stroke="#5E1F30" stroke-width="3"/>
+    <text x="347" y="418" fill="#241419">Circulation</text>
+    <rect x="406" y="344" width="94" height="86" rx="10" fill="#FFFDF8" stroke="#DCCBB0"/>
+    <path d="M440 392 q6 -22 13 0 q6 -30 13 0 q6 -18 13 0" stroke="#5E1F30" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="453" y="418" fill="#241419">Stress</text>
+  </g>
+
+  <!-- weekly plan bar -->
+  <g>
+    <rect x="300" y="452" width="200" height="14" rx="7" fill="#EFE3CC"/>
+    <rect x="300" y="452" width="88" height="14" rx="7" fill="#2F5D46"/>
+    <text x="300" y="486" font-family="Verdana,sans-serif" font-size="11.5" fill="#7A5C46">Week 3 of 8 · cause-first plan</text>
+  </g>
+
+  <rect x="300" y="510" width="200" height="46" rx="10" fill="#C9962E"/>
+  <text x="400" y="539" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" font-weight="bold" fill="#241419">Today's lesson</text>
+  <rect x="300" y="566" width="200" height="46" rx="10" fill="none" stroke="#5E1F30" stroke-width="2"/>
+  <text x="400" y="595" text-anchor="middle" font-family="Verdana,sans-serif" font-size="13" font-weight="bold" fill="#5E1F30">Talk to your doctor</text>
+
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+</svg>

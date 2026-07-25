@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/></linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F2A3E"/><stop offset="1" stop-color="#4A1826"/></linearGradient>
+    <linearGradient id="cop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C97F5E"/><stop offset="1" stop-color="#8C4E38"/></linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="265" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
+  <circle cx="400" cy="400" r="295" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="6" fill="#C9962E">AANAND</text>
+  <ellipse cx="400" cy="642" rx="230" ry="26" fill="#241419" opacity=".13"/>
+  <!-- open box base -->
+  <path d="M212 396 L588 396 L588 596 Q588 620 564 620 L236 620 Q212 620 212 596 Z" fill="url(#box)"/>
+  <rect x="212" y="396" width="376" height="8" fill="#C9962E"/>
+  <!-- lid tilted behind -->
+  <path d="M250 300 L590 260 L610 320 L270 360 Z" fill="#5E1F30"/>
+  <rect x="255" y="330" width="330" height="4" fill="#C9962E" opacity=".5" transform="rotate(-6 400 332)"/>
+  <!-- items nested -->
+  <rect x="256" y="430" width="70" height="150" rx="20" fill="url(#cop)"/>
+  <circle cx="291" cy="424" r="30" fill="#D99AA0"/>
+  <path d="M360 470 C348 470 340 464 340 452 C340 500 400 540 400 540 C400 540 460 500 460 452 C460 464 452 470 440 470 C424 470 408 484 400 498 C392 484 376 470 360 470 Z" fill="#DDB967" opacity=".95"/>
+  <rect x="486" y="452" width="58" height="128" rx="14" fill="#E8B4B8"/>
+  <rect x="492" y="440" width="46" height="18" rx="6" fill="#C9962E"/>
+  <text x="400" y="672" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="bold" letter-spacing="2" fill="#5E1F30">MILAN KIT</text>
+  <text x="400" y="698" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12.5" letter-spacing="2" fill="#7A5C46">COUPLES STARTER BOX · मिलन</text>
+  <text x="400" y="744" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+</svg>

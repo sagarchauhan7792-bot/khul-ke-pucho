@@ -1,0 +1,61 @@
+<section class="section-pad">
+  <div class="page-width">
+    <div class="section-intro">
+      <div class="eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for block in section.blocks %}
+        <div class="card" {{ block.shopify_attributes }}>
+          <div class="card__body">
+            <span class="badge badge--herbal">{{ block.settings.badge }}</span>
+            <h3 style="margin-top:10px">{{ block.settings.title }}</h3>
+            <p style="font-size:14.5px">{{ block.settings.text }}</p>
+            {% if block.settings.product != blank %}
+              <a href="{{ block.settings.product.url }}" class="btn btn--outline" style="width:100%">
+                Enroll · {{ block.settings.product.price | money }}
+              </a>
+            {% else %}
+              <a href="{{ block.settings.link }}" class="btn btn--outline" style="width:100%">Learn more</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Course cards",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Structured courses" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Learn the science. Practice the fix." },
+    { "type": "textarea", "id": "text", "label": "Intro", "default": "Doctor-designed, self-paced programs — because lasting change is a practice, not a pill." }
+  ],
+  "blocks": [
+    {
+      "type": "course",
+      "name": "Course",
+      "settings": [
+        { "type": "text", "id": "badge", "label": "Badge", "default": "Course" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Course title" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "What the course covers, in two dignified sentences." },
+        { "type": "product", "id": "product", "label": "Linked product (for price & checkout)" },
+        { "type": "url", "id": "link", "label": "Fallback link (if no product)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Course cards",
+      "blocks": [
+        { "type": "course", "settings": { "badge": "Timing", "title": "PME Course", "text": "A structured, doctor-designed program for early discharge — technique, practice and tracking, step by step." } },
+        { "type": "course", "settings": { "badge": "Erection health", "title": "ED Course", "text": "Understand the causes — circulation, sugar, stress — and follow a guided plan that addresses them." } },
+        { "type": "course", "settings": { "badge": "Foundation", "title": "Yoga for Vitality", "text": "Classical asana and breath practice for stamina, sleep and calm — the foundation every plan stands on." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

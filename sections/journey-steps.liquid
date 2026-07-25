@@ -1,0 +1,47 @@
+<section class="section-pad">
+  <div class="page-width">
+    <div class="section-intro">
+      <div class="eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="grid grid--4 journey">
+      {% for block in section.blocks %}
+        <div class="card journey-step" {{ block.shopify_attributes }}>
+          <h4>{{ block.settings.title }}</h4>
+          <p style="font-size:14.5px;margin:0">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Journey steps",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "How it works" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "From first question to full plan" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Ask privately" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Book a phone or video consult. No clinic visit, no waiting room, nobody watching." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Journey steps",
+      "blocks": [
+        { "type": "step", "settings": { "title": "Ask privately", "text": "Book a ₹99 phone or video consult. No clinic visit, no waiting room, nobody watching." } },
+        { "type": "step", "settings": { "title": "Get a real diagnosis", "text": "A registered doctor looks at the causes — sleep, sugar, stress, circulation — not just the symptom." } },
+        { "type": "step", "settings": { "title": "Receive your plan", "text": "Classical formulations, lifestyle steps and courses, matched to your case and posted in plain packaging." } },
+        { "type": "step", "settings": { "title": "Improve with follow-up", "text": "Scheduled follow-ups track progress. We adjust the plan until it works." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

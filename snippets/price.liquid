@@ -1,0 +1,7 @@
+{% comment %} Accepts: product {% endcomment %}
+<span class="price">
+  {% if product.price_varies %}From {% endif %}{{ product.price | money }}
+  {% if product.compare_at_price > product.price %}
+    <s class="price--compare">{{ product.compare_at_price | money }}</s>
+  {% endif %}
+</span>

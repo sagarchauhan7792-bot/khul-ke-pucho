@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="site-footer__grid">
+      <div>
+        <div class="site-logo" style="margin-bottom:14px">
+          <span class="sanskrit" style="color:var(--c-bg);font-size:24px">खुल के पूछो</span>
+          <small style="color:var(--c-accent-light)">Khul Ke Pucho</small>
+        </div>
+        <p style="font-size:14.5px;max-width:34ch">{{ section.settings.about_text }}</p>
+        {% if settings.ayush_license != blank %}
+          <p style="font-size:13px"><strong>AYUSH License:</strong> {{ settings.ayush_license }}</p>
+        {% else %}
+          <p style="font-size:13px;opacity:.7">AYUSH License: <em>TODO — add in Theme settings → Trust &amp; compliance</em></p>
+        {% endif %}
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          {% for link in section.settings.menu_shop.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          {% for link in section.settings.menu_help.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Our promise</h4>
+        <ul style="font-size:14px">
+          <li>Plain brown parcel — no product name outside</li>
+          <li>Cash on Delivery available</li>
+          <li>Lab-tested, AYUSH-licensed formulations</li>
+          <li>Private consultations with registered doctors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-seal">
+      <div class="sanskrit">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</div>
+      <div style="margin-top:4px;opacity:.85">May all be happy; may all be free of disease.</div>
+      <div style="margin-top:12px;opacity:.7">{{ settings.medical_disclaimer }}</div>
+      <div style="margin-top:10px;opacity:.7">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }} · All rights reserved</div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "textarea", "id": "about_text", "label": "About text", "default": "Classical Ayurvedic formulations, qualified doctors and structured courses for sexual wellness — with modern proof and complete privacy. Ancient wisdom. Open answers." },
+    { "type": "link_list", "id": "menu_shop", "label": "Shop menu", "default": "main-menu" },
+    { "type": "link_list", "id": "menu_help", "label": "Help menu", "default": "footer" }
+  ]
+}
+{% endschema %}

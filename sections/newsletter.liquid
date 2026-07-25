@@ -1,0 +1,26 @@
+<section class="section-pad center">
+  <div class="page-width" style="max-width:640px">
+    <div class="eyebrow">{{ section.settings.eyebrow }}</div>
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+    {% form 'customer', class: 'newsletter-form' %}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input type="email" name="contact[email]" placeholder="Your email — kept private" required aria-label="Email address">
+      <button type="submit" class="btn btn--primary">Subscribe</button>
+    {% endform %}
+    <p style="font-size:12px;color:#7A5C46;margin-top:10px">{{ section.settings.privacy_note }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Weekly wisdom" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "One honest health letter a week" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Plain-language guidance on sleep, sugar, stress and intimacy. No spam, no shame." },
+    { "type": "text", "id": "privacy_note", "label": "Privacy note", "default": "Sender name appears as 'KKP Wellness' — nothing category-revealing in your inbox." }
+  ],
+  "presets": [{ "name": "Newsletter" }]
+}
+{% endschema %}

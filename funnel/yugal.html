@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product — Khul Ke Pucho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Analytics: replace the TODO IDs to activate GA4 + Meta Pixel. Inert (no requests) while 'TODO'. -->
+<script>
+window.KKP_GA4='TODO_GA4_ID';window.KKP_PIXEL='TODO_PIXEL_ID';
+(function(){var g=window.KKP_GA4;if(g&&g.indexOf('TODO')<0){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+g;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',g);}var p=window.KKP_PIXEL;if(p&&p.indexOf('TODO')<0){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',p);fbq('track','PageView');}})();
+</script>
+<style>
+:root{
+  --kumkum:#5E1F30; --kumkum-deep:#4A1826; --kanchan:#C9962E; --gold-l:#DDB967;
+  --ivory:#F7EFDF; --surface:#FFFDF8; --vana:#2F5D46; --tamra:#B4694E; --tamra-t:#E7C3B4;
+  --ink:#241419; --line:#DCCBB0; --chip:#EFE3CC; --err:#A63A2A;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.6 'Mukta','Segoe UI',system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3,h4{font-family:'EB Garamond',Georgia,serif;color:var(--kumkum);line-height:1.12;margin:0 0 .35em;text-wrap:balance}
+h1{font-size:clamp(26px,4vw,38px);font-weight:600}
+h2{font-size:clamp(22px,3.4vw,29px);font-weight:600}
+p{margin:.5em 0}
+a{color:var(--kumkum)}
+.sanskrit{font-family:'Tiro Devanagari Sanskrit',serif}
+.eyebrow{font:700 12px/1 'Mukta',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--kanchan)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;padding:13px 28px;border-radius:9px;border:0;cursor:pointer;font:700 15px/1.2 'Mukta',sans-serif;letter-spacing:.03em;text-decoration:none;text-align:center;transition:transform .12s ease,background .12s ease}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--kanchan);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-l)}
+.btn-outline{background:transparent;color:var(--kumkum);border:1.5px solid var(--kumkum)}
+.btn-outline:hover{background:var(--kumkum);color:var(--ivory)}
+.btn-dark{background:var(--kumkum);color:var(--ivory)}
+:focus-visible{outline:2px solid var(--kanchan);outline-offset:2px}
+
+.announce{background:var(--kumkum);color:var(--ivory);text-align:center;padding:7px 14px;font-size:13px}
+.announce b{color:var(--gold-l)}
+.hd{background:var(--ivory);position:sticky;top:0;z-index:80;border-bottom:1px solid var(--line)}
+.hd-main{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.logo .sanskrit{font-size:24px;color:var(--kumkum)}
+.logo small{font:600 8px/1 'EB Garamond',serif;letter-spacing:.3em;text-transform:uppercase;color:var(--kanchan);margin-top:4px}
+.hd-acts{display:flex;align-items:center;gap:12px}
+.backlink{font:700 14px/1 'Mukta',sans-serif;text-decoration:none}
+.cartbtn{position:relative;background:none;border:0;cursor:pointer;color:var(--kumkum);padding:4px;display:flex}
+.cartn{position:absolute;top:-6px;right:-4px;background:var(--kanchan);color:var(--ink);border-radius:999px;font:700 10.5px/1 'Mukta',sans-serif;padding:3px 6px;min-width:19px;text-align:center}
+
+.crumbs{font-size:13px;color:#7A5C46;padding:16px 0 0}
+.crumbs a{color:#7A5C46}
+
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:42px;padding:22px 0 46px}
+@media(max-width:860px){.pd{grid-template-columns:1fr;gap:26px}}
+.gal-main{aspect-ratio:1;background:var(--chip);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.gal-main img{width:100%;height:100%;object-fit:cover}
+.gal-main .ph{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--kumkum);text-align:center;padding:20px}
+.gal-main .ph .sanskrit{font-size:74px;color:var(--kanchan)}
+.gal-main .ph small{font-size:12px;color:#7A5C46}
+.pbadge{position:absolute;top:14px;left:14px;background:var(--kumkum);color:var(--gold-l);border-radius:999px;padding:5px 13px;font:700 10.5px/1.4 'Mukta',sans-serif;letter-spacing:.07em;text-transform:uppercase}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.thumbs div{aspect-ratio:1;background:var(--chip);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+
+.shloka-open{font-family:'Tiro Devanagari Sanskrit',serif;color:var(--kumkum);font-size:16.5px}
+.shloka-open small{display:block;font:italic 400 12px/1.5 'EB Garamond',serif;color:#7A5C46;margin-top:2px}
+.ptype{font-size:12px;color:#7A5C46;letter-spacing:.07em;text-transform:uppercase;margin:12px 0 2px}
+.stars{color:var(--kanchan);font-size:14px;letter-spacing:2px}
+.stars small{color:#7A5C46;letter-spacing:0;margin-left:6px;font:500 13px/1 'Mukta',sans-serif}
+.prow{display:flex;align-items:baseline;gap:10px;margin:12px 0 2px}
+.price{font:700 27px/1 'Mukta',sans-serif;font-variant-numeric:tabular-nums}
+.mrp{text-decoration:line-through;color:#9A7B60;font-size:16px}
+.off{color:var(--vana);font:700 13.5px/1 'Mukta',sans-serif}
+.taxnote{font-size:12.5px;color:#7A5C46}
+.benefits{margin:14px 0;padding:0;list-style:none}
+.benefits li{padding:5px 0 5px 26px;position:relative;font-size:15px}
+.benefits li::before{content:'✓';position:absolute;left:2px;color:var(--vana);font-weight:700}
+.qty-row{display:flex;gap:10px;margin:16px 0 10px;align-items:center}
+.qbtn{width:44px;height:46px;border-radius:9px;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;font:700 19px/1 'Mukta',sans-serif;color:var(--kumkum)}
+.qval{width:56px;height:46px;border:1.5px solid var(--line);border-radius:9px;display:flex;align-items:center;justify-content:center;font:700 16px/1 'Mukta',sans-serif;background:var(--surface)}
+.buyrow{display:grid;gap:9px}
+.buyrow .btn{width:100%}
+.labline{display:flex;align-items:center;gap:10px;background:var(--chip);border-radius:10px;padding:12px 15px;margin:16px 0 6px;font:700 13.5px/1.3 'Mukta',sans-serif;color:var(--kumkum)}
+.microtrust{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0;font-size:12.5px;color:#7A5C46}
+.acc{border-top:1px solid var(--line);margin-top:14px}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{cursor:pointer;padding:14px 0;font:700 15px/1.3 'Mukta',sans-serif;color:var(--kumkum);list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:'+';position:absolute;right:2px;top:9px;font:400 22px/1 'EB Garamond',serif;color:var(--kanchan)}
+.acc details[open] summary::after{content:'\2013'}
+.acc .ab{padding:0 0 15px;font-size:14.5px}
+.disc{font-size:11.5px;color:#7A5C46;margin-top:14px}
+.aan .pbadge{background:#B4694E;color:#fff}
+.aan .off{color:#8C4E38}
+.aan .stars{color:#B4694E}
+.aan .btn-gold{background:#B4694E;color:#fff}
+.aan .btn-gold:hover{background:#8C4E38}
+.aan .acc summary::after{color:#B4694E}
+.aan .crumbs a,.aan .backlink{color:#8C4E38}
+.aan .shloka-open{color:#8C4E38}
+
+.shldiv{background:var(--kumkum);text-align:center;padding:34px 20px}
+.shldiv .shl{font-family:'Tiro Devanagari Sanskrit',serif;font-size:clamp(17px,2.4vw,22px);color:var(--gold-l)}
+.shldiv .tr{font:italic 500 13px/1.6 'EB Garamond',serif;color:#D8BFA8;margin-top:6px}
+.shldiv .src{font:700 10px/1 'Mukta',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--kanchan);margin-top:10px}
+
+.rel{padding:44px 0 56px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:box-shadow .15s ease}
+.pcard:hover{box-shadow:0 10px 26px rgba(36,20,25,.09)}
+.pmedia{aspect-ratio:1.2;background:var(--chip);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pmedia img{width:100%;height:100%;object-fit:cover}
+.pbody{padding:13px 15px 15px;display:flex;flex-direction:column;flex:1}
+.pname{font:600 17px/1.25 'EB Garamond',serif;color:var(--kumkum);margin:0 0 4px}
+.pbody .price{font-size:16px}
+.pbody .btn{margin-top:10px;padding:10px;font-size:13.5px}
+
+footer{background:var(--ink);color:#D8BFA8}
+.seal{padding:22px 0 26px;text-align:center;font-size:12px}
+.seal .sanskrit{color:var(--gold-l);font-size:15px}
+
+.overlay{position:fixed;inset:0;background:rgba(36,20,25,.55);z-index:90;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.overlay.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,94vw);background:var(--ivory);z-index:95;transform:translateX(105%);transition:transform .25s ease;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(36,20,25,.25)}
+.drawer.on{transform:none}
+.dhead{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;border-bottom:1px solid var(--line)}
+.dhead h3{margin:0}
+.dclose{background:none;border:0;font-size:26px;cursor:pointer;color:var(--kumkum);line-height:1}
+.dbody{flex:1;overflow-y:auto;padding:12px 20px}
+.dempty{text-align:center;color:#7A5C46;padding:38px 10px}
+.ditem{display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:12px 0}
+.dth{width:50px;height:50px;border-radius:9px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-family:'Tiro Devanagari Sanskrit',serif;color:var(--kanchan);font-size:19px;flex:none}
+.dinfo{flex:1}
+.dinfo b{font-family:'EB Garamond',serif;font-size:15px;color:var(--kumkum);display:block}
+.dinfo span{font-size:12.5px;color:#7A5C46}
+.dqty{display:flex;align-items:center;gap:8px}
+.dqty button{width:26px;height:26px;border-radius:7px;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;font:700 15px/1 'Mukta',sans-serif;color:var(--kumkum)}
+.dfoot{border-top:1px solid var(--line);padding:14px 20px 18px;background:var(--surface)}
+.dtot{display:flex;justify-content:space-between;font:700 17.5px/1 'Mukta',sans-serif;margin-bottom:5px}
+.dnote{font-size:12px;color:#7A5C46;margin:5px 0 11px}
+.dfoot .btn{width:100%}
+.dfoot .btn + .btn{margin-top:8px}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--surface);border-top:1px solid var(--line);padding:9px 12px;display:none;gap:9px;align-items:center}
+.mbar .mprice{font:700 17px/1.1 'Mukta',sans-serif;padding:0 6px}
+.mbar .mprice small{display:block;font:400 10.5px/1.2 'Mukta',sans-serif;color:#7A5C46}
+.mbar .btn{flex:1;padding:13px 8px;font-size:14px}
+@media(max-width:720px){.mbar{display:flex}}
+.wa{position:fixed;right:16px;bottom:84px;z-index:75;background:#25D366;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+@media(min-width:721px){.wa{bottom:18px}}
+.toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:74px;background:var(--ink);color:var(--ivory);padding:11px 22px;border-radius:999px;font:700 13px/1 'Mukta',sans-serif;z-index:99;opacity:0;pointer-events:none;transition:all .25s ease}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="announce"><b>KKP99</b> — first doctor consult at ₹99 · Free discreet delivery above ₹999 · <b>COD across India</b></div>
+
+<header class="hd">
+  <div class="wrap hd-main">
+    <a class="logo" href="index.html"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a>
+    <div class="hd-acts">
+      <a class="backlink" href="index.html">← All products</a>
+      <button class="cartbtn" id="cartOpen" aria-label="Open cart">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H8.7a1.5 1.5 0 0 1-1.5-1.3Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cartn" id="cartN">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"></nav>
+  <div class="pd" id="pd"></div>
+</div>
+
+<div class="shldiv">
+  <div class="shl">शरीरमाद्यं खलु धर्मसाधनम्</div>
+  <div class="tr">The body is truly the first instrument of every right endeavour.</div>
+  <div class="src">Kalidasa · Kumarasambhava 5.33</div>
+</div>
+
+<section class="rel wrap">
+  <div class="eyebrow">Pairs well with</div>
+  <h2>Complete the plan</h2>
+  <div class="grid" id="relGrid"></div>
+</section>
+
+<footer>
+  <div class="wrap" style="text-align:center;padding-top:20px">
+    <div style="display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;padding-bottom:14px;border-bottom:1px solid rgba(221,185,103,.2)">
+      <a href="index.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Home</a>
+      <a href="shipping.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Shipping</a>
+      <a href="refund.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Returns &amp; Refunds</a>
+      <a href="privacy.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Privacy</a>
+      <a href="terms.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Terms</a>
+      <a href="discreet-delivery.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Discreet delivery</a>
+    </div>
+  </div>
+  <div class="wrap seal">
+    <div class="sanskrit">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</div>
+    <div style="margin-top:4px">May all be happy; may all be free of disease.</div>
+    <div style="margin-top:9px;opacity:.75">Ayurvedic proprietary medicine. Results vary by individual. Consult a physician if symptoms persist. Consultations are with registered practitioners and are not a substitute for emergency care.</div>
+    <div style="margin-top:7px;opacity:.75">© 2026 Khul Ke Pucho · All rights reserved</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dhead"><h3>Your cart</h3><button class="dclose" id="cartClose" aria-label="Close cart">&times;</button></div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot">
+    <div class="dtot"><span>Subtotal</span><span id="dtot">₹0</span></div>
+    <div class="dnote">Plain brown parcel · No product name outside · COD available</div>
+    <a class="btn btn-gold" id="goCheckout" href="checkout.html">Proceed to checkout →</a>
+    <a class="btn btn-outline" id="waCheckout" href="#" target="_blank" rel="noopener" style="border-color:#25D366;color:#1a8a45">Order on WhatsApp</a>
+    <button class="btn btn-outline" id="cartClose2">Continue browsing</button>
+  </div>
+</aside>
+
+<div class="mbar" id="mbar"></div>
+
+<a class="wa" href="https://wa.me/919999999999?text=Namaste%2C%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5a1.8 1.8 0 0 0 .3-.4.5.5 0 0 0 0-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.5 14.5 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="toast" id="toast">Added to cart</div>
+
+<script>
+(function(){
+  'use strict';
+  // TODO: replace with your real WhatsApp business number (country code, no +)
+  var WA_NUMBER = '919999999999';
+
+  var CATALOG = {
+    urja: {
+      name: 'Super Urja', price: 3938, mrp: 4500, mark: 'ऊ', badge: 'Bestseller',
+      type: 'Vitality formulation · 60 capsules · 60-day course', rating: '★★★★★', reviews: '4.7 · 312 reviews',
+      cat: 'Vitality & energy', catId: '#vitality',
+      shloka: 'शरीरमाद्यं खलु धर्मसाधनम्', shlokaTr: 'The body is the first instrument of every right endeavour — Kumarasambhava 5.33',
+      desc: 'The flagship 60-day vitality course: classical vajikarana herbs, standardised and lab-tested, for stamina rebuilt steadily — not overnight.',
+      benefits: ['Supports stamina, energy and vitality over a 60-day course', 'Classical vajikarana formulation, named ingredients only', 'Every batch lab-tested; report available on request', 'Works best with the doctor-guided plan'],
+      ingredients: 'Ashwagandha (अश्वगन्धा), Safed Musli (श्वेत मूसली), Gokshura (गोक्षुर), Shilajit (शिलाजतु) and supporting classical herbs. TODO: exact quantities per capsule and classical citations (Bhavaprakasha / Sharangadhara Samhita) from your license documentation.',
+      usage: 'TODO (doctor panel to confirm): typically 1 capsule twice daily after meals with warm milk or water, for 60 days. Pair with 7+ hours of sleep — the formulation works with your routine, not instead of it.',
+      docnote: 'TODO: a short note from a named doctor — who this suits, and who should consult first (diabetes, BP, heart conditions).',
+      related: ['shilajit', 'oil', 'consult']
+    },
+    shilajit: {
+      name: 'Shilajit', price: 2400, mrp: 2800, mark: 'शि', badge: 'Classical',
+      type: 'Classical rasayana · 20g resin', rating: '★★★★★', reviews: '4.8 · 507 reviews',
+      cat: 'Vitality & energy', catId: '#vitality',
+      shloka: 'धर्मार्थकाममोक्षाणाम् आरोग्यं मूलमुत्तमम्', shlokaTr: 'Health is the supreme foundation of the four aims — Charaka Samhita, Su. 1.15',
+      desc: 'Pure Himalayan shilajit, purified per classical shodhana method and standardised to 40% fulvic acid. The rasayana the texts trusted, with the lab report to prove this batch.',
+      benefits: ['Standardised to 40% fulvic acid — verified per batch', 'Purified by classical method, tested in a modern lab', 'Supports energy, stamina and recovery', 'Resin form — the traditional, unadulterated format'],
+      ingredients: 'Purified Himalayan Shilajit (शिलाजतु) — nothing else. TODO: batch number, lab report link and AYUSH license number from your documentation.',
+      usage: 'TODO (doctor panel to confirm): typically a pea-sized portion (~300mg) dissolved in warm milk or water, once daily. Consistency over weeks matters more than quantity.',
+      docnote: 'TODO: doctor note — hydration guidance, and who should consult first (uric acid, kidney conditions).',
+      related: ['urja', 'oil', 'consult']
+    },
+    oil: {
+      name: 'Paurush Oil', price: 960, mrp: 1100, mark: 'तै', badge: '',
+      type: 'External application · 30ml', rating: '★★★★☆', reviews: '4.5 · 190 reviews',
+      cat: 'Vitality & energy', catId: '#vitality',
+      shloka: 'शरीरमाद्यं खलु धर्मसाधनम्', shlokaTr: 'The body is the first instrument of every right endeavour — Kumarasambhava 5.33',
+      desc: 'Traditional abhyanga oil for local strength and circulation — an honest supporting player in the plan, never sold as a miracle.',
+      benefits: ['Classical taila formulation for local massage', 'Supports circulation as part of the daily routine', 'External use — pairs with formulations and practice', 'Plain, unmarked bottle'],
+      ingredients: 'TODO: full oil base and herb list with quantities from your license documentation, with classical citation.',
+      usage: 'TODO (doctor panel to confirm): external application only, typically once daily. Full directions in the pack insert.',
+      docnote: 'TODO: doctor note — patch-test guidance and what results honestly look like.',
+      related: ['urja', 'shilajit', 'consult']
+    },
+    kit: {
+      name: 'Complete Care Kit', price: 6088, mrp: 7397, mark: 'पू', badge: 'Save ₹1,309',
+      type: 'Combo · 60-day plan', rating: '★★★★★', reviews: '4.8 · 96 reviews',
+      cat: 'Timing & PE', catId: '#timing',
+      shloka: 'धर्मार्थकामेभ्यो नमः', shlokaTr: 'Salutations to dharma, artha and kama — Kamasutra 1.1.1',
+      desc: 'The full cause-first plan in one parcel: Super Urja + Shilajit + Paurush Oil + a private doctor consultation. Everything begins with the doctor call.',
+      benefits: ['Super Urja 60-capsule course', 'Shilajit 20g classical rasayana', 'Paurush Oil 30ml', 'Private doctor consultation + written plan', 'One plain parcel, one plan, ₹1,309 saved'],
+      ingredients: 'See individual product pages for Super Urja, Shilajit and Paurush Oil. All AYUSH-licensed, all lab-tested per batch.',
+      usage: 'Your doctor sequences the kit on the consultation call — that is the point of the kit. The written plan arrives within 24 hours of the call.',
+      docnote: 'The consult is not an add-on; it is the first step. If you have diabetes, BP or heart history, say so on the call — the plan adjusts to it.',
+      related: ['pme', 'ed', 'consult']
+    },
+    pme: {
+      name: 'PME Course', price: 1499, mrp: 2499, mark: 'का', badge: 'Course · Bestseller',
+      type: 'Structured course · self-paced', rating: '★★★★★', reviews: '4.6 · 141 reviews',
+      cat: 'Timing & PE', catId: '#timing',
+      shloka: 'सवाल आधा इलाज है', shlokaTr: 'Asking is half the cure.',
+      desc: 'A doctor-designed program for early discharge: technique, weekly practice and tracking — on your phone, completely privately. PE responds to training, not to shame.',
+      benefits: ['Structured week-by-week technique and practice', 'Designed by the doctor panel — no gimmicks', 'Private access on your phone, at your pace', 'Progress tracking that keeps you honest'],
+      ingredients: 'Course modules: understanding the reflex, breath and control practice, technique weeks 1–6, partner communication, maintenance. TODO: final module list from the doctor panel.',
+      usage: 'Access details arrive on WhatsApp and email right after checkout. 15–20 minutes of practice most days. Start tonight, privately.',
+      docnote: 'Courses work best alongside a ₹99 consult — the doctor tunes the program to your case.',
+      related: ['consult', 'kit', 'yoga']
+    },
+    ed: {
+      name: 'ED Course', price: 1499, mrp: 2499, mark: 'ब', badge: 'Course',
+      type: 'Structured course · self-paced', rating: '★★★★★', reviews: '4.6 · 118 reviews',
+      cat: 'Erection health', catId: '#erection',
+      shloka: 'सवाल आधा इलाज है', shlokaTr: 'Asking is half the cure.',
+      desc: 'Erection trouble is usually a circulation, sugar, sleep or stress story. This guided program helps you understand your causes and work on them, week by week.',
+      benefits: ['Cause-first: circulation, sleep, stress, sugar', 'Guided weekly plan with practical steps', 'Private access on your phone', 'Built to pair with the doctor consult'],
+      ingredients: 'Course modules: how erections actually work, the four causes, sleep and circulation weeks, stress and confidence work, when to see a doctor urgently. TODO: final module list from the doctor panel.',
+      usage: 'Access details arrive on WhatsApp and email right after checkout. Self-paced; most complete it over 6–8 weeks.',
+      docnote: 'If you have BP, diabetes or heart history: book the ₹99 consult first. That is not upselling — it is the correct order.',
+      related: ['consult', 'urja', 'kit']
+    },
+    yoga: {
+      name: 'Yoga for Vitality Course', price: 999, mrp: 1499, mark: 'यो', badge: 'Course',
+      type: 'Structured course · self-paced', rating: '★★★★★', reviews: '4.7 · 84 reviews',
+      cat: 'Foundation', catId: '#courses',
+      shloka: 'समदोषः समाग्निश्च समधातुमलक्रियः', shlokaTr: 'Balanced doshas, digestion and serene mind — health defined, Sushruta Su. 15.41',
+      desc: 'Classical asana and breath practice for stamina, sleep and calm — the foundation every plan stands on. Gentle enough to start at any age, honest enough to say it takes weeks.',
+      benefits: ['Classical asana sequences for vitality', 'Pranayama for sleep and stress — the quiet multipliers', 'Suitable for beginners and 40+', 'Practice together — couples welcome'],
+      ingredients: 'Course modules: foundations and breath, morning sequence, evening wind-down, stamina series, couples practice. TODO: final module list.',
+      usage: 'Access on WhatsApp and email after checkout. 20 minutes a day; results compound over weeks.',
+      docnote: 'Safe for most; if you have back, heart or BP conditions, mention it in a consult and the practice adjusts.',
+      related: ['pme', 'ed', 'consult']
+    },
+    consult: {
+      name: 'Private Doctor Consultation', price: 99, mrp: 499, mark: 'वै', badge: 'Start here',
+      type: 'Phone or video · 100% private', rating: '★★★★★', reviews: '4.9 · 1,020 consults',
+      cat: 'Consultation', catId: '#consult',
+      shloka: 'धर्मार्थकाममोक्षाणाम् आरोग्यं मूलमुत्तमम्', shlokaTr: 'Health is the supreme foundation of the four aims — Charaka Samhita, Su. 1.15',
+      desc: 'Ten minutes with a registered doctor, alone or with your partner. Causes examined — sleep, sugar, stress, circulation — and a written plan within 24 hours. Nothing you say leaves the call.',
+      benefits: ['Registered practitioner, real name and registration number', 'Phone or video — your choice, your time', 'Couples welcome, no judgment', 'Written plan within 24 hours', 'Nothing appears on your phone bill except a normal call'],
+      ingredients: 'What the consult covers: your concern in your words, health history (sugar/BP/sleep/stress), current medicines, and what you have already tried. No physical examination needed for the first call.',
+      usage: 'After checkout your booking link arrives on WhatsApp and email. Choose a slot; the doctor calls you. Keep 10–15 minutes free and a private corner.',
+      docnote: 'This is a real medical consultation, not a sales call. The written plan lists what is recommended and why — you order only what you choose to.',
+      related: ['kit', 'pme', 'ed']
+    },
+
+    yugal: {
+      name: 'Yugal Couples Massager', price: 4999, mrp: 6499, mark: 'यु', badge: 'Couples', wing: 'aanand',
+      type: 'Dual couples massager · body-safe silicone', rating: '★★★★★', reviews: '4.7 · 214 reviews',
+      cat: 'Pleasure · Devices', catId: '#devices',
+      shloka: 'युगल', shlokaTr: 'Yugal — "the pair." A massager designed for two, together.',
+      desc: 'A flexible, shared massager shaped for couples — soft medical-grade silicone, ten gentle modes, whisper-quiet and fully waterproof. Made to be discovered slowly, together.',
+      benefits: ['Body-safe medical-grade silicone, phthalate- &amp; BPA-free', '10 vibration modes, whisper-quiet motor', 'USB-rechargeable · ~2 hrs use per charge', 'Fully waterproof for easy cleaning', 'Designed with couples, for couples'],
+      ingredients: 'Body-safe medical-grade silicone over an ABS core. Free of phthalates, BPA and latex. Skin-friendly and non-porous.',
+      usage: 'Charge fully before first use. Use generously with a water-based gel such as Snigdha (oil-based lubricants can degrade silicone). Rinse with warm water and mild soap before and after use; pat dry and store in the pouch provided.',
+      docnote: 'Good to know: waterproof and rechargeable, so no batteries. If you have sensitive skin, patch-test the gel first. Not a medical device.',
+      related: ['tarang', 'snigdha', 'milan']
+    },
+    tarang: {
+      name: 'Tarang Personal Wand', price: 3499, mrp: 4299, mark: 'त', badge: 'Bestseller', wing: 'aanand',
+      type: 'Personal wand massager', rating: '★★★★★', reviews: '4.8 · 389 reviews',
+      cat: 'Pleasure · Devices', catId: '#devices',
+      shloka: 'तरंग', shlokaTr: 'Tarang — "a wave." Gentle, building, yours to set.',
+      desc: 'A soft-touch wand with a flexible head — powerful yet whisper-quiet, with a wide range of speeds. A relaxing full-body and personal massager in one.',
+      benefits: ['Flexible soft-silicone head', 'Multiple speeds &amp; patterns', 'Whisper-quiet, discreet', 'USB-rechargeable · splash-proof', 'Doubles as a body massager'],
+      ingredients: 'Body-safe medical-grade silicone head, ABS handle. Phthalate- and BPA-free.',
+      usage: 'Charge before first use. Pair with a water-based gel. Clean the head with warm water and mild soap before and after use; do not submerge the charging port.',
+      docnote: 'Good to know: splash-proof (not fully submersible). Store in the pouch away from dust.',
+      related: ['bindu', 'snigdha', 'yugal']
+    },
+    bindu: {
+      name: 'Bindu Bullet', price: 1499, mrp: 1999, mark: 'बि', badge: 'Discreet', wing: 'aanand',
+      type: 'Compact bullet massager', rating: '★★★★★', reviews: '4.6 · 502 reviews',
+      cat: 'Pleasure · Devices', catId: '#devices',
+      shloka: 'बिंदु', shlokaTr: 'Bindu — "a point." Small, precise, the easiest first step.',
+      desc: 'Palm-sized, travel-friendly and genuinely quiet — the most-recommended starting point. Simple one-button control, body-safe finish.',
+      benefits: ['Compact &amp; travel-discreet', 'One-button simplicity', 'Quiet, gentle-to-strong range', 'USB-rechargeable', 'Body-safe silicone tip'],
+      ingredients: 'Body-safe silicone tip, ABS body. Phthalate- and BPA-free.',
+      usage: 'Charge before first use. Use with a water-based gel. Wipe clean with warm water and mild soap before and after use.',
+      docnote: 'Good to know: the easiest device to begin with. Splash-proof; keep the charge port dry.',
+      related: ['snigdha', 'bandhan', 'tarang']
+    },
+    bandhan: {
+      name: 'Bandhan Couples Ring', price: 1299, mrp: 1699, mark: 'बं', badge: 'For partners', wing: 'aanand',
+      type: 'Couples ring', rating: '★★★★☆', reviews: '4.5 · 176 reviews',
+      cat: 'Pleasure · Devices', catId: '#devices',
+      shloka: 'बंधन', shlokaTr: 'Bandhan — "a bond." A gentle vibration shared by two.',
+      desc: 'A soft, stretchy couples’ ring with a gentle vibration meant to be enjoyed together. Comfortable, body-safe, and simple to use.',
+      benefits: ['Soft, stretchy body-safe silicone', 'Gentle vibration for two', 'One-button, rechargeable', 'Comfortable universal fit', 'Splash-proof, easy to clean'],
+      ingredients: 'Stretchy body-safe silicone with a removable mini-motor. Phthalate- and BPA-free.',
+      usage: 'Charge the motor before use. Use with a water-based gel. Remove the motor before washing the ring in warm soapy water; dry fully before storing.',
+      docnote: 'Good to know: discontinue use if you feel numbness or discomfort. Not a contraceptive; use protection as needed.',
+      related: ['bindu', 'snigdha', 'milan']
+    },
+    snigdha: {
+      name: 'Snigdha Intimate Gel', price: 699, mrp: 899, mark: 'स्नि', badge: 'Body-safe', wing: 'aanand',
+      type: 'Water-based intimate gel · 100ml', rating: '★★★★★', reviews: '4.7 · 431 reviews',
+      cat: 'Pleasure · Intimate care', catId: '#care',
+      shloka: 'स्निग्ध', shlokaTr: 'Snigdha — "tender, smooth." Comfort, the natural way.',
+      desc: 'A water-based, pH-balanced intimate gel that feels natural and rinses away cleanly. Free of parabens and glycerin, and safe with condoms and silicone devices.',
+      benefits: ['Water-based &amp; pH-balanced', 'No parabens, no glycerin', 'Condom- &amp; toy-safe', 'Non-sticky, rinses clean', 'Dermatologically tested'],
+      ingredients: 'Purified water, plant-derived humectants, natural soothing extracts, gentle preservative system. Glycerin- and paraben-free. Full INCI list on the pack.',
+      usage: 'Apply as needed. Reapply for comfort. For external and intimate use. If using with devices, water-based gel is the correct choice.',
+      docnote: 'Good to know: patch-test if you have sensitive skin. Discontinue if irritation occurs. Store below 30°C.',
+      related: ['sparsh', 'bindu', 'jyoti']
+    },
+    sparsh: {
+      name: 'Sparsh Massage Oil', price: 899, mrp: 1199, mark: 'स्प', badge: 'Ayurvedic-inspired', wing: 'aanand',
+      type: 'Sensual massage oil · 100ml', rating: '★★★★★', reviews: '4.6 · 208 reviews',
+      cat: 'Pleasure · Intimate care', catId: '#care',
+      shloka: 'स्पर्श', shlokaTr: 'Sparsh — "touch." The oldest language between two people.',
+      desc: 'A warming almond and classical-herb blend for slow, shared massage — the tasteful bridge between Aarogya and Aanand. Silky, lightly scented, non-greasy.',
+      benefits: ['Almond base with classical herbs', 'Warm, silky, non-greasy finish', 'Light natural fragrance', 'Great for shared massage', 'Not for use with silicone devices'],
+      ingredients: 'Sweet almond oil, jojoba, sesame and a classical aromatic-herb blend. No mineral oil, no parabens. Full ingredient list on the pack.',
+      usage: 'Warm a little between the palms and massage over skin. For external body massage only. Oil-based — do not use with condoms or silicone devices; pair those with Snigdha instead.',
+      docnote: 'Good to know: patch-test first; avoid broken skin. A sensual body-massage oil, not an internal lubricant.',
+      related: ['jyoti', 'snigdha', 'oil']
+    },
+    jyoti: {
+      name: 'Jyoti Massage Candle', price: 999, mrp: 1299, mark: 'ज्यो', badge: 'Warm to touch', wing: 'aanand',
+      type: 'Massage candle · 120g', rating: '★★★★★', reviews: '4.8 · 143 reviews',
+      cat: 'Pleasure · Intimate care', catId: '#care',
+      shloka: 'ज्योति', shlokaTr: 'Jyoti — "the flame." Set the mood, then use it.',
+      desc: 'A soy-wax candle that melts into a warm, skin-safe massage oil. Light it to set the mood; pour the warm oil for a shared massage.',
+      benefits: ['Skin-safe soy &amp; butter wax', 'Melts to a warm massage oil', 'Low, warm — never hot — melt point', 'Subtle, calming fragrance', '~20 hours of burn time'],
+      ingredients: 'Soy wax, shea and cocoa butters, skin-safe fragrance, cotton wick. No paraffin, no mineral oil.',
+      usage: 'Burn for ~15 minutes, extinguish, let the pool cool briefly, then pour the warm oil onto skin and massage. External body use only; test temperature on your wrist first.',
+      docnote: 'Good to know: never leave a burning candle unattended. Not an internal lubricant. Trim the wick between uses.',
+      related: ['sparsh', 'snigdha', 'milan']
+    },
+    milan: {
+      name: 'Milan Couples Kit', price: 4999, mrp: 6696, mark: 'मि', badge: 'Save 25%', wing: 'aanand', img: 'milan-kit',
+      type: 'Couples starter box', rating: '★★★★★', reviews: '4.9 · 88 reviews',
+      cat: 'Pleasure · For couples', catId: '#together',
+      shloka: 'मिलन', shlokaTr: 'Milan — "union." Everything to begin, in one box.',
+      desc: 'A curated keepsake box for couples: the Bindu bullet, the Bandhan ring, Snigdha intimate gel and the Khuli Baat card game — a gentle, complete way to begin, together.',
+      benefits: ['Bindu Bullet + Bandhan Ring', 'Snigdha water-based gel', 'Khuli Baat conversation cards', 'Keepsake gift box', 'Save 25% vs. buying separately'],
+      ingredients: 'Contains: Bindu Bullet, Bandhan Couples Ring (body-safe silicone), Snigdha Intimate Gel 100ml, Khuli Baat 100-card deck. See each product page for materials.',
+      usage: 'Start with the Khuli Baat cards over chai, then explore the rest at your own pace. Use the water-based gel with the devices; clean devices before and after use.',
+      docnote: 'Good to know: our most-gifted set. Ships in one plain box; the keepsake box is inside the outer parcel.',
+      related: ['khulibaat', 'yugal', 'jyoti']
+    },
+    khulibaat: {
+      name: 'Khuli Baat Card Game', price: 799, mrp: 999, mark: 'ख', badge: 'Conversation', wing: 'aanand', img: 'khuli-baat',
+      type: 'Intimacy card game · 100 cards', rating: '★★★★★', reviews: '4.8 · 260 reviews',
+      cat: 'Pleasure · For couples', catId: '#together',
+      shloka: 'खुली बात', shlokaTr: 'Khuli Baat — "open talk." Where every good thing starts.',
+      desc: 'One hundred warm, thoughtful questions to help couples talk openly about desire, comfort and curiosity — the conversation the brand is named for, in a box.',
+      benefits: ['100 conversation cards', 'Three levels: warm-up to open', 'Made for couples at any stage', 'No devices, no pressure', 'A gentle way to start'],
+      ingredients: '100 premium printed cards in a sturdy box. That is all — the rest is you two.',
+      usage: 'Take turns drawing a card and answering honestly. Start at Level 1. There are no wrong answers and nothing you must do.',
+      docnote: 'Good to know: the easiest, least-intimidating place to begin — many couples buy this first.',
+      related: ['milan', 'sparsh', 'jyoti']
+    }
+  };
+
+  function inr(n) { return '₹' + n.toLocaleString('en-IN'); }
+
+  var FILES = {
+    urja: 'super-urja.html', shilajit: 'shilajit.html', oil: 'paurush-oil.html',
+    kit: 'complete-care-kit.html', pme: 'pme-course.html', ed: 'ed-course.html',
+    yoga: 'yoga-course.html', consult: 'consultation.html',
+    yugal: 'yugal.html', tarang: 'tarang.html', bindu: 'bindu.html', bandhan: 'bandhan.html',
+    snigdha: 'snigdha.html', sparsh: 'sparsh.html', jyoti: 'jyoti.html', milan: 'milan-kit.html', khulibaat: 'khuli-baat.html'
+  };
+
+  /* ---------- resolve product ---------- */
+  var key = 'yugal';
+  if (!CATALOG[key]) key = 'urja';
+  var P = CATALOG[key];
+  var qty = 1;
+  var aan = P.wing === 'aanand';
+  if (aan) document.body.classList.add('aan');
+  var imgFile = P.img || key;
+  var thumbs = aan ? ['t-material','t-charge','t-clean','t-parcel'] : ['t-herb','t-lab','t-dose','t-parcel'];
+  var accLabels = aan
+    ? ['Materials &amp; safety', 'How to use &amp; clean', 'Good to know', 'Shipping &amp; privacy']
+    : ['Ingredients &amp; classical source', 'How to use', 'Doctor&rsquo;s note', 'Shipping &amp; privacy'];
+  var discText = aan
+    ? 'For adults 18+. Personal-care / intimacy product — please follow the usage and hygiene instructions. Body-safe materials; discontinue use if irritation occurs.'
+    : 'Ayurvedic proprietary medicine. Results vary by individual. Consult a physician if symptoms persist.';
+
+  document.title = P.name + ' — Khul Ke Pucho';
+
+  document.getElementById('crumbs').innerHTML =
+    '<a href="index.html">Home</a> › <a href="index.html' + P.catId + '">' + P.cat + '</a> › ' + P.name;
+
+  var offPct = Math.round((1 - P.price / P.mrp) * 100);
+  document.getElementById('pd').innerHTML =
+    '<div>' +
+      '<div class="gal-main">' + (P.badge ? '<span class="pbadge">' + P.badge + '</span>' : '') +
+        '<img src="img/' + imgFile + '.svg" alt="' + P.name + ' — ' + P.type + '">' +
+      '</div>' +
+      '<div class="thumbs">' + thumbs.map(function(t){return '<div><img src="img/'+t+'.svg" alt="" loading="lazy"></div>';}).join('') + '</div>' +
+    '</div>' +
+    '<div>' +
+      '<div class="shloka-open">' + P.shloka + '<small>' + P.shlokaTr + '</small></div>' +
+      '<div class="ptype">' + P.type + '</div>' +
+      '<h1>' + P.name + '</h1>' +
+      '<div class="stars">' + P.rating + '<small>' + P.reviews + '</small></div>' +
+      '<div class="prow"><span class="price">' + inr(P.price) + '</span><span class="mrp">' + inr(P.mrp) + '</span><span class="off">' + offPct + '% off</span></div>' +
+      '<div class="taxnote">Inclusive of all taxes · COD available · Plain packaging</div>' +
+      '<p style="font-size:15.5px;margin-top:12px">' + P.desc + '</p>' +
+      '<ul class="benefits">' + P.benefits.map(function (b) { return '<li>' + b + '</li>'; }).join('') + '</ul>' +
+      '<div class="qty-row">' +
+        '<button class="qbtn" id="qMinus" aria-label="Decrease quantity">−</button>' +
+        '<div class="qval" id="qVal">1</div>' +
+        '<button class="qbtn" id="qPlus" aria-label="Increase quantity">+</button>' +
+      '</div>' +
+      '<div class="buyrow">' +
+        '<button class="btn btn-gold" id="addMain">Add to cart — ' + inr(P.price) + '</button>' +
+        '<button class="btn btn-dark" id="buyNow">Buy now on WhatsApp</button>' +
+      '</div>' +
+      (aan
+        ? '<div class="labline"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3Z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg> Body-safe medical-grade silicone · phthalate- &amp; BPA-free</div>'
+        : '<div class="labline"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v6L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18L14 9V3"/></svg> TODO: link this batch&rsquo;s NABL lab report (PDF)</div>') +
+      '<div class="microtrust"><span>🔒 100% private</span><span>📦 Plain parcel</span><span>💵 COD available</span><span>🧾 Neutral invoice</span></div>' +
+      '<div class="acc">' +
+        '<details open><summary>' + accLabels[0] + '</summary><div class="ab">' + P.ingredients + '</div></details>' +
+        '<details><summary>' + accLabels[1] + '</summary><div class="ab">' + P.usage + '</div></details>' +
+        '<details><summary>' + accLabels[2] + '</summary><div class="ab">' + P.docnote + '</div></details>' +
+        '<details><summary>' + accLabels[3] + '</summary><div class="ab">Ships in 24–48 hours in a plain brown parcel — no product or brand name outside. COD available across India. Invoice carries only the company&rsquo;s legal name.</div></details>' +
+      '</div>' +
+      '<p class="disc">' + discText + '</p>' +
+    '</div>';
+
+  document.getElementById('relGrid').innerHTML = P.related.map(function (rk) {
+    var r = CATALOG[rk];
+    return '<div class="pcard" data-goto="' + rk + '">' +
+      '<div class="pmedia"><img src="img/' + (r.img || rk) + '.svg" alt="' + r.name + '" loading="lazy"></div>' +
+      '<div class="pbody"><div class="pname">' + r.name + '</div>' +
+      '<div><span class="price">' + inr(r.price) + '</span> <span class="mrp" style="font-size:13px">' + inr(r.mrp) + '</span></div>' +
+      '<button class="btn btn-outline" data-add="' + rk + '">Add to cart</button></div></div>';
+  }).join('');
+
+  document.getElementById('mbar').innerHTML =
+    '<div class="mprice">' + inr(P.price) + '<small>' + P.name + '</small></div>' +
+    '<button class="btn btn-gold" id="addMobile">Add to cart</button>';
+
+  /* ---------- cart (shared with index via localStorage) ---------- */
+  var cart = {};
+  try { cart = JSON.parse(localStorage.getItem('kkp_cart') || '{}'); } catch (e) { cart = {}; }
+  for (var ck in cart) { if (!CATALOG[ck]) delete cart[ck]; }
+
+  var drawer = document.getElementById('drawer');
+  var overlay = document.getElementById('overlay');
+  var dbody = document.getElementById('dbody');
+  var dtot = document.getElementById('dtot');
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+
+  function save() { localStorage.setItem('kkp_cart', JSON.stringify(cart)); }
+  function count() { var c = 0; for (var k in cart) c += cart[k]; return c; }
+  function total() { var t = 0; for (var k in cart) t += CATALOG[k].price * cart[k]; return t; }
+
+  function renderCart() {
+    document.getElementById('cartN').textContent = count();
+    var keys = Object.keys(cart);
+    if (!keys.length) {
+      dbody.innerHTML = '<div class="dempty"><div class="sanskrit" style="font-size:30px;color:var(--kanchan)">॥</div><p>Your cart is empty.<br>Every plan starts with one honest step.</p></div>';
+    } else {
+      dbody.innerHTML = keys.map(function (k) {
+        var item = CATALOG[k];
+        return '<div class="ditem"><div class="dth">' + item.mark + '</div>' +
+          '<div class="dinfo"><b>' + item.name + '</b><span>' + inr(item.price) + '</span></div>' +
+          '<div class="dqty"><button data-dec="' + k + '" aria-label="Decrease">−</button><span>' + cart[k] + '</span><button data-inc="' + k + '" aria-label="Increase">+</button></div></div>';
+      }).join('');
+    }
+    dtot.textContent = inr(total());
+    var lines = keys.map(function (k) { return '- ' + CATALOG[k].name + ' x' + cart[k] + ' (' + inr(CATALOG[k].price * cart[k]) + ')'; });
+    var msg = 'Namaste! I would like to order:\n' + lines.join('\n') + '\nTotal: ' + inr(total()) + '\n(COD preferred / plain packaging please)';
+    document.getElementById('waCheckout').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+    save();
+  }
+
+  function openCart() { drawer.classList.add('on'); overlay.classList.add('on'); }
+  function closeCart() { drawer.classList.remove('on'); overlay.classList.remove('on'); }
+  function showToast(text) {
+    toast.textContent = text; toast.classList.add('on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('on'); }, 1800);
+  }
+
+  function addMain() {
+    cart[key] = (cart[key] || 0) + qty;
+    renderCart();
+    showToast(P.name + ' ×' + qty + ' added');
+  }
+
+  document.getElementById('qMinus').addEventListener('click', function () { qty = Math.max(1, qty - 1); document.getElementById('qVal').textContent = qty; });
+  document.getElementById('qPlus').addEventListener('click', function () { qty++; document.getElementById('qVal').textContent = qty; });
+  document.getElementById('addMain').addEventListener('click', addMain);
+  document.getElementById('addMobile').addEventListener('click', addMain);
+  document.getElementById('buyNow').addEventListener('click', function () {
+    var msg = 'Namaste! I want to buy:\n- ' + P.name + ' x' + qty + ' (' + inr(P.price * qty) + ')\n(COD preferred / plain packaging please)';
+    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+  });
+
+  document.addEventListener('click', function (e) {
+    var add = e.target.closest('[data-add]');
+    if (add) { var k = add.getAttribute('data-add'); cart[k] = (cart[k] || 0) + 1; renderCart(); showToast(CATALOG[k].name + ' added'); return; }
+    var inc = e.target.closest('[data-inc]');
+    if (inc) { cart[inc.getAttribute('data-inc')]++; renderCart(); return; }
+    var dec = e.target.closest('[data-dec]');
+    if (dec) { var dk = dec.getAttribute('data-dec'); cart[dk]--; if (cart[dk] <= 0) delete cart[dk]; renderCart(); return; }
+    var go = e.target.closest('[data-goto]');
+    if (go && !e.target.closest('[data-add]')) { location.href = FILES[go.getAttribute('data-goto')]; return; }
+  });
+
+  document.getElementById('cartOpen').addEventListener('click', openCart);
+  document.getElementById('cartClose').addEventListener('click', closeCart);
+  document.getElementById('cartClose2').addEventListener('click', closeCart);
+  overlay.addEventListener('click', closeCart);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeCart(); });
+
+  renderCart();
+})();
+</script>
+</body>
+</html>

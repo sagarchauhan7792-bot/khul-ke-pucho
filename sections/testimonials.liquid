@@ -1,0 +1,43 @@
+<section class="section-pad">
+  <div class="page-width">
+    <div class="section-intro">
+      <div class="eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="grid grid--3">
+      {% for block in section.blocks %}
+        <div class="card quote-card" {{ block.shopify_attributes }}>
+          <div class="quote-card__body">
+            <blockquote>&ldquo;{{ block.settings.quote }}&rdquo;</blockquote>
+            <cite>{{ block.settings.name }}</cite>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <p class="center" style="font-size:12.5px;color:#7A5C46;margin-top:18px">{{ section.settings.disclaimer }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "In their words" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Asked openly. Answered properly." },
+    { "type": "text", "id": "disclaimer", "label": "Disclaimer", "default": "Names changed for privacy. Testimonials describe service experience, not medical outcomes." }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Testimonial",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote", "default": "TODO: replace with a real customer quote about the service experience — privacy, doctor behaviour, delivery. No medical-result claims." },
+        { "type": "text", "id": "name", "label": "Name & city", "default": "R.K., Kanpur" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Testimonials", "blocks": [ { "type": "quote" }, { "type": "quote" }, { "type": "quote" } ] }
+  ]
+}
+{% endschema %}

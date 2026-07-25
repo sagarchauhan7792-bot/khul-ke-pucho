@@ -1,0 +1,35 @@
+<div class="page-width section-pad--tight">
+  <h1>Search</h1>
+  <form action="{{ routes.search_url }}" method="get" role="search" class="newsletter-form" style="margin:18px 0 30px;max-width:560px">
+    <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search products, courses, articles" aria-label="Search" style="flex:1;padding:12px 16px;border:1.5px solid var(--c-line);border-radius:8px;font:400 15px/1 'Mukta',sans-serif;background:var(--c-surface)">
+    <button type="submit" class="btn btn--primary">Search</button>
+  </form>
+
+  {% if search.performed %}
+    {% if search.results_count == 0 %}
+      <p>No results for &ldquo;{{ search.terms }}&rdquo;. Try a simpler word, or <a href="{{ routes.all_products_collection_url }}">browse all products</a>.</p>
+    {% else %}
+      <div class="grid grid--3" style="padding-bottom:50px">
+        {% paginate search.results by 12 %}
+          {% for item in search.results %}
+            {% if item.object_type == 'product' %}
+              {% render 'product-card', product: item %}
+            {% else %}
+              <a href="{{ item.url }}" class="card"><div class="card__body"><h3 class="product-card__title">{{ item.title }}</h3></div></a>
+            {% endif %}
+          {% endfor %}
+          {% if paginate.pages > 1 %}
+            <div style="grid-column:1/-1" class="center">{{ paginate | default_pagination }}</div>
+          {% endif %}
+        {% endpaginate %}
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Search",
+  "settings": []
+}
+{% endschema %}

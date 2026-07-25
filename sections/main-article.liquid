@@ -1,0 +1,22 @@
+<div class="page-width">
+  <article class="article-content">
+    <div class="eyebrow">Khuli Baat</div>
+    <h1>{{ article.title }}</h1>
+    <p style="font-size:13.5px;color:#7A5C46">
+      <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%d %B %Y' }}</time>
+      {% if article.author != blank %} · {{ article.author }}{% endif %}
+    </p>
+    {% if article.image %}
+      {{ article.image | image_url: width: 1200 | image_tag: alt: article.title }}
+    {% endif %}
+    <div style="margin-top:20px">{{ article.content }}</div>
+    <p style="font-size:12px;color:#7A5C46;margin-top:30px">{{ settings.medical_disclaimer }}</p>
+  </article>
+</div>
+
+{% schema %}
+{
+  "name": "Article",
+  "settings": []
+}
+{% endschema %}

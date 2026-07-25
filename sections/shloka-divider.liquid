@@ -1,0 +1,19 @@
+<section class="shloka-divider">
+  <div class="page-width">
+    <div class="shloka">{{ section.settings.shloka }}</div>
+    <div class="tr">{{ section.settings.translation }}</div>
+    <div class="src">{{ section.settings.source }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shloka divider",
+  "settings": [
+    { "type": "text", "id": "shloka", "label": "Sanskrit shloka", "default": "धर्मार्थकाममोक्षाणाम् आरोग्यं मूलमुत्तमम्" },
+    { "type": "text", "id": "translation", "label": "Translation", "default": "Health is the supreme foundation of righteousness, wealth, desire and liberation." },
+    { "type": "text", "id": "source", "label": "Source", "default": "Charaka Samhita · Sutrasthana 1.15" }
+  ],
+  "presets": [{ "name": "Shloka divider" }]
+}
+{% endschema %}

@@ -1,0 +1,51 @@
+<div class="page-width section-pad--tight">
+  <h1>Your cart</h1>
+
+  {% if cart.item_count == 0 %}
+    <p>Your cart is empty. <a href="{{ routes.all_products_collection_url }}">See our formulations</a> or <a href="{{ routes.root_url }}">return home</a>.</p>
+  {% else %}
+    <form action="{{ routes.cart_url }}" method="post" novalidate>
+      <table class="cart-table">
+        <thead>
+          <tr><th>Item</th><th>Price</th><th>Quantity</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+          {% for item in cart.items %}
+            <tr>
+              <td>
+                <a href="{{ item.url }}" style="font-family:'EB Garamond',serif;font-weight:600;font-size:16.5px;text-decoration:none">{{ item.product.title }}</a>
+                {% if item.variant.title != 'Default Title' %}<div style="font-size:13px;color:#7A5C46">{{ item.variant.title }}</div>{% endif %}
+                <div><a href="{{ item.url_to_remove }}" style="font-size:12.5px;color:var(--c-error)">Remove</a></div>
+              </td>
+              <td class="price">{{ item.price | money }}</td>
+              <td>
+                <input class="qty-input" type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Quantity for {{ item.product.title }}">
+              </td>
+              <td class="price">{{ item.final_line_price | money }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div class="cart-cod-note">
+        <strong>Privacy promise:</strong> plain brown parcel, no product name outside, invoice carries only the company's legal name. <strong>COD available</strong> — choose it at checkout.
+      </div>
+
+      <div class="cart-footer">
+        <div class="price" style="font-size:22px">Subtotal: {{ cart.total_price | money }}</div>
+        <div style="font-size:13px;color:#7A5C46">Taxes included. Shipping calculated at checkout.</div>
+        <div style="display:flex;gap:12px">
+          <button type="submit" name="update" class="btn btn--outline">Update cart</button>
+          <button type="submit" name="checkout" class="btn btn--primary">Checkout securely</button>
+        </div>
+      </div>
+    </form>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Cart page",
+  "settings": []
+}
+{% endschema %}

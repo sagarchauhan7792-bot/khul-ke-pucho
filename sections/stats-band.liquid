@@ -1,0 +1,38 @@
+<section class="stats-band">
+  <div class="page-width stats-band__row">
+    {% for block in section.blocks %}
+      <div class="stat" {{ block.shopify_attributes }}>
+        <b>{{ block.settings.value }}</b>
+        <span>{{ block.settings.label }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stats band",
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "10,000+" },
+        { "type": "text", "id": "label", "label": "Label", "default": "consultations completed" }
+      ]
+    }
+  ],
+  "settings": [],
+  "presets": [
+    {
+      "name": "Stats band",
+      "blocks": [
+        { "type": "stat", "settings": { "value": "TODO", "label": "consultations completed — use real numbers only" } },
+        { "type": "stat", "settings": { "value": "TODO", "label": "orders delivered discreetly" } },
+        { "type": "stat", "settings": { "value": "100%", "label": "lab-tested batches" } },
+        { "type": "stat", "settings": { "value": "COD", "label": "available across India" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

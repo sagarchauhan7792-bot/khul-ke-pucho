@@ -1,0 +1,56 @@
+<section class="section-pad" style="background:var(--c-surface);border-block:1px solid var(--c-line)">
+  <div class="page-width">
+    <div class="section-intro">
+      <div class="eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div class="grid grid--4">
+      {% for block in section.blocks %}
+        <div class="card doctor-card" {{ block.shopify_attributes }}>
+          {% if block.settings.photo %}
+            {{ block.settings.photo | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.name }}
+          {% else %}
+            {% render 'placeholder-image', label: 'TODO: doctor photo' %}
+          {% endif %}
+          <div class="doctor-card__body">
+            <h4 style="margin-bottom:2px">{{ block.settings.name }}</h4>
+            <div style="font-size:13.5px">{{ block.settings.qualification }}</div>
+            <div class="reg">{{ block.settings.registration }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Doctor panel",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Your doctors" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Real names. Real registrations." },
+    { "type": "textarea", "id": "text", "label": "Intro", "default": "Every consultation is with a registered practitioner. Ask them anything — that is what they are here for." }
+  ],
+  "blocks": [
+    {
+      "type": "doctor",
+      "name": "Doctor",
+      "settings": [
+        { "type": "image_picker", "id": "photo", "label": "Photo" },
+        { "type": "text", "id": "name", "label": "Name", "default": "Dr. Name Here" },
+        { "type": "text", "id": "qualification", "label": "Qualification", "default": "BAMS, MD (Ayurveda)" },
+        { "type": "text", "id": "registration", "label": "Registration no.", "default": "TODO: Reg. no." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Doctor panel",
+      "blocks": [
+        { "type": "doctor" }, { "type": "doctor" }, { "type": "doctor" }, { "type": "doctor" }
+      ]
+    }
+  ]
+}
+{% endschema %}
