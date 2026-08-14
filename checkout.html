@@ -169,10 +169,12 @@ footer{background:var(--ink);color:#D8BFA8}
   var form=document.getElementById('coForm'), emptyState=document.getElementById('emptyState');
   if(!keys.length){form.style.display='none';emptyState.style.display='block';return;}
 
-  function total(){var t=0;for(var k in cart)t+=CATALOG[k].price*cart[k];return t;}
+  var BUNDLE_EX={consult:1,kit:1,milan:1};
+  function bundleOff(){var n=0,base=0;for(var k in cart){if(!BUNDLE_EX[k]){n++;base+=CATALOG[k].price*cart[k];}}var pct=n>=4?20:n===3?15:n===2?10:0;return{pct:pct,off:Math.round(base*pct/100)};}
+  function total(){var t=0;for(var k in cart)t+=CATALOG[k].price*cart[k];return t-bundleOff().off;}
   document.getElementById('items').innerHTML=keys.map(function(k){var i=CATALOG[k];
     return '<div class="li"><div class="thumb">'+i.mark+'</div><div class="m"><b>'+i.name+'</b><span class="qty">Qty '+cart[k]+' × '+inr(i.price)+'</span></div><div class="p">'+inr(i.price*cart[k])+'</div></div>';
-  }).join('');
+  }).join('')+(bundleOff().off>0?'<div class="li"><div class="thumb" style="color:var(--vana)">%</div><div class="m"><b style="color:var(--vana)">Bundle savings ('+bundleOff().pct+'%)</b></div><div class="p" style="color:var(--vana)">−'+inr(bundleOff().off)+'</div></div>':'');
   document.getElementById('grand').textContent=inr(total());
 
   // payment toggle
@@ -213,6 +215,7 @@ footer{background:var(--ink);color:#D8BFA8}
   function waLink(oid,payLabel){
     var d=form;
     var lines=keys.map(function(k){return '- '+CATALOG[k].name+' x'+cart[k]+' ('+inr(CATALOG[k].price*cart[k])+')';});
+    var bo=bundleOff();if(bo.off>0)lines.push('Bundle savings: -'+inr(bo.off)+' ('+bo.pct+'% off)');
     var msg='Namaste! New order '+oid+'\n'+lines.join('\n')+'\nTotal: '+inr(total())+'\nPayment: '+payLabel+
       '\n\nName: '+d.name.value+'\nPhone: '+d.phone.value+'\nAddress: '+d.addr.value+', '+d.city.value+', '+d.state.value+' - '+d.pincode.value+
       '\n(Plain packaging please)';

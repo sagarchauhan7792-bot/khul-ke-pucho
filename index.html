@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Khul Ke Pucho — Wisdom for healing. Freedom for pleasure.</title>
 <meta name="description" content="Two wings, one house. Aarogya: AYUSH-licensed Ayurvedic wellness, doctors and courses. Aanand: tasteful, body-safe intimacy products for couples. Plain packaging. COD across India.">
+<link rel="canonical" href="https://sagarchauhan7792-bot.github.io/khul-ke-pucho/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Khul Ke Pucho">
+<meta property="og:title" content="Khul Ke Pucho — Wisdom for healing. Freedom for pleasure.">
+<meta property="og:description" content="Aarogya: AYUSH-licensed Ayurvedic wellness, doctors and courses. Aanand: tasteful, body-safe intimacy for couples. Plain packaging. COD across India.">
+<meta property="og:url" content="https://sagarchauhan7792-bot.github.io/khul-ke-pucho/">
+<meta property="og:image" content="https://sagarchauhan7792-bot.github.io/khul-ke-pucho/img/band-aarogya.svg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Khul Ke Pucho","url":"https://sagarchauhan7792-bot.github.io/khul-ke-pucho/","description":"Indian sexual-wellness house: AYUSH-licensed Ayurvedic formulations, doctor consultations and body-safe intimacy products.","slogan":"Wisdom for healing. Freedom for pleasure."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Will anyone know what I ordered?","acceptedAnswer":{"@type":"Answer","text":"No. Every order ships in a plain brown parcel with no product name outside. The invoice carries only the company's legal name."}},
+{"@type":"Question","name":"Are the pleasure products body-safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. All devices use medical-grade, body-safe silicone, are USB-rechargeable and splash-proof. Intimate care is water-based, pH-balanced and dermatologically tested."}},
+{"@type":"Question","name":"Can I pay on delivery?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cash on Delivery is available across India, along with UPI, cards and netbanking."}},
+{"@type":"Question","name":"How does the ₹99 consultation work?","acceptedAnswer":{"@type":"Answer","text":"Order it like any product. Your booking link arrives on WhatsApp and email — choose phone or video and a time that suits you. Your written plan follows within 24 hours."}}
+]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
@@ -335,6 +354,55 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 .toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:74px;background:var(--ink);color:var(--ivory);padding:11px 22px;border-radius:999px;font:700 13px/1 'Mukta',sans-serif;z-index:99;opacity:0;pointer-events:none;transition:all .25s ease}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+
+/* language toggle */
+.langbtn{background:none;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;font:700 12.5px/1 'Mukta',sans-serif;color:var(--kumkum);padding:8px 13px;white-space:nowrap}
+.langbtn:hover{border-color:var(--kanchan);background:var(--chip)}
+
+/* quick exit */
+.qexit{position:fixed;left:14px;bottom:14px;z-index:98;background:var(--surface);border:1.5px solid var(--line);border-radius:999px;padding:9px 15px;font:700 12px/1 'Mukta',sans-serif;color:#7A5C46;cursor:pointer;display:flex;align-items:center;gap:6px;box-shadow:0 3px 12px rgba(36,20,25,.14)}
+.qexit:hover{border-color:var(--kumkum);color:var(--kumkum)}
+@media(max-width:720px){.qexit{bottom:66px}}
+
+/* social proof card */
+.sproof{position:fixed;left:14px;bottom:64px;z-index:74;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--kanchan);border-radius:12px;padding:11px 34px 11px 14px;max-width:290px;box-shadow:0 8px 24px rgba(36,20,25,.18);font-size:13px;transform:translateY(16px);opacity:0;pointer-events:none;transition:all .3s ease}
+.sproof.on{transform:none;opacity:1;pointer-events:auto}
+.sproof b{color:var(--kumkum)}
+.sproof small{display:block;color:#7A5C46;font-size:11px;margin-top:2px}
+.sproof .spx{position:absolute;top:4px;right:8px;background:none;border:0;font-size:18px;color:#9A7B60;cursor:pointer;line-height:1}
+@media(max-width:720px){.sproof{bottom:118px}}
+
+/* bundle builder */
+.bundle{background:var(--surface);border-block:1px solid var(--line)}
+.bchips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:18px 0 6px}
+.bchip{display:flex;align-items:center;gap:7px;background:var(--ivory);border:1.5px solid var(--line);border-radius:999px;padding:9px 15px;cursor:pointer;font:500 13.5px/1 'Mukta',sans-serif;user-select:none;transition:all .15s ease}
+.bchip:hover{border-color:var(--kanchan)}
+.bchip.sel{background:var(--kumkum);border-color:var(--kumkum);color:var(--ivory)}
+.bchip.sel .bp{color:var(--gold-l)}
+.bchip .bp{color:#7A5C46;font-size:12px}
+.bsum{text-align:center;margin-top:14px}
+.bsum .btier{display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center;font:700 12.5px/1 'Mukta',sans-serif;color:#7A5C46;margin-bottom:12px}
+.bsum .btier span.on{color:var(--vana)}
+.bsum .bline{font:700 17px/1.4 'Mukta',sans-serif;color:var(--kumkum)}
+.bsum .bline .bsave{color:var(--vana)}
+
+/* arousal-science section */
+.science{background:linear-gradient(160deg,#5E1F30,#3D1524);color:#F0D9CE}
+.science h2{color:#fff}
+.science .intro p{color:#E4C4BC}
+.scicard{background:rgba(255,255,255,.06);border:1px solid rgba(232,180,184,.28);border-radius:14px;padding:20px 22px}
+.scicard .num{font:600 26px/1 'EB Garamond',serif;color:var(--gulab)}
+.scicard h4{color:#fff;margin:8px 0 6px}
+.scicard p{font-size:13.6px;color:#EBD3CB;margin:0}
+.sci-note{text-align:center;font-size:11.5px;color:#C9A0A6;margin-top:18px;max-width:70ch;margin-inline:auto}
+
+/* slot picker + exit modal share qbox */
+.slotgrid{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.slotc{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:10px 13px;cursor:pointer;font:600 13px/1.3 'Mukta',sans-serif;text-align:center;min-width:74px}
+.slotc:hover{border-color:var(--kanchan)}
+.slotc.sel{background:var(--kumkum);color:var(--ivory);border-color:var(--kumkum)}
+.slotc small{display:block;font-weight:500;font-size:11px;color:#9A7B60}
+.slotc.sel small{color:var(--gold-l)}
 </style>
 </head>
 <body>
@@ -357,6 +425,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   <div class="wrap hd-main">
     <a class="logo" href="#top"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a>
     <div class="hd-acts">
+      <button class="langbtn" id="langTgl" aria-label="भाषा बदलें / change language">हिंदी</button>
       <a class="btn btn-dark btn-sm hd-consult" href="#consult">Consult a doctor · ₹99</a>
       <button class="cartbtn" id="cartOpen" aria-label="Open cart">
         <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H8.7a1.5 1.5 0 0 1-1.5-1.3Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
@@ -524,7 +593,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 <section class="pad" id="consult" style="padding-bottom:30px">
   <div class="wrap"><div class="consult">
     <div><div class="eyebrow">For you — and for you both</div><h2 style="margin-top:6px">A private doctor consultation, ₹99</h2><p>Phone or video, alone or with your partner. A registered doctor examines the causes and writes your plan within 24 hours. Nothing you say leaves the call.</p></div>
-    <div class="center"><button class="btn btn-dark" data-add="consult">Book my consult — ₹99</button><p style="font-size:12.5px;margin-top:9px;color:#7A5C46">100% private · Registered practitioners · Plan in writing</p></div>
+    <div class="center"><button class="btn btn-dark" data-add="consult">Book my consult — ₹99</button><br><button class="btn btn-outline btn-sm" data-slot-open style="margin-top:10px">Pick a time slot →</button><p style="font-size:12.5px;margin-top:9px;color:#7A5C46">100% private · Registered practitioners · Plan in writing</p></div>
   </div></div>
 </section>
 
@@ -581,6 +650,23 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
     </div>
   </section>
 
+  <!-- ===== AANAND: SCIENCE OF AROUSAL (education, wellness-framed) ===== -->
+  <section class="pad science" id="science">
+    <div class="wrap">
+      <div class="intro"><div class="eyebrow" style="color:var(--gulab)">Aanand · The science of arousal</div><h2>Her pleasure is physiology, not a mystery</h2><p>Modern sexual-wellness practice treats arousal as something couples can understand and work with — openly, together.</p></div>
+      <div class="grid g3">
+        <div class="scicard"><div class="num">15–20 min</div><h4>Arousal takes time</h4><p>Research consistently finds most women need 15–20 minutes of arousal before intercourse feels its best. Slowing down — massage, warmth, conversation — is not a detour; it is the route. Sparsh oil and the Jyoti candle are built for exactly this stage.</p></div>
+        <div class="scicard"><div class="num">~70%</div><h4>The right stimulation matters</h4><p>Large surveys report a majority of women reach climax most reliably with external stimulation rather than intercourse alone. Body-safe devices like Tarang and Bindu exist to support this — which is why modern couples' counsellors discuss them without embarrassment.</p></div>
+        <div class="scicard"><div class="num">pH 4.5</div><h4>Comfort is a wellness issue</h4><p>Dryness and discomfort are common and nothing to hide. A water-based, pH-balanced gel like Snigdha supports comfort and is condom-safe. If discomfort persists, that is a doctor conversation — and ours cost ₹99.</p></div>
+      </div>
+      <div class="hero-ctas" style="justify-content:center;margin-top:22px">
+        <a class="btn btn-cop" href="#devices">Explore the tools</a>
+        <button class="btn" style="background:var(--gulab);color:var(--kumkum-deep)" data-add="consult">Couples consult · ₹99</button>
+      </div>
+      <p class="sci-note">Educational information for adults, not medical advice or a promise of outcomes. Aanand products are personal-care items — not medicines or medical devices. For persistent concerns, speak to a registered practitioner.</p>
+    </div>
+  </section>
+
   <section class="catrow wrap" id="together" style="padding-bottom:48px">
     <div class="catrow-h">
       <div><div class="eyebrow cop">Aanand · For couples</div><h2 style="margin:.15em 0">Explore it together</h2><div class="sub">Gifting-friendly sets and conversation starters — for partners, at any stage.</div></div>
@@ -592,6 +678,19 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
     </div>
   </section>
 </div>
+
+<!-- bundle builder -->
+<section class="pad bundle" id="bundle">
+  <div class="wrap">
+    <div class="intro"><div class="eyebrow">Build your own plan</div><h2 id="bundleH2">Pick any 2, 3 or 4 — save up to 20%</h2><p id="bundleSub">Choose what suits you both. 2 items — 10% off · 3 items — 15% off · 4 or more — 20% off. The discount appears in your cart automatically.</p></div>
+    <div class="bchips" id="bchips"></div>
+    <div class="bsum">
+      <div class="btier" id="btier"><span data-t="2">2 items · 10%</span><span data-t="3">3 items · 15%</span><span data-t="4">4+ items · 20%</span></div>
+      <div class="bline" id="bline">Select products above to build your bundle</div>
+      <button class="btn btn-gold" id="bundleAdd" style="margin-top:12px" disabled>Add bundle to cart</button>
+    </div>
+  </div>
+</section>
 
 <!-- quiz strip -->
 <div class="stats" id="quiz"><div class="wrap" style="padding:20px 20px;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center"><span style="font:700 15px/1.3 'Mukta',sans-serif">Confused where to start? Answer 3 questions — get your plan.</span><button class="btn btn-dark btn-sm" data-quiz-open>Start self-check →</button></div></div>
@@ -676,6 +775,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
       <details><summary>Are the pleasure products body-safe?</summary><div class="a">Yes. All devices use medical-grade, body-safe silicone, are USB-rechargeable and splash-proof. Intimate care is water-based, pH-balanced and dermatologically tested. Materials and care instructions are on every product page.</div></details>
       <details><summary>Is the Ayurveda real, or bus-stand medicine?</summary><div class="a">Every formulation is AYUSH-licensed and every batch is lab-tested, with reports on request. We name every ingredient and cite its classical source. We never promise miracles — and we put that in writing.</div></details>
       <details><summary>Can I pay on delivery?</summary><div class="a">Yes. Cash on Delivery is available across India, along with UPI, cards and netbanking.</div></details>
+      <details><summary>Can devices really help with arousal difficulties?</summary><div class="a">They can support arousal and comfort — that is why modern sexual-wellness practice discusses them openly. Most women need 15–20 minutes of arousal, and a majority respond best to external stimulation; body-safe devices and pH-balanced care products are tools for exactly that. They are personal-care items, not medicines: if a difficulty is persistent or painful, start with the ₹99 consult so a registered practitioner can look at the whole picture.</div></details>
       <details><summary>Can my partner and I shop or consult together?</summary><div class="a">Absolutely — that is the whole idea. The Aanand range is couples-first, and our doctors and counsellors see couples too. No judgment, ever.</div></details>
       <details><summary>How does the ₹99 consultation work?</summary><div class="a">Order it like any product. Your booking link arrives on WhatsApp and email — choose phone or video and a time that suits you. Your written plan follows within 24 hours.</div></details>
     </div>
@@ -726,7 +826,8 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   <div class="dhead"><h3>Your cart</h3><button class="dclose" id="cartClose" aria-label="Close cart">&times;</button></div>
   <div class="dbody" id="dbody"></div>
   <div class="dfoot">
-    <div class="dtot"><span>Subtotal</span><span id="dtot">₹0</span></div>
+    <div class="dtot" id="dbund" style="display:none;color:var(--vana);font-size:14.5px;margin-bottom:2px"><span id="dbundl">Bundle savings</span><span id="dbundv"></span></div>
+    <div class="dtot"><span id="dtotl">Total</span><span id="dtot">₹0</span></div>
     <div class="dnote">Plain brown parcel · No product name outside · COD available</div>
     <a class="btn btn-gold" id="goCheckout" href="checkout.html">Proceed to checkout →</a>
     <a class="btn btn-outline" id="waCheckout" href="#" target="_blank" rel="noopener" style="border-color:#25D366;color:#1a8a45">Order on WhatsApp</a>
@@ -748,6 +849,47 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 </a>
 
 <div class="toast" id="toast">Added to cart</div>
+
+<!-- quick exit (privacy) -->
+<button class="qexit" id="qexit" title="Leave this site instantly">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  Quick exit
+</button>
+
+<!-- social proof card -->
+<div class="sproof" id="sproof" role="status" aria-live="polite">
+  <button class="spx" id="spx" aria-label="Hide notifications">&times;</button>
+  <span id="sproofTxt"></span>
+  <small>Plain parcel · name never shown · <span style="color:var(--vana)">✓ verified order</span></small>
+</div>
+
+<!-- exit-intent modal -->
+<div class="qmodal" id="exitModal" role="dialog" aria-modal="true" aria-label="Before you go">
+  <div class="qbox">
+    <button class="qx" id="exitClose" aria-label="Close">&times;</button>
+    <div class="qstep">Before you go</div>
+    <div class="qq">One honest question deserves one honest answer — ₹99</div>
+    <p style="font-size:14.5px;margin:0 0 14px">A registered doctor, on the phone, completely private. Use code <b style="color:var(--kumkum)">KKP99</b> — your first consultation costs less than a cup of coffee at the airport.</p>
+    <button class="btn btn-gold" style="width:100%" data-add="consult" id="exitCta">Book the ₹99 consult</button>
+    <button class="btn btn-outline" style="width:100%;margin-top:8px" id="exitNo">No thanks, I'll keep browsing</button>
+    <p style="font-size:11.5px;color:#7A5C46;margin-top:10px;text-align:center">Shown once. We don't nag — that's a promise.</p>
+  </div>
+</div>
+
+<!-- doctor slot picker modal -->
+<div class="qmodal" id="slotModal" role="dialog" aria-modal="true" aria-label="Pick a consultation slot">
+  <div class="qbox">
+    <button class="qx" id="slotClose" aria-label="Close">&times;</button>
+    <div class="qstep">Private consultation · ₹99</div>
+    <div class="qq">Pick a day and time that suits you</div>
+    <div style="font:700 12px/1 'Mukta',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7A5C46;margin-top:4px">Day</div>
+    <div class="slotgrid" id="slotDays"></div>
+    <div style="font:700 12px/1 'Mukta',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7A5C46;margin-top:10px">Time</div>
+    <div class="slotgrid" id="slotTimes"></div>
+    <button class="btn btn-gold" id="slotConfirm" style="width:100%;margin-top:16px" disabled>Confirm slot on WhatsApp →</button>
+    <p style="font-size:11.5px;color:#7A5C46;margin-top:10px">Your slot request goes to our care team on WhatsApp; they confirm within the hour. Phone or video — your choice, alone or with your partner.</p>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -791,13 +933,24 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   function count(){var c=0;for(var k in cart)c+=cart[k];return c;}
   function total(){var t=0;for(var k in cart)t+=CATALOG[k].price*cart[k];return t;}
   function renderBadges(){document.getElementById('cartN').textContent=count();document.getElementById('cartN2').textContent=count();}
+  var BUNDLE_EX={consult:1,kit:1,milan:1}; // combos & consult don't count toward bundle tiers
+  function bundleInfo(){
+    var n=0,base=0;
+    for(var k in cart){if(!BUNDLE_EX[k]){n++;base+=CATALOG[k].price*cart[k];}}
+    var pct=n>=4?20:n===3?15:n===2?10:0;
+    return {n:n,pct:pct,off:Math.round(base*pct/100)};
+  }
   function renderDrawer(){
     var keys=Object.keys(cart);
     if(!keys.length){dbody.innerHTML='<div class="dempty"><div class="sanskrit" style="font-size:30px;color:var(--kanchan)">॥</div><p>Your cart is empty.<br>Every plan starts with one honest step.</p></div>';}
     else{dbody.innerHTML=keys.map(function(k){var i=CATALOG[k];return '<div class="ditem"><div class="dth">'+i.mark+'</div><div class="dinfo"><b>'+i.name+'</b><span>'+inr(i.price)+'</span></div><div class="dqty"><button data-dec="'+k+'" aria-label="Decrease">−</button><span>'+cart[k]+'</span><button data-inc="'+k+'" aria-label="Increase">+</button></div></div>';}).join('');}
-    dtot.textContent=inr(total());
+    var b=bundleInfo(),bund=document.getElementById('dbund'),payable=total()-b.off;
+    if(b.off>0){bund.style.display='flex';document.getElementById('dbundl').textContent='Bundle savings ('+b.n+' items · '+b.pct+'%)';document.getElementById('dbundv').textContent='−'+inr(b.off);}
+    else bund.style.display='none';
+    dtot.textContent=inr(payable);
     var lines=keys.map(function(k){return '- '+CATALOG[k].name+' x'+cart[k]+' ('+inr(CATALOG[k].price*cart[k])+')';});
-    var msg='Namaste! I would like to order:\n'+lines.join('\n')+'\nTotal: '+inr(total())+'\n(COD preferred / plain packaging please)';
+    if(b.off>0)lines.push('Bundle savings: -'+inr(b.off)+' ('+b.pct+'% off)');
+    var msg='Namaste! I would like to order:\n'+lines.join('\n')+'\nTotal: '+inr(payable)+'\n(COD preferred / plain packaging please)';
     document.getElementById('waCheckout').href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg);
   }
   function render(){renderBadges();renderDrawer();save();}
@@ -807,28 +960,58 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 
   /* quiz */
   var qmodal=document.getElementById('qmodal'), qbox=document.getElementById('qbox'), qAnswers={};
-  var QUIZ=[
-    {id:'concern',q:'What describes your main concern best?',opts:[['timing','Finishing earlier than I want'],['erection','Erection strength or consistency'],['energy','Low energy, stamina or desire'],['couple','We want to explore pleasure together']]},
+  var QUIZ_START={id:'concern',q:'What describes your main concern best?',opts:[['timing','Finishing earlier than I want'],['erection','Erection strength or consistency'],['energy','Low energy, stamina or desire'],['couple','We want more from intimacy — together']]};
+  var QUIZ_WELL=[
     {id:'duration',q:'How long has this been on your mind?',opts:[['recent','A few weeks'],['months','A few months'],['years','A year or more']]},
-    {id:'health',q:'Any of these apply? (pick the closest)',opts:[['metabolic','Diabetes / BP / heart condition'],['stress','High stress or poor sleep'],['none','None of these']]}
+    {id:'health',q:'Do any of these apply?',opts:[['metabolic','Diabetes / BP / heart condition'],['stress','High stress or poor sleep'],['none','None of these']]},
+    {id:'sleep',q:'How is your sleep, honestly?',opts:[['low','Under 6 hours, often broken'],['mid','6–7 hours'],['good','7+ hours, mostly restful']]},
+    {id:'partner',q:'Is a partner part of this journey right now?',opts:[['together','Yes — we want to work on it together'],['private','Yes, but I want to sort this privately first'],['single','No partner right now']]},
+    {id:'age',q:'Your age band?',opts:[['a1','Under 30'],['a2','30–45'],['a3','45+']]},
+    {id:'style',q:'What suits you best?',opts:[['course','A structured self-paced course'],['formulation','Classical formulations'],['doctor','Let a doctor decide my plan']]}
   ];
+  var QUIZ_COUPLE=[
+    {id:'stage',q:'Where are you two on this journey?',opts:[['new','Completely new to all this'],['some','We have explored a little'],['open','Comfortable and curious']]},
+    {id:'goal',q:'What would you like more of?',opts:[['talk','Openness — we barely talk about it'],['her','More arousal and comfort for her'],['shared','Something we can enjoy together']]},
+    {id:'budget',q:'A comfortable budget to start?',opts:[['b1','Under ₹1,500'],['b2','₹1,500–3,500'],['b3','₹3,500+']]}
+  ];
+  function quizFlow(){return [QUIZ_START].concat(qAnswers.concern==='couple'?QUIZ_COUPLE:QUIZ_WELL);}
   function quizRecommend(){
-    var c=qAnswers.concern,h=qAnswers.health,rec=[];
-    if(c==='couple'){rec.push({key:'milan',why:'A tasteful couples starter box — the easiest way to explore together.'});rec.push({key:'khulibaat',why:'Start with an open conversation before anything else.'});return rec;}
-    if(h==='metabolic'){rec.push({key:'consult',why:'With BP/sugar in the picture, a doctor must design your plan — non-negotiable with us.'});
-      if(c==='timing')rec.push({key:'pme',why:'The program your doctor will likely build on.'});
-      else if(c==='erection')rec.push({key:'ed',why:'The cause-first program your doctor will likely build on.'});
-      else rec.push({key:'shilajit',why:'Classical rasayana support, subject to your doctor’s advice.'});return rec;}
-    if(c==='timing'){rec.push({key:'pme',why:'PE responds to structured technique and practice.'});rec.push({key:'consult',why:'Add the ₹99 consult so a doctor personalises it.'});}
-    else if(c==='erection'){rec.push({key:'ed',why:'Cause-first program for circulation, stress and sleep.'});rec.push({key:'consult',why:'Add the ₹99 consult so a doctor personalises it.'});}
-    else{rec.push({key:'urja',why:'The flagship 60-day vitality course.'});rec.push({key:'shilajit',why:'Classical rasayana foundation, lab-standardised.'});}
-    return rec;
+    var a=qAnswers,rec=[];
+    function add(key,why){if(!rec.some(function(r){return r.key===key;}))rec.push({key:key,why:why});}
+    if(a.concern==='couple'){
+      if(a.goal==='talk'){add('khulibaat','Openness first — 100 questions that make the conversation easy.');add('sparsh','A slow shared massage is the gentlest next step after talking.');}
+      else if(a.goal==='her'){add('snigdha','Comfort is the foundation — water-based, pH-balanced, condom-safe.');
+        if(a.budget==='b1')add('bindu','Most women respond best to external stimulation — this is the easiest, most discreet start.');
+        else add('tarang','Most women respond best to external stimulation — the wand is the gold standard for it.');
+        if(a.stage==='new')add('jyoti','Warmth and time matter: arousal takes 15–20 minutes. Set the stage first.');}
+      else{if(a.budget==='b3')add(a.stage==='new'?'milan':'yugal',a.stage==='new'?'Everything a couple needs to begin, in one tasteful box.':'Designed to be worn and enjoyed together.');
+        else if(a.budget==='b2'){add('bindu','Small, quiet and shared easily — the classic first device.');add('khulibaat','Pair it with the game — anticipation is half the fun.');}
+        else{add('bandhan','A shared ring — the most affordable way to explore together.');add('snigdha','Always the right companion product.');}}
+      return rec;
+    }
+    var doctorFirst = a.health==='metabolic' || a.age==='a3' || a.style==='doctor' || a.duration==='years';
+    if(doctorFirst){
+      var dwhy = a.health==='metabolic' ? 'With BP/sugar in the picture, a doctor must design your plan — non-negotiable with us.'
+        : a.duration==='years' ? 'A year or more deserves a real diagnosis, not another guess. Start here.'
+        : 'A registered doctor reads your whole picture and writes the plan — the honest first step.';
+      add('consult',dwhy);
+    }
+    if(a.concern==='timing'){add('pme','PE responds to structured technique and weekly practice.');if(!doctorFirst)add('consult','Add the ₹99 consult so a doctor personalises the program.');}
+    else if(a.concern==='erection'){add('ed','Cause-first program for circulation, stress and sleep.');
+      if(a.sleep==='low'||a.health==='stress')add('shilajit','With stress and short sleep in your answers, classical rasayana support helps the foundation.');
+      if(!doctorFirst)add('consult','Add the ₹99 consult so a doctor personalises the program.');}
+    else{add('urja','The flagship 60-day vitality course.');add('shilajit','Classical rasayana foundation, lab-standardised.');}
+    if(a.partner==='together'&&rec.length<3)add('khulibaat','You said you are in this together — openness measurably helps outcomes.');
+    return rec.slice(0,3);
   }
   function quizRender(i){
-    if(i<QUIZ.length){var s=QUIZ[i];
-      qbox.innerHTML='<button class="qx" data-quiz-close aria-label="Close">&times;</button><div class="qstep">Self-check · '+(i+1)+' of '+QUIZ.length+'</div><div class="qq">'+s.q+'</div>'+s.opts.map(function(o){return '<button class="qopt" data-qa="'+s.id+':'+o[0]+':'+i+'">'+o[1]+'</button>';}).join('')+'<p style="font-size:11.5px;color:#7A5C46;margin-top:12px">Private. Nothing is stored or sent anywhere.</p>';
+    var flow=quizFlow();
+    if(i<flow.length){var s=flow[i];
+      qbox.innerHTML='<button class="qx" data-quiz-close aria-label="Close">&times;</button><div class="qstep">Self-check · '+(i+1)+' of '+flow.length+'</div><div class="qq">'+s.q+'</div>'+s.opts.map(function(o){return '<button class="qopt" data-qa="'+s.id+':'+o[0]+':'+i+'">'+o[1]+'</button>';}).join('')+'<p style="font-size:11.5px;color:#7A5C46;margin-top:12px">Private. Nothing is stored or sent anywhere.</p>';
     }else{var recs=quizRecommend();
-      qbox.innerHTML='<button class="qx" data-quiz-close aria-label="Close">&times;</button><div class="qstep">Your suggested plan</div><div class="qq">Here is the honest starting point</div>'+recs.map(function(r){var it=CATALOG[r.key];return '<div class="qres"><b>'+it.name+' · '+inr(it.price)+'</b><span>'+r.why+'</span><div style="margin-top:10px"><button class="btn btn-gold btn-sm" data-add="'+r.key+'">Add to cart</button></div></div>';}).join('')+'<p style="font-size:12px;color:#7A5C46;margin-top:10px">Guidance, not a diagnosis. Your doctor confirms the plan on the consult.</p><button class="btn btn-outline" style="width:100%;margin-top:6px" data-quiz-close>Close</button>';
+      var planTotal=recs.reduce(function(t,r){return t+CATALOG[r.key].price;},0);
+      var allKeys=recs.map(function(r){return r.key;}).join(',');
+      qbox.innerHTML='<button class="qx" data-quiz-close aria-label="Close">&times;</button><div class="qstep">Your suggested plan</div><div class="qq">Here is the honest starting point</div>'+recs.map(function(r){var it=CATALOG[r.key];return '<div class="qres"><b>'+it.name+' · '+inr(it.price)+'</b><span>'+r.why+'</span><div style="margin-top:10px"><button class="btn btn-gold btn-sm" data-add="'+r.key+'">Add to cart</button></div></div>';}).join('')+'<button class="btn btn-dark" style="width:100%;margin-top:8px" data-addall="'+allKeys+'">Add full plan — '+inr(planTotal)+'</button><p style="font-size:12px;color:#7A5C46;margin-top:10px">Guidance, not a diagnosis. Your doctor confirms the plan on the consult.</p><button class="btn btn-outline" style="width:100%;margin-top:6px" data-quiz-close>Close</button>';
     }
   }
   function quizOpen(){qAnswers={};quizRender(0);qmodal.classList.add('on');overlay.classList.add('on');}
@@ -842,6 +1025,8 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
     var add=e.target.closest('[data-add]');
     if(add){var k=add.getAttribute('data-add');cart[k]=(cart[k]||0)+1;render();showToast(CATALOG[k].name+' added');
       if(add.classList.contains('addbtn')){var isCop=add.classList.contains('btn-cop');var orig=add.textContent;add.textContent='Added ✓';add.style.background='var(--vana)';add.style.color='#fff';setTimeout(function(){add.textContent=orig;add.style.background='';add.style.color='';},1400);}return;}
+    var addAll=e.target.closest('[data-addall]');
+    if(addAll){addAll.getAttribute('data-addall').split(',').forEach(function(k){if(CATALOG[k])cart[k]=(cart[k]||0)+1;});render();showToast('Full plan added to cart');openCart();return;}
     var inc=e.target.closest('[data-inc]');if(inc){cart[inc.getAttribute('data-inc')]++;render();return;}
     var dec=e.target.closest('[data-dec]');if(dec){var dk=dec.getAttribute('data-dec');cart[dk]--;if(cart[dk]<=0)delete cart[dk];render();return;}
     if(e.target.closest('[data-quiz-open]')){e.preventDefault();quizOpen();return;}
@@ -862,6 +1047,165 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   overlay.addEventListener('click',function(){closeCart();quizClose();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeCart();quizClose();closeMenus(null);}});
   navTgl.addEventListener('click',function(){var o=catnav.classList.toggle('open');navTgl.setAttribute('aria-expanded',o?'true':'false');});
+
+  /* ===== bundle builder ===== */
+  var BKEYS=['urja','shilajit','oil','pme','ed','tarang','bindu','bandhan','yugal','snigdha','sparsh','jyoti','khulibaat'];
+  var bSel={};
+  var bchips=document.getElementById('bchips');
+  if(bchips){
+    bchips.innerHTML=BKEYS.map(function(k){var i=CATALOG[k];return '<span class="bchip" data-bk="'+k+'" role="checkbox" aria-checked="false" tabindex="0">'+i.name+' <span class="bp">'+inr(i.price)+'</span></span>';}).join('');
+    function bUpdate(){
+      var keys=Object.keys(bSel),n=keys.length,sub=keys.reduce(function(t,k){return t+CATALOG[k].price;},0);
+      var pct=n>=4?20:n===3?15:n===2?10:0,off=Math.round(sub*pct/100);
+      document.querySelectorAll('#btier span').forEach(function(s){var t=parseInt(s.getAttribute('data-t'),10);s.classList.toggle('on',pct>0&&(t===4?n>=4:n===t));});
+      var bline=document.getElementById('bline'),badd=document.getElementById('bundleAdd');
+      if(!n){bline.textContent='Select products above to build your bundle';badd.disabled=true;}
+      else if(pct===0){bline.innerHTML=inr(sub)+' — add 1 more to unlock <b class="bsave">10% off</b>';badd.disabled=false;}
+      else{bline.innerHTML='<s style="color:#9A7B60;font-weight:500">'+inr(sub)+'</s> '+inr(sub-off)+' <span class="bsave">you save '+inr(off)+' ('+pct+'%)</span>';badd.disabled=false;}
+      badd.textContent=n?'Add '+n+' item'+(n>1?'s':'')+' to cart':'Add bundle to cart';
+    }
+    bchips.addEventListener('click',function(e){
+      var c=e.target.closest('[data-bk]');if(!c)return;
+      var k=c.getAttribute('data-bk');
+      if(bSel[k])delete bSel[k];else bSel[k]=1;
+      c.classList.toggle('sel',!!bSel[k]);c.setAttribute('aria-checked',bSel[k]?'true':'false');
+      bUpdate();
+    });
+    bchips.addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'){var c=e.target.closest('[data-bk]');if(c){e.preventDefault();c.click();}}});
+    document.getElementById('bundleAdd').addEventListener('click',function(){
+      for(var k in bSel)cart[k]=(cart[k]||0)+1;
+      bSel={};document.querySelectorAll('.bchip.sel').forEach(function(c){c.classList.remove('sel');c.setAttribute('aria-checked','false');});
+      bUpdate();render();showToast('Bundle added — discount applied in cart');openCart();
+    });
+    bUpdate();
+  }
+
+  /* ===== doctor slot picker ===== */
+  var slotModal=document.getElementById('slotModal'),slotDay=null,slotTime=null;
+  var SLOT_TIMES=['10:00 am','12:00 pm','3:00 pm','6:00 pm','8:00 pm','10:00 pm'];
+  function slotOpen(){
+    var days=document.getElementById('slotDays'),names=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var html='';
+    for(var d=1;d<=7;d++){var dt=new Date();dt.setDate(dt.getDate()+d);
+      var label=d===1?'Tomorrow':names[dt.getDay()];
+      html+='<button class="slotc" data-slot-day="'+label+', '+dt.getDate()+' '+months[dt.getMonth()]+'">'+label+'<small>'+dt.getDate()+' '+months[dt.getMonth()]+'</small></button>';}
+    days.innerHTML=html;
+    document.getElementById('slotTimes').innerHTML=SLOT_TIMES.map(function(t){return '<button class="slotc" data-slot-time="'+t+'">'+t+'</button>';}).join('');
+    slotDay=null;slotTime=null;document.getElementById('slotConfirm').disabled=true;
+    slotModal.classList.add('on');overlay.classList.add('on');
+  }
+  function slotClose(){slotModal.classList.remove('on');if(!drawer.classList.contains('on'))overlay.classList.remove('on');}
+  slotModal.addEventListener('click',function(e){
+    var d=e.target.closest('[data-slot-day]'),t=e.target.closest('[data-slot-time]');
+    if(d){slotDay=d.getAttribute('data-slot-day');slotModal.querySelectorAll('[data-slot-day]').forEach(function(x){x.classList.toggle('sel',x===d);});}
+    if(t){slotTime=t.getAttribute('data-slot-time');slotModal.querySelectorAll('[data-slot-time]').forEach(function(x){x.classList.toggle('sel',x===t);});}
+    document.getElementById('slotConfirm').disabled=!(slotDay&&slotTime);
+  });
+  document.getElementById('slotConfirm').addEventListener('click',function(){
+    var msg='Namaste! I would like to book the ₹99 private doctor consultation.\nPreferred slot: '+slotDay+' at '+slotTime+'\nPhone or video is fine. Please confirm.';
+    window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');
+    cart.consult=(cart.consult||0)+1;render();slotClose();showToast('Slot request sent — consult added to cart');
+  });
+  document.getElementById('slotClose').addEventListener('click',slotClose);
+  document.addEventListener('click',function(e){if(e.target.closest('[data-slot-open]')){e.preventDefault();slotOpen();}});
+
+  /* ===== exit-intent popup (desktop, once per session) ===== */
+  var exitModal=document.getElementById('exitModal');
+  function exitShow(){
+    if(document.getElementById('ageGate').classList.contains('hidden')===false)return;
+    if(qmodal.classList.contains('on')||drawer.classList.contains('on')||slotModal.classList.contains('on'))return;
+    try{if(sessionStorage.getItem('kkp_exit')==='1')return;sessionStorage.setItem('kkp_exit','1');}catch(e){}
+    exitModal.classList.add('on');overlay.classList.add('on');
+  }
+  function exitHide(){exitModal.classList.remove('on');if(!drawer.classList.contains('on'))overlay.classList.remove('on');}
+  document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=8)exitShow();});
+  document.getElementById('exitClose').addEventListener('click',exitHide);
+  document.getElementById('exitNo').addEventListener('click',exitHide);
+  document.getElementById('exitCta').addEventListener('click',exitHide);
+
+  /* ===== social proof toasts (TODO: replace seed list with real order feed) ===== */
+  var SPROOF=[
+    ['R.K. from Kanpur','ordered a wellness plan'],['S. & P. from Indore','ordered the Milan Kit'],
+    ['M.T. from Nagpur','booked the ₹99 consult'],['A.V. from Patna','ordered Shilajit'],
+    ['K.D. from Jaipur','ordered discreetly'],['V.S. from Lucknow','booked a couples consult'],
+    ['N.B. from Bhopal','ordered the PME Course'],['T.R. from Surat','ordered intimate care']
+  ];
+  var sproofEl=document.getElementById('sproof'),spIdx=Math.floor(Date.now()/60000)%SPROOF.length,spShown=0,spOff=false,spTimer=null;
+  function spNext(){
+    if(spOff||spShown>=4)return;
+    var s=SPROOF[spIdx%SPROOF.length];spIdx++;spShown++;
+    document.getElementById('sproofTxt').innerHTML='<b>'+s[0]+'</b> '+s[1]+' recently';
+    sproofEl.classList.add('on');
+    setTimeout(function(){sproofEl.classList.remove('on');},6000);
+    spTimer=setTimeout(spNext,32000);
+  }
+  document.getElementById('spx').addEventListener('click',function(){spOff=true;clearTimeout(spTimer);sproofEl.classList.remove('on');});
+  if(!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches))spTimer=setTimeout(spNext,12000);
+
+  /* ===== quick exit ===== */
+  document.getElementById('qexit').addEventListener('click',function(){
+    try{localStorage.removeItem('kkp_cart');}catch(e){}
+    location.replace('https://www.google.com/search?q=weather+today');
+  });
+
+  /* ===== Hindi toggle ===== */
+  var I18N=[
+    ['.announce','<b>KKP99</b> — पहला डॉक्टर परामर्श ₹99 में · ₹999 से ऊपर मुफ़्त गुप्त डिलीवरी · <b>पूरे भारत में COD</b>'],
+    ['.hd-consult','डॉक्टर से पूछें · ₹99'],
+    ['#worlds .aarogya h2','आयुर्वेदिक स्वास्थ्य'],
+    ['#worlds .aarogya p','कारणों का इलाज — समय, शक्ति, ऊर्जा — शास्त्रीय औषधियों, पंजीकृत डॉक्टरों और कोर्स के साथ।'],
+    ['#worlds .aarogya .go','आरोग्य में प्रवेश करें →'],
+    ['#worlds .aanand h2','आधुनिक अंतरंगता'],
+    ['#worlds .aanand p','गरिमा के साथ आनंद — शरीर-सुरक्षित उत्पाद, प्राकृतिक देखभाल और जोड़ों के लिए।'],
+    ['#worlds .aanand .go','आनन्द में प्रवेश करें →'],
+    ['#timing .catrow-h h2','इलाज संभव। अभ्यास से सुधार। बहुत आम।'],
+    ['#timing .catrow-h .sub','शीघ्रपतन तकनीक, अभ्यास और सही सहारे से सुधरता है — शर्म से नहीं।'],
+    ['#erection .catrow-h h2','अक्सर यह रक्त-संचार की कहानी है'],
+    ['#erection .catrow-h .sub','नींद, शुगर, BP और तनाव अधिकतर मामलों की जड़ हैं। हम इन्हीं का इलाज करते हैं, ईमानदारी से।'],
+    ['#vitality .catrow-h h2','शक्ति, शास्त्रीय तरीक़े से'],
+    ['#vitality .catrow-h .sub','ग्रंथों में वर्णित, लैब में परखा हुआ।'],
+    ['#consult .consult h2','निजी डॉक्टर परामर्श, सिर्फ़ ₹99'],
+    ['#consult .consult p','फ़ोन या वीडियो — अकेले या जीवनसाथी के साथ। पंजीकृत डॉक्टर कारण समझकर 24 घंटे में आपका प्लान लिखते हैं। आपकी बात कॉल से बाहर नहीं जाती।'],
+    ['#devices .catrow-h h2','रुचि से चुने। शरीर-सुरक्षित बने।'],
+    ['#devices .catrow-h .sub','मेडिकल-ग्रेड सिलिकॉन, बेहद शांत, USB चार्जिंग, वॉटरप्रूफ़ — और हमेशा सादे पार्सल में।'],
+    ['#care .catrow-h h2','जहाँ स्वास्थ्य आनंद से मिलता है'],
+    ['#science .intro h2','उनका आनंद विज्ञान है, रहस्य नहीं'],
+    ['#science .intro p','आधुनिक यौन-स्वास्थ्य विज्ञान उत्तेजना को समझने-समझाने की चीज़ मानता है — खुलकर, साथ मिलकर।'],
+    ['#together .catrow-h h2','साथ मिलकर जानिए'],
+    ['#bundleH2','कोई भी 2, 3 या 4 चुनें — 20% तक बचत'],
+    ['#bundleSub','जो आप दोनों को ठीक लगे वही चुनें। 2 चीज़ें — 10% छूट · 3 चीज़ें — 15% · 4 या अधिक — 20%। छूट कार्ट में अपने आप दिखती है।'],
+    ['#quiz span','उलझन में हैं? कुछ सवालों के जवाब दें — अपना प्लान पाएं।'],
+    ['#quiz button','सेल्फ़-चेक शुरू करें →'],
+    ['#faq .intro h2','जो सवाल सब पूछते हैं'],
+    ['.final h2','खुल के इलाज कराइए। खुल के प्यार कीजिए।'],
+    ['.final p','दोनों के लिए एक भरोसेमंद घर — आयुर्वेदिक स्वास्थ्य और आधुनिक अंतरंगता, हमेशा निजी, कभी शर्म नहीं।']
+  ];
+  var stepsHi=[['निजी तौर पर पूछें','₹99 का परामर्श बुक करें। न क्लिनिक, न लाइन, न किसी की नज़र।'],['सही निदान पाएं','पंजीकृत डॉक्टर कारण देखते हैं — सिर्फ़ लक्षण नहीं।'],['अपना प्लान पाएं','आपके मामले के अनुसार औषधियाँ, अभ्यास और कोर्स।'],['फ़ॉलो-अप से सुधारें','तय फ़ॉलो-अप से प्लान तब तक बदलता है जब तक असर न दिखे।']];
+  var lang='en';
+  try{lang=localStorage.getItem('kkp_lang')||'en';}catch(e){}
+  var langBtn=document.getElementById('langTgl');
+  function applyLang(){
+    I18N.forEach(function(pair){
+      var el=document.querySelector(pair[0]);if(!el)return;
+      if(el.__en===undefined)el.__en=el.innerHTML;
+      el.innerHTML=lang==='hi'?pair[1]:el.__en;
+    });
+    document.querySelectorAll('.steps .step').forEach(function(st,i){
+      var h=st.querySelector('h4'),p=st.querySelector('p');
+      if(h.__en===undefined){h.__en=h.innerHTML;p.__en=p.innerHTML;}
+      h.innerHTML=lang==='hi'?stepsHi[i][0]:h.__en;p.innerHTML=lang==='hi'?stepsHi[i][1]:p.__en;
+    });
+    document.querySelectorAll('.addbtn').forEach(function(b){
+      if(b.__en===undefined)b.__en=b.textContent;
+      b.textContent=lang==='hi'?(b.__en.indexOf('consult')>-1||b.__en.indexOf('Book')>-1?'परामर्श बुक करें':'कार्ट में डालें'):b.__en;
+    });
+    langBtn.textContent=lang==='hi'?'English':'हिंदी';
+    document.documentElement.lang=lang==='hi'?'hi':'en';
+    try{localStorage.setItem('kkp_lang',lang);}catch(e){}
+    window.dispatchEvent(new CustomEvent('kkp:lang',{detail:lang}));
+  }
+  langBtn.addEventListener('click',function(){lang=lang==='hi'?'en':'hi';applyLang();});
+  if(lang==='hi')applyLang();
 
   render();
 })();
@@ -891,17 +1235,41 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
         ctas: '<a class="btn btn-cop" href="#devices">Shop pleasure</a><a class="btn btn-outline hero-ob" href="#care">Intimate care</a>'
       }
     };
+    var dataHi = {
+      aarogya: {
+        shl: data.aarogya.shl,
+        h: 'खुल के इलाज। <span class="amp">पूरा</span> जीवन।',
+        lede: 'AYUSH-लाइसेंस प्राप्त आयुर्वेदिक औषधियाँ, पंजीकृत डॉक्टर और संरचित कोर्स — कारण-आधारित, पूरी तरह निजी। हर उस भारतीय के लिए जिसे पूछने से रोका गया।',
+        ctas: '<a class="btn btn-gold" href="#timing">स्वास्थ्य देखें</a><a class="btn btn-outline hero-ob" href="#consult">डॉक्टर से पूछें · ₹99</a>'
+      },
+      both: {
+        shl: data.both.shl,
+        h: 'स्वास्थ्य के लिए ज्ञान। <span class="amp">आनंद</span> के लिए आज़ादी।',
+        lede: 'दो पंख, एक भरोसेमंद घर। <strong>आरोग्य</strong> — आयुर्वेदिक स्वास्थ्य, डॉक्टर और कोर्स। <strong>आनन्द</strong> — जोड़ों के लिए रुचिपूर्ण, शरीर-सुरक्षित अंतरंगता। दोनों निजी, दोनों बिना शर्म।',
+        ctas: '<a class="btn btn-gold" href="#worlds">दोनों संसार देखें</a><a class="btn btn-cop" href="#devices">आनंद की ख़रीदारी</a>'
+      },
+      aanand: {
+        shl: data.aanand.shl,
+        h: '<span class="amp">बेझिझक</span> जानिए। बिना शर्म।',
+        lede: 'जोड़ों के लिए रुचिपूर्ण, शरीर-सुरक्षित अंतरंगता — मेडिकल-ग्रेड सिलिकॉन उत्पाद, प्राकृतिक देखभाल और दो लोगों की रस्में। हमेशा सादे पार्सल में।',
+        ctas: '<a class="btn btn-cop" href="#devices">आनंद की ख़रीदारी</a><a class="btn btn-outline hero-ob" href="#care">अंतरंग देखभाल</a>'
+      }
+    };
+    var heroLang = 'en';
+    try { heroLang = localStorage.getItem('kkp_lang') || 'en'; } catch(e){}
     var shl = document.getElementById('heroShl'), h1 = document.getElementById('heroH1'),
         lede = document.getElementById('heroLede'), ctas = document.getElementById('heroCtas'),
-        btns = hero.querySelectorAll('.hero-toggle button'), swapT = null;
+        btns = hero.querySelectorAll('.hero-toggle button'), swapT = null, curMode = 'both';
     function setMode(mode){
-      if (!data[mode]) return;
+      var src = heroLang === 'hi' ? dataHi : data;
+      if (!src[mode]) return;
+      curMode = mode;
       hero.classList.add('swapping');
       clearTimeout(swapT);
       swapT = setTimeout(function(){
         hero.setAttribute('data-mode', mode);
-        shl.innerHTML = data[mode].shl; h1.innerHTML = data[mode].h;
-        lede.innerHTML = data[mode].lede; ctas.innerHTML = data[mode].ctas;
+        shl.innerHTML = src[mode].shl; h1.innerHTML = src[mode].h;
+        lede.innerHTML = src[mode].lede; ctas.innerHTML = src[mode].ctas;
         btns.forEach(function(b){
           var on = b.getAttribute('data-mode') === mode;
           b.classList.toggle('active', on); b.setAttribute('aria-selected', on ? 'true' : 'false');
@@ -910,6 +1278,8 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
       }, 300);
     }
     btns.forEach(function(b){ b.addEventListener('click', function(){ setMode(b.getAttribute('data-mode')); }); });
+    window.addEventListener('kkp:lang', function(e){ heroLang = e.detail; setMode(curMode); });
+    if (heroLang === 'hi') setMode('both');
   }
 
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;

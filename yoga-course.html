@@ -472,6 +472,20 @@ footer{background:var(--ink);color:#D8BFA8}
 
   document.title = P.name + ' — Khul Ke Pucho';
 
+  /* SEO: canonical + OG + Product JSON-LD (runtime, from CATALOG) */
+  (function () {
+    var base = 'https://sagarchauhan7792-bot.github.io/khul-ke-pucho/';
+    var url = base + (FILES[key] || 'product.html');
+    function meta(attr, name, content) { var m = document.createElement('meta'); m.setAttribute(attr, name); m.content = content; document.head.appendChild(m); }
+    var link = document.createElement('link'); link.rel = 'canonical'; link.href = url; document.head.appendChild(link);
+    meta('name', 'description', P.desc);
+    meta('property', 'og:type', 'product'); meta('property', 'og:site_name', 'Khul Ke Pucho');
+    meta('property', 'og:title', P.name + ' — Khul Ke Pucho'); meta('property', 'og:description', P.desc);
+    meta('property', 'og:url', url); meta('property', 'og:image', base + 'img/' + imgFile + '.svg');
+    var ld = { '@context': 'https://schema.org', '@type': 'Product', 'name': P.name, 'description': P.desc, 'image': base + 'img/' + imgFile + '.svg', 'brand': { '@type': 'Brand', 'name': 'Khul Ke Pucho' }, 'offers': { '@type': 'Offer', 'priceCurrency': 'INR', 'price': String(P.price), 'availability': 'https://schema.org/InStock', 'url': url } };
+    var s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+  })();
+
   document.getElementById('crumbs').innerHTML =
     '<a href="index.html">Home</a> › <a href="index.html' + P.catId + '">' + P.cat + '</a> › ' + P.name;
 
@@ -556,9 +570,14 @@ footer{background:var(--ink);color:#D8BFA8}
           '<div class="dqty"><button data-dec="' + k + '" aria-label="Decrease">−</button><span>' + cart[k] + '</span><button data-inc="' + k + '" aria-label="Increase">+</button></div></div>';
       }).join('');
     }
-    dtot.textContent = inr(total());
+    var BUNDLE_EX = { consult: 1, kit: 1, milan: 1 }, bn = 0, bbase = 0;
+    for (var bk in cart) { if (!BUNDLE_EX[bk]) { bn++; bbase += CATALOG[bk].price * cart[bk]; } }
+    var bpct = bn >= 4 ? 20 : bn === 3 ? 15 : bn === 2 ? 10 : 0, boff = Math.round(bbase * bpct / 100);
+    var payable = total() - boff;
+    dtot.textContent = inr(payable);
     var lines = keys.map(function (k) { return '- ' + CATALOG[k].name + ' x' + cart[k] + ' (' + inr(CATALOG[k].price * cart[k]) + ')'; });
-    var msg = 'Namaste! I would like to order:\n' + lines.join('\n') + '\nTotal: ' + inr(total()) + '\n(COD preferred / plain packaging please)';
+    if (boff > 0) lines.push('Bundle savings: -' + inr(boff) + ' (' + bpct + '% off)');
+    var msg = 'Namaste! I would like to order:\n' + lines.join('\n') + '\nTotal: ' + inr(payable) + '\n(COD preferred / plain packaging please)';
     document.getElementById('waCheckout').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
     save();
   }

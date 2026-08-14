@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /checkout.html
+Disallow: /preview/
+
+Sitemap: https://sagarchauhan7792-bot.github.io/khul-ke-pucho/sitemap.xml
