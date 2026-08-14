@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khul Ke Pucho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kkp.css">
+<!-- Analytics: replace the TODO IDs to activate GA4 + Meta Pixel. Inert (no requests) while 'TODO'. -->
+<script>
+window.KKP_GA4='TODO_GA4_ID';window.KKP_PIXEL='TODO_PIXEL_ID';
+(function(){var g=window.KKP_GA4;if(g&&g.indexOf('TODO')<0){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+g;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',g);}var p=window.KKP_PIXEL;if(p&&p.indexOf('TODO')<0){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',p);fbq('track','PageView');}})();
+</script>
+<style>
+/* category-page specifics */
+.cathero{color:var(--ivory);position:relative;overflow:hidden;padding:46px 0 40px}
+.cathero.aarogya{background:linear-gradient(120deg,#356B4F 0%,#2F5D46 55%,#20402F 100%)}
+.cathero.aanand{background:linear-gradient(120deg,#A85636 0%,#5E1F30 58%,#2A1620 100%)}
+.cathero .wrap{position:relative;z-index:1}
+.cathero .crumbs{font-size:12.5px;margin-bottom:14px;padding:0}
+.cathero .crumbs a{color:rgba(247,239,223,.75);text-decoration:none}
+.cathero .crumbs a:hover{text-decoration:underline}
+.cathero .shl{font-family:'Tiro Devanagari Sanskrit',serif;font-size:16px;color:var(--gold-l)}
+.cathero .shl small{font:italic 500 12px/1.4 'EB Garamond',serif;color:#D8BFA8;display:block;margin-top:3px}
+.cathero h1{color:var(--ivory);font-size:clamp(27px,4.4vw,42px);margin:12px 0 8px}
+.cathero .lede{color:#EBDBC8;font-size:16.5px;max-width:60ch;margin:0 0 18px}
+.cathero.aanand .shl{color:var(--gulab)}
+.cathero .em{position:absolute;right:-14px;bottom:-58px;font:400 200px/1 'Tiro Devanagari Sanskrit',serif;color:rgba(247,239,223,.08);pointer-events:none}
+.tez{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:8px}
+.tezc{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.tezc:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(36,20,25,.12)}
+.tezc .sanskrit{font-size:24px;color:var(--kanchan)}
+.tezc.cop .sanskrit{color:var(--tamra)}
+.tezc h3{margin:6px 0 4px}
+.tezc p{font-size:13.5px;color:#5C4030;margin:0}
+.tezc .go{display:inline-block;margin-top:10px;font:700 13px/1 'Mukta',sans-serif;color:var(--kumkum)}
+.edu{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--kanchan);border-radius:14px;padding:22px 26px;max-width:820px;margin:0 auto}
+.edu.cop{border-left-color:var(--tamra)}
+.edu p{font-size:15px;margin:.4em 0}
+.relrow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.relrow a{font:700 13.5px/1 'Mukta',sans-serif;background:var(--chip);border-radius:999px;padding:11px 18px;text-decoration:none}
+.relrow a:hover{background:var(--kanchan);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div class="agegate" id="ageGate">
+  <div class="agebox">
+    <div class="sanskrit">॥</div>
+    <h2>Are you 18 or older?</h2>
+    <p>Khul Ke Pucho offers sexual wellness products and intimate care for adults. Please confirm your age to enter.</p>
+    <button class="btn btn-gold" id="ageYes">Yes, I am 18+</button>
+    <button class="btn btn-outline" style="border-color:var(--gold-l);color:var(--gold-l)" id="ageNo">No, exit</button>
+    <small>We ask this to keep intimate content away from minors. Nothing is stored beyond your choice on this device.</small>
+  </div>
+</div>
+
+<div class="announce"><b>KKP99</b> — first doctor consult at ₹99 · Free discreet delivery above ₹999 · <b>COD across India</b></div>
+
+<header class="hd">
+  <div class="wrap hd-main">
+    <a class="logo" href="index.html"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a>
+    <div class="hd-acts">
+      <button class="langbtn" id="langTgl" aria-label="भाषा बदलें / change language">हिंदी</button>
+      <a class="btn btn-dark btn-sm hd-consult" href="consultation.html">Consult a doctor · ₹99</a>
+      <button class="cartbtn" id="cartOpen" aria-label="Open cart">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H8.7a1.5 1.5 0 0 1-1.5-1.3Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cartn" id="cartN">0</span>
+      </button>
+      <button class="navtgl" id="navTgl" aria-expanded="false" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="catnav" id="catnav" aria-label="Shop menus">
+    <div class="wrap catnav-in">
+      <div class="menu"><a href="index.html" style="color:var(--kumkum)">Home</a></div>
+      <div class="menu" data-menu>
+        <button aria-expanded="false">आरोग्य · Wellness <span class="car">▼</span></button>
+        <div class="dd">
+          <a href="aarogya.html"><span class="dico">आ</span><div><b>Aarogya overview</b><span>The wellness wing — doctors, courses, formulations</span></div></a>
+          <a href="timing.html"><span class="dico">का</span><div><b>Timing &amp; PE</b><span>Courses, kit and the honest plan</span></div></a>
+          <a href="erection-health.html"><span class="dico">ब</span><div><b>Erection health</b><span>Cause-first: circulation, sleep, stress</span></div></a>
+          <a href="vitality.html"><span class="dico">ऊ</span><div><b>Vitality &amp; energy</b><span>Classical formulations, lab-tested</span></div></a>
+          <a class="dd-cta" href="consultation.html">Consult a doctor · ₹99</a>
+        </div>
+      </div>
+      <div class="menu aan" data-menu>
+        <button aria-expanded="false">आनन्द · Pleasure <span class="car">▼</span></button>
+        <div class="dd">
+          <a href="aanand.html"><span class="dico">आ</span><div><b>Aanand overview</b><span>The pleasure wing — tasteful, body-safe</span></div></a>
+          <a href="devices.html"><span class="dico">यु</span><div><b>Devices</b><span>Medical-grade silicone, whisper-quiet</span></div></a>
+          <a href="intimate-care.html"><span class="dico">स्</span><div><b>Intimate care</b><span>Gels, oils and candles — body-safe</span></div></a>
+          <a href="couples.html"><span class="dico">मि</span><div><b>For couples</b><span>Sets, rituals and conversation</span></div></a>
+        </div>
+      </div>
+      <div class="menu"><a href="#" data-quiz-open>2-min self-check</a></div>
+    </div>
+  </nav>
+</header>
+
+<main id="catMain"></main>
+
+<!-- quiz strip -->
+<div class="stats" id="quiz"><div class="wrap" style="padding:20px 20px;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center"><span style="font:700 15px/1.3 'Mukta',sans-serif">Confused where to start? Answer a few questions — get your plan.</span><button class="btn btn-dark btn-sm" data-quiz-open>Start self-check →</button></div></div>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <div class="logo" style="margin-bottom:12px"><span class="sanskrit" style="color:var(--ivory);font-size:22px">खुल के पूछो</span><small style="color:var(--gold-l)">Khul Ke Pucho</small></div>
+      <p style="font-size:13.5px;max-width:34ch">Two wings, one house. Ayurvedic wellness &amp; modern intimacy — private, body-safe, and without shame.</p>
+      <p style="font-size:12px;opacity:.8">AYUSH License: <em>TODO — add number</em></p>
+    </div>
+    <div><h4>Aarogya · Wellness</h4><ul><li><a href="timing.html">Timing &amp; PE</a></li><li><a href="erection-health.html">Erection health</a></li><li><a href="vitality.html">Vitality &amp; energy</a></li><li><a href="consultation.html">Doctor consult</a></li></ul></div>
+    <div><h4>Aanand · Pleasure</h4><ul><li><a href="devices.html">Devices</a></li><li><a href="intimate-care.html">Intimate care</a></li><li><a href="couples.html">For couples</a></li><li><a href="index.html#faq">Body-safe &amp; care</a></li></ul></div>
+    <div><h4>Our promise</h4><ul style="font-size:13.5px"><li>Plain parcel, no product name outside</li><li>COD across India</li><li>Body-safe &amp; lab-tested</li><li>18+ only · registered doctors</li></ul></div>
+  </div>
+  <div class="wrap" style="text-align:center;padding-top:6px">
+    <div style="display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;padding-bottom:14px;border-bottom:1px solid rgba(221,185,103,.2)">
+      <a href="shipping.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Shipping</a>
+      <a href="refund.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Returns &amp; Refunds</a>
+      <a href="privacy.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Privacy</a>
+      <a href="terms.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Terms</a>
+      <a href="discreet-delivery.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Discreet delivery</a>
+    </div>
+  </div>
+  <div class="wrap seal">
+    <div class="sanskrit">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</div>
+    <div style="margin-top:4px">May all be happy; may all be free of disease.</div>
+    <div style="margin-top:9px;opacity:.75">For adults 18+. Ayurvedic proprietary medicine — results vary; consult a physician if symptoms persist. Consultations are with registered practitioners and are not a substitute for emergency care. Intimate products are personal-care items; please read usage &amp; hygiene instructions.</div>
+    <div style="margin-top:7px;opacity:.75">© 2026 Khul Ke Pucho · All rights reserved</div>
+  </div>
+</footer>
+
+<!-- cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dhead"><h3>Your cart</h3><button class="dclose" id="cartClose" aria-label="Close cart">&times;</button></div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot">
+    <div class="dtot" id="dbund" style="display:none;color:var(--vana);font-size:14.5px;margin-bottom:2px"><span id="dbundl">Bundle savings</span><span id="dbundv"></span></div>
+    <div class="dtot"><span id="dtotl">Total</span><span id="dtot">₹0</span></div>
+    <div class="dnote">Plain brown parcel · No product name outside · COD available</div>
+    <a class="btn btn-gold" id="goCheckout" href="checkout.html">Proceed to checkout →</a>
+    <a class="btn btn-outline" id="waCheckout" href="#" target="_blank" rel="noopener" style="border-color:#25D366;color:#1a8a45">Order on WhatsApp</a>
+    <button class="btn btn-outline" id="cartClose2">Continue browsing</button>
+  </div>
+</aside>
+
+<!-- quiz modal -->
+<div class="qmodal" id="qmodal" role="dialog" aria-modal="true" aria-label="Self check"><div class="qbox" id="qbox"></div></div>
+
+<div class="mbar">
+  <button class="btn btn-outline" data-quiz-open>2-min check</button>
+  <a class="btn btn-cop" href="devices.html" style="flex:1">Pleasure</a>
+  <button class="btn btn-gold" id="mCart">Cart (<span id="cartN2">0</span>)</button>
+</div>
+
+<a class="wa" href="https://wa.me/919999999999?text=Namaste%2C%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5a1.8 1.8 0 0 0 .3-.4.5.5 0 0 0 0-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.5 14.5 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="toast" id="toast">Added to cart</div>
+
+<!-- quick exit (privacy) -->
+<button class="qexit" id="qexit" title="Leave this site instantly">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  Quick exit
+</button>
+
+<!-- social proof card -->
+<div class="sproof" id="sproof" role="status" aria-live="polite">
+  <button class="spx" id="spx" aria-label="Hide notifications">&times;</button>
+  <span id="sproofTxt"></span>
+  <small>Plain parcel · name never shown · <span style="color:var(--vana)">✓ verified order</span></small>
+</div>
+
+<!-- exit-intent modal -->
+<div class="qmodal" id="exitModal" role="dialog" aria-modal="true" aria-label="Before you go">
+  <div class="qbox">
+    <button class="qx" id="exitClose" aria-label="Close">&times;</button>
+    <div class="qstep">Before you go</div>
+    <div class="qq">One honest question deserves one honest answer — ₹99</div>
+    <p style="font-size:14.5px;margin:0 0 14px">A registered doctor, on the phone, completely private. Use code <b style="color:var(--kumkum)">KKP99</b> — your first consultation costs less than a cup of coffee at the airport.</p>
+    <button class="btn btn-gold" style="width:100%" data-add="consult" id="exitCta">Book the ₹99 consult</button>
+    <button class="btn btn-outline" style="width:100%;margin-top:8px" id="exitNo">No thanks, I'll keep browsing</button>
+    <p style="font-size:11.5px;color:#7A5C46;margin-top:10px;text-align:center">Shown once. We don't nag — that's a promise.</p>
+  </div>
+</div>
+
+<!-- doctor slot picker modal -->
+<div class="qmodal" id="slotModal" role="dialog" aria-modal="true" aria-label="Pick a consultation slot">
+  <div class="qbox">
+    <button class="qx" id="slotClose" aria-label="Close">&times;</button>
+    <div class="qstep">Private consultation · ₹99</div>
+    <div class="qq">Pick a day and time that suits you</div>
+    <div style="font:700 12px/1 'Mukta',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7A5C46;margin-top:4px">Day</div>
+    <div class="slotgrid" id="slotDays"></div>
+    <div style="font:700 12px/1 'Mukta',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7A5C46;margin-top:10px">Time</div>
+    <div class="slotgrid" id="slotTimes"></div>
+    <button class="btn btn-gold" id="slotConfirm" style="width:100%;margin-top:16px" disabled>Confirm slot on WhatsApp →</button>
+    <p style="font-size:11.5px;color:#7A5C46;margin-top:10px">Your slot request goes to our care team on WhatsApp; they confirm within the hour. Phone or video — your choice, alone or with your partner.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  /* ---------- page data ---------- */
+  var BASE = 'https://sagarchauhan7792-bot.github.io/khul-ke-pucho/';
+  var CARDS = {
+    urja:{w:'aarogya',type:'Vitality formulation · 60 caps',desc:'Flagship 60-day course: classical vajikarana herbs, lab-tested.',stars:'★★★★★',rev:'4.7 · 312',mrp:4500,badge:'Bestseller',img:'urja'},
+    shilajit:{w:'aarogya',type:'Classical rasayana · 20g',desc:'Pure Himalayan, purified per classical method, 40% fulvic acid.',stars:'★★★★★',rev:'4.8 · 507',mrp:2800,badge:'Classical',img:'shilajit'},
+    oil:{w:'aarogya',type:'External application · 30ml',desc:'Traditional abhyanga oil for local strength — part of the plan.',stars:'★★★★☆',rev:'4.5 · 190',mrp:1100,badge:'',img:'oil'},
+    kit:{w:'aarogya',type:'Combo · 60-day plan',desc:'Shukra + Shilajit + Paurush Oil + a private doctor consult.',stars:'★★★★★',rev:'4.8 · 96',mrp:7397,badge:'Save ₹1,309',img:'kit'},
+    pme:{w:'aarogya',type:'Structured course · self-paced',desc:'Doctor-designed: technique, weekly practice and tracking, privately.',stars:'★★★★★',rev:'4.6 · 141',mrp:2499,badge:'Course · Bestseller',img:'pme'},
+    ed:{w:'aarogya',type:'Structured course · self-paced',desc:'Understand the real causes and follow a guided, week-by-week plan.',stars:'★★★★★',rev:'4.6 · 118',mrp:2499,badge:'Course',img:'ed'},
+    yoga:{w:'aarogya',type:'Structured course · self-paced',desc:'Classical asana and breath practice for stamina, sleep and calm.',stars:'★★★★★',rev:'4.7 · 84',mrp:1499,badge:'Course',img:'yoga'},
+    consult:{w:'aarogya',type:'Phone or video · 100% private',desc:'A registered doctor examines causes and writes your plan in 24 hours.',stars:'★★★★★',rev:'4.9 · 1,020',mrp:499,badge:'Start here',img:'consult',btn:'Book consult'},
+    yugal:{w:'aanand',type:'Dual couples massager',desc:'A shared massager designed for two — flexible, body-safe, 10 modes.',stars:'★★★★★',rev:'4.7 · 214',mrp:6499,badge:'Couples',img:'yugal'},
+    tarang:{w:'aanand',type:'Personal wand massager',desc:'A soft-touch wand with a flexible head — whisper-quiet, powerful.',stars:'★★★★★',rev:'4.8 · 389',mrp:4299,badge:'Bestseller',img:'tarang'},
+    bindu:{w:'aanand',type:'Compact bullet massager',desc:'Palm-sized, travel-friendly and quiet — the easiest first step.',stars:'★★★★★',rev:'4.6 · 502',mrp:1999,badge:'Discreet',img:'bindu'},
+    bandhan:{w:'aanand',type:'Couples ring',desc:"A soft, stretchy couples' ring with a gentle vibration for two.",stars:'★★★★☆',rev:'4.5 · 176',mrp:1699,badge:'For partners',img:'bandhan'},
+    snigdha:{w:'aanand',type:'Water-based intimate gel · 100ml',desc:'Water-based, pH-balanced, no parabens or glycerin — condom-safe.',stars:'★★★★★',rev:'4.7 · 431',mrp:899,badge:'Body-safe',img:'snigdha'},
+    sparsh:{w:'aanand',type:'Sensual massage oil · 100ml',desc:'Warming almond &amp; classical herb blend for slow, shared massage.',stars:'★★★★★',rev:'4.6 · 208',mrp:1199,badge:'Ayurvedic-inspired',img:'sparsh'},
+    jyoti:{w:'aanand',type:'Massage candle · 120g',desc:'Soy wax that melts into a warm massage oil — set the mood, then use it.',stars:'★★★★★',rev:'4.8 · 143',mrp:1299,badge:'Warm to touch',img:'jyoti'},
+    milan:{w:'aanand',type:'Couples starter box',desc:'Bindu + Bandhan + Snigdha + Khuli Baat, in a keepsake box.',stars:'★★★★★',rev:'4.9 · 88',mrp:6696,badge:'Save 25%',img:'milan-kit'},
+    khulibaat:{w:'aanand',type:'Intimacy card game · 100 cards',desc:'100 questions to help couples talk openly — desire, comfort, curiosity.',stars:'★★★★★',rev:'4.8 · 260',mrp:999,badge:'Conversation',img:'khuli-baat'}
+  };
+
+  var SCIENCE =
+    '<section class="pad science" id="science">' +
+      '<div class="wrap">' +
+        '<div class="intro"><div class="eyebrow" style="color:var(--gulab)">Aanand · The science of arousal</div><h2>Her pleasure is physiology, not a mystery</h2><p>Modern sexual-wellness practice treats arousal as something couples can understand and work with — openly, together.</p></div>' +
+        '<div class="grid g3">' +
+          '<div class="scicard"><div class="num">15–20 min</div><h4>Arousal takes time</h4><p>Research consistently finds most women need 15–20 minutes of arousal before intercourse feels its best. Slowing down — massage, warmth, conversation — is not a detour; it is the route. Sparsh oil and the Jyoti candle are built for exactly this stage.</p></div>' +
+          '<div class="scicard"><div class="num">~70%</div><h4>The right stimulation matters</h4><p>Large surveys report a majority of women reach climax most reliably with external stimulation rather than intercourse alone. Body-safe devices like Tarang and Bindu exist to support this — which is why modern couples’ counsellors discuss them without embarrassment.</p></div>' +
+          '<div class="scicard"><div class="num">pH 4.5</div><h4>Comfort is a wellness issue</h4><p>Dryness and discomfort are common and nothing to hide. A water-based, pH-balanced gel like Snigdha supports comfort and is condom-safe. If discomfort persists, that is a doctor conversation — and ours cost ₹99.</p></div>' +
+        '</div>' +
+        '<div class="hero-ctas" style="justify-content:center;margin-top:22px">' +
+          '<a class="btn btn-cop" href="devices.html">Explore the tools</a>' +
+          '<button class="btn" style="background:var(--gulab);color:var(--kumkum-deep)" data-add="consult">Couples consult · ₹99</button>' +
+        '</div>' +
+        '<p class="sci-note">Educational information for adults, not medical advice or a promise of outcomes. Aanand products are personal-care items — not medicines or medical devices. For persistent concerns, speak to a registered practitioner.</p>' +
+      '</div>' +
+    '</section>';
+
+  var CONSULT_BAND =
+    '<section class="pad" id="consult" style="padding-bottom:30px"><div class="wrap"><div class="consult">' +
+      '<div><div class="eyebrow">For you — and for you both</div><h2 style="margin-top:6px">A private doctor consultation, ₹99</h2><p>Phone or video, alone or with your partner. A registered doctor examines the causes and writes your plan within 24 hours. Nothing you say leaves the call.</p></div>' +
+      '<div class="center"><button class="btn btn-dark" data-add="consult">Book my consult — ₹99</button><br><button class="btn btn-outline btn-sm" data-slot-open style="margin-top:10px">Pick a time slot →</button><p style="font-size:12.5px;margin-top:9px;color:#7A5C46">100% private · Registered practitioners · Plan in writing</p></div>' +
+    '</div></div></section>';
+
+  var STEPS =
+    '<section class="pad" style="padding-top:34px"><div class="wrap">' +
+      '<div class="intro"><div class="eyebrow">How wellness works</div><h2>From first question to full plan</h2></div>' +
+      '<div class="steps">' +
+        '<div class="step"><h4>Ask privately</h4><p>Book the ₹99 consult. No clinic, no waiting room, nobody watching.</p></div>' +
+        '<div class="step"><h4>Get a real diagnosis</h4><p>A registered doctor examines causes — not just the symptom.</p></div>' +
+        '<div class="step"><h4>Receive your plan</h4><p>Formulations, practice and courses matched to your case.</p></div>' +
+        '<div class="step"><h4>Improve with follow-up</h4><p>Scheduled follow-ups adjust the plan until it works.</p></div>' +
+      '</div></div></section>';
+
+  var HERBS =
+    '<section class="pad herbs"><div class="wrap">' +
+      '<div class="intro"><div class="eyebrow">The pharmacopoeia</div><h2>Named in the texts. Tested in the lab.</h2><p>Every herb we use has a classical citation and a modern lab report.</p></div>' +
+      '<div class="grid g4">' +
+        '<div class="hcard"><img class="hi" src="img/herb-shilajit.svg" alt="" loading="lazy"><div class="sanskrit">शिलाजतु</div><h4>Shilajit</h4><p>Himalayan mineral resin, standardised for fulvic acid.</p></div>' +
+        '<div class="hcard"><img class="hi" src="img/herb-ashwagandha.svg" alt="" loading="lazy"><div class="sanskrit">अश्वगन्धा</div><h4>Ashwagandha</h4><p>Classical rasayana for strength and calm.</p></div>' +
+        '<div class="hcard"><img class="hi" src="img/herb-musli.svg" alt="" loading="lazy"><div class="sanskrit">श्वेत मूसली</div><h4>Safed Musli</h4><p>Traditional vajikarana herb, named in the Bhavaprakasha.</p></div>' +
+        '<div class="hcard"><img class="hi" src="img/herb-gokshura.svg" alt="" loading="lazy"><div class="sanskrit">गोक्षुर</div><h4>Gokshura</h4><p>Classical support for vitality, cited across the samhitas.</p></div>' +
+      '</div></div></section>';
+
+  var WHY =
+    '<section class="pad" id="why"><div class="wrap">' +
+      '<div class="intro"><div class="eyebrow">Why us</div><h2>The difference is the honesty</h2></div>' +
+      '<div class="cmp"><table>' +
+        '<tr><th>What you get</th><th class="kkp">Khul Ke Pucho</th><th>City D2C brands</th><th>"Bus-stand" sellers</th></tr>' +
+        '<tr><td>Wellness &amp; pleasure, one house</td><td class="kkp"><span class="yes">✓</span> Aarogya + Aanand together</td><td>One or the other</td><td><span class="no">✗</span> Neither, safely</td></tr>' +
+        '<tr><td>Doctor before product</td><td class="kkp"><span class="yes">✓</span> ₹99 consult, plan in writing</td><td>Quiz-bots, then upsell</td><td><span class="no">✗</span> None</td></tr>' +
+        '<tr><td>Body-safe, lab-tested</td><td class="kkp"><span class="yes">✓</span> Medical-grade silicone + AYUSH labs</td><td>Sometimes</td><td><span class="no">✗</span> Unknown materials</td></tr>' +
+        '<tr><td>Privacy engineered</td><td class="kkp"><span class="yes">✓</span> Plain parcel, neutral invoice</td><td><span class="yes">✓</span> Usually</td><td><span class="no">✗</span> Loud packaging</td></tr>' +
+        '<tr><td>Couples welcome</td><td class="kkp"><span class="yes">✓</span> Products &amp; doctors for both</td><td>Men-only or women-only</td><td><span class="no">✗</span> —</td></tr>' +
+        '<tr><td>Promises</td><td class="kkp">The process, never a miracle</td><td>"Results in days"</td><td>"100% guarantee"</td></tr>' +
+      '</table></div></div></section>';
+
+  var DOCS =
+    '<section class="pad docs" id="doctors"><div class="wrap">' +
+      '<div class="intro"><div class="eyebrow">Your doctors</div><h2>Real names. Real registrations.</h2><p>Every consultation is with a registered practitioner. Ask them anything.</p></div>' +
+      '<div class="grid g4">' +
+        '<div class="doc"><img class="docimg" src="img/doc1.svg" alt="Registered Ayurvedic doctor" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>BAMS, MD (Ayurveda)</div><div class="reg">Reg. no. TODO</div></div></div>' +
+        '<div class="doc"><img class="docimg" src="img/doc2.svg" alt="Registered doctor, sexual health" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>BAMS · Sexual health</div><div class="reg">Reg. no. TODO</div></div></div>' +
+        '<div class="doc"><img class="docimg" src="img/doc3.svg" alt="Registered counsellor" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>BHMS · Counselling</div><div class="reg">Reg. no. TODO</div></div></div>' +
+        '<div class="doc"><img class="docimg" src="img/doc4.svg" alt="Couples counsellor" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>MD · Couples counselling</div><div class="reg">Reg. no. TODO</div></div></div>' +
+      '</div></div></section>';
+
+  var CARE_BAND =
+    '<section class="pad" style="padding:8px 0 0"><div class="wrap"><div class="band rev">' +
+      '<img src="img/band-aanand.svg" alt="Two forms in a gentle embrace">' +
+      '<div class="bandtext"><div class="eyebrow cop">Aanand · Made with care</div><h2>Pleasure, chosen with dignity</h2><p>Every device is body-safe, medical-grade silicone; every intimate-care product is dermatologically tested. Tasteful, discreet, and delivered in a plain parcel.</p><a class="btn btn-cop" href="intimate-care.html">Shop intimate care</a></div>' +
+    '</div></div></section>';
+
+  var CATS = {
+    aarogya: {
+      wing:'aarogya', em:'ओ',
+      title:'Aarogya — Ayurvedic Sexual Wellness for Men | Khul Ke Pucho',
+      meta:'AYUSH-licensed Ayurvedic formulations, registered doctors and structured courses for timing, erection health and vitality. Private, cause-first, COD across India.',
+      shl:'धर्मार्थकाममोक्षाणाम् आरोग्यं मूलमुत्तमम्', shlTr:'Health is the supreme foundation of the four aims — Charaka Samhita 1.15',
+      h1:'Heal openly. Live fully.',
+      lede:'The wellness wing: classical formulations, registered doctors and structured courses for timing, erection health and vitality — cause-first, and completely private.',
+      hiH1:'खुल के इलाज। पूरा जीवन।', hiLede:'स्वास्थ्य पंख: शास्त्रीय औषधियाँ, पंजीकृत डॉक्टर और संरचित कोर्स — कारण-आधारित, पूरी तरह निजी।',
+      teasers:[
+        {href:'timing.html',mark:'का',h:'Timing & PE',p:'Treatable, trainable, common — courses and the honest plan.'},
+        {href:'erection-health.html',mark:'ब',h:'Erection health',p:'Usually a circulation story: sleep, sugar, BP, stress.'},
+        {href:'vitality.html',mark:'ऊ',h:'Vitality & energy',p:'Stamina rebuilt the classical way — named in the texts.'}
+      ],
+      groups:[
+        {eyebrow:'Timing & early discharge',h:'Treatable. Trainable. Common.',keys:['pme','kit','consult'],href:'timing.html'},
+        {eyebrow:'Erection health',h:'Usually a circulation story',keys:['ed','urja','consult'],href:'erection-health.html'},
+        {eyebrow:'Vitality & energy',h:'Stamina rebuilt the classical way',keys:['shilajit','urja','oil'],href:'vitality.html'}
+      ],
+      extras:[CONSULT_BAND,STEPS,HERBS,WHY,DOCS],
+      related:[{label:'Explore Aanand · Pleasure →',href:'aanand.html'}]
+    },
+    aanand: {
+      wing:'aanand', em:'आ',
+      title:'Aanand — Tasteful, Body-Safe Intimacy for Couples | Khul Ke Pucho',
+      meta:'Body-safe devices in medical-grade silicone, natural intimate care and couples’ rituals. Tasteful, discreet, plain parcel, COD across India.',
+      shl:'कामः पुरुषार्थः', shlTr:'Kama is one of life’s aims — a science, not a secret',
+      h1:'Pleasure, without apology.',
+      lede:'The pleasure wing: bold, body-safe and beautifully discreet. Devices, natural intimate care and couples’ rituals — for partners who choose to explore openly.',
+      hiH1:'आनंद, बिना किसी झिझक।', hiLede:'आनन्द पंख: शरीर-सुरक्षित उत्पाद, प्राकृतिक देखभाल और जोड़ों की रस्में — हमेशा सादे पार्सल में।',
+      teasers:[
+        {href:'devices.html',mark:'यु',h:'Devices',p:'Medical-grade silicone, whisper-quiet, waterproof.'},
+        {href:'intimate-care.html',mark:'स्',h:'Intimate care',p:'Gels, oils and candles — where wellness meets pleasure.'},
+        {href:'couples.html',mark:'मि',h:'For couples',p:'Sets, rituals and conversation starters for two.'}
+      ],
+      groups:[
+        {eyebrow:'Pleasure devices',h:'Chosen tastefully. Made body-safe.',keys:['yugal','tarang','bindu','bandhan'],href:'devices.html'},
+        {eyebrow:'Natural intimate care',h:'Where wellness meets pleasure',keys:['snigdha','sparsh','jyoti'],href:'intimate-care.html'},
+        {eyebrow:'For couples',h:'Explore it together',keys:['milan','khulibaat','jyoti'],href:'couples.html'}
+      ],
+      extras:[CARE_BAND,SCIENCE],
+      related:[{label:'Explore Aarogya · Wellness →',href:'aarogya.html'}]
+    },
+    timing: {
+      wing:'aarogya', em:'का',
+      title:'Premature Ejaculation — Courses & Doctor-Guided Plans | Khul Ke Pucho',
+      meta:'PE is treatable and trainable. Doctor-designed PME course, complete care kit and ₹99 private consultations. Private, plain parcel, COD across India.',
+      shl:'अभ्यासेन तु कौन्तेय', shlTr:'By practice, O Arjuna — mastery comes with abhyasa (Gita 6.35)',
+      h1:'Treatable. Trainable. Common.',
+      lede:'PE responds to technique, practice and the right support — not shame. Most men improve in weeks with a structured program.',
+      hiH1:'इलाज संभव। अभ्यास से सुधार। बहुत आम।', hiLede:'शीघ्रपतन तकनीक, अभ्यास और सही सहारे से सुधरता है — शर्म से नहीं।',
+      edu:'<p><b>Why it happens:</b> timing is a reflex that stress, inexperience and habit train the wrong way — and technique retrains the right way. It is one of the most common concerns Indian men bring to our doctors, and one of the most fixable.</p><p><b>The honest route:</b> a structured practice program, and a doctor who checks whether stress, thyroid or sensitivity issues are in the picture. No magic pills, no "3 din me result".</p>',
+      keys:['pme','kit','consult','yoga'],
+      extras:[CONSULT_BAND],
+      related:[{label:'Erection health →',href:'erection-health.html'},{label:'Vitality & energy →',href:'vitality.html'},{label:'Aarogya overview →',href:'aarogya.html'}]
+    },
+    'erection-health': {
+      wing:'aarogya', em:'ब',
+      title:'Erection Health — Cause-First Ayurvedic Plans | Khul Ke Pucho',
+      meta:'Sleep, sugar, BP and stress drive most erection concerns. ED course, classical formulations and ₹99 doctor consultations — honest and private.',
+      shl:'शरीरमाद्यं खलु धर्मसाधनम्', shlTr:'The body is the first instrument of dharma — Kumarasambhava 5.33',
+      h1:'Usually a circulation story',
+      lede:'Sleep, sugar, BP and stress drive most cases. We treat them, honestly — with a doctor reading your whole picture first.',
+      hiH1:'अक्सर यह रक्त-संचार की कहानी है', hiLede:'नींद, शुगर, BP और तनाव अधिकतर मामलों की जड़ हैं। हम इन्हीं का इलाज करते हैं, ईमानदारी से।',
+      edu:'<p><b>Why it happens:</b> an erection is circulation plus calm. Anything that narrows vessels or floods the body with stress — poor sleep, high sugar, BP, smoking, anxiety — shows up here first. That is why it deserves a real diagnosis, not a guess.</p><p><b>The honest route:</b> a doctor looks at causes, then matches a plan: the cause-first ED course, classical rasayana support, and follow-ups that adjust until it works. If you have BP, sugar or heart history — start with the consult, always.</p>',
+      keys:['ed','urja','consult','shilajit'],
+      extras:[CONSULT_BAND],
+      related:[{label:'Timing & PE →',href:'timing.html'},{label:'Vitality & energy →',href:'vitality.html'},{label:'Aarogya overview →',href:'aarogya.html'}]
+    },
+    vitality: {
+      wing:'aarogya', em:'ऊ',
+      title:'Vitality & Stamina — Classical Ayurvedic Formulations | Khul Ke Pucho',
+      meta:'Shukra, Shilajit and Paurush Oil — vajikarana formulations named in the classical texts and tested in the lab. 60-day courses, COD across India.',
+      shl:'वाजीकरणतन्त्रं नाम', shlTr:'The science of vajikarana — one of Ayurveda’s eight classical branches',
+      h1:'Stamina rebuilt the classical way',
+      lede:'Named in the texts, tested in the lab. Vajikarana is a formal branch of classical Ayurveda — not bus-stand medicine.',
+      hiH1:'शक्ति, शास्त्रीय तरीक़े से', hiLede:'ग्रंथों में वर्णित, लैब में परखा हुआ। वाजीकरण आयुर्वेद की एक शास्त्रीय शाखा है।',
+      edu:'<p><b>What vajikarana is:</b> one of the eight classical branches of Ayurveda, dedicated to vitality and reproductive health. Every formulation we make names its herbs, cites its classical source, and carries a batch lab report.</p><p><b>The honest route:</b> rasayana works over weeks, not days — our courses run 60 days for a reason. Pair them with sleep and practice, and let a doctor confirm what fits your constitution.</p>',
+      keys:['shilajit','urja','oil','yoga'],
+      extras:[HERBS,CONSULT_BAND],
+      related:[{label:'Timing & PE →',href:'timing.html'},{label:'Erection health →',href:'erection-health.html'},{label:'Aarogya overview →',href:'aarogya.html'}]
+    },
+    devices: {
+      wing:'aanand', em:'यु',
+      title:'Body-Safe Pleasure Devices for Couples | Khul Ke Pucho Aanand',
+      meta:'Yugal, Tarang, Bindu, Bandhan — medical-grade silicone, whisper-quiet, USB-rechargeable, waterproof. Plain parcel, COD across India.',
+      shl:'रतिर्देहसुखं', shlTr:'Pleasure honoured with dignity — chosen tastefully, made body-safe',
+      h1:'Chosen tastefully. Made body-safe.',
+      lede:'Medical-grade silicone, whisper-quiet, USB-rechargeable, waterproof — and delivered in a plain parcel, always.',
+      hiH1:'रुचि से चुने। शरीर-सुरक्षित बने।', hiLede:'मेडिकल-ग्रेड सिलिकॉन, बेहद शांत, USB चार्जिंग, वॉटरप्रूफ़ — और हमेशा सादे पार्सल में।',
+      edu:'<p><b>Our standard:</b> every device is body-safe, medical-grade silicone — phthalate- and BPA-free, splash-proof, USB-rechargeable and genuinely quiet. Materials and cleaning instructions are printed on every product page.</p><p><b>Privacy engineered:</b> plain brown parcel, no product name outside, neutral invoice. The courier sees a parcel; only you know what is inside.</p>',
+      keys:['yugal','tarang','bindu','bandhan'],
+      extras:[SCIENCE],
+      related:[{label:'Intimate care →',href:'intimate-care.html'},{label:'For couples →',href:'couples.html'},{label:'Aanand overview →',href:'aanand.html'}]
+    },
+    'intimate-care': {
+      wing:'aanand', em:'स्',
+      title:'Natural Intimate Care — Gels, Oils & Candles | Khul Ke Pucho Aanand',
+      meta:'Snigdha pH-balanced gel, Sparsh massage oil, Jyoti massage candle — Ayurvedic-inspired, dermatologically tested, condom-safe. Plain parcel, COD.',
+      shl:'स्नेहो हि स्नेहनं श्रेष्ठम्', shlTr:'Gentleness is the finest anointment — the bridge between wellness and pleasure',
+      h1:'Where wellness meets pleasure',
+      lede:'Ayurvedic-inspired, body-safe, dermatologically tested — the bridge between both wings of the house.',
+      hiH1:'जहाँ स्वास्थ्य आनंद से मिलता है', hiLede:'आयुर्वेद-प्रेरित, शरीर-सुरक्षित, त्वचा-परीक्षित — दोनों पंखों के बीच का सेतु।',
+      edu:'<p><b>Comfort is a wellness issue:</b> dryness and discomfort are common and nothing to hide. A water-based, pH-balanced gel supports comfort and is condom-safe; warm oil and candle rituals give arousal the time it actually needs.</p><p><b>The standard:</b> dermatologically tested, no parabens or glycerin in the gel, and every ingredient named. Personal-care products, honestly labelled.</p>',
+      keys:['snigdha','sparsh','jyoti'],
+      extras:[SCIENCE],
+      related:[{label:'Devices →',href:'devices.html'},{label:'For couples →',href:'couples.html'},{label:'Aanand overview →',href:'aanand.html'}]
+    },
+    couples: {
+      wing:'aanand', em:'मि',
+      title:'For Couples — Sets, Rituals & Conversation | Khul Ke Pucho Aanand',
+      meta:'Milan couples kit, Khuli Baat card game and gifting-friendly rituals for partners at any stage. Tasteful, discreet, COD across India.',
+      shl:'सह नाववतु', shlTr:'May we be protected together — the spirit of shared exploration',
+      h1:'Explore it together',
+      lede:'Gifting-friendly sets and conversation starters — for partners, at any stage. Anniversary-safe, tastefully packed.',
+      hiH1:'साथ मिलकर जानिए', hiLede:'उपहार-योग्य सेट और बातचीत की शुरुआत — हर पड़ाव के जोड़ों के लिए।',
+      edu:'<p><b>Start with talking:</b> most couples have never actually discussed desire out loud. The Khuli Baat game exists for exactly that — 100 questions that make the conversation easy, funny and honest.</p><p><b>Gifting, done tastefully:</b> the Milan Kit arrives in a keepsake box inside a plain parcel — an anniversary gift that starts a conversation, not an embarrassment.</p>',
+      keys:['milan','khulibaat','jyoti','yugal'],
+      extras:[CARE_BAND],
+      related:[{label:'Devices →',href:'devices.html'},{label:'Intimate care →',href:'intimate-care.html'},{label:'Aanand overview →',href:'aanand.html'}]
+    }
+  };
+
+  /* ---------- resolve page ---------- */
+  var cat = 'aarogya';
+  if (!CATS[cat]) cat = 'aarogya';
+  var C = CATS[cat];
+  var FILE = cat + '.html';
+  var aan = C.wing === 'aanand';
+
+  /* SEO */
+  document.title = C.title;
+  (function(){
+    function meta(attr,name,content){var m=document.createElement('meta');m.setAttribute(attr,name);m.content=content;document.head.appendChild(m);}
+    var link=document.createElement('link');link.rel='canonical';link.href=BASE+FILE;document.head.appendChild(link);
+    meta('name','description',C.meta);
+    meta('property','og:type','website');meta('property','og:site_name','Khul Ke Pucho');
+    meta('property','og:title',C.title);meta('property','og:description',C.meta);
+    meta('property','og:url',BASE+FILE);meta('property','og:image',BASE+'img/band-'+C.wing+'.svg');
+  })();
+
+  /* per-page Hindi additions (picked up by kkp.js applyLang) */
+  window.KKP_I18N_PAGE = [['#catH1', C.hiH1], ['#catLede', C.hiLede]];
+
+  /* ---------- render ---------- */
+  function inr(n){return '₹'+n.toLocaleString('en-IN');}
+  function cardHTML(k){
+    var c=CARDS[k],cop=c.w==='aanand';
+    var price=({urja:3938,shilajit:2400,oil:960,kit:6088,pme:1499,ed:1499,yoga:999,consult:99,yugal:4999,tarang:3499,bindu:1499,bandhan:1299,snigdha:699,sparsh:899,jyoti:999,milan:4999,khulibaat:799})[k];
+    var name=({urja:'Shukra',shilajit:'Shilajit',oil:'Paurush Oil',kit:'Complete Care Kit',pme:'PME Course',ed:'ED Course',yoga:'Yoga for Vitality',consult:'Private Doctor Consultation',yugal:'Yugal',tarang:'Tarang',bindu:'Bindu',bandhan:'Bandhan',snigdha:'Snigdha',sparsh:'Sparsh',jyoti:'Jyoti',milan:'Milan Kit',khulibaat:'Khuli Baat'})[k];
+    var off=Math.round((1-price/c.mrp)*100);
+    return '<div class="pcard"><div class="pmedia">'+(c.badge?'<span class="pbadge'+(cop?' cop':'')+'">'+c.badge+'</span>':'')+'<img src="img/'+c.img+'.svg" alt="'+name+'" loading="lazy"></div><div class="pbody"><div class="ptype">'+c.type+'</div><div class="pname">'+name+'</div><p class="pdesc">'+c.desc+'</p><div class="stars">'+c.stars+'<small>'+c.rev+'</small></div><div class="prow"><span class="price">'+inr(price)+'</span><span class="mrp">'+inr(c.mrp)+'</span><span class="off">'+(k==='consult'?'launch':off+'% off')+'</span></div><button class="btn '+(cop?'btn-cop':'btn-gold')+' addbtn" data-add="'+k+'">'+(c.btn||'Add to cart')+'</button></div></div>';
+  }
+
+  var html =
+    '<section class="cathero '+C.wing+'">' +
+      '<div class="wrap">' +
+        '<div class="crumbs"><a href="index.html">Home</a> › <a href="'+C.wing+'.html">'+(aan?'आनन्द · Aanand':'आरोग्य · Aarogya')+'</a>'+(cat===C.wing?'':' › '+C.h1)+'</div>' +
+        '<div class="shl sanskrit">'+C.shl+'<small>'+C.shlTr+'</small></div>' +
+        '<h1 id="catH1">'+C.h1+'</h1>' +
+        '<p class="lede" id="catLede">'+C.lede+'</p>' +
+        '<div class="hero-ctas"><button class="btn '+(aan?'btn-cop':'btn-gold')+'" data-quiz-open>Find my plan — 2-min check</button><a class="btn btn-outline hero-ob" href="'+(aan?'couples.html':'consultation.html')+'">'+(aan?'For couples →':'Consult a doctor · ₹99')+'</a></div>' +
+      '</div><span class="em sanskrit">'+C.em+'</span>' +
+    '</section>';
+
+  if (C.teasers) {
+    html += '<section class="wrap" style="margin-top:26px"><div class="tez">' +
+      C.teasers.map(function(t){return '<a class="tezc'+(aan?' cop':'')+'" href="'+t.href+'"><span class="sanskrit">'+t.mark+'</span><h3>'+t.h+'</h3><p>'+t.p+'</p><span class="go">Explore →</span></a>';}).join('') +
+    '</div></section>';
+  }
+
+  if (C.edu) {
+    html += '<section class="pad" style="padding-bottom:10px"><div class="wrap"><div class="edu'+(aan?' cop':'')+'">'+C.edu+'</div></div></section>';
+  }
+
+  if (C.groups) {
+    C.groups.forEach(function(g){
+      html += '<section class="catrow wrap"><div class="catrow-h"><div><div class="eyebrow'+(aan?' cop':'')+'">'+(aan?'Aanand':'Aarogya')+' · '+g.eyebrow+'</div><h2 style="margin:.15em 0">'+g.h+'</h2></div><a class="all" href="'+g.href+'">See the full page →</a></div><div class="grid '+(g.keys.length>3?'g4':'g3')+'">'+g.keys.map(cardHTML).join('')+'</div></section>';
+    });
+  } else {
+    html += '<section class="catrow wrap"><div class="grid '+(C.keys.length>3?'g4':'g3')+'">'+C.keys.map(cardHTML).join('')+'</div></section>';
+  }
+
+  (C.extras||[]).forEach(function(x){ html += x; });
+
+  if (C.related) {
+    html += '<section class="pad" style="padding-top:26px"><div class="wrap"><div class="intro"><h2 style="font-size:22px">Keep exploring</h2></div><div class="relrow">'+C.related.map(function(r){return '<a href="'+r.href+'">'+r.label+'</a>';}).join('')+'</div></div></section>';
+  }
+
+  document.getElementById('catMain').innerHTML = html;
+})();
+</script>
+<script src="assets/kkp.js"></script>
+</body>
+</html>

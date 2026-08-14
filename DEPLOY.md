@@ -20,6 +20,16 @@ Search the `funnel/` folder for `TODO` and replace:
 | Stats numbers | `index.html` stats band | Use real counts only |
 | Policy dates + review | all policy pages | **Have a lawyer review** the templates before publishing |
 
+**Site structure (Aug 2026):** multi-page. Shared styles/JS live in `assets/kkp.css` + `assets/kkp.js`. Wing/category pages (`aarogya`, `aanand`, `timing`, `erection-health`, `vitality`, `devices`, `intimate-care`, `couples`) are generated from `category.html`. After editing `category.html`, regenerate them:
+```powershell
+# from repo root
+$root='.'; $src=[IO.File]::ReadAllText("$root\category.html")
+$needle="var cat = /*KKP_CAT*/ new URLSearchParams(location.search).get('c') || 'aarogya';"
+$pages=@('aarogya','aanand','timing','erection-health','vitality','devices','intimate-care','couples')
+$enc=New-Object System.Text.UTF8Encoding($false)
+foreach($p in $pages){[IO.File]::WriteAllText("$root\$p.html",$src.Replace($needle,"var cat = '$p';"),$enc)}
+```
+
 After editing `product.html`, regenerate the 17 product pages:
 ```powershell
 # from repo root

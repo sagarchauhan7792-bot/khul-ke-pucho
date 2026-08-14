@@ -32,378 +32,7 @@
 window.KKP_GA4='TODO_GA4_ID';window.KKP_PIXEL='TODO_PIXEL_ID';
 (function(){var g=window.KKP_GA4;if(g&&g.indexOf('TODO')<0){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+g;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',g);}var p=window.KKP_PIXEL;if(p&&p.indexOf('TODO')<0){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',p);fbq('track','PageView');}})();
 </script>
-<style>
-:root{
-  --kumkum:#5E1F30; --kumkum-deep:#4A1826; --kanchan:#C9962E; --gold-l:#DDB967;
-  --ivory:#F7EFDF; --surface:#FFFDF8; --vana:#2F5D46; --tamra:#B4694E; --tamra-d:#8C4E38; --gulab:#E8B4B8; --gulab-d:#D99AA0;
-  --ink:#241419; --line:#DCCBB0; --chip:#EFE3CC; --err:#A63A2A;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.6 'Mukta','Segoe UI',system-ui,sans-serif;overflow-x:clip}
-img{max-width:100%;display:block}
-h1,h2,h3,h4{font-family:'EB Garamond',Georgia,serif;color:var(--kumkum);line-height:1.12;margin:0 0 .35em;text-wrap:balance}
-h1{font-size:clamp(29px,4.6vw,46px);font-weight:600}
-h2{font-size:clamp(24px,3.8vw,32px);font-weight:600}
-h3{font-size:20px;font-weight:600}
-p{margin:.5em 0}
-a{color:var(--kumkum)}
-.sanskrit{font-family:'Tiro Devanagari Sanskrit',serif}
-.eyebrow{font:700 12px/1 'Mukta',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--kanchan)}
-.eyebrow.cop{color:var(--tamra)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
-.pad{padding:54px 0}
-.center{text-align:center}
-.intro{max-width:62ch;margin:0 auto 30px;text-align:center}
-.btn{display:inline-block;padding:13px 28px;border-radius:9px;border:0;cursor:pointer;font:700 15px/1.2 'Mukta',sans-serif;letter-spacing:.03em;text-decoration:none;text-align:center;transition:transform .12s ease,background .12s ease}
-.btn:active{transform:scale(.98)}
-.btn-gold{background:var(--kanchan);color:var(--ink)}
-.btn-gold:hover{background:var(--gold-l)}
-.btn-cop{background:var(--tamra);color:#fff}
-.btn-cop:hover{background:var(--tamra-d)}
-.btn-outline{background:transparent;color:var(--kumkum);border:1.5px solid var(--kumkum)}
-.btn-outline:hover{background:var(--kumkum);color:var(--ivory)}
-.btn-dark{background:var(--kumkum);color:var(--ivory)}
-.btn-dark:hover{background:var(--kumkum-deep)}
-.btn-sm{padding:10px 18px;font-size:13.5px}
-:focus-visible{outline:2px solid var(--kanchan);outline-offset:2px}
-
-.announce{background:var(--kumkum);color:var(--ivory);text-align:center;padding:7px 14px;font-size:13px}
-.announce b{color:var(--gold-l)}
-
-/* header */
-.hd{background:var(--ivory);position:sticky;top:0;z-index:80;border-bottom:1px solid var(--line)}
-.hd-main{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
-.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1}
-.logo .sanskrit{font-size:24px;color:var(--kumkum)}
-.logo small{font:600 8px/1 'EB Garamond',serif;letter-spacing:.3em;text-transform:uppercase;color:var(--kanchan);margin-top:4px}
-.hd-acts{display:flex;align-items:center;gap:12px}
-.hd-consult{display:inline-block}
-@media(max-width:640px){.hd-consult{display:none}}
-.cartbtn{position:relative;background:none;border:0;cursor:pointer;color:var(--kumkum);padding:4px;display:flex}
-.cartn{position:absolute;top:-6px;right:-4px;background:var(--kanchan);color:var(--ink);border-radius:999px;font:700 10.5px/1 'Mukta',sans-serif;padding:3px 6px;min-width:19px;text-align:center}
-.navtgl{display:none;background:none;border:0;color:var(--kumkum);cursor:pointer;padding:4px}
-
-/* category nav */
-.catnav{border-top:1px solid var(--line);background:var(--surface)}
-.catnav-in{display:flex;gap:2px;align-items:stretch;flex-wrap:wrap}
-.menu{position:relative}
-.menu>button,.menu>a{display:flex;align-items:center;gap:6px;background:none;border:0;cursor:pointer;padding:12px 15px;font:700 13.5px/1 'Mukta',sans-serif;color:var(--ink);text-decoration:none;white-space:nowrap}
-.menu.aan>button,.menu.aan>a{color:var(--tamra-d)}
-.menu>button:hover,.menu>a:hover,.menu.open>button{color:var(--kumkum);box-shadow:inset 0 -3px 0 var(--kanchan)}
-.menu.aan>button:hover,.menu.aan.open>button,.menu.aan>a:hover{color:var(--tamra-d);box-shadow:inset 0 -3px 0 var(--tamra)}
-.menu .car{transition:transform .15s ease;font-size:10px;color:var(--kanchan)}
-.menu.aan .car{color:var(--tamra)}
-.menu.open .car{transform:rotate(180deg)}
-.dd{display:none;position:absolute;left:0;top:100%;min-width:290px;background:var(--surface);border:1px solid var(--line);border-radius:0 0 14px 14px;box-shadow:0 14px 34px rgba(36,20,25,.16);padding:10px;z-index:90}
-.menu.open .dd{display:block}
-@media(hover:hover) and (min-width:981px){.menu:hover .dd{display:block}}
-.dd a{display:flex;gap:11px;align-items:flex-start;padding:10px 12px;border-radius:10px;text-decoration:none}
-.dd a:hover{background:var(--chip)}
-.dd .dico{width:38px;height:38px;border-radius:9px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-family:'Tiro Devanagari Sanskrit',serif;font-size:17px;color:var(--kanchan);flex:none}
-.menu.aan .dd .dico{color:var(--tamra)}
-.dd b{display:block;font:700 14px/1.3 'Mukta',sans-serif;color:var(--kumkum)}
-.dd span{font-size:12.5px;color:#7A5C46}
-.dd .dd-cta{margin:8px 4px 2px;display:block;text-align:center;background:var(--kumkum);color:var(--ivory);border-radius:9px;padding:10px;font:700 13.5px/1 'Mukta',sans-serif}
-@media(max-width:980px){
-  .navtgl{display:block}
-  .catnav{display:none;position:absolute;left:0;right:0;top:100%;border-bottom:1px solid var(--line);max-height:calc(100vh - 120px);overflow-y:auto}
-  .catnav.open{display:block}
-  .catnav-in{flex-direction:column;gap:0;padding:6px 0 12px}
-  .menu>button,.menu>a{width:100%;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--line);font-size:15px}
-  .dd{position:static;min-width:0;border:0;border-radius:0;box-shadow:none;background:var(--ivory);padding:4px 10px}
-}
-
-/* hero */
-.hero{background:linear-gradient(120deg,var(--kumkum) 0%,var(--kumkum-deep) 60%,#3A2233 100%);color:var(--ivory);position:relative;overflow:hidden}
-.hero::after{content:'॥';position:absolute;right:-20px;bottom:-80px;font:400 320px/1 'Tiro Devanagari Sanskrit',serif;color:rgba(221,185,103,.06);pointer-events:none}
-.hero-in{padding:52px 0 46px;position:relative;z-index:1;text-align:center;max-width:820px;margin:0 auto}
-.hero .shl{font-family:'Tiro Devanagari Sanskrit',serif;font-size:17px;color:var(--gold-l)}
-.hero .shl small{font:italic 500 12.5px/1.4 'EB Garamond',serif;color:#D8BFA8;display:block;margin-top:3px}
-.hero h1{color:var(--ivory);margin:18px 0 10px}
-.hero h1 .amp{color:var(--gulab)}
-.hero .lede{font-size:17.5px;max-width:56ch;margin:0 auto 22px;color:#EBDBC8}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.hero-proof{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-top:22px;font-size:13px;color:#D8BFA8}
-.hero-proof b{display:block;font:600 19px/1.2 'EB Garamond',serif;color:var(--gold-l)}
-
-/* two worlds */
-.worlds{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:-42px;position:relative;z-index:5}
-@media(max-width:760px){.worlds{grid-template-columns:1fr;margin-top:-30px}}
-.world{border-radius:20px;padding:30px 30px 26px;position:relative;overflow:hidden;box-shadow:0 16px 40px rgba(36,20,25,.14);text-decoration:none;display:block;transition:transform .15s ease}
-.world:hover{transform:translateY(-4px)}
-.world.aarogya{background:linear-gradient(160deg,#356B4F,#2F5D46);color:#EAF3EC}
-.world.aanand{background:linear-gradient(160deg,#C07A5C,#8C4E38);color:#FBEDE6}
-.world .tag{font:700 11px/1 'Mukta',sans-serif;letter-spacing:.24em;text-transform:uppercase;opacity:.85}
-.world .sk{font-family:'Tiro Devanagari Sanskrit',serif;font-size:30px;margin:10px 0 2px;color:#fff}
-.world h2{color:#fff;margin:2px 0 8px;font-size:26px}
-.world p{font-size:14.5px;opacity:.95;max-width:34ch}
-.world .go{display:inline-block;margin-top:14px;font:700 13.5px/1 'Mukta',sans-serif;color:#fff;border:1.5px solid rgba(255,255,255,.6);border-radius:8px;padding:9px 16px}
-.world .em{position:absolute;right:-10px;bottom:-24px;font-size:150px;line-height:1;opacity:.14;font-family:'Tiro Devanagari Sanskrit',serif;color:#fff}
-
-/* trust */
-.trust{background:var(--surface);border-block:1px solid var(--line)}
-.trow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;padding:14px 0}
-.titem{display:flex;align-items:center;gap:9px;justify-content:center;font:500 13px/1.3 'Mukta',sans-serif;text-align:center}
-.titem svg{color:var(--vana);flex:none}
-
-/* category rows */
-.catrow{padding:44px 0 8px}
-.catrow-h{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:18px}
-.catrow-h .sub{font-size:14px;color:#5C4030;max-width:56ch}
-.catrow-h .all{font:700 13.5px/1 'Mukta',sans-serif;white-space:nowrap}
-.grid{display:grid;gap:18px}
-.g3{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-.g4{grid-template-columns:repeat(auto-fill,minmax(215px,1fr))}
-.pcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .15s ease;cursor:pointer}
-.pcard:hover{box-shadow:0 10px 26px rgba(36,20,25,.09)}
-.pcard:hover .pname{text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--kanchan)}
-.pmedia{aspect-ratio:1.15;background:var(--chip);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.pmedia img{width:100%;height:100%;object-fit:cover}
-.pbadge{position:absolute;top:11px;left:11px;background:var(--kumkum);color:var(--gold-l);border-radius:999px;padding:4px 11px;font:700 10px/1.4 'Mukta',sans-serif;letter-spacing:.07em;text-transform:uppercase}
-.pbadge.cop{background:var(--tamra);color:#fff}
-.pbody{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
-.ptype{font-size:11.5px;color:#7A5C46;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
-.pname{font:600 18px/1.25 'EB Garamond',serif;color:var(--kumkum);margin:0 0 3px}
-.pdesc{font-size:13.4px;color:#5C4030;margin:0 0 8px;flex:1}
-.stars{color:var(--kanchan);font-size:12.5px;letter-spacing:2px}
-.stars small{color:#7A5C46;letter-spacing:0;margin-left:5px}
-.prow{display:flex;align-items:baseline;gap:8px;margin:7px 0 11px}
-.price{font:700 18px/1 'Mukta',sans-serif;font-variant-numeric:tabular-nums}
-.mrp{text-decoration:line-through;color:#9A7B60;font-size:13.5px}
-.off{color:var(--vana);font:700 12px/1 'Mukta',sans-serif}
-.addbtn{width:100%}
-.addbtn.added{background:var(--vana);color:#fff}
-
-/* aanand section tint */
-.aanwrap{background:linear-gradient(180deg,#FBF1EC,#F7EFDF);border-block:1px solid var(--line)}
-
-/* consult band */
-.consult{background:var(--gulab);border-radius:18px;padding:34px 32px;display:grid;grid-template-columns:1.4fr 1fr;gap:26px;align-items:center}
-@media(max-width:780px){.consult{grid-template-columns:1fr}}
-.consult .eyebrow{color:var(--kumkum)}
-
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;counter-reset:st}
-.step{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 58px;position:relative}
-.step::before{counter-increment:st;content:counter(st,decimal-leading-zero);position:absolute;left:16px;top:16px;font:600 21px/1 'EB Garamond',serif;color:var(--kanchan)}
-.step h4{margin:0 0 3px}
-.step p{font-size:13.6px;margin:0}
-
-/* shloka divider */
-.shldiv{background:var(--kumkum);text-align:center;padding:38px 20px}
-.shldiv .shl{font-family:'Tiro Devanagari Sanskrit',serif;font-size:clamp(18px,2.5vw,23px);color:var(--gold-l)}
-.shldiv .tr{font:italic 500 13.5px/1.6 'EB Garamond',serif;color:#D8BFA8;margin-top:7px}
-.shldiv .src{font:700 10px/1 'Mukta',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--kanchan);margin-top:11px}
-
-/* herbs */
-.herbs{background:var(--vana);color:#fff}
-.herbs h2{color:#fff}.herbs .intro p{color:#DCE9DF}.herbs .eyebrow{color:var(--gold-l)}
-.hcard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:13px;padding:16px 18px}
-.hcard .sanskrit{font-size:18px;color:var(--gold-l)}
-.hcard h4{color:#fff;margin:4px 0 5px}.hcard p{font-size:13px;color:#DCE9DF;margin:0}
-
-/* compare */
-.cmp{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.cmp table{border-collapse:collapse;width:100%;min-width:620px;font-size:14px}
-.cmp th{background:var(--chip);text-align:left;padding:12px 15px;font:700 11.5px/1.3 'Mukta',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7A5C46;border-bottom:2px solid var(--line)}
-.cmp th.kkp{background:var(--kumkum);color:var(--gold-l)}
-.cmp td{padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}
-.cmp tr:last-child td{border-bottom:none}
-.cmp td.kkp{background:#FBF4E4;font-weight:500}
-.yes{color:var(--vana);font-weight:700}.no{color:var(--err);font-weight:700}
-
-/* doctors/quotes/stats */
-.docs{background:var(--surface);border-block:1px solid var(--line)}
-.doc{background:var(--ivory);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-align:center}
-.doc .ph{aspect-ratio:1/1.02;background:var(--chip);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:var(--kumkum)}
-.doc .ph .sanskrit{font-size:28px;color:var(--kanchan)}.doc .ph small{font-size:10.5px;color:#7A5C46}
-.docb{padding:13px 12px 16px}.docb h4{margin:0 0 2px}.docb div{font-size:12.5px}.docb .reg{font-size:11px;color:#7A5C46}
-.quote{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
-.quote blockquote{margin:0 0 10px;font:italic 500 15px/1.55 'EB Garamond',serif}
-.quote cite{font:700 12.5px/1.3 'Mukta',sans-serif;font-style:normal;color:#7A5C46}
-.stats{background:var(--surface);border-block:1px solid var(--line)}
-.stats .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;padding:28px 0;text-align:center}
-.stat b{display:block;font:600 30px/1.1 'EB Garamond',serif;color:var(--kumkum);font-variant-numeric:tabular-nums}
-.stat span{font-size:13px;color:#7A5C46}
-
-/* faq/final/footer */
-.faq{max-width:800px;margin:0 auto}
-.faq details{background:var(--surface);border:1px solid var(--line);border-radius:11px;margin:9px 0}
-.faq summary{cursor:pointer;padding:14px 44px 14px 19px;font:700 15px/1.4 'Mukta',sans-serif;color:var(--kumkum);list-style:none;position:relative}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:'+';position:absolute;right:17px;top:10px;font:400 22px/1 'EB Garamond',serif;color:var(--kanchan)}
-.faq details[open] summary::after{content:'\2013'}
-.faq .a{padding:0 19px 15px;font-size:14.5px}
-.final{background:linear-gradient(120deg,var(--kumkum),var(--kumkum-deep));color:var(--ivory);text-align:center}
-.final h2{color:var(--ivory)}.final p{color:#EBDBC8;max-width:52ch;margin:.5em auto 22px}
-footer{background:var(--ink);color:#D8BFA8}
-.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:28px;padding:40px 0 24px}
-@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
-footer h4{color:var(--gold-l);font-size:14.5px;letter-spacing:.05em}
-footer a{color:var(--ivory);text-decoration:none;font-size:14px}footer a:hover{text-decoration:underline}
-footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
-.seal{border-top:1px solid rgba(221,185,103,.25);padding:16px 0 92px;text-align:center;font-size:12px}
-.seal .sanskrit{color:var(--gold-l);font-size:15px}
-
-/* interactive hero */
-.hero{transition:background .6s ease}
-.hero[data-mode="aarogya"]{background:linear-gradient(120deg,#356B4F 0%,#2F5D46 55%,#20402F 100%)}
-.hero[data-mode="both"]{background:linear-gradient(120deg,#5E1F30 0%,#4A1826 60%,#3A2233 100%)}
-.hero[data-mode="aanand"]{background:linear-gradient(120deg,#A85636 0%,#5E1F30 55%,#2A1620 100%)}
-.hero-bgfx{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-.hero-bgfx i{position:absolute;border-radius:50%;filter:blur(4px)}
-.hero-bgfx .g1{width:520px;height:520px;top:-170px;right:-120px;background:radial-gradient(circle,rgba(221,185,103,.30),transparent 70%);animation:floatA 15s ease-in-out infinite}
-.hero-bgfx .g2{width:460px;height:460px;bottom:-180px;left:-120px;background:radial-gradient(circle,rgba(232,180,184,.24),transparent 70%);animation:floatB 19s ease-in-out infinite}
-.hero-bgfx .m{font-family:'Tiro Devanagari Sanskrit',serif;color:rgba(247,239,223,.10);font-size:120px;filter:none}
-.hero-bgfx .m1{top:40px;left:6%;animation:floatB 20s ease-in-out infinite}
-.hero-bgfx .m2{bottom:30px;right:8%;font-size:90px;animation:floatA 17s ease-in-out infinite}
-@keyframes floatA{0%,100%{transform:translate(0,0)}50%{transform:translate(-38px,38px)}}
-@keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(38px,-28px)}}
-.hero-in{position:relative;z-index:2}
-.hero-toggle{display:inline-flex;gap:4px;background:rgba(255,255,255,.08);border:1px solid rgba(221,185,103,.42);border-radius:999px;padding:4px;margin-bottom:22px}
-.hero-toggle button{background:none;border:0;cursor:pointer;color:#EBDBC8;font:700 12.5px/1 'Mukta',sans-serif;padding:9px 15px;border-radius:999px;transition:all .2s ease;white-space:nowrap}
-.hero-toggle button:hover{color:#fff}
-.hero-toggle button.active{background:var(--gold-l);color:var(--ink)}
-.hero[data-mode="aanand"] .hero-toggle button.active{background:var(--gulab);color:var(--kumkum-deep)}
-.hero[data-mode="aarogya"] .hero-toggle button.active{background:#9ECBAA;color:#20402F}
-.hero h1,.hero .lede,.hero .shl,.hero-ctas{transition:opacity .3s ease}
-.hero.swapping h1,.hero.swapping .lede,.hero.swapping .shl,.hero.swapping .hero-ctas{opacity:0}
-.hero-ob{border-color:var(--gold-l);color:var(--gold-l)}
-.hero-ob:hover{background:var(--gold-l);color:var(--ink)}
-
-/* reveal on scroll (applied via JS; safe without JS) */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}.hero-bgfx{display:none}}
-
-/* card hover zoom */
-.pmedia img{transition:transform .45s ease}
-.pcard:hover .pmedia img{transform:scale(1.06)}
-
-/* bolder Aanand wing */
-.aanwrap{background:linear-gradient(180deg,#FBEDE6 0%,#F7EFDF 26%)}
-.aanwrap .catrow-h h2{font-size:clamp(26px,4.4vw,40px)}
-.aanwrap .pcard:hover{box-shadow:0 18px 42px rgba(140,78,56,.26)}
-.aan-hero{background:linear-gradient(120deg,#A85636 0%,#5E1F30 58%,#2A1620 100%);color:#FBEDE6;border-radius:20px;padding:46px 42px;position:relative;overflow:hidden}
-.aan-hero .sk{font-family:'Tiro Devanagari Sanskrit',serif;font-size:clamp(34px,7vw,64px);color:var(--gulab);line-height:1;margin-bottom:2px}
-.aan-hero h2{color:#fff;font-size:clamp(28px,4.4vw,42px);margin:2px 0 10px}
-.aan-hero p{color:#F0D9CE;max-width:48ch;font-size:16px}
-.aan-hero .em{position:absolute;right:-16px;bottom:-56px;font:400 210px/1 'Tiro Devanagari Sanskrit',serif;color:rgba(232,180,184,.13);pointer-events:none}
-
-/* new imagery */
-.docimg{width:100%;aspect-ratio:1/1.02;object-fit:cover;display:block}
-.hcard{position:relative}
-.hcard .hi{width:50px;height:50px;margin-bottom:4px;display:block}
-.band{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
-@media(max-width:760px){.band{grid-template-columns:1fr}}
-.band img{width:100%;height:100%;object-fit:cover;min-height:240px;display:block}
-.band.rev .bandtext{order:-1}
-.bandtext{padding:34px 36px;display:flex;flex-direction:column;justify-content:center}
-.bandtext p{font-size:15px;color:#5C4030;max-width:44ch}
-.bandtext .btn{align-self:flex-start;margin-top:12px}
-
-/* drawer / modal / bars */
-.overlay{position:fixed;inset:0;background:rgba(36,20,25,.55);z-index:90;opacity:0;pointer-events:none;transition:opacity .2s ease}
-.overlay.on{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,94vw);background:var(--ivory);z-index:95;transform:translateX(105%);transition:transform .25s ease;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(36,20,25,.25)}
-.drawer.on{transform:none}
-.dhead{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;border-bottom:1px solid var(--line)}
-.dhead h3{margin:0}
-.dclose{background:none;border:0;font-size:26px;cursor:pointer;color:var(--kumkum);line-height:1}
-.dbody{flex:1;overflow-y:auto;padding:12px 20px}
-.dempty{text-align:center;color:#7A5C46;padding:38px 10px}
-.ditem{display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:12px 0}
-.dth{width:50px;height:50px;border-radius:9px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-family:'Tiro Devanagari Sanskrit',serif;color:var(--kanchan);font-size:19px;flex:none}
-.dinfo{flex:1}.dinfo b{font-family:'EB Garamond',serif;font-size:15px;color:var(--kumkum);display:block}.dinfo span{font-size:12.5px;color:#7A5C46}
-.dqty{display:flex;align-items:center;gap:8px}
-.dqty button{width:26px;height:26px;border-radius:7px;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;font:700 15px/1 'Mukta',sans-serif;color:var(--kumkum)}
-.dfoot{border-top:1px solid var(--line);padding:14px 20px 18px;background:var(--surface)}
-.dtot{display:flex;justify-content:space-between;font:700 17.5px/1 'Mukta',sans-serif;margin-bottom:5px}
-.dnote{font-size:12px;color:#7A5C46;margin:5px 0 11px}
-.dfoot .btn{width:100%}.dfoot .btn + .btn{margin-top:8px}
-
-.qmodal{position:fixed;inset:0;z-index:96;display:none;align-items:center;justify-content:center;padding:18px}
-.qmodal.on{display:flex}
-.qbox{background:var(--ivory);border-radius:18px;max-width:520px;width:100%;max-height:92vh;overflow-y:auto;padding:26px 26px 24px;position:relative;box-shadow:0 20px 60px rgba(36,20,25,.4)}
-.qbox .qx{position:absolute;top:12px;right:16px;background:none;border:0;font-size:26px;color:var(--kumkum);cursor:pointer;line-height:1}
-.qbox .qq{font:600 21px/1.25 'EB Garamond',serif;color:var(--kumkum);margin:6px 0 16px}
-.qopt{display:block;width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:11px;padding:13px 16px;margin:9px 0;cursor:pointer;font:500 15px/1.4 'Mukta',sans-serif;color:var(--ink)}
-.qopt:hover{border-color:var(--kanchan);background:var(--chip)}
-.qstep{font:700 11px/1 'Mukta',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--kanchan)}
-.qres{border:1.5px solid var(--kanchan);border-radius:13px;padding:16px 18px;margin:14px 0;background:var(--surface)}
-.qres b{font:600 17px/1.3 'EB Garamond',serif;color:var(--kumkum);display:block}
-.qres span{font-size:13.5px;color:#5C4030}
-
-/* age gate */
-.agegate{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,var(--kumkum),var(--kumkum-deep));display:flex;align-items:center;justify-content:center;padding:20px;text-align:center}
-.agegate.hidden{display:none}
-.agebox{max-width:440px}
-.agebox .sanskrit{font-size:34px;color:var(--gold-l)}
-.agebox h2{color:var(--ivory);margin:12px 0 6px}
-.agebox p{color:#EBDBC8;font-size:15px;margin:0 auto 22px;max-width:38ch}
-.agebox .btn{margin:5px}
-.agebox small{display:block;margin-top:18px;color:#C9A9B4;font-size:12px}
-
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--surface);border-top:1px solid var(--line);padding:9px 12px;display:none;gap:9px;align-items:center}
-.mbar .btn{flex:1;padding:12px 8px;font-size:13.5px}
-@media(max-width:720px){.mbar{display:flex}}
-.wa{position:fixed;right:16px;bottom:84px;z-index:75;background:#25D366;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-@media(min-width:721px){.wa{bottom:18px}}
-.toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:74px;background:var(--ink);color:var(--ivory);padding:11px 22px;border-radius:999px;font:700 13px/1 'Mukta',sans-serif;z-index:99;opacity:0;pointer-events:none;transition:all .25s ease}
-.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
-
-/* language toggle */
-.langbtn{background:none;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;font:700 12.5px/1 'Mukta',sans-serif;color:var(--kumkum);padding:8px 13px;white-space:nowrap}
-.langbtn:hover{border-color:var(--kanchan);background:var(--chip)}
-
-/* quick exit */
-.qexit{position:fixed;left:14px;bottom:14px;z-index:98;background:var(--surface);border:1.5px solid var(--line);border-radius:999px;padding:9px 15px;font:700 12px/1 'Mukta',sans-serif;color:#7A5C46;cursor:pointer;display:flex;align-items:center;gap:6px;box-shadow:0 3px 12px rgba(36,20,25,.14)}
-.qexit:hover{border-color:var(--kumkum);color:var(--kumkum)}
-@media(max-width:720px){.qexit{bottom:66px}}
-
-/* social proof card */
-.sproof{position:fixed;left:14px;bottom:64px;z-index:74;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--kanchan);border-radius:12px;padding:11px 34px 11px 14px;max-width:290px;box-shadow:0 8px 24px rgba(36,20,25,.18);font-size:13px;transform:translateY(16px);opacity:0;pointer-events:none;transition:all .3s ease}
-.sproof.on{transform:none;opacity:1;pointer-events:auto}
-.sproof b{color:var(--kumkum)}
-.sproof small{display:block;color:#7A5C46;font-size:11px;margin-top:2px}
-.sproof .spx{position:absolute;top:4px;right:8px;background:none;border:0;font-size:18px;color:#9A7B60;cursor:pointer;line-height:1}
-@media(max-width:720px){.sproof{bottom:118px}}
-
-/* bundle builder */
-.bundle{background:var(--surface);border-block:1px solid var(--line)}
-.bchips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:18px 0 6px}
-.bchip{display:flex;align-items:center;gap:7px;background:var(--ivory);border:1.5px solid var(--line);border-radius:999px;padding:9px 15px;cursor:pointer;font:500 13.5px/1 'Mukta',sans-serif;user-select:none;transition:all .15s ease}
-.bchip:hover{border-color:var(--kanchan)}
-.bchip.sel{background:var(--kumkum);border-color:var(--kumkum);color:var(--ivory)}
-.bchip.sel .bp{color:var(--gold-l)}
-.bchip .bp{color:#7A5C46;font-size:12px}
-.bsum{text-align:center;margin-top:14px}
-.bsum .btier{display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center;font:700 12.5px/1 'Mukta',sans-serif;color:#7A5C46;margin-bottom:12px}
-.bsum .btier span.on{color:var(--vana)}
-.bsum .bline{font:700 17px/1.4 'Mukta',sans-serif;color:var(--kumkum)}
-.bsum .bline .bsave{color:var(--vana)}
-
-/* arousal-science section */
-.science{background:linear-gradient(160deg,#5E1F30,#3D1524);color:#F0D9CE}
-.science h2{color:#fff}
-.science .intro p{color:#E4C4BC}
-.scicard{background:rgba(255,255,255,.06);border:1px solid rgba(232,180,184,.28);border-radius:14px;padding:20px 22px}
-.scicard .num{font:600 26px/1 'EB Garamond',serif;color:var(--gulab)}
-.scicard h4{color:#fff;margin:8px 0 6px}
-.scicard p{font-size:13.6px;color:#EBD3CB;margin:0}
-.sci-note{text-align:center;font-size:11.5px;color:#C9A0A6;margin-top:18px;max-width:70ch;margin-inline:auto}
-
-/* slot picker + exit modal share qbox */
-.slotgrid{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
-.slotc{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:10px 13px;cursor:pointer;font:600 13px/1.3 'Mukta',sans-serif;text-align:center;min-width:74px}
-.slotc:hover{border-color:var(--kanchan)}
-.slotc.sel{background:var(--kumkum);color:var(--ivory);border-color:var(--kumkum)}
-.slotc small{display:block;font-weight:500;font-size:11px;color:#9A7B60}
-.slotc.sel small{color:var(--gold-l)}
-</style>
+<link rel="stylesheet" href="assets/kkp.css">
 </head>
 <body>
 
@@ -438,45 +67,27 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   </div>
   <nav class="catnav" id="catnav" aria-label="Shop menus">
     <div class="wrap catnav-in">
-      <div class="menu"><a href="#worlds" style="color:var(--kumkum)">Two worlds</a></div>
       <div class="menu" data-menu>
-        <button aria-expanded="false">Wellness · Timing <span class="car">▼</span></button>
+        <button aria-expanded="false">आरोग्य · Wellness <span class="car">▼</span></button>
         <div class="dd">
-          <a href="#timing"><span class="dico">का</span><div><b>PME Course</b><span>Doctor-designed program · ₹1,499</span></div></a>
-          <a href="#timing"><span class="dico">पू</span><div><b>Complete Care Kit</b><span>Formulations + consult · ₹6,088</span></div></a>
-          <a href="#consult"><span class="dico">वै</span><div><b>Private consult ₹99</b><span>Diagnosis, not a guess</span></div></a>
-          <a class="dd-cta" href="#quiz" data-quiz-open>Not sure? Take the 2-minute self-check</a>
-        </div>
-      </div>
-      <div class="menu" data-menu>
-        <button aria-expanded="false">Wellness · Erection &amp; Vitality <span class="car">▼</span></button>
-        <div class="dd">
-          <a href="#erection"><span class="dico">ब</span><div><b>ED Course</b><span>Cause-first program · ₹1,499</span></div></a>
-          <a href="#vitality"><span class="dico">ऊ</span><div><b>Shukra</b><span>60-day vitality course · ₹3,938</span></div></a>
-          <a href="#vitality"><span class="dico">शि</span><div><b>Shilajit</b><span>Pure Himalayan · ₹2,400</span></div></a>
-          <a href="#vitality"><span class="dico">तै</span><div><b>Paurush Oil</b><span>Abhyanga oil · ₹960</span></div></a>
+          <a href="aarogya.html"><span class="dico">आ</span><div><b>Aarogya overview</b><span>The wellness wing — doctors, courses, formulations</span></div></a>
+          <a href="timing.html"><span class="dico">का</span><div><b>Timing &amp; PE</b><span>Courses, kit and the honest plan</span></div></a>
+          <a href="erection-health.html"><span class="dico">ब</span><div><b>Erection health</b><span>Cause-first: circulation, sleep, stress</span></div></a>
+          <a href="vitality.html"><span class="dico">ऊ</span><div><b>Vitality &amp; energy</b><span>Classical formulations, lab-tested</span></div></a>
+          <a class="dd-cta" href="consultation.html">Consult a doctor · ₹99</a>
         </div>
       </div>
       <div class="menu aan" data-menu>
-        <button aria-expanded="false">Pleasure · Devices <span class="car">▼</span></button>
+        <button aria-expanded="false">आनन्द · Pleasure <span class="car">▼</span></button>
         <div class="dd">
-          <a href="#devices"><span class="dico">यु</span><div><b>Yugal Couples Massager</b><span>Body-safe silicone · ₹4,999</span></div></a>
-          <a href="#devices"><span class="dico">त</span><div><b>Tarang Personal Wand</b><span>Whisper-quiet · ₹3,499</span></div></a>
-          <a href="#devices"><span class="dico">बि</span><div><b>Bindu Bullet</b><span>Discreet &amp; compact · ₹1,499</span></div></a>
-          <a href="#devices"><span class="dico">ब</span><div><b>Bandhan Couples Ring</b><span>For partners · ₹1,299</span></div></a>
+          <a href="aanand.html"><span class="dico">आ</span><div><b>Aanand overview</b><span>The pleasure wing — tasteful, body-safe</span></div></a>
+          <a href="devices.html"><span class="dico">यु</span><div><b>Devices</b><span>Medical-grade silicone, whisper-quiet</span></div></a>
+          <a href="intimate-care.html"><span class="dico">स्</span><div><b>Intimate care</b><span>Gels, oils and candles — body-safe</span></div></a>
+          <a href="couples.html"><span class="dico">मि</span><div><b>For couples</b><span>Sets, rituals and conversation</span></div></a>
         </div>
       </div>
-      <div class="menu aan" data-menu>
-        <button aria-expanded="false">Pleasure · Intimate care &amp; Together <span class="car">▼</span></button>
-        <div class="dd">
-          <a href="#care"><span class="dico">स्</span><div><b>Snigdha Intimate Gel</b><span>Water-based, body-safe · ₹699</span></div></a>
-          <a href="#care"><span class="dico">स्प</span><div><b>Sparsh Massage Oil</b><span>Ayurvedic-inspired · ₹899</span></div></a>
-          <a href="#care"><span class="dico">ज्यो</span><div><b>Jyoti Massage Candle</b><span>Warm to the touch · ₹999</span></div></a>
-          <a href="#together"><span class="dico">मि</span><div><b>Milan Couples Kit</b><span>Curated starter box · ₹4,999</span></div></a>
-          <a href="#together"><span class="dico">ख</span><div><b>Khuli Baat Card Game</b><span>Talk openly · ₹799</span></div></a>
-        </div>
-      </div>
-      <div class="menu"><a href="#why">Why KKP</a></div>
+      <div class="menu"><a href="aarogya.html#why">Why KKP</a></div>
+      <div class="menu"><a href="#" data-quiz-open>2-min self-check</a></div>
     </div>
   </nav>
 </header>
@@ -494,8 +105,8 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
     <h1 id="heroH1">Wisdom for healing. <span class="amp">Freedom</span> for pleasure.</h1>
     <p class="lede" id="heroLede">Two wings, one trusted house. <strong>Aarogya</strong> — AYUSH-licensed Ayurvedic formulations, real doctors and courses. <strong>Aanand</strong> — tasteful, body-safe intimacy for couples. Both private, both without shame.</p>
     <div class="hero-ctas" id="heroCtas">
-      <a class="btn btn-gold" href="#worlds">Explore both worlds</a>
-      <a class="btn btn-cop" href="#devices">Shop pleasure</a>
+      <a class="btn btn-gold" href="aarogya.html">Explore Aarogya</a>
+      <a class="btn btn-cop" href="aanand.html">Explore Aanand</a>
     </div>
     <div class="hero-proof">
       <div><b>4.7★</b>average rating</div>
@@ -509,7 +120,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 <!-- TWO WORLDS -->
 <section class="wrap" id="worlds">
   <div class="worlds">
-    <a class="world aarogya" href="#timing">
+    <a class="world aarogya" href="aarogya.html">
       <div class="tag">Wing One</div>
       <div class="sk">आरोग्य · Aarogya</div>
       <h2>Ayurvedic Wellness</h2>
@@ -517,7 +128,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
       <span class="go">Enter Aarogya →</span>
       <span class="em">ओ</span>
     </a>
-    <a class="world aanand" href="#devices">
+    <a class="world aanand" href="aanand.html">
       <div class="tag">Wing Two</div>
       <div class="sk">आनन्द · Aanand</div>
       <h2>Modern Intimacy</h2>
@@ -539,55 +150,18 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   </div>
 </section>
 
-<!-- ===== AAROGYA: TIMING ===== -->
-<section class="catrow wrap" id="timing">
+<!-- featured: Aarogya -->
+<section class="catrow wrap" id="featured-aarogya">
   <div class="catrow-h">
-    <div><div class="eyebrow">Aarogya · Timing &amp; early discharge</div><h2 style="margin:.15em 0">Treatable. Trainable. Common.</h2><div class="sub">PE responds to technique, practice and the right support — not shame.</div></div>
-    <a class="all" href="#consult">Start with a consult →</a>
+    <div><div class="eyebrow">आरोग्य · Wellness</div><h2 style="margin:.15em 0">Start with the honest three</h2><div class="sub">Cause-first courses, classical formulations and a doctor who reads your whole picture.</div></div>
+    <a class="all" href="aarogya.html">Enter Aarogya →</a>
   </div>
   <div class="grid g3">
     <div class="pcard"><div class="pmedia"><span class="pbadge">Course · Bestseller</span><img src="img/pme.svg" alt="PME Course" loading="lazy"></div><div class="pbody"><div class="ptype">Structured course · self-paced</div><div class="pname">PME Course</div><p class="pdesc">Doctor-designed: technique, weekly practice and tracking, privately.</p><div class="stars">★★★★★<small>4.6 · 141</small></div><div class="prow"><span class="price">₹1,499</span><span class="mrp">₹2,499</span><span class="off">40% off</span></div><button class="btn btn-gold addbtn" data-add="pme">Add to cart</button></div></div>
-    <div class="pcard"><div class="pmedia"><span class="pbadge">Save ₹1,309</span><img src="img/kit.svg" alt="Complete Care Kit" loading="lazy"></div><div class="pbody"><div class="ptype">Combo · 60-day plan</div><div class="pname">Complete Care Kit</div><p class="pdesc">Shukra + Shilajit + Paurush Oil + a private doctor consult.</p><div class="stars">★★★★★<small>4.8 · 96</small></div><div class="prow"><span class="price">₹6,088</span><span class="mrp">₹7,397</span><span class="off">18% off</span></div><button class="btn btn-gold addbtn" data-add="kit">Add to cart</button></div></div>
+    <div class="pcard"><div class="pmedia"><span class="pbadge">Bestseller</span><img src="img/urja.svg" alt="Shukra" loading="lazy"></div><div class="pbody"><div class="ptype">Vitality formulation · 60 caps</div><div class="pname">Shukra</div><p class="pdesc">Flagship 60-day course: classical vajikarana herbs, lab-tested.</p><div class="stars">★★★★★<small>4.7 · 312</small></div><div class="prow"><span class="price">₹3,938</span><span class="mrp">₹4,500</span><span class="off">12% off</span></div><button class="btn btn-gold addbtn" data-add="urja">Add to cart</button></div></div>
     <div class="pcard"><div class="pmedia"><span class="pbadge">Start here</span><img src="img/consult.svg" alt="Private Doctor Consultation" loading="lazy"></div><div class="pbody"><div class="ptype">Phone or video · 100% private</div><div class="pname">Private Doctor Consultation</div><p class="pdesc">A registered doctor examines causes and writes your plan in 24 hours.</p><div class="stars">★★★★★<small>4.9 · 1,020</small></div><div class="prow"><span class="price">₹99</span><span class="mrp">₹499</span><span class="off">launch</span></div><button class="btn btn-gold addbtn" data-add="consult">Book consult</button></div></div>
   </div>
 </section>
-
-<!-- ===== AAROGYA: ERECTION ===== -->
-<section class="catrow wrap" id="erection">
-  <div class="catrow-h">
-    <div><div class="eyebrow">Aarogya · Erection health</div><h2 style="margin:.15em 0">Usually a circulation story</h2><div class="sub">Sleep, sugar, BP and stress drive most cases. We treat them, honestly.</div></div>
-    <a class="all" href="#consult">Start with a consult →</a>
-  </div>
-  <div class="grid g3">
-    <div class="pcard"><div class="pmedia"><span class="pbadge">Course</span><img src="img/ed.svg" alt="ED Course" loading="lazy"></div><div class="pbody"><div class="ptype">Structured course · self-paced</div><div class="pname">ED Course</div><p class="pdesc">Understand the real causes and follow a guided, week-by-week plan.</p><div class="stars">★★★★★<small>4.6 · 118</small></div><div class="prow"><span class="price">₹1,499</span><span class="mrp">₹2,499</span><span class="off">40% off</span></div><button class="btn btn-gold addbtn" data-add="ed">Add to cart</button></div></div>
-    <div class="pcard"><div class="pmedia"><span class="pbadge">Bestseller</span><img src="img/urja.svg" alt="Shukra" loading="lazy"></div><div class="pbody"><div class="ptype">Vitality formulation · 60 caps</div><div class="pname">Shukra</div><p class="pdesc">Flagship 60-day course: classical vajikarana herbs, lab-tested.</p><div class="stars">★★★★★<small>4.7 · 312</small></div><div class="prow"><span class="price">₹3,938</span><span class="mrp">₹4,500</span><span class="off">12% off</span></div><button class="btn btn-gold addbtn" data-add="urja">Add to cart</button></div></div>
-    <div class="pcard"><div class="pmedia"><span class="pbadge">Start here</span><img src="img/consult.svg" alt="Private Doctor Consultation" loading="lazy"></div><div class="pbody"><div class="ptype">Phone or video · 100% private</div><div class="pname">Private Doctor Consultation</div><p class="pdesc">BP, sugar or heart history? This is exactly where to begin.</p><div class="stars">★★★★★<small>4.9 · 1,020</small></div><div class="prow"><span class="price">₹99</span><span class="mrp">₹499</span><span class="off">launch</span></div><button class="btn btn-gold addbtn" data-add="consult">Book consult</button></div></div>
-  </div>
-</section>
-
-<!-- ===== AAROGYA: VITALITY ===== -->
-<section class="catrow wrap" id="vitality">
-  <div class="catrow-h">
-    <div><div class="eyebrow">Aarogya · Vitality &amp; energy</div><h2 style="margin:.15em 0">Stamina rebuilt the classical way</h2><div class="sub">Named in the texts, tested in the lab.</div></div>
-    <a class="all" href="#consult">Ask what suits you →</a>
-  </div>
-  <div class="grid g3">
-    <div class="pcard"><div class="pmedia"><span class="pbadge">Classical</span><img src="img/shilajit.svg" alt="Shilajit" loading="lazy"></div><div class="pbody"><div class="ptype">Classical rasayana · 20g</div><div class="pname">Shilajit</div><p class="pdesc">Pure Himalayan, purified per classical method, 40% fulvic acid.</p><div class="stars">★★★★★<small>4.8 · 507</small></div><div class="prow"><span class="price">₹2,400</span><span class="mrp">₹2,800</span><span class="off">14% off</span></div><button class="btn btn-gold addbtn" data-add="shilajit">Add to cart</button></div></div>
-    <div class="pcard"><div class="pmedia"><span class="pbadge">Bestseller</span><img src="img/urja.svg" alt="Shukra" loading="lazy"></div><div class="pbody"><div class="ptype">Vitality formulation · 60 caps</div><div class="pname">Shukra</div><p class="pdesc">The flagship vitality course — stamina rebuilt over 60 days.</p><div class="stars">★★★★★<small>4.7 · 312</small></div><div class="prow"><span class="price">₹3,938</span><span class="mrp">₹4,500</span><span class="off">12% off</span></div><button class="btn btn-gold addbtn" data-add="urja">Add to cart</button></div></div>
-    <div class="pcard"><div class="pmedia"><img src="img/oil.svg" alt="Paurush Oil" loading="lazy"></div><div class="pbody"><div class="ptype">External application · 30ml</div><div class="pname">Paurush Oil</div><p class="pdesc">Traditional abhyanga oil for local strength — part of the plan.</p><div class="stars">★★★★☆<small>4.5 · 190</small></div><div class="prow"><span class="price">₹960</span><span class="mrp">₹1,100</span><span class="off">13% off</span></div><button class="btn btn-gold addbtn" data-add="oil">Add to cart</button></div></div>
-  </div>
-</section>
-
-<!-- aarogya lifestyle band -->
-<section class="pad" style="padding-bottom:8px"><div class="wrap"><div class="band">
-  <img src="img/band-aarogya.svg" alt="Ayurvedic preparation — mortar, pestle and herbs">
-  <div class="bandtext">
-    <div class="eyebrow">Aarogya · Our approach</div>
-    <h2>We treat causes, not symptoms</h2>
-    <p>Sleep, sugar, stress and circulation quietly shape intimate health. Our doctors read the whole picture, then match classical formulations and daily practice to your case.</p>
-    <a class="btn btn-outline" href="#consult">Talk to a doctor · ₹99</a>
-  </div>
-</div></div></section>
 
 <!-- consult band -->
 <section class="pad" id="consult" style="padding-bottom:30px">
@@ -603,78 +177,17 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   <div class="src">Charaka Samhita · Sutrasthana 1.15</div>
 </div>
 
-<!-- ===== AANAND WING ===== -->
+<!-- featured: Aanand -->
 <div class="aanwrap">
-  <section class="wrap" style="padding-top:44px"><div class="aan-hero reveal">
-    <div class="sk">आनन्द</div>
-    <h2>Pleasure, without apology.</h2>
-    <p>Bold, body-safe and beautifully discreet. Devices, natural intimate care and couples’ rituals — for partners who choose to explore openly.</p>
-    <div class="hero-ctas" style="margin-top:16px">
-      <a class="btn btn-cop" href="#devices">Shop devices</a>
-      <a class="btn" style="background:var(--gulab);color:var(--kumkum-deep)" href="#together">For couples</a>
-    </div>
-    <div class="em" aria-hidden="true">आ</div>
-  </div></section>
-
-  <section class="catrow wrap" id="devices" style="padding-top:36px">
+  <section class="catrow wrap" id="featured-aanand" style="padding-top:40px;padding-bottom:44px">
     <div class="catrow-h">
-      <div><div class="eyebrow cop">Aanand · Pleasure devices</div><h2 style="margin:.15em 0">Chosen tastefully. Made body-safe.</h2><div class="sub">Medical-grade silicone, whisper-quiet, USB-rechargeable, waterproof — and delivered in a plain parcel.</div></div>
-      <a class="all" href="#together" style="color:var(--tamra-d)">See couples sets →</a>
+      <div><div class="eyebrow cop">आनन्द · Pleasure</div><h2 style="margin:.15em 0">Tasteful. Body-safe. Yours.</h2><div class="sub">Devices, natural intimate care and couples' rituals — delivered in a plain parcel, always.</div></div>
+      <a class="all" href="aanand.html" style="color:var(--tamra-d)">Enter Aanand →</a>
     </div>
-    <div class="grid g4">
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">Couples</span><img src="img/yugal.svg" alt="Yugal Couples Massager" loading="lazy"></div><div class="pbody"><div class="ptype">Dual couples massager</div><div class="pname">Yugal</div><p class="pdesc">A shared massager designed for two — flexible, body-safe, 10 modes.</p><div class="stars">★★★★★<small>4.7 · 214</small></div><div class="prow"><span class="price">₹4,999</span><span class="mrp">₹6,499</span><span class="off">23% off</span></div><button class="btn btn-cop addbtn" data-add="yugal">Add to cart</button></div></div>
+    <div class="grid g3">
       <div class="pcard"><div class="pmedia"><span class="pbadge cop">Bestseller</span><img src="img/tarang.svg" alt="Tarang Personal Wand" loading="lazy"></div><div class="pbody"><div class="ptype">Personal wand massager</div><div class="pname">Tarang</div><p class="pdesc">A soft-touch wand with a flexible head — whisper-quiet, powerful.</p><div class="stars">★★★★★<small>4.8 · 389</small></div><div class="prow"><span class="price">₹3,499</span><span class="mrp">₹4,299</span><span class="off">19% off</span></div><button class="btn btn-cop addbtn" data-add="tarang">Add to cart</button></div></div>
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">Discreet</span><img src="img/bindu.svg" alt="Bindu Bullet" loading="lazy"></div><div class="pbody"><div class="ptype">Compact bullet massager</div><div class="pname">Bindu</div><p class="pdesc">Palm-sized, travel-friendly and quiet — the easiest first step.</p><div class="stars">★★★★★<small>4.6 · 502</small></div><div class="prow"><span class="price">₹1,499</span><span class="mrp">₹1,999</span><span class="off">25% off</span></div><button class="btn btn-cop addbtn" data-add="bindu">Add to cart</button></div></div>
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">For partners</span><img src="img/bandhan.svg" alt="Bandhan Couples Ring" loading="lazy"></div><div class="pbody"><div class="ptype">Couples ring</div><div class="pname">Bandhan</div><p class="pdesc">A soft, stretchy couples' ring with a gentle vibration for two.</p><div class="stars">★★★★☆<small>4.5 · 176</small></div><div class="prow"><span class="price">₹1,299</span><span class="mrp">₹1,699</span><span class="off">24% off</span></div><button class="btn btn-cop addbtn" data-add="bandhan">Add to cart</button></div></div>
-    </div>
-  </section>
-
-  <section class="pad" style="padding:8px 0 0"><div class="wrap"><div class="band rev">
-    <img src="img/band-aanand.svg" alt="Two forms in a gentle embrace">
-    <div class="bandtext">
-      <div class="eyebrow cop">Aanand · Made with care</div>
-      <h2>Pleasure, chosen with dignity</h2>
-      <p>Every device is body-safe, medical-grade silicone; every intimate-care product is dermatologically tested. Tasteful, discreet, and delivered in a plain parcel.</p>
-      <a class="btn btn-cop" href="#care">Shop intimate care</a>
-    </div>
-  </div></div></section>
-
-  <section class="catrow wrap" id="care">
-    <div class="catrow-h">
-      <div><div class="eyebrow cop">Aanand · Natural intimate care</div><h2 style="margin:.15em 0">Where wellness meets pleasure</h2><div class="sub">Ayurvedic-inspired, body-safe, dermatologically tested — the bridge between both wings.</div></div>
-    </div>
-    <div class="grid g3">
       <div class="pcard"><div class="pmedia"><span class="pbadge cop">Body-safe</span><img src="img/snigdha.svg" alt="Snigdha Intimate Gel" loading="lazy"></div><div class="pbody"><div class="ptype">Water-based intimate gel · 100ml</div><div class="pname">Snigdha</div><p class="pdesc">Water-based, pH-balanced, no parabens or glycerin — condom-safe.</p><div class="stars">★★★★★<small>4.7 · 431</small></div><div class="prow"><span class="price">₹699</span><span class="mrp">₹899</span><span class="off">22% off</span></div><button class="btn btn-cop addbtn" data-add="snigdha">Add to cart</button></div></div>
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">Ayurvedic-inspired</span><img src="img/sparsh.svg" alt="Sparsh Massage Oil" loading="lazy"></div><div class="pbody"><div class="ptype">Sensual massage oil · 100ml</div><div class="pname">Sparsh</div><p class="pdesc">Warming almond &amp; classical herb blend for slow, shared massage.</p><div class="stars">★★★★★<small>4.6 · 208</small></div><div class="prow"><span class="price">₹899</span><span class="mrp">₹1,199</span><span class="off">25% off</span></div><button class="btn btn-cop addbtn" data-add="sparsh">Add to cart</button></div></div>
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">Warm to touch</span><img src="img/jyoti.svg" alt="Jyoti Massage Candle" loading="lazy"></div><div class="pbody"><div class="ptype">Massage candle · 120g</div><div class="pname">Jyoti</div><p class="pdesc">Soy wax that melts into a warm massage oil — set the mood, then use it.</p><div class="stars">★★★★★<small>4.8 · 143</small></div><div class="prow"><span class="price">₹999</span><span class="mrp">₹1,299</span><span class="off">23% off</span></div><button class="btn btn-cop addbtn" data-add="jyoti">Add to cart</button></div></div>
-    </div>
-  </section>
-
-  <!-- ===== AANAND: SCIENCE OF AROUSAL (education, wellness-framed) ===== -->
-  <section class="pad science" id="science">
-    <div class="wrap">
-      <div class="intro"><div class="eyebrow" style="color:var(--gulab)">Aanand · The science of arousal</div><h2>Her pleasure is physiology, not a mystery</h2><p>Modern sexual-wellness practice treats arousal as something couples can understand and work with — openly, together.</p></div>
-      <div class="grid g3">
-        <div class="scicard"><div class="num">15–20 min</div><h4>Arousal takes time</h4><p>Research consistently finds most women need 15–20 minutes of arousal before intercourse feels its best. Slowing down — massage, warmth, conversation — is not a detour; it is the route. Sparsh oil and the Jyoti candle are built for exactly this stage.</p></div>
-        <div class="scicard"><div class="num">~70%</div><h4>The right stimulation matters</h4><p>Large surveys report a majority of women reach climax most reliably with external stimulation rather than intercourse alone. Body-safe devices like Tarang and Bindu exist to support this — which is why modern couples' counsellors discuss them without embarrassment.</p></div>
-        <div class="scicard"><div class="num">pH 4.5</div><h4>Comfort is a wellness issue</h4><p>Dryness and discomfort are common and nothing to hide. A water-based, pH-balanced gel like Snigdha supports comfort and is condom-safe. If discomfort persists, that is a doctor conversation — and ours cost ₹99.</p></div>
-      </div>
-      <div class="hero-ctas" style="justify-content:center;margin-top:22px">
-        <a class="btn btn-cop" href="#devices">Explore the tools</a>
-        <button class="btn" style="background:var(--gulab);color:var(--kumkum-deep)" data-add="consult">Couples consult · ₹99</button>
-      </div>
-      <p class="sci-note">Educational information for adults, not medical advice or a promise of outcomes. Aanand products are personal-care items — not medicines or medical devices. For persistent concerns, speak to a registered practitioner.</p>
-    </div>
-  </section>
-
-  <section class="catrow wrap" id="together" style="padding-bottom:48px">
-    <div class="catrow-h">
-      <div><div class="eyebrow cop">Aanand · For couples</div><h2 style="margin:.15em 0">Explore it together</h2><div class="sub">Gifting-friendly sets and conversation starters — for partners, at any stage.</div></div>
-    </div>
-    <div class="grid g3">
       <div class="pcard"><div class="pmedia"><span class="pbadge cop">Save 25%</span><img src="img/milan-kit.svg" alt="Milan Couples Kit" loading="lazy"></div><div class="pbody"><div class="ptype">Couples starter box</div><div class="pname">Milan Kit</div><p class="pdesc">Bindu + Bandhan + Snigdha + Khuli Baat, in a keepsake box.</p><div class="stars">★★★★★<small>4.9 · 88</small></div><div class="prow"><span class="price">₹4,999</span><span class="mrp">₹6,696</span><span class="off">25% off</span></div><button class="btn btn-cop addbtn" data-add="milan">Add to cart</button></div></div>
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">Conversation</span><img src="img/khuli-baat.svg" alt="Khuli Baat Card Game" loading="lazy"></div><div class="pbody"><div class="ptype">Intimacy card game · 100 cards</div><div class="pname">Khuli Baat</div><p class="pdesc">100 questions to help couples talk openly — desire, comfort, curiosity.</p><div class="stars">★★★★★<small>4.8 · 260</small></div><div class="prow"><span class="price">₹799</span><span class="mrp">₹999</span><span class="off">20% off</span></div><button class="btn btn-cop addbtn" data-add="khulibaat">Add to cart</button></div></div>
-      <div class="pcard"><div class="pmedia"><span class="pbadge cop">Gift</span><img src="img/jyoti.svg" alt="Jyoti Massage Candle" loading="lazy"></div><div class="pbody"><div class="ptype">Add a mood-setter</div><div class="pname">Jyoti Candle</div><p class="pdesc">A warm-oil massage candle — the easiest, most-gifted first step.</p><div class="stars">★★★★★<small>4.8 · 143</small></div><div class="prow"><span class="price">₹999</span><span class="mrp">₹1,299</span><span class="off">23% off</span></div><button class="btn btn-cop addbtn" data-add="jyoti">Add to cart</button></div></div>
     </div>
   </section>
 </div>
@@ -694,57 +207,6 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 
 <!-- quiz strip -->
 <div class="stats" id="quiz"><div class="wrap" style="padding:20px 20px;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center"><span style="font:700 15px/1.3 'Mukta',sans-serif">Confused where to start? Answer 3 questions — get your plan.</span><button class="btn btn-dark btn-sm" data-quiz-open>Start self-check →</button></div></div>
-
-<section class="pad" style="padding-top:34px">
-  <div class="wrap">
-    <div class="intro"><div class="eyebrow">How wellness works</div><h2>From first question to full plan</h2></div>
-    <div class="steps">
-      <div class="step"><h4>Ask privately</h4><p>Book the ₹99 consult. No clinic, no waiting room, nobody watching.</p></div>
-      <div class="step"><h4>Get a real diagnosis</h4><p>A registered doctor examines causes — not just the symptom.</p></div>
-      <div class="step"><h4>Receive your plan</h4><p>Formulations, practice and courses matched to your case.</p></div>
-      <div class="step"><h4>Improve with follow-up</h4><p>Scheduled follow-ups adjust the plan until it works.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="pad herbs">
-  <div class="wrap">
-    <div class="intro"><div class="eyebrow">The pharmacopoeia</div><h2>Named in the texts. Tested in the lab.</h2><p>Every herb we use has a classical citation and a modern lab report.</p></div>
-    <div class="grid g4">
-      <div class="hcard"><img class="hi" src="img/herb-shilajit.svg" alt="" loading="lazy"><div class="sanskrit">शिलाजतु</div><h4>Shilajit</h4><p>Himalayan mineral resin, standardised for fulvic acid.</p></div>
-      <div class="hcard"><img class="hi" src="img/herb-ashwagandha.svg" alt="" loading="lazy"><div class="sanskrit">अश्वगन्धा</div><h4>Ashwagandha</h4><p>Classical rasayana for strength and calm.</p></div>
-      <div class="hcard"><img class="hi" src="img/herb-musli.svg" alt="" loading="lazy"><div class="sanskrit">श्वेत मूसली</div><h4>Safed Musli</h4><p>Traditional vajikarana herb, named in the Bhavaprakasha.</p></div>
-      <div class="hcard"><img class="hi" src="img/herb-gokshura.svg" alt="" loading="lazy"><div class="sanskrit">गोक्षुर</div><h4>Gokshura</h4><p>Classical support for vitality, cited across the samhitas.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="pad" id="why">
-  <div class="wrap">
-    <div class="intro"><div class="eyebrow">Why us</div><h2>The difference is the honesty</h2></div>
-    <div class="cmp"><table>
-      <tr><th>What you get</th><th class="kkp">Khul Ke Pucho</th><th>City D2C brands</th><th>"Bus-stand" sellers</th></tr>
-      <tr><td>Wellness &amp; pleasure, one house</td><td class="kkp"><span class="yes">✓</span> Aarogya + Aanand together</td><td>One or the other</td><td><span class="no">✗</span> Neither, safely</td></tr>
-      <tr><td>Doctor before product</td><td class="kkp"><span class="yes">✓</span> ₹99 consult, plan in writing</td><td>Quiz-bots, then upsell</td><td><span class="no">✗</span> None</td></tr>
-      <tr><td>Body-safe, lab-tested</td><td class="kkp"><span class="yes">✓</span> Medical-grade silicone + AYUSH labs</td><td>Sometimes</td><td><span class="no">✗</span> Unknown materials</td></tr>
-      <tr><td>Privacy engineered</td><td class="kkp"><span class="yes">✓</span> Plain parcel, neutral invoice</td><td><span class="yes">✓</span> Usually</td><td><span class="no">✗</span> Loud packaging</td></tr>
-      <tr><td>Couples welcome</td><td class="kkp"><span class="yes">✓</span> Products &amp; doctors for both</td><td>Men-only or women-only</td><td><span class="no">✗</span> —</td></tr>
-      <tr><td>Promises</td><td class="kkp">The process, never a miracle</td><td>"Results in days"</td><td>"100% guarantee"</td></tr>
-    </table></div>
-  </div>
-</section>
-
-<section class="pad docs" id="doctors">
-  <div class="wrap">
-    <div class="intro"><div class="eyebrow">Your doctors</div><h2>Real names. Real registrations.</h2><p>Every consultation is with a registered practitioner. Ask them anything.</p></div>
-    <div class="grid g4">
-      <div class="doc"><img class="docimg" src="img/doc1.svg" alt="Registered Ayurvedic doctor" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>BAMS, MD (Ayurveda)</div><div class="reg">Reg. no. TODO</div></div></div>
-      <div class="doc"><img class="docimg" src="img/doc2.svg" alt="Registered doctor, sexual health" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>BAMS · Sexual health</div><div class="reg">Reg. no. TODO</div></div></div>
-      <div class="doc"><img class="docimg" src="img/doc3.svg" alt="Registered counsellor" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>BHMS · Counselling</div><div class="reg">Reg. no. TODO</div></div></div>
-      <div class="doc"><img class="docimg" src="img/doc4.svg" alt="Couples counsellor" loading="lazy"><div class="docb"><h4>Dr. Name Here</h4><div>MD · Couples counselling</div><div class="reg">Reg. no. TODO</div></div></div>
-    </div>
-  </div>
-</section>
 
 <section class="pad">
   <div class="wrap">
@@ -788,7 +250,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
     <div style="font:italic 500 13px/1.5 'EB Garamond',serif;color:#D8BFA8;margin:6px 0 18px">Health, prosperity and desire — our shastras honoured all three.</div>
     <h2>Heal openly. Love openly.</h2>
     <p>One trusted house for both — Ayurvedic wellness and modern intimacy, always private, never with shame.</p>
-    <div class="hero-ctas" style="justify-content:center"><a class="btn btn-gold" href="#timing">Explore Aarogya</a><a class="btn btn-cop" href="#devices">Explore Aanand</a></div>
+    <div class="hero-ctas" style="justify-content:center"><a class="btn btn-gold" href="aarogya.html">Explore Aarogya</a><a class="btn btn-cop" href="aanand.html">Explore Aanand</a></div>
   </div>
 </section>
 
@@ -799,8 +261,8 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
       <p style="font-size:13.5px;max-width:34ch">Two wings, one house. Ayurvedic wellness &amp; modern intimacy — private, body-safe, and without shame.</p>
       <p style="font-size:12px;opacity:.8">AYUSH License: <em>TODO — add number</em></p>
     </div>
-    <div><h4>Aarogya · Wellness</h4><ul><li><a href="#timing">Timing &amp; PE</a></li><li><a href="#erection">Erection health</a></li><li><a href="#vitality">Vitality &amp; energy</a></li><li><a href="#consult">Doctor consult</a></li></ul></div>
-    <div><h4>Aanand · Pleasure</h4><ul><li><a href="#devices">Devices</a></li><li><a href="#care">Intimate care</a></li><li><a href="#together">For couples</a></li><li><a href="#faq">Body-safe &amp; care</a></li></ul></div>
+    <div><h4>Aarogya · Wellness</h4><ul><li><a href="timing.html">Timing &amp; PE</a></li><li><a href="erection-health.html">Erection health</a></li><li><a href="vitality.html">Vitality &amp; energy</a></li><li><a href="consultation.html">Doctor consult</a></li></ul></div>
+    <div><h4>Aanand · Pleasure</h4><ul><li><a href="devices.html">Devices</a></li><li><a href="intimate-care.html">Intimate care</a></li><li><a href="couples.html">For couples</a></li><li><a href="#faq">Body-safe &amp; care</a></li></ul></div>
     <div><h4>Our promise</h4><ul style="font-size:13.5px"><li>Plain parcel, no product name outside</li><li>COD across India</li><li>Body-safe &amp; lab-tested</li><li>18+ only · registered doctors</li></ul></div>
   </div>
   <div class="wrap" style="text-align:center;padding-top:6px">
@@ -840,7 +302,7 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
 
 <div class="mbar">
   <button class="btn btn-outline" data-quiz-open>2-min check</button>
-  <a class="btn btn-cop" href="#devices" style="flex:1">Pleasure</a>
+  <a class="btn btn-cop" href="aanand.html" style="flex:1">Pleasure</a>
   <button class="btn btn-gold" id="mCart">Cart (<span id="cartN2">0</span>)</button>
 </div>
 
@@ -891,406 +353,78 @@ footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0}
   </div>
 </div>
 
+<script src="assets/kkp.js"></script>
 <script>
-(function(){
-  'use strict';
-  var WA_NUMBER = '919999999999'; // TODO: real WhatsApp business number
-
-  var CATALOG = {
-    urja:{name:'Shukra',price:3938,mark:'ऊ'}, shilajit:{name:'Shilajit',price:2400,mark:'शि'},
-    oil:{name:'Paurush Oil',price:960,mark:'तै'}, kit:{name:'Complete Care Kit',price:6088,mark:'पू'},
-    pme:{name:'PME Course',price:1499,mark:'का'}, ed:{name:'ED Course',price:1499,mark:'ब'},
-    yoga:{name:'Yoga for Vitality Course',price:999,mark:'यो'}, consult:{name:'Private Doctor Consultation',price:99,mark:'वै'},
-    yugal:{name:'Yugal Couples Massager',price:4999,mark:'यु'}, tarang:{name:'Tarang Personal Wand',price:3499,mark:'त'},
-    bindu:{name:'Bindu Bullet',price:1499,mark:'बि'}, bandhan:{name:'Bandhan Couples Ring',price:1299,mark:'ब'},
-    snigdha:{name:'Snigdha Intimate Gel',price:699,mark:'स्'}, sparsh:{name:'Sparsh Massage Oil',price:899,mark:'स्प'},
-    jyoti:{name:'Jyoti Massage Candle',price:999,mark:'ज्यो'}, milan:{name:'Milan Couples Kit',price:4999,mark:'मि'},
-    khulibaat:{name:'Khuli Baat Card Game',price:799,mark:'ख'}
-  };
-  var FILES = {
-    urja:'shukra.html', shilajit:'shilajit.html', oil:'paurush-oil.html', kit:'complete-care-kit.html',
-    pme:'pme-course.html', ed:'ed-course.html', yoga:'yoga-course.html', consult:'consultation.html',
-    yugal:'yugal.html', tarang:'tarang.html', bindu:'bindu.html', bandhan:'bandhan.html',
-    snigdha:'snigdha.html', sparsh:'sparsh.html', jyoti:'jyoti.html', milan:'milan-kit.html', khulibaat:'khuli-baat.html'
-  };
-
-  /* age gate */
-  var gate = document.getElementById('ageGate');
-  try { if (localStorage.getItem('kkp_age_ok') === '1') gate.classList.add('hidden'); } catch(e){}
-  document.getElementById('ageYes').addEventListener('click', function(){ try{localStorage.setItem('kkp_age_ok','1');}catch(e){} gate.classList.add('hidden'); });
-  document.getElementById('ageNo').addEventListener('click', function(){ location.href = 'https://www.google.com'; });
-
-  var cart = {};
-  try { cart = JSON.parse(localStorage.getItem('kkp_cart') || '{}'); } catch (e) { cart = {}; }
-  for (var ck in cart) { if (!CATALOG[ck]) delete cart[ck]; }
-
-  var drawer=document.getElementById('drawer'), overlay=document.getElementById('overlay'),
-      dbody=document.getElementById('dbody'), dtot=document.getElementById('dtot'),
-      toast=document.getElementById('toast'), toastTimer=null;
-
-  function inr(n){return '₹'+n.toLocaleString('en-IN');}
-  function save(){localStorage.setItem('kkp_cart',JSON.stringify(cart));}
-  function count(){var c=0;for(var k in cart)c+=cart[k];return c;}
-  function total(){var t=0;for(var k in cart)t+=CATALOG[k].price*cart[k];return t;}
-  function renderBadges(){document.getElementById('cartN').textContent=count();document.getElementById('cartN2').textContent=count();}
-  var BUNDLE_EX={consult:1,kit:1,milan:1}; // combos & consult don't count toward bundle tiers
-  function bundleInfo(){
-    var n=0,base=0;
-    for(var k in cart){if(!BUNDLE_EX[k]){n++;base+=CATALOG[k].price*cart[k];}}
-    var pct=n>=4?20:n===3?15:n===2?10:0;
-    return {n:n,pct:pct,off:Math.round(base*pct/100)};
-  }
-  function renderDrawer(){
-    var keys=Object.keys(cart);
-    if(!keys.length){dbody.innerHTML='<div class="dempty"><div class="sanskrit" style="font-size:30px;color:var(--kanchan)">॥</div><p>Your cart is empty.<br>Every plan starts with one honest step.</p></div>';}
-    else{dbody.innerHTML=keys.map(function(k){var i=CATALOG[k];return '<div class="ditem"><div class="dth">'+i.mark+'</div><div class="dinfo"><b>'+i.name+'</b><span>'+inr(i.price)+'</span></div><div class="dqty"><button data-dec="'+k+'" aria-label="Decrease">−</button><span>'+cart[k]+'</span><button data-inc="'+k+'" aria-label="Increase">+</button></div></div>';}).join('');}
-    var b=bundleInfo(),bund=document.getElementById('dbund'),payable=total()-b.off;
-    if(b.off>0){bund.style.display='flex';document.getElementById('dbundl').textContent='Bundle savings ('+b.n+' items · '+b.pct+'%)';document.getElementById('dbundv').textContent='−'+inr(b.off);}
-    else bund.style.display='none';
-    dtot.textContent=inr(payable);
-    var lines=keys.map(function(k){return '- '+CATALOG[k].name+' x'+cart[k]+' ('+inr(CATALOG[k].price*cart[k])+')';});
-    if(b.off>0)lines.push('Bundle savings: -'+inr(b.off)+' ('+b.pct+'% off)');
-    var msg='Namaste! I would like to order:\n'+lines.join('\n')+'\nTotal: '+inr(payable)+'\n(COD preferred / plain packaging please)';
-    document.getElementById('waCheckout').href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg);
-  }
-  function render(){renderBadges();renderDrawer();save();}
-  function openCart(){drawer.classList.add('on');overlay.classList.add('on');}
-  function closeCart(){drawer.classList.remove('on');overlay.classList.remove('on');}
-  function showToast(t){toast.textContent=t;toast.classList.add('on');clearTimeout(toastTimer);toastTimer=setTimeout(function(){toast.classList.remove('on');},1800);}
-
-  /* quiz */
-  var qmodal=document.getElementById('qmodal'), qbox=document.getElementById('qbox'), qAnswers={};
-  var QUIZ_START={id:'concern',q:'What describes your main concern best?',opts:[['timing','Finishing earlier than I want'],['erection','Erection strength or consistency'],['energy','Low energy, stamina or desire'],['couple','We want more from intimacy — together']]};
-  var QUIZ_WELL=[
-    {id:'duration',q:'How long has this been on your mind?',opts:[['recent','A few weeks'],['months','A few months'],['years','A year or more']]},
-    {id:'health',q:'Do any of these apply?',opts:[['metabolic','Diabetes / BP / heart condition'],['stress','High stress or poor sleep'],['none','None of these']]},
-    {id:'sleep',q:'How is your sleep, honestly?',opts:[['low','Under 6 hours, often broken'],['mid','6–7 hours'],['good','7+ hours, mostly restful']]},
-    {id:'partner',q:'Is a partner part of this journey right now?',opts:[['together','Yes — we want to work on it together'],['private','Yes, but I want to sort this privately first'],['single','No partner right now']]},
-    {id:'age',q:'Your age band?',opts:[['a1','Under 30'],['a2','30–45'],['a3','45+']]},
-    {id:'style',q:'What suits you best?',opts:[['course','A structured self-paced course'],['formulation','Classical formulations'],['doctor','Let a doctor decide my plan']]}
-  ];
-  var QUIZ_COUPLE=[
-    {id:'stage',q:'Where are you two on this journey?',opts:[['new','Completely new to all this'],['some','We have explored a little'],['open','Comfortable and curious']]},
-    {id:'goal',q:'What would you like more of?',opts:[['talk','Openness — we barely talk about it'],['her','More arousal and comfort for her'],['shared','Something we can enjoy together']]},
-    {id:'budget',q:'A comfortable budget to start?',opts:[['b1','Under ₹1,500'],['b2','₹1,500–3,500'],['b3','₹3,500+']]}
-  ];
-  function quizFlow(){return [QUIZ_START].concat(qAnswers.concern==='couple'?QUIZ_COUPLE:QUIZ_WELL);}
-  function quizRecommend(){
-    var a=qAnswers,rec=[];
-    function add(key,why){if(!rec.some(function(r){return r.key===key;}))rec.push({key:key,why:why});}
-    if(a.concern==='couple'){
-      if(a.goal==='talk'){add('khulibaat','Openness first — 100 questions that make the conversation easy.');add('sparsh','A slow shared massage is the gentlest next step after talking.');}
-      else if(a.goal==='her'){add('snigdha','Comfort is the foundation — water-based, pH-balanced, condom-safe.');
-        if(a.budget==='b1')add('bindu','Most women respond best to external stimulation — this is the easiest, most discreet start.');
-        else add('tarang','Most women respond best to external stimulation — the wand is the gold standard for it.');
-        if(a.stage==='new')add('jyoti','Warmth and time matter: arousal takes 15–20 minutes. Set the stage first.');}
-      else{if(a.budget==='b3')add(a.stage==='new'?'milan':'yugal',a.stage==='new'?'Everything a couple needs to begin, in one tasteful box.':'Designed to be worn and enjoyed together.');
-        else if(a.budget==='b2'){add('bindu','Small, quiet and shared easily — the classic first device.');add('khulibaat','Pair it with the game — anticipation is half the fun.');}
-        else{add('bandhan','A shared ring — the most affordable way to explore together.');add('snigdha','Always the right companion product.');}}
-      return rec;
-    }
-    var doctorFirst = a.health==='metabolic' || a.age==='a3' || a.style==='doctor' || a.duration==='years';
-    if(doctorFirst){
-      var dwhy = a.health==='metabolic' ? 'With BP/sugar in the picture, a doctor must design your plan — non-negotiable with us.'
-        : a.duration==='years' ? 'A year or more deserves a real diagnosis, not another guess. Start here.'
-        : 'A registered doctor reads your whole picture and writes the plan — the honest first step.';
-      add('consult',dwhy);
-    }
-    if(a.concern==='timing'){add('pme','PE responds to structured technique and weekly practice.');if(!doctorFirst)add('consult','Add the ₹99 consult so a doctor personalises the program.');}
-    else if(a.concern==='erection'){add('ed','Cause-first program for circulation, stress and sleep.');
-      if(a.sleep==='low'||a.health==='stress')add('shilajit','With stress and short sleep in your answers, classical rasayana support helps the foundation.');
-      if(!doctorFirst)add('consult','Add the ₹99 consult so a doctor personalises the program.');}
-    else{add('urja','The flagship 60-day vitality course.');add('shilajit','Classical rasayana foundation, lab-standardised.');}
-    if(a.partner==='together'&&rec.length<3)add('khulibaat','You said you are in this together — openness measurably helps outcomes.');
-    return rec.slice(0,3);
-  }
-  function quizRender(i){
-    var flow=quizFlow();
-    if(i<flow.length){var s=flow[i];
-      qbox.innerHTML='<button class="qx" data-quiz-close aria-label="Close">&times;</button><div class="qstep">Self-check · '+(i+1)+' of '+flow.length+'</div><div class="qq">'+s.q+'</div>'+s.opts.map(function(o){return '<button class="qopt" data-qa="'+s.id+':'+o[0]+':'+i+'">'+o[1]+'</button>';}).join('')+'<p style="font-size:11.5px;color:#7A5C46;margin-top:12px">Private. Nothing is stored or sent anywhere.</p>';
-    }else{var recs=quizRecommend();
-      var planTotal=recs.reduce(function(t,r){return t+CATALOG[r.key].price;},0);
-      var allKeys=recs.map(function(r){return r.key;}).join(',');
-      qbox.innerHTML='<button class="qx" data-quiz-close aria-label="Close">&times;</button><div class="qstep">Your suggested plan</div><div class="qq">Here is the honest starting point</div>'+recs.map(function(r){var it=CATALOG[r.key];return '<div class="qres"><b>'+it.name+' · '+inr(it.price)+'</b><span>'+r.why+'</span><div style="margin-top:10px"><button class="btn btn-gold btn-sm" data-add="'+r.key+'">Add to cart</button></div></div>';}).join('')+'<button class="btn btn-dark" style="width:100%;margin-top:8px" data-addall="'+allKeys+'">Add full plan — '+inr(planTotal)+'</button><p style="font-size:12px;color:#7A5C46;margin-top:10px">Guidance, not a diagnosis. Your doctor confirms the plan on the consult.</p><button class="btn btn-outline" style="width:100%;margin-top:6px" data-quiz-close>Close</button>';
-    }
-  }
-  function quizOpen(){qAnswers={};quizRender(0);qmodal.classList.add('on');overlay.classList.add('on');}
-  function quizClose(){qmodal.classList.remove('on');if(!drawer.classList.contains('on'))overlay.classList.remove('on');}
-
-  /* nav */
-  var navTgl=document.getElementById('navTgl'), catnav=document.getElementById('catnav');
-  function closeMenus(except){document.querySelectorAll('.menu.open').forEach(function(m){if(m!==except){m.classList.remove('open');var b=m.querySelector('button');if(b)b.setAttribute('aria-expanded','false');}});}
-
-  document.addEventListener('click',function(e){
-    var add=e.target.closest('[data-add]');
-    if(add){var k=add.getAttribute('data-add');cart[k]=(cart[k]||0)+1;render();showToast(CATALOG[k].name+' added');
-      if(add.classList.contains('addbtn')){var isCop=add.classList.contains('btn-cop');var orig=add.textContent;add.textContent='Added ✓';add.style.background='var(--vana)';add.style.color='#fff';setTimeout(function(){add.textContent=orig;add.style.background='';add.style.color='';},1400);}return;}
-    var addAll=e.target.closest('[data-addall]');
-    if(addAll){addAll.getAttribute('data-addall').split(',').forEach(function(k){if(CATALOG[k])cart[k]=(cart[k]||0)+1;});render();showToast('Full plan added to cart');openCart();return;}
-    var inc=e.target.closest('[data-inc]');if(inc){cart[inc.getAttribute('data-inc')]++;render();return;}
-    var dec=e.target.closest('[data-dec]');if(dec){var dk=dec.getAttribute('data-dec');cart[dk]--;if(cart[dk]<=0)delete cart[dk];render();return;}
-    if(e.target.closest('[data-quiz-open]')){e.preventDefault();quizOpen();return;}
-    if(e.target.closest('[data-quiz-close]')){quizClose();return;}
-    var qa=e.target.closest('[data-qa]');if(qa){var p=qa.getAttribute('data-qa').split(':');qAnswers[p[0]]=p[1];quizRender(parseInt(p[2],10)+1);return;}
-    var mb=e.target.closest('.menu>button');
-    if(mb){var menu=mb.parentElement,willOpen=!menu.classList.contains('open');closeMenus(menu);menu.classList.toggle('open',willOpen);mb.setAttribute('aria-expanded',willOpen?'true':'false');return;}
-    if(!e.target.closest('.menu'))closeMenus(null);
-    if(e.target.closest('.dd a')){closeMenus(null);catnav.classList.remove('open');}
-    var card=e.target.closest('.pcard');
-    if(card&&!e.target.closest('button')&&!e.target.closest('a')){var cb=card.querySelector('[data-add]');if(cb){location.href=FILES[cb.getAttribute('data-add')];return;}}
-  });
-
-  document.getElementById('cartOpen').addEventListener('click',openCart);
-  document.getElementById('mCart').addEventListener('click',openCart);
-  document.getElementById('cartClose').addEventListener('click',closeCart);
-  document.getElementById('cartClose2').addEventListener('click',closeCart);
-  overlay.addEventListener('click',function(){closeCart();quizClose();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeCart();quizClose();closeMenus(null);}});
-  navTgl.addEventListener('click',function(){var o=catnav.classList.toggle('open');navTgl.setAttribute('aria-expanded',o?'true':'false');});
-
-  /* ===== bundle builder ===== */
-  var BKEYS=['urja','shilajit','oil','pme','ed','tarang','bindu','bandhan','yugal','snigdha','sparsh','jyoti','khulibaat'];
-  var bSel={};
-  var bchips=document.getElementById('bchips');
-  if(bchips){
-    bchips.innerHTML=BKEYS.map(function(k){var i=CATALOG[k];return '<span class="bchip" data-bk="'+k+'" role="checkbox" aria-checked="false" tabindex="0">'+i.name+' <span class="bp">'+inr(i.price)+'</span></span>';}).join('');
-    function bUpdate(){
-      var keys=Object.keys(bSel),n=keys.length,sub=keys.reduce(function(t,k){return t+CATALOG[k].price;},0);
-      var pct=n>=4?20:n===3?15:n===2?10:0,off=Math.round(sub*pct/100);
-      document.querySelectorAll('#btier span').forEach(function(s){var t=parseInt(s.getAttribute('data-t'),10);s.classList.toggle('on',pct>0&&(t===4?n>=4:n===t));});
-      var bline=document.getElementById('bline'),badd=document.getElementById('bundleAdd');
-      if(!n){bline.textContent='Select products above to build your bundle';badd.disabled=true;}
-      else if(pct===0){bline.innerHTML=inr(sub)+' — add 1 more to unlock <b class="bsave">10% off</b>';badd.disabled=false;}
-      else{bline.innerHTML='<s style="color:#9A7B60;font-weight:500">'+inr(sub)+'</s> '+inr(sub-off)+' <span class="bsave">you save '+inr(off)+' ('+pct+'%)</span>';badd.disabled=false;}
-      badd.textContent=n?'Add '+n+' item'+(n>1?'s':'')+' to cart':'Add bundle to cart';
-    }
-    bchips.addEventListener('click',function(e){
-      var c=e.target.closest('[data-bk]');if(!c)return;
-      var k=c.getAttribute('data-bk');
-      if(bSel[k])delete bSel[k];else bSel[k]=1;
-      c.classList.toggle('sel',!!bSel[k]);c.setAttribute('aria-checked',bSel[k]?'true':'false');
-      bUpdate();
-    });
-    bchips.addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'){var c=e.target.closest('[data-bk]');if(c){e.preventDefault();c.click();}}});
-    document.getElementById('bundleAdd').addEventListener('click',function(){
-      for(var k in bSel)cart[k]=(cart[k]||0)+1;
-      bSel={};document.querySelectorAll('.bchip.sel').forEach(function(c){c.classList.remove('sel');c.setAttribute('aria-checked','false');});
-      bUpdate();render();showToast('Bundle added — discount applied in cart');openCart();
-    });
-    bUpdate();
-  }
-
-  /* ===== doctor slot picker ===== */
-  var slotModal=document.getElementById('slotModal'),slotDay=null,slotTime=null;
-  var SLOT_TIMES=['10:00 am','12:00 pm','3:00 pm','6:00 pm','8:00 pm','10:00 pm'];
-  function slotOpen(){
-    var days=document.getElementById('slotDays'),names=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    var html='';
-    for(var d=1;d<=7;d++){var dt=new Date();dt.setDate(dt.getDate()+d);
-      var label=d===1?'Tomorrow':names[dt.getDay()];
-      html+='<button class="slotc" data-slot-day="'+label+', '+dt.getDate()+' '+months[dt.getMonth()]+'">'+label+'<small>'+dt.getDate()+' '+months[dt.getMonth()]+'</small></button>';}
-    days.innerHTML=html;
-    document.getElementById('slotTimes').innerHTML=SLOT_TIMES.map(function(t){return '<button class="slotc" data-slot-time="'+t+'">'+t+'</button>';}).join('');
-    slotDay=null;slotTime=null;document.getElementById('slotConfirm').disabled=true;
-    slotModal.classList.add('on');overlay.classList.add('on');
-  }
-  function slotClose(){slotModal.classList.remove('on');if(!drawer.classList.contains('on'))overlay.classList.remove('on');}
-  slotModal.addEventListener('click',function(e){
-    var d=e.target.closest('[data-slot-day]'),t=e.target.closest('[data-slot-time]');
-    if(d){slotDay=d.getAttribute('data-slot-day');slotModal.querySelectorAll('[data-slot-day]').forEach(function(x){x.classList.toggle('sel',x===d);});}
-    if(t){slotTime=t.getAttribute('data-slot-time');slotModal.querySelectorAll('[data-slot-time]').forEach(function(x){x.classList.toggle('sel',x===t);});}
-    document.getElementById('slotConfirm').disabled=!(slotDay&&slotTime);
-  });
-  document.getElementById('slotConfirm').addEventListener('click',function(){
-    var msg='Namaste! I would like to book the ₹99 private doctor consultation.\nPreferred slot: '+slotDay+' at '+slotTime+'\nPhone or video is fine. Please confirm.';
-    window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');
-    cart.consult=(cart.consult||0)+1;render();slotClose();showToast('Slot request sent — consult added to cart');
-  });
-  document.getElementById('slotClose').addEventListener('click',slotClose);
-  document.addEventListener('click',function(e){if(e.target.closest('[data-slot-open]')){e.preventDefault();slotOpen();}});
-
-  /* ===== exit-intent popup (desktop, once per session) ===== */
-  var exitModal=document.getElementById('exitModal');
-  function exitShow(){
-    if(document.getElementById('ageGate').classList.contains('hidden')===false)return;
-    if(qmodal.classList.contains('on')||drawer.classList.contains('on')||slotModal.classList.contains('on'))return;
-    try{if(sessionStorage.getItem('kkp_exit')==='1')return;sessionStorage.setItem('kkp_exit','1');}catch(e){}
-    exitModal.classList.add('on');overlay.classList.add('on');
-  }
-  function exitHide(){exitModal.classList.remove('on');if(!drawer.classList.contains('on'))overlay.classList.remove('on');}
-  document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=8)exitShow();});
-  document.getElementById('exitClose').addEventListener('click',exitHide);
-  document.getElementById('exitNo').addEventListener('click',exitHide);
-  document.getElementById('exitCta').addEventListener('click',exitHide);
-
-  /* ===== social proof toasts (TODO: replace seed list with real order feed) ===== */
-  var SPROOF=[
-    ['R.K. from Kanpur','ordered a wellness plan'],['S. & P. from Indore','ordered the Milan Kit'],
-    ['M.T. from Nagpur','booked the ₹99 consult'],['A.V. from Patna','ordered Shilajit'],
-    ['K.D. from Jaipur','ordered discreetly'],['V.S. from Lucknow','booked a couples consult'],
-    ['N.B. from Bhopal','ordered the PME Course'],['T.R. from Surat','ordered intimate care']
-  ];
-  var sproofEl=document.getElementById('sproof'),spIdx=Math.floor(Date.now()/60000)%SPROOF.length,spShown=0,spOff=false,spTimer=null;
-  function spNext(){
-    if(spOff||spShown>=4)return;
-    var s=SPROOF[spIdx%SPROOF.length];spIdx++;spShown++;
-    document.getElementById('sproofTxt').innerHTML='<b>'+s[0]+'</b> '+s[1]+' recently';
-    sproofEl.classList.add('on');
-    setTimeout(function(){sproofEl.classList.remove('on');},6000);
-    spTimer=setTimeout(spNext,32000);
-  }
-  document.getElementById('spx').addEventListener('click',function(){spOff=true;clearTimeout(spTimer);sproofEl.classList.remove('on');});
-  if(!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches))spTimer=setTimeout(spNext,12000);
-
-  /* ===== quick exit ===== */
-  document.getElementById('qexit').addEventListener('click',function(){
-    try{localStorage.removeItem('kkp_cart');}catch(e){}
-    location.replace('https://www.google.com/search?q=weather+today');
-  });
-
-  /* ===== Hindi toggle ===== */
-  var I18N=[
-    ['.announce','<b>KKP99</b> — पहला डॉक्टर परामर्श ₹99 में · ₹999 से ऊपर मुफ़्त गुप्त डिलीवरी · <b>पूरे भारत में COD</b>'],
-    ['.hd-consult','डॉक्टर से पूछें · ₹99'],
-    ['#worlds .aarogya h2','आयुर्वेदिक स्वास्थ्य'],
-    ['#worlds .aarogya p','कारणों का इलाज — समय, शक्ति, ऊर्जा — शास्त्रीय औषधियों, पंजीकृत डॉक्टरों और कोर्स के साथ।'],
-    ['#worlds .aarogya .go','आरोग्य में प्रवेश करें →'],
-    ['#worlds .aanand h2','आधुनिक अंतरंगता'],
-    ['#worlds .aanand p','गरिमा के साथ आनंद — शरीर-सुरक्षित उत्पाद, प्राकृतिक देखभाल और जोड़ों के लिए।'],
-    ['#worlds .aanand .go','आनन्द में प्रवेश करें →'],
-    ['#timing .catrow-h h2','इलाज संभव। अभ्यास से सुधार। बहुत आम।'],
-    ['#timing .catrow-h .sub','शीघ्रपतन तकनीक, अभ्यास और सही सहारे से सुधरता है — शर्म से नहीं।'],
-    ['#erection .catrow-h h2','अक्सर यह रक्त-संचार की कहानी है'],
-    ['#erection .catrow-h .sub','नींद, शुगर, BP और तनाव अधिकतर मामलों की जड़ हैं। हम इन्हीं का इलाज करते हैं, ईमानदारी से।'],
-    ['#vitality .catrow-h h2','शक्ति, शास्त्रीय तरीक़े से'],
-    ['#vitality .catrow-h .sub','ग्रंथों में वर्णित, लैब में परखा हुआ।'],
-    ['#consult .consult h2','निजी डॉक्टर परामर्श, सिर्फ़ ₹99'],
-    ['#consult .consult p','फ़ोन या वीडियो — अकेले या जीवनसाथी के साथ। पंजीकृत डॉक्टर कारण समझकर 24 घंटे में आपका प्लान लिखते हैं। आपकी बात कॉल से बाहर नहीं जाती।'],
-    ['#devices .catrow-h h2','रुचि से चुने। शरीर-सुरक्षित बने।'],
-    ['#devices .catrow-h .sub','मेडिकल-ग्रेड सिलिकॉन, बेहद शांत, USB चार्जिंग, वॉटरप्रूफ़ — और हमेशा सादे पार्सल में।'],
-    ['#care .catrow-h h2','जहाँ स्वास्थ्य आनंद से मिलता है'],
-    ['#science .intro h2','उनका आनंद विज्ञान है, रहस्य नहीं'],
-    ['#science .intro p','आधुनिक यौन-स्वास्थ्य विज्ञान उत्तेजना को समझने-समझाने की चीज़ मानता है — खुलकर, साथ मिलकर।'],
-    ['#together .catrow-h h2','साथ मिलकर जानिए'],
-    ['#bundleH2','कोई भी 2, 3 या 4 चुनें — 20% तक बचत'],
-    ['#bundleSub','जो आप दोनों को ठीक लगे वही चुनें। 2 चीज़ें — 10% छूट · 3 चीज़ें — 15% · 4 या अधिक — 20%। छूट कार्ट में अपने आप दिखती है।'],
-    ['#quiz span','उलझन में हैं? कुछ सवालों के जवाब दें — अपना प्लान पाएं।'],
-    ['#quiz button','सेल्फ़-चेक शुरू करें →'],
-    ['#faq .intro h2','जो सवाल सब पूछते हैं'],
-    ['.final h2','खुल के इलाज कराइए। खुल के प्यार कीजिए।'],
-    ['.final p','दोनों के लिए एक भरोसेमंद घर — आयुर्वेदिक स्वास्थ्य और आधुनिक अंतरंगता, हमेशा निजी, कभी शर्म नहीं।']
-  ];
-  var stepsHi=[['निजी तौर पर पूछें','₹99 का परामर्श बुक करें। न क्लिनिक, न लाइन, न किसी की नज़र।'],['सही निदान पाएं','पंजीकृत डॉक्टर कारण देखते हैं — सिर्फ़ लक्षण नहीं।'],['अपना प्लान पाएं','आपके मामले के अनुसार औषधियाँ, अभ्यास और कोर्स।'],['फ़ॉलो-अप से सुधारें','तय फ़ॉलो-अप से प्लान तब तक बदलता है जब तक असर न दिखे।']];
-  var lang='en';
-  try{lang=localStorage.getItem('kkp_lang')||'en';}catch(e){}
-  var langBtn=document.getElementById('langTgl');
-  function applyLang(){
-    I18N.forEach(function(pair){
-      var el=document.querySelector(pair[0]);if(!el)return;
-      if(el.__en===undefined)el.__en=el.innerHTML;
-      el.innerHTML=lang==='hi'?pair[1]:el.__en;
-    });
-    document.querySelectorAll('.steps .step').forEach(function(st,i){
-      var h=st.querySelector('h4'),p=st.querySelector('p');
-      if(h.__en===undefined){h.__en=h.innerHTML;p.__en=p.innerHTML;}
-      h.innerHTML=lang==='hi'?stepsHi[i][0]:h.__en;p.innerHTML=lang==='hi'?stepsHi[i][1]:p.__en;
-    });
-    document.querySelectorAll('.addbtn').forEach(function(b){
-      if(b.__en===undefined)b.__en=b.textContent;
-      b.textContent=lang==='hi'?(b.__en.indexOf('consult')>-1||b.__en.indexOf('Book')>-1?'परामर्श बुक करें':'कार्ट में डालें'):b.__en;
-    });
-    langBtn.textContent=lang==='hi'?'English':'हिंदी';
-    document.documentElement.lang=lang==='hi'?'hi':'en';
-    try{localStorage.setItem('kkp_lang',lang);}catch(e){}
-    window.dispatchEvent(new CustomEvent('kkp:lang',{detail:lang}));
-  }
-  langBtn.addEventListener('click',function(){lang=lang==='hi'?'en':'hi';applyLang();});
-  if(lang==='hi')applyLang();
-
-  render();
-})();
-
-/* ===== interactive hero + scroll reveal ===== */
+/* ===== interactive hero (home only) ===== */
 (function(){
   'use strict';
   var hero = document.getElementById('heroSection');
-  if (hero) {
-    var data = {
-      aarogya: {
-        shl: 'धर्मार्थकाममोक्षाणाम् आरोग्यं मूलमुत्तमम्<small>Health is the supreme foundation of the four aims — Charaka Samhita 1.15</small>',
-        h: 'Heal openly. <span class="amp">Live</span> fully.',
-        lede: 'AYUSH-licensed Ayurvedic formulations, registered doctors and structured courses — cause-first, and completely private. For every Indian who was told not to ask.',
-        ctas: '<a class="btn btn-gold" href="#timing">Explore wellness</a><a class="btn btn-outline hero-ob" href="#consult">Consult a doctor · ₹99</a>'
-      },
-      both: {
-        shl: 'धर्मार्थकामेभ्यो नमः<small>Salutations to dharma, artha and kama — Kamasutra 1.1.1</small>',
-        h: 'Wisdom for healing. <span class="amp">Freedom</span> for pleasure.',
-        lede: 'Two wings, one trusted house. <strong>Aarogya</strong> — Ayurvedic wellness, doctors and courses. <strong>Aanand</strong> — tasteful, body-safe intimacy for couples. Both private, both without shame.',
-        ctas: '<a class="btn btn-gold" href="#worlds">Explore both worlds</a><a class="btn btn-cop" href="#devices">Shop pleasure</a>'
-      },
-      aanand: {
-        shl: 'कामः पुरुषार्थः<small>Kama is one of life’s aims — a science, not a secret</small>',
-        h: 'Explore <span class="amp">boldly.</span> Without shame.',
-        lede: 'Tasteful, body-safe intimacy for couples — devices in medical-grade silicone, natural intimate care, and rituals for two. Delivered in a plain parcel, always.',
-        ctas: '<a class="btn btn-cop" href="#devices">Shop pleasure</a><a class="btn btn-outline hero-ob" href="#care">Intimate care</a>'
-      }
-    };
-    var dataHi = {
-      aarogya: {
-        shl: data.aarogya.shl,
-        h: 'खुल के इलाज। <span class="amp">पूरा</span> जीवन।',
-        lede: 'AYUSH-लाइसेंस प्राप्त आयुर्वेदिक औषधियाँ, पंजीकृत डॉक्टर और संरचित कोर्स — कारण-आधारित, पूरी तरह निजी। हर उस भारतीय के लिए जिसे पूछने से रोका गया।',
-        ctas: '<a class="btn btn-gold" href="#timing">स्वास्थ्य देखें</a><a class="btn btn-outline hero-ob" href="#consult">डॉक्टर से पूछें · ₹99</a>'
-      },
-      both: {
-        shl: data.both.shl,
-        h: 'स्वास्थ्य के लिए ज्ञान। <span class="amp">आनंद</span> के लिए आज़ादी।',
-        lede: 'दो पंख, एक भरोसेमंद घर। <strong>आरोग्य</strong> — आयुर्वेदिक स्वास्थ्य, डॉक्टर और कोर्स। <strong>आनन्द</strong> — जोड़ों के लिए रुचिपूर्ण, शरीर-सुरक्षित अंतरंगता। दोनों निजी, दोनों बिना शर्म।',
-        ctas: '<a class="btn btn-gold" href="#worlds">दोनों संसार देखें</a><a class="btn btn-cop" href="#devices">आनंद की ख़रीदारी</a>'
-      },
-      aanand: {
-        shl: data.aanand.shl,
-        h: '<span class="amp">बेझिझक</span> जानिए। बिना शर्म।',
-        lede: 'जोड़ों के लिए रुचिपूर्ण, शरीर-सुरक्षित अंतरंगता — मेडिकल-ग्रेड सिलिकॉन उत्पाद, प्राकृतिक देखभाल और दो लोगों की रस्में। हमेशा सादे पार्सल में।',
-        ctas: '<a class="btn btn-cop" href="#devices">आनंद की ख़रीदारी</a><a class="btn btn-outline hero-ob" href="#care">अंतरंग देखभाल</a>'
-      }
-    };
-    var heroLang = 'en';
-    try { heroLang = localStorage.getItem('kkp_lang') || 'en'; } catch(e){}
-    var shl = document.getElementById('heroShl'), h1 = document.getElementById('heroH1'),
-        lede = document.getElementById('heroLede'), ctas = document.getElementById('heroCtas'),
-        btns = hero.querySelectorAll('.hero-toggle button'), swapT = null, curMode = 'both';
-    function setMode(mode){
-      var src = heroLang === 'hi' ? dataHi : data;
-      if (!src[mode]) return;
-      curMode = mode;
-      hero.classList.add('swapping');
-      clearTimeout(swapT);
-      swapT = setTimeout(function(){
-        hero.setAttribute('data-mode', mode);
-        shl.innerHTML = src[mode].shl; h1.innerHTML = src[mode].h;
-        lede.innerHTML = src[mode].lede; ctas.innerHTML = src[mode].ctas;
-        btns.forEach(function(b){
-          var on = b.getAttribute('data-mode') === mode;
-          b.classList.toggle('active', on); b.setAttribute('aria-selected', on ? 'true' : 'false');
-        });
-        hero.classList.remove('swapping');
-      }, 300);
+  if (!hero) return;
+  var data = {
+    aarogya: {
+      shl: 'धर्मार्थकाममोक्षाणाम् आरोग्यं मूलमुत्तमम्<small>Health is the supreme foundation of the four aims — Charaka Samhita 1.15</small>',
+      h: 'Heal openly. <span class="amp">Live</span> fully.',
+      lede: 'AYUSH-licensed Ayurvedic formulations, registered doctors and structured courses — cause-first, and completely private. For every Indian who was told not to ask.',
+      ctas: '<a class="btn btn-gold" href="aarogya.html">Explore wellness</a><a class="btn btn-outline hero-ob" href="#consult">Consult a doctor · ₹99</a>'
+    },
+    both: {
+      shl: 'धर्मार्थकामेभ्यो नमः<small>Salutations to dharma, artha and kama — Kamasutra 1.1.1</small>',
+      h: 'Wisdom for healing. <span class="amp">Freedom</span> for pleasure.',
+      lede: 'Two wings, one trusted house. <strong>Aarogya</strong> — Ayurvedic wellness, doctors and courses. <strong>Aanand</strong> — tasteful, body-safe intimacy for couples. Both private, both without shame.',
+      ctas: '<a class="btn btn-gold" href="aarogya.html">Explore Aarogya</a><a class="btn btn-cop" href="aanand.html">Explore Aanand</a>'
+    },
+    aanand: {
+      shl: 'कामः पुरुषार्थः<small>Kama is one of life’s aims — a science, not a secret</small>',
+      h: 'Explore <span class="amp">boldly.</span> Without shame.',
+      lede: 'Tasteful, body-safe intimacy for couples — devices in medical-grade silicone, natural intimate care, and rituals for two. Delivered in a plain parcel, always.',
+      ctas: '<a class="btn btn-cop" href="aanand.html">Shop pleasure</a><a class="btn btn-outline hero-ob" href="intimate-care.html">Intimate care</a>'
     }
-    btns.forEach(function(b){ b.addEventListener('click', function(){ setMode(b.getAttribute('data-mode')); }); });
-    window.addEventListener('kkp:lang', function(e){ heroLang = e.detail; setMode(curMode); });
-    if (heroLang === 'hi') setMode('both');
+  };
+  var dataHi = {
+    aarogya: {
+      shl: data.aarogya.shl,
+      h: 'खुल के इलाज। <span class="amp">पूरा</span> जीवन।',
+      lede: 'AYUSH-लाइसेंस प्राप्त आयुर्वेदिक औषधियाँ, पंजीकृत डॉक्टर और संरचित कोर्स — कारण-आधारित, पूरी तरह निजी। हर उस भारतीय के लिए जिसे पूछने से रोका गया।',
+      ctas: '<a class="btn btn-gold" href="aarogya.html">स्वास्थ्य देखें</a><a class="btn btn-outline hero-ob" href="#consult">डॉक्टर से पूछें · ₹99</a>'
+    },
+    both: {
+      shl: data.both.shl,
+      h: 'स्वास्थ्य के लिए ज्ञान। <span class="amp">आनंद</span> के लिए आज़ादी।',
+      lede: 'दो पंख, एक भरोसेमंद घर। <strong>आरोग्य</strong> — आयुर्वेदिक स्वास्थ्य, डॉक्टर और कोर्स। <strong>आनन्द</strong> — जोड़ों के लिए रुचिपूर्ण, शरीर-सुरक्षित अंतरंगता। दोनों निजी, दोनों बिना शर्म।',
+      ctas: '<a class="btn btn-gold" href="aarogya.html">आरोग्य देखें</a><a class="btn btn-cop" href="aanand.html">आनन्द देखें</a>'
+    },
+    aanand: {
+      shl: data.aanand.shl,
+      h: '<span class="amp">बेझिझक</span> जानिए। बिना शर्म।',
+      lede: 'जोड़ों के लिए रुचिपूर्ण, शरीर-सुरक्षित अंतरंगता — मेडिकल-ग्रेड सिलिकॉन उत्पाद, प्राकृतिक देखभाल और दो लोगों की रस्में। हमेशा सादे पार्सल में।',
+      ctas: '<a class="btn btn-cop" href="aanand.html">आनंद की ख़रीदारी</a><a class="btn btn-outline hero-ob" href="intimate-care.html">अंतरंग देखभाल</a>'
+    }
+  };
+  var heroLang = 'en';
+  try { heroLang = localStorage.getItem('kkp_lang') || 'en'; } catch(e){}
+  var shl = document.getElementById('heroShl'), h1 = document.getElementById('heroH1'),
+      lede = document.getElementById('heroLede'), ctas = document.getElementById('heroCtas'),
+      btns = hero.querySelectorAll('.hero-toggle button'), swapT = null, curMode = 'both';
+  function setMode(mode){
+    var src = heroLang === 'hi' ? dataHi : data;
+    if (!src[mode]) return;
+    curMode = mode;
+    hero.classList.add('swapping');
+    clearTimeout(swapT);
+    swapT = setTimeout(function(){
+      hero.setAttribute('data-mode', mode);
+      shl.innerHTML = src[mode].shl; h1.innerHTML = src[mode].h;
+      lede.innerHTML = src[mode].lede; ctas.innerHTML = src[mode].ctas;
+      btns.forEach(function(b){
+        var on = b.getAttribute('data-mode') === mode;
+        b.classList.toggle('active', on); b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      hero.classList.remove('swapping');
+    }, 300);
   }
-
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var targets = document.querySelectorAll('.catrow, .band, .aan-hero, .consult, .cmp, .faq, .herbs .intro, .steps, .worlds');
-  if (!reduce && 'IntersectionObserver' in window) {
-    targets.forEach(function(el){ el.classList.add('reveal'); });
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    targets.forEach(function(el){ obs.observe(el); });
-  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setMode(b.getAttribute('data-mode')); }); });
+  window.addEventListener('kkp:lang', function(e){ heroLang = e.detail; setMode(curMode); });
+  if (heroLang === 'hi') setMode('both');
 })();
 </script>
 </body>
