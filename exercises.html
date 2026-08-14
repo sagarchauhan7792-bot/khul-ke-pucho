@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhyasa — Self-Practice Exercises for Timing, Erection Health & Intimacy | Khul Ke Pucho</title>
+<meta name="description" content="Free, private, step-by-step exercises: stop-start and squeeze technique for timing, pelvic-floor training, breathwork for erection health, and sensate-focus rituals for couples. With built-in practice timers.">
+<link rel="canonical" href="https://sagarchauhan7792-bot.github.io/khul-ke-pucho/exercises.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Khul Ke Pucho">
+<meta property="og:title" content="Abhyasa — Self-Practice Exercises | Khul Ke Pucho">
+<meta property="og:description" content="Free, private, step-by-step exercises for timing, erection health, vitality and couples' intimacy — with built-in practice timers and a streak tracker.">
+<meta property="og:url" content="https://sagarchauhan7792-bot.github.io/khul-ke-pucho/exercises.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kkp.css">
+<script>
+window.KKP_GA4='TODO_GA4_ID';window.KKP_PIXEL='TODO_PIXEL_ID';
+(function(){var g=window.KKP_GA4;if(g&&g.indexOf('TODO')<0){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+g;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',g);}var p=window.KKP_PIXEL;if(p&&p.indexOf('TODO')<0){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',p);fbq('track','PageView');}})();
+</script>
+<style>
+/* exercises page */
+.exhero{background:linear-gradient(120deg,var(--kumkum) 0%,var(--kumkum-deep) 55%,#3A2233 100%);color:var(--ivory);padding:46px 0 42px;position:relative;overflow:hidden}
+.exhero::after{content:'अ';position:absolute;right:-16px;bottom:-70px;font:400 260px/1 'Tiro Devanagari Sanskrit',serif;color:rgba(221,185,103,.07);pointer-events:none}
+.exhero .wrap{position:relative;z-index:1}
+.exhero .shl{font-family:'Tiro Devanagari Sanskrit',serif;font-size:17px;color:var(--gold-l)}
+.exhero .shl small{font:italic 500 12.5px/1.4 'EB Garamond',serif;color:#D8BFA8;display:block;margin-top:3px}
+.exhero h1{color:var(--ivory);font-size:clamp(28px,4.6vw,44px);margin:14px 0 8px}
+.exhero .lede{color:#EBDBC8;font-size:16.5px;max-width:62ch;margin:0 0 16px}
+.streakbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(221,185,103,.14);border:1px solid rgba(221,185,103,.45);border-radius:999px;padding:9px 18px;font:700 13.5px/1 'Mukta',sans-serif;color:var(--gold-l)}
+/* filters */
+.exfilters{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin:26px 0 6px}
+.exf{background:var(--surface);border:1.5px solid var(--line);border-radius:999px;padding:10px 18px;cursor:pointer;font:700 13px/1 'Mukta',sans-serif;color:var(--ink);transition:all .15s ease}
+.exf:hover{border-color:var(--kanchan)}
+.exf.on{background:var(--kumkum);border-color:var(--kumkum);color:var(--ivory)}
+/* cards */
+.exgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px;margin-top:20px}
+.exc{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease,opacity .25s ease}
+.exc:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(36,20,25,.14)}
+.exc.hide{display:none}
+.exc .stripe{height:6px}
+.exc[data-cat="pe"] .stripe{background:linear-gradient(90deg,var(--kanchan),var(--gold-l))}
+.exc[data-cat="ed"] .stripe{background:linear-gradient(90deg,#2F5D46,#5B8A6E)}
+.exc[data-cat="vit"] .stripe{background:linear-gradient(90deg,#5E1F30,#9A4B60)}
+.exc[data-cat="cpl"] .stripe{background:linear-gradient(90deg,var(--tamra),var(--gulab))}
+.exc .exbody{padding:18px 20px 16px;display:flex;flex-direction:column;flex:1}
+.exc .sanskrit{font-size:22px;color:var(--kanchan)}
+.exc[data-cat="ed"] .sanskrit{color:var(--vana)}
+.exc[data-cat="cpl"] .sanskrit{color:var(--tamra)}
+.exc h3{margin:6px 0 4px;font-size:19px}
+.exc .promise{font-size:13.5px;color:#5C4030;flex:1;margin:0 0 12px}
+.exchips{display:flex;gap:6px;flex-wrap:wrap}
+.exch{font:700 10.5px/1 'Mukta',sans-serif;letter-spacing:.05em;text-transform:uppercase;background:var(--chip);border-radius:999px;padding:5px 10px;color:#7A5C46}
+.exch.lvl-Beginner{background:#E4EFE7;color:#2F5D46}
+.exch.lvl-Regular{background:#F6E8CE;color:#8a6414}
+.exch.lvl-Advanced{background:#F3DCDF;color:#8C3A4E}
+.exc .done{font:700 11px/1 'Mukta',sans-serif;color:var(--vana);margin-top:10px}
+/* modal */
+.exmodal .qbox{max-width:600px}
+.exsteps{margin:12px 0;padding:0;list-style:none;counter-reset:xs}
+.exsteps li{position:relative;padding:9px 0 9px 42px;border-bottom:1px dashed var(--line);font-size:14.5px}
+.exsteps li::before{counter-increment:xs;content:counter(xs);position:absolute;left:4px;top:8px;width:26px;height:26px;border-radius:50%;background:var(--chip);color:var(--kumkum);font:700 13px/26px 'Mukta',sans-serif;text-align:center}
+.excaut{background:#FBF1EC;border:1px solid #E7C3B4;border-radius:10px;padding:11px 14px;font-size:13px;margin:12px 0}
+.exrel{display:flex;align-items:center;gap:12px;background:var(--chip);border-radius:12px;padding:12px 14px;margin-top:12px}
+.exrel .dth{width:44px;height:44px;border-radius:9px;background:var(--surface);display:flex;align-items:center;justify-content:center;font-family:'Tiro Devanagari Sanskrit',serif;color:var(--kanchan);font-size:18px;flex:none}
+.exrel b{font-family:'EB Garamond',serif;color:var(--kumkum)}
+.exrel span{font-size:12.5px;color:#7A5C46;display:block}
+/* timer */
+.timerbox{display:flex;flex-direction:column;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0 4px}
+.tring{position:relative;width:150px;height:150px}
+.tring svg{transform:rotate(-90deg)}
+.tring .bg{stroke:var(--chip);fill:none}
+.tring .fg{stroke:var(--kanchan);fill:none;stroke-linecap:round;transition:stroke-dashoffset .3s linear}
+.tmid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tmid b{font:600 30px/1 'EB Garamond',serif;color:var(--kumkum);font-variant-numeric:tabular-nums}
+.tmid span{font:700 11px/1.4 'Mukta',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#7A5C46}
+.breathcue{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,var(--gold-l),var(--kanchan));margin:0 auto;transition:transform 3.8s ease-in-out;transform:scale(.55)}
+.breathcue.in{transform:scale(1)}
+.tbtns{display:flex;gap:8px}
+@media(prefers-reduced-motion:reduce){.breathcue{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="agegate" id="ageGate">
+  <div class="agebox">
+    <div class="sanskrit">॥</div>
+    <h2>Are you 18 or older?</h2>
+    <p>Khul Ke Pucho offers sexual wellness products and intimate care for adults. Please confirm your age to enter.</p>
+    <button class="btn btn-gold" id="ageYes">Yes, I am 18+</button>
+    <button class="btn btn-outline" style="border-color:var(--gold-l);color:var(--gold-l)" id="ageNo">No, exit</button>
+    <small>We ask this to keep intimate content away from minors. Nothing is stored beyond your choice on this device.</small>
+  </div>
+</div>
+
+<div class="announce"><b>KKP99</b> — first doctor consult at ₹99 · Free discreet delivery above ₹999 · <b>COD across India</b></div>
+
+<header class="hd">
+  <div class="wrap hd-main">
+    <a class="logo" href="index.html"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a>
+    <div class="hd-acts">
+      <button class="langbtn" id="langTgl" aria-label="भाषा बदलें / change language">हिंदी</button>
+      <a class="btn btn-dark btn-sm hd-consult" href="consultation.html">Consult a doctor · ₹99</a>
+      <button class="cartbtn" id="cartOpen" aria-label="Open cart">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H8.7a1.5 1.5 0 0 1-1.5-1.3Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cartn" id="cartN">0</span>
+      </button>
+      <button class="navtgl" id="navTgl" aria-expanded="false" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="catnav" id="catnav" aria-label="Shop menus">
+    <div class="wrap catnav-in">
+      <div class="menu"><a href="index.html" style="color:var(--kumkum)">Home</a></div>
+      <div class="menu" data-menu>
+        <button aria-expanded="false">आरोग्य · Wellness <span class="car">▼</span></button>
+        <div class="dd">
+          <a href="aarogya.html"><span class="dico">आ</span><div><b>Aarogya overview</b><span>The wellness wing — doctors, courses, formulations</span></div></a>
+          <a href="timing.html"><span class="dico">का</span><div><b>Timing &amp; PE</b><span>Courses, kit and the honest plan</span></div></a>
+          <a href="erection-health.html"><span class="dico">ब</span><div><b>Erection health</b><span>Cause-first: circulation, sleep, stress</span></div></a>
+          <a href="vitality.html"><span class="dico">ऊ</span><div><b>Vitality &amp; energy</b><span>Classical formulations, lab-tested</span></div></a>
+          <a class="dd-cta" href="consultation.html">Consult a doctor · ₹99</a>
+        </div>
+      </div>
+      <div class="menu aan" data-menu>
+        <button aria-expanded="false">आनन्द · Pleasure <span class="car">▼</span></button>
+        <div class="dd">
+          <a href="aanand.html"><span class="dico">आ</span><div><b>Aanand overview</b><span>The pleasure wing — tasteful, body-safe</span></div></a>
+          <a href="devices.html"><span class="dico">यु</span><div><b>Devices</b><span>Medical-grade silicone, whisper-quiet</span></div></a>
+          <a href="intimate-care.html"><span class="dico">स्</span><div><b>Intimate care</b><span>Gels, oils and candles — body-safe</span></div></a>
+          <a href="couples.html"><span class="dico">मि</span><div><b>For couples</b><span>Sets, rituals and conversation</span></div></a>
+        </div>
+      </div>
+      <div class="menu"><a href="exercises.html" style="box-shadow:inset 0 -3px 0 var(--kanchan)">Exercises</a></div>
+      <div class="menu"><a href="journal.html">Journal</a></div>
+      <div class="menu"><a href="#" data-quiz-open>2-min self-check</a></div>
+    </div>
+  </nav>
+</header>
+
+<section class="exhero">
+  <div class="wrap">
+    <div class="shl sanskrit">अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते<small>By practice it is mastered — Bhagavad Gita 6.35</small></div>
+    <h1 id="catH1">Abhyasa — the practice room</h1>
+    <p class="lede" id="catLede">Free, private, step-by-step exercises that real sexual-wellness practice is built on — timing control, pelvic-floor strength, calm circulation, and rituals for two. Each with a built-in timer. Nothing leaves your phone.</p>
+    <span class="streakbadge" id="streakBadge">🔥 Start your first practice today</span>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:54px">
+  <div class="exfilters" id="exFilters">
+    <button class="exf on" data-f="all">All practices</button>
+    <button class="exf" data-f="pe">Timing &amp; PE</button>
+    <button class="exf" data-f="ed">Erection health</button>
+    <button class="exf" data-f="vit">Vitality &amp; energy</button>
+    <button class="exf" data-f="cpl">Couples &amp; intimacy</button>
+  </div>
+  <div class="exgrid" id="exGrid"></div>
+  <p class="center" style="font-size:12px;color:#7A5C46;margin-top:22px;max-width:76ch;margin-inline:auto">Training and education for adults — not medical advice, a diagnosis, or a promise of outcomes. Results build over weeks of regular practice. If you have heart, BP or respiratory conditions, check breathwork with a doctor first — ours cost ₹99. Stop any practice that causes pain.</p>
+</section>
+
+<!-- structured-course band -->
+<section class="pad" style="padding-top:0"><div class="wrap"><div class="consult">
+  <div><div class="eyebrow">From practice to program</div><h2 style="margin-top:6px">These exercises are the ingredients. The courses are the recipe.</h2><p>The PME and ED courses turn these practices into a doctor-designed, week-by-week program with tracking — so you know you are doing the right thing, in the right order, for long enough to work.</p></div>
+  <div class="center"><a class="btn btn-dark" href="pme-course.html">PME Course — ₹1,499</a><br><a class="btn btn-outline btn-sm" href="ed-course.html" style="margin-top:10px">ED Course — ₹1,499</a></div>
+</div></div></section>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <div class="logo" style="margin-bottom:12px"><span class="sanskrit" style="color:var(--ivory);font-size:22px">खुल के पूछो</span><small style="color:var(--gold-l)">Khul Ke Pucho</small></div>
+      <p style="font-size:13.5px;max-width:34ch">Two wings, one house. Ayurvedic wellness &amp; modern intimacy — private, body-safe, and without shame.</p>
+      <p style="font-size:12px;opacity:.8">AYUSH License: <em>TODO — add number</em></p>
+    </div>
+    <div><h4>Aarogya · Wellness</h4><ul><li><a href="timing.html">Timing &amp; PE</a></li><li><a href="erection-health.html">Erection health</a></li><li><a href="vitality.html">Vitality &amp; energy</a></li><li><a href="consultation.html">Doctor consult</a></li></ul></div>
+    <div><h4>Aanand · Pleasure</h4><ul><li><a href="devices.html">Devices</a></li><li><a href="intimate-care.html">Intimate care</a></li><li><a href="couples.html">For couples</a></li></ul></div>
+    <div><h4>Learn &amp; practice</h4><ul><li><a href="exercises.html">Exercises</a></li><li><a href="journal.html">Journal</a></li><li><a href="track-order.html">Track my order</a></li></ul></div>
+  </div>
+  <div class="wrap" style="text-align:center;padding-top:6px">
+    <div style="display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;padding-bottom:14px;border-bottom:1px solid rgba(221,185,103,.2)">
+      <a href="shipping.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Shipping</a>
+      <a href="refund.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Returns &amp; Refunds</a>
+      <a href="privacy.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Privacy</a>
+      <a href="terms.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Terms</a>
+      <a href="discreet-delivery.html" style="color:var(--gold-l);text-decoration:none;font-size:13.5px">Discreet delivery</a>
+    </div>
+  </div>
+  <div class="wrap seal">
+    <div class="sanskrit">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</div>
+    <div style="margin-top:4px">May all be happy; may all be free of disease.</div>
+    <div style="margin-top:9px;opacity:.75">For adults 18+. Ayurvedic proprietary medicine — results vary; consult a physician if symptoms persist. Consultations are with registered practitioners and are not a substitute for emergency care. Intimate products are personal-care items; please read usage &amp; hygiene instructions.</div>
+    <div style="margin-top:7px;opacity:.75">© 2026 Khul Ke Pucho · All rights reserved</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dhead"><h3>Your cart</h3><button class="dclose" id="cartClose" aria-label="Close cart">&times;</button></div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot">
+    <div class="dtot" id="dbund" style="display:none;color:var(--vana);font-size:14.5px;margin-bottom:2px"><span id="dbundl">Bundle savings</span><span id="dbundv"></span></div>
+    <div class="dtot"><span id="dtotl">Total</span><span id="dtot">₹0</span></div>
+    <div class="dnote">Plain brown parcel · No product name outside · COD available</div>
+    <a class="btn btn-gold" id="goCheckout" href="checkout.html">Proceed to checkout →</a>
+    <a class="btn btn-outline" id="waCheckout" href="#" target="_blank" rel="noopener" style="border-color:#25D366;color:#1a8a45">Order on WhatsApp</a>
+    <button class="btn btn-outline" id="cartClose2">Continue browsing</button>
+  </div>
+</aside>
+
+<div class="qmodal" id="qmodal" role="dialog" aria-modal="true" aria-label="Self check"><div class="qbox" id="qbox"></div></div>
+
+<!-- exercise detail modal -->
+<div class="qmodal exmodal" id="exModal" role="dialog" aria-modal="true" aria-label="Exercise detail"><div class="qbox" id="exBox"></div></div>
+
+<div class="mbar">
+  <button class="btn btn-outline" data-quiz-open>2-min check</button>
+  <a class="btn btn-gold" href="#exGrid" style="flex:1">Practices</a>
+  <button class="btn btn-dark" id="mCart">Cart (<span id="cartN2">0</span>)</button>
+</div>
+
+<a class="wa" href="https://wa.me/919999999999?text=Namaste%2C%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5a1.8 1.8 0 0 0 .3-.4.5.5 0 0 0 0-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.5 14.5 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="toast" id="toast">Added to cart</div>
+
+<button class="qexit" id="qexit" title="Leave this site instantly">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  Quick exit
+</button>
+
+<script>
+window.KKP_I18N_PAGE = [
+  ['#catH1','अभ्यास — साधना का कमरा'],
+  ['#catLede','मुफ़्त, निजी, कदम-दर-कदम अभ्यास — समय पर नियंत्रण, पेल्विक-फ़्लोर शक्ति, शांत रक्त-संचार और दो लोगों की रस्में। हर अभ्यास के साथ टाइमर। कुछ भी आपके फ़ोन से बाहर नहीं जाता।']
+];
+(function () {
+  'use strict';
+  var EX = [
+    {id:'stopstart',cat:'pe',sk:'विराम',name:'Stop–Start Training',promise:'The classic timing-control drill: learn to recognise the point of no return, then step back from it.',lvl:'Beginner',dur:10,freq:'3×/week',
+     steps:['Alone and unhurried, begin stimulation and rate your arousal from 1–10.','At 7/10 — clearly before the point of no return — stop completely.','Breathe slowly until arousal drops to 4/10 or lower.','Repeat the cycle 4–5 times per session; finish only on the final cycle.','Over sessions, hold at 7–8/10 for longer before stopping.'],
+     notice:'Most men feel noticeably better control in 2–4 weeks of regular practice.',caution:'This is a training drill, not a test. If anxiety spikes, shorten the session — consistency beats intensity.',rel:{key:'pme',why:'The PME Course sequences this into a week-by-week program.'}},
+    {id:'squeeze',cat:'pe',sk:'मुद्रा',name:'Squeeze Technique',promise:'The pause-and-squeeze method sex therapists have taught for decades.',lvl:'Beginner',dur:10,freq:'3×/week',
+     steps:['Practise the stop–start cycle as usual.','At 7–8/10, stop and gently squeeze just below the glans for 10–15 seconds.','Let arousal settle by 2–3 points, then resume.','Repeat 4–5 cycles per session.','With a partner, teach them the squeeze — it becomes a shared skill.'],
+     notice:'Control typically improves across 3–6 weeks; works well combined with stop–start.',caution:'The squeeze should be firm but never painful.',rel:{key:'pme',why:'Structured version with tracking inside the PME Course.'}},
+    {id:'kegel',cat:'pe',sk:'मूलबन्ध',name:'Pelvic-Floor Kegels',promise:'The muscle you use to stop urine mid-flow is the same one that controls timing. Train it.',lvl:'Beginner',dur:5,freq:'Daily',
+     steps:['Find the muscle: stop urine mid-flow once to identify it (then never practise during urination).','Squeeze and hold 3 seconds, relax 3 seconds — 10 reps.','Do 3 sets, breathing normally throughout — don’t clench abs or thighs.','Progress to 5-second holds over two weeks.','Add 10 quick pulses at the end of each session.'],
+     notice:'Pelvic-floor studies show meaningful timing gains around week 4–8 of daily work.',caution:'More is not better — an over-tight pelvic floor can worsen timing. Balance with reverse kegels.',rel:{key:'pme',why:'The course pairs kegels with the drills in the right ratio.'}},
+    {id:'revkegel',cat:'pe',sk:'शिथिल',name:'Reverse Kegels',promise:'The release half of pelvic training — most men skip it, and it matters just as much.',lvl:'Regular',dur:5,freq:'Daily',
+     steps:['Sit or lie comfortably; take a slow belly breath.','On the inhale, gently bear down as if starting urination — feel the floor drop and soften.','Hold the relaxed-open feeling 5 seconds; exhale and return to neutral.','10 slow reps; never strain.','Pair each tense kegel session with a reverse session.'],
+     notice:'Softens the “always clenched” pattern that quietly drives early finishing.',caution:'This is gentle. If you feel pressure or pain, you are pushing too hard.',rel:{key:'consult',why:'Unsure about your pelvic pattern? Ask in a ₹99 consult.'}},
+    {id:'edging',cat:'pe',sk:'सीमा',name:'Edging Ladder',promise:'Advanced arousal-control: surf close to the edge, longer each week, without going over.',lvl:'Advanced',dur:15,freq:'2×/week',
+     steps:['Only start after 2+ weeks of stop–start practice.','Bring arousal to 8/10 and hold that level — vary speed and pressure to stay there.','Hold the edge for 30 seconds, then back off to 5/10.','Three edges per session, extending holds by 15 seconds weekly.','Log your longest hold — the number itself builds confidence.'],
+     notice:'The strongest single predictor of control gains in practice programs.',caution:'Frustration means you have jumped a level — go back to stop–start for a week.',rel:{key:'pme',why:'The PME Course’s weeks 4–6 are built around this ladder.'}},
+    {id:'boxbreath',cat:'pe',sk:'समवृत्ति',name:'Box Breathing (in intimacy)',promise:'4-4-4-4 breathing steadies the nervous system that panic-rushes the finish.',lvl:'Beginner',dur:4,freq:'As needed',breath:'box',
+     steps:['Inhale through the nose for 4 counts.','Hold gently for 4 counts.','Exhale slowly for 4 counts.','Hold empty for 4 counts, and repeat.','Practise daily so it becomes automatic — then use it during intimacy whenever arousal spikes.'],
+     notice:'Works immediately as a spike-breaker; the reflex builds with daily practice.',caution:'Breath-holds should be comfortable. Heart or BP condition? Confirm with a doctor first.',rel:{key:'consult',why:'A doctor can tailor breathwork to your health in one ₹99 call.'}},
+    {id:'walk',cat:'ed',sk:'गति',name:'Brisk-Walk Protocol',promise:'Erections are circulation. A daily brisk walk is the most underrated erection exercise there is.',lvl:'Beginner',dur:30,freq:'5×/week',
+     steps:['Walk fast enough that talking is possible but singing is not.','Hold it 30 minutes; morning light doubles the sleep benefit.','Swing arms, breathe through the nose where you can.','Track a weekly streak — the habit is the medicine.','After 4 weeks, add two short faster intervals per walk.'],
+     notice:'Vascular studies link regular aerobic work with measurably better erectile function in 8–12 weeks.',caution:'Chest pain, dizziness or breathlessness — stop and see a doctor promptly.',rel:{key:'ed',why:'The ED Course builds circulation, sleep and practice into one plan.'}},
+    {id:'478',cat:'ed',sk:'शान्ति',name:'4-7-8 Night Downshift',promise:'Stress hormones are erection killers. This pre-sleep breath drops the body into repair mode.',lvl:'Beginner',dur:3,freq:'Nightly',breath:'478',
+     steps:['In bed, tongue resting behind upper teeth.','Inhale quietly through the nose for 4 counts.','Hold for 7 counts.','Exhale audibly through the mouth for 8 counts.','Four cycles to start; work up to eight.'],
+     notice:'Deeper sleep in days; sleep is where testosterone and repair happen.',caution:'Mild light-headedness at first is common — do it lying down.',rel:{key:'shilajit',why:'Pair with rasayana support for the recovery foundation.'}},
+    {id:'vajra',cat:'ed',sk:'वज्रासन',name:'Vajrasana + Belly Breath',promise:'The classical after-meal seat that aids digestion and pelvic blood flow.',lvl:'Beginner',dur:10,freq:'Daily',
+     steps:['Kneel and sit back on your heels, spine tall (cushion under ankles if needed).','Hands on thighs; close your eyes.','Breathe into the belly — let it rise on the inhale, fall on the exhale.','Start with 5 minutes after dinner; build to 10.','Finish with 5 gentle kegel pulses.'],
+     notice:'A calm 10-minute daily anchor; benefits compound with the walk protocol.',caution:'Knee or ankle injuries — use a chair variant instead: sit tall, feet flat.',rel:{key:'yoga',why:'The Yoga for Vitality Course sequences the full classical set.'}},
+    {id:'surya',cat:'vit',sk:'सूर्य',name:'Surya Namaskar Ladder',promise:'Twelve postures, one flowing sequence — the classical full-body vitality builder.',lvl:'Regular',dur:15,freq:'Daily',
+     steps:['Learn the 12-posture cycle slowly first — form before speed.','Week 1: 3 rounds each morning, breath matched to movement.','Add one round per week toward 12.','Keep it before breakfast; empty stomach, open window.','On rest days, do 2 gentle rounds anyway — the streak matters.'],
+     notice:'Stamina, flexibility and mood lift within 3–4 weeks; a foundation for everything else.',caution:'Back pain or BP: learn the modified sequence first — ask in a consult.',rel:{key:'yoga',why:'Guided rounds with form cues inside the Yoga Course.'}},
+    {id:'bhramari',cat:'vit',sk:'भ्रामरी',name:'Bhramari (Humming Bee)',promise:'The humming exhale that switches off a racing mind before sleep.',lvl:'Beginner',dur:5,freq:'Nightly',
+     steps:['Sit comfortably; eyes closed; thumbs gently closing the ears.','Inhale through the nose.','Exhale with a low, steady hum — feel it vibrate in the skull.','Six slow rounds; let each hum lengthen naturally.','Sit in the silence for 30 seconds after the last round.'],
+     notice:'Most people feel the downshift on the first try; sleep quality builds over a week.',caution:'Ear infection — skip the ear-closing, just hum.',rel:{key:'shilajit',why:'Recovery practices pair with rasayana support.'}},
+    {id:'sensate1',cat:'cpl',sk:'स्पर्श',name:'Sensate Focus I',promise:'The therapist-designed couples ritual: touch without goals, and let pressure dissolve.',lvl:'Beginner',dur:20,freq:'Weekly',
+     steps:['Agree first: intercourse is off the menu tonight — that is the whole point.','Partner A touches B everywhere except breasts and genitals, 10 minutes; B only notices sensations.','Swap roles for 10 minutes.','No performance, no reciprocation pressure, no commentary except “softer/slower”.','Afterwards, each shares one touch they loved. Sparsh oil or the Jyoti candle set the stage well.'],
+     notice:'Couples typically report less pressure and more desire within 2–3 sessions.',caution:'If either partner feels anxious, shorten the session — never push through.',rel:{key:'sparsh',why:'A warm massage oil made for exactly this ritual.'}},
+    {id:'sensate2',cat:'cpl',sk:'स्पर्श २',name:'Sensate Focus II',promise:'Stage two: intimate touch returns — still without goals, still without pressure.',lvl:'Regular',dur:20,freq:'Weekly',
+     steps:['Only begin after 2–3 comfortable Stage I sessions.','Same structure, now including breasts and genitals — but climax stays off the menu.','The receiving partner guides with hand-over-hand: show, don’t tell.','Keep 10 minutes each; end when the timer ends, deliberately.','Talk after: one thing to keep, one thing to try next time.'],
+     notice:'This stage rebuilds arousal trust — where the arousal-gap science becomes real.',caution:'If old pressure creeps back, return to Stage I for a week. No failure in that.',rel:{key:'snigdha',why:'Comfort first — pH-balanced and condom-safe.'}},
+    {id:'eyegaze',cat:'cpl',sk:'दृष्टि',name:'Eye-Gazing + Synced Breath',promise:'Five minutes of shared silence that feels strangely powerful by minute three.',lvl:'Beginner',dur:5,freq:'Weekly',
+     steps:['Sit cross-legged facing each other, knees close, lights low.','Soft gaze into one eye; giggling is normal for the first minute — let it pass.','Begin matching breath: inhale together, exhale together.','Stay 5 minutes; end with a hug that lasts three full breaths.','Say one sentence each: “Right now I feel …”.'],
+     notice:'A fast intimacy reset; many couples make it a weekly ritual.',caution:'None — except it feels intense. That is the point.',rel:{key:'khulibaat',why:'Follow with three Khuli Baat cards while the openness is there.'}},
+    {id:'massage',cat:'cpl',sk:'अभ्यंग',name:'Partner Massage Ritual',promise:'The 15–20 minutes of unhurried warmth that arousal science says most couples skip.',lvl:'Beginner',dur:20,freq:'Weekly',
+     steps:['Warm the room; light the Jyoti candle or warm Sparsh oil in your palms.','Start at shoulders and back — long, slow strokes, zero hurry.','Move to arms, hands, scalp; ask “more or less pressure?” once, then read the body.','Ten minutes each; receiving partner’s only job is to enjoy.','Where it leads is up to you both — the ritual is complete either way.'],
+     notice:'Builds the 15–20 minute arousal runway most couples never give themselves.',caution:'Patch-test oils on the forearm first; avoid broken skin.',rel:{key:'jyoti',why:'The massage candle made for this ritual.'}}
+  ];
+
+  var relNames={pme:'PME Course · ₹1,499',ed:'ED Course · ₹1,499',consult:'Private Doctor Consultation · ₹99',shilajit:'Shilajit · ₹2,400',yoga:'Yoga for Vitality · ₹999',sparsh:'Sparsh Massage Oil · ₹899',snigdha:'Snigdha Intimate Gel · ₹699',khulibaat:'Khuli Baat Card Game · ₹799',jyoti:'Jyoti Massage Candle · ₹999'};
+  var relMarks={pme:'का',ed:'ब',consult:'वै',shilajit:'शि',yoga:'यो',sparsh:'स्प',snigdha:'स्',khulibaat:'ख',jyoti:'ज्यो'};
+
+  /* streak store */
+  function store(){try{return JSON.parse(localStorage.getItem('kkp_abhyasa')||'{}');}catch(e){return {};}}
+  function saveStore(s){try{localStorage.setItem('kkp_abhyasa',JSON.stringify(s));}catch(e){}}
+  function today(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+  function yesterday(){var d=new Date();d.setDate(d.getDate()-1);return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+  function renderStreak(){
+    var s=store(),b=document.getElementById('streakBadge');
+    if(!s.streak){b.textContent='🔥 Start your first practice today';return;}
+    b.textContent='🔥 '+s.streak+'-day practice streak'+(s.last===today()?' — done today ✓':' — practise today to keep it');
+  }
+  function markPracticed(id){
+    var s=store();
+    s.counts=s.counts||{};s.counts[id]=(s.counts[id]||0)+1;
+    if(s.last!==today()){
+      s.streak=(s.last===yesterday())?(s.streak||0)+1:1;
+      s.last=today();
+    }
+    saveStore(s);renderStreak();renderGrid(curFilter);
+  }
+
+  /* grid */
+  var grid=document.getElementById('exGrid'),curFilter='all';
+  function renderGrid(f){
+    curFilter=f;
+    var s=store(),counts=s.counts||{};
+    grid.innerHTML=EX.map(function(e){
+      var hide=f!=='all'&&e.cat!==f;
+      return '<div class="exc'+(hide?' hide':'')+'" data-cat="'+e.cat+'" data-ex="'+e.id+'" role="button" tabindex="0" aria-label="'+e.name+'">'+
+        '<div class="stripe"></div><div class="exbody">'+
+        '<span class="sanskrit">'+e.sk+'</span><h3>'+e.name+'</h3><p class="promise">'+e.promise+'</p>'+
+        '<div class="exchips"><span class="exch lvl-'+e.lvl+'">'+e.lvl+'</span><span class="exch">'+e.dur+' min</span><span class="exch">'+e.freq+'</span></div>'+
+        (counts[e.id]?'<div class="done">✓ practised '+counts[e.id]+' time'+(counts[e.id]>1?'s':'')+'</div>':'')+
+        '</div></div>';
+    }).join('');
+  }
+  renderGrid('all');renderStreak();
+
+  document.getElementById('exFilters').addEventListener('click',function(e){
+    var b=e.target.closest('[data-f]');if(!b)return;
+    document.querySelectorAll('.exf').forEach(function(x){x.classList.toggle('on',x===b);});
+    renderGrid(b.getAttribute('data-f'));
+  });
+
+  /* modal + timer */
+  var modal=document.getElementById('exModal'),box=document.getElementById('exBox');
+  var tInt=null,tLeft=0,tTotal=0,breathInt=null;
+  var CIRC=2*Math.PI*66;
+  function fmt(n){return Math.floor(n/60)+':'+('0'+(n%60)).slice(-2);}
+  function stopTimer(){clearInterval(tInt);tInt=null;clearInterval(breathInt);breathInt=null;}
+  function openEx(id){
+    var e=EX.filter(function(x){return x.id===id;})[0];if(!e)return;
+    stopTimer();tTotal=e.dur*60;tLeft=tTotal;
+    box.innerHTML='<button class="qx" id="exClose" aria-label="Close">&times;</button>'+
+      '<div class="qstep">'+({pe:'Timing & PE',ed:'Erection health',vit:'Vitality & energy',cpl:'Couples & intimacy'})[e.cat]+' · '+e.lvl+' · '+e.freq+'</div>'+
+      '<div class="qq"><span class="sanskrit" style="color:var(--kanchan);margin-right:8px">'+e.sk+'</span>'+e.name+'</div>'+
+      '<ol class="exsteps">'+e.steps.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ol>'+
+      '<p style="font-size:13.5px"><b style="color:var(--vana)">When you’ll notice change:</b> '+e.notice+'</p>'+
+      '<div class="excaut">⚠️ '+e.caution+'</div>'+
+      '<div class="timerbox">'+
+        (e.breath?'<div class="breathcue" id="breathCue"></div><div id="breathLbl" style="font:700 12px/1 \'Mukta\',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#7A5C46">Press start</div>':'')+
+        '<div class="tring"><svg width="150" height="150"><circle class="bg" cx="75" cy="75" r="66" stroke-width="9"/><circle class="fg" id="tFg" cx="75" cy="75" r="66" stroke-width="9" stroke-dasharray="'+CIRC+'" stroke-dashoffset="0"/></svg><div class="tmid"><b id="tTime">'+fmt(tLeft)+'</b><span>'+e.dur+'-min practice</span></div></div>'+
+        '<div class="tbtns"><button class="btn btn-gold btn-sm" id="tStart">Start</button><button class="btn btn-outline btn-sm" id="tReset">Reset</button></div>'+
+      '</div>'+
+      '<button class="btn btn-dark" style="width:100%;margin-top:10px" id="exDone">✓ Mark practised today</button>'+
+      '<div class="exrel"><div class="dth">'+relMarks[e.rel.key]+'</div><div><b>'+relNames[e.rel.key]+'</b><span>'+e.rel.why+'</span></div><button class="btn btn-gold btn-sm" data-add="'+e.rel.key+'" style="margin-left:auto;flex:none">Add</button></div>';
+    modal.classList.add('on');document.getElementById('overlay').classList.add('on');
+    document.getElementById('exClose').addEventListener('click',closeEx);
+    document.getElementById('exDone').addEventListener('click',function(){markPracticed(e.id);this.textContent='✓ Counted — streak updated';this.disabled=true;});
+    document.getElementById('tReset').addEventListener('click',function(){stopTimer();tLeft=tTotal;tick(e);document.getElementById('tStart').textContent='Start';});
+    document.getElementById('tStart').addEventListener('click',function(){
+      var btn=this;
+      if(tInt){stopTimer();btn.textContent='Resume';return;}
+      btn.textContent='Pause';
+      tInt=setInterval(function(){
+        tLeft--;if(tLeft<=0){tLeft=0;stopTimer();btn.textContent='Done ✓';}
+        tick(e);
+      },1000);
+      if(e.breath)startBreath(e.breath);
+    });
+    tick(e);
+  }
+  function tick(e){
+    var t=document.getElementById('tTime'),fg=document.getElementById('tFg');
+    if(t)t.textContent=fmt(tLeft);
+    if(fg)fg.style.strokeDashoffset=String(CIRC*(1-tLeft/tTotal));
+  }
+  function startBreath(mode){
+    var cue=document.getElementById('breathCue'),lbl=document.getElementById('breathLbl');
+    if(!cue)return;
+    var phases=mode==='478'?[['Inhale',4,true],['Hold',7,null],['Exhale',8,false]]:[['Inhale',4,true],['Hold',4,null],['Exhale',4,false],['Hold',4,null]];
+    var pi=0,left=phases[0][1];
+    function apply(){var p=phases[pi];lbl.textContent=p[0]+' · '+left;if(p[2]===true)cue.classList.add('in');if(p[2]===false)cue.classList.remove('in');}
+    apply();
+    breathInt=setInterval(function(){
+      left--;
+      if(left<=0){pi=(pi+1)%phases.length;left=phases[pi][1];}
+      apply();
+    },1000);
+  }
+  function closeEx(){stopTimer();modal.classList.remove('on');var d=document.getElementById('drawer');if(!d.classList.contains('on'))document.getElementById('overlay').classList.remove('on');}
+  grid.addEventListener('click',function(e){var c=e.target.closest('[data-ex]');if(c)openEx(c.getAttribute('data-ex'));});
+  grid.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){var c=e.target.closest('[data-ex]');if(c){e.preventDefault();openEx(c.getAttribute('data-ex'));}}});
+  modal.addEventListener('click',function(e){if(e.target===modal)closeEx();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEx();});
+})();
+</script>
+<script src="assets/kkp.js"></script>
+</body>
+</html>

@@ -1,8 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-  <rect width="300" height="300" fill="#F7EFDF"/>
-  <circle cx="150" cy="146" r="60" fill="#E7C3B4"/>
-  <circle cx="150" cy="146" r="60" fill="none" stroke="#B4694E" stroke-width="3"/>
-  <circle cx="132" cy="128" r="14" fill="#F7EFDF" opacity=".55"/>
-  <path d="M118 176 q32 20 64 0" stroke="#8C4E38" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <text x="150" y="238" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14.5" letter-spacing="1" fill="#7A5C46">Body-safe silicone</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+
+  <linearGradient id="sil" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D89377"/><stop offset=".22" stop-color="#C97F5E"/><stop offset=".58" stop-color="#B4694E"/><stop offset=".88" stop-color="#7A422E"/><stop offset="1" stop-color="#A15C42"/>
+  </linearGradient>
+  <linearGradient id="blush" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F4CDD0"/><stop offset=".3" stop-color="#E8B4B8"/><stop offset=".72" stop-color="#D99AA0"/><stop offset="1" stop-color="#B9787E"/>
+  </linearGradient>
+  <radialGradient id="softhead" cx=".38" cy=".3" r=".78">
+    <stop offset="0" stop-color="#FBE3E0"/><stop offset=".55" stop-color="#E8B4B8"/><stop offset="1" stop-color="#C98A90"/>
+  </radialGradient></defs>
+
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#B4694E" opacity=".10" filter="url(#glowf)"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  
+  <ellipse cx="500" cy="736" rx="170" ry="24" fill="#241419" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="500" cy="446" r="178" fill="url(#softhead)"/>
+  <circle cx="500" cy="446" r="178" fill="none" stroke="#B9787E" stroke-width="3" opacity=".5"/>
+  <ellipse cx="440" cy="386" rx="52" ry="34" fill="#FFFFFF" opacity=".45" filter="url(#soft3)"/>
+  <text x="500" y="438" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="40" font-weight="bold" fill="#5E1F30">100%</text>
+  <text x="500" y="486" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="22" letter-spacing="2" fill="#5E1F30">body-safe</text>
+  <text x="500" y="662" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="24" fill="#7A5C46">phthalate- &amp; BPA-free</text>
+  <text x="500" y="906" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="30" letter-spacing="4" fill="#7A5C46">MEDICAL-GRADE SILICONE</text>
+
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

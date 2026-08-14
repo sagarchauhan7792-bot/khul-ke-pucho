@@ -89,6 +89,15 @@ footer{background:var(--ink);color:#D8BFA8}
       </div>
 
       <div class="card">
+        <div class="eyebrow">Gifting</div>
+        <label class="consent" style="margin-top:10px"><input type="checkbox" id="giftChk"><span><b>🎁 This is a gift</b> — add a note and we'll pack it as a tasteful keepsake inside the plain parcel.</span></label>
+        <div id="giftBox" style="display:none;margin-top:10px">
+          <div class="field"><label for="giftNote">Gift note (printed on a small card, no prices anywhere)</label><input id="giftNote" name="giftNote" type="text" maxlength="120" placeholder="e.g. Happy anniversary — here's to us. ♥"></div>
+          <label class="consent"><input type="checkbox" id="giftPlain" checked><span><b>Double-plain packaging</b> — even the inner box stays unmarked until they open the gift wrap.</span></label>
+        </div>
+      </div>
+
+      <div class="card">
         <div class="eyebrow">Payment</div>
         <div class="pay">
           <label class="payopt sel"><input type="radio" name="pay" value="cod" checked><span><b>Cash on Delivery</b><br><span>Pay in cash when your plain parcel arrives.</span></span></label>
@@ -147,6 +156,9 @@ footer{background:var(--ink);color:#D8BFA8}
   'use strict';
   var WA_NUMBER='919999999999'; // TODO: real WhatsApp business number
   var RAZORPAY_KEY=''; // TODO: 'rzp_live_xxx' — leave blank to keep online-pay in documented test mode
+
+  var giftChk=document.getElementById('giftChk');
+  if(giftChk)giftChk.addEventListener('change',function(){document.getElementById('giftBox').style.display=giftChk.checked?'block':'none';});
 
   var CATALOG={
     urja:{name:'Shukra',price:3938,mark:'ऊ'},shilajit:{name:'Shilajit',price:2400,mark:'शि'},
@@ -219,6 +231,10 @@ footer{background:var(--ink);color:#D8BFA8}
     var msg='Namaste! New order '+oid+'\n'+lines.join('\n')+'\nTotal: '+inr(total())+'\nPayment: '+payLabel+
       '\n\nName: '+d.name.value+'\nPhone: '+d.phone.value+'\nAddress: '+d.addr.value+', '+d.city.value+', '+d.state.value+' - '+d.pincode.value+
       '\n(Plain packaging please)';
+    if(document.getElementById('giftChk').checked){
+      var gn=document.getElementById('giftNote').value.trim();
+      msg+='\n\n🎁 GIFT ORDER'+(document.getElementById('giftPlain').checked?' — double-plain packaging':'')+(gn?'\nGift note: "'+gn+'"':'')+'\nNo prices on or inside the parcel, please.';
+    }
     return 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg);
   }
 

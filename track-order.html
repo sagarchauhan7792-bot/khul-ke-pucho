@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track My Order | Khul Ke Pucho</title>
+<meta name="description" content="Check the status of your Khul Ke Pucho order — privately, on WhatsApp. Plain parcels, neutral invoices, COD across India.">
+<link rel="canonical" href="https://sagarchauhan7792-bot.github.io/khul-ke-pucho/track-order.html">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kkp.css">
+<style>
+.trwrap{max-width:560px;margin:0 auto;padding:40px 20px 60px}
+.trcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+.trcard label{display:block;font:700 13px/1 'Mukta',sans-serif;margin:14px 0 6px;color:var(--kumkum)}
+.trcard input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:400 15px/1.4 'Mukta',sans-serif;background:var(--ivory);color:var(--ink)}
+.trcard input:focus{outline:2px solid var(--kanchan);border-color:var(--kanchan)}
+.trtimeline{margin:34px 0 0;padding:0;list-style:none}
+.trtimeline li{position:relative;padding:0 0 26px 38px;font-size:14.5px}
+.trtimeline li::before{content:'';position:absolute;left:9px;top:22px;bottom:0;width:2px;background:var(--line)}
+.trtimeline li:last-child::before{display:none}
+.trtimeline li::after{content:'';position:absolute;left:2px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--kanchan);border:3px solid var(--ivory);box-shadow:0 0 0 1.5px var(--line)}
+.trtimeline b{display:block;font-family:'EB Garamond',serif;font-size:16.5px;color:var(--kumkum)}
+</style>
+</head>
+<body>
+
+<div class="announce"><b>KKP99</b> — first doctor consult at ₹99 · Free discreet delivery above ₹999 · <b>COD across India</b></div>
+
+<header class="hd">
+  <div class="wrap hd-main">
+    <a class="logo" href="index.html"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a>
+    <div class="hd-acts">
+      <a class="btn btn-dark btn-sm hd-consult" href="consultation.html">Consult a doctor · ₹99</a>
+      <a class="backlink" href="index.html" style="font:700 14px/1 'Mukta',sans-serif;text-decoration:none">← Back to shop</a>
+    </div>
+  </div>
+</header>
+
+<div class="trwrap">
+  <div class="center" style="margin-bottom:22px">
+    <div class="eyebrow">Your parcel, privately</div>
+    <h1 style="margin:.2em 0">Track my order</h1>
+    <p style="color:#5C4030;font-size:15px">Enter your order details and we'll check the status on WhatsApp — the same private channel your order came through.</p>
+  </div>
+  <div class="trcard">
+    <label for="trId">Order ID</label>
+    <input id="trId" type="text" placeholder="e.g. KKP48121234" autocomplete="off">
+    <label for="trPhone">Phone number used on the order</label>
+    <input id="trPhone" type="tel" placeholder="10-digit mobile number" maxlength="10" inputmode="numeric">
+    <button class="btn btn-gold" id="trGo" style="width:100%;margin-top:18px">Check status on WhatsApp →</button>
+    <p style="font-size:12px;color:#7A5C46;margin:12px 0 0;text-align:center">Our care team replies within the hour, 9 am – 9 pm. Nothing about your order is visible to anyone else.</p>
+  </div>
+
+  <ul class="trtimeline">
+    <li><b>Order placed</b>You receive a confirmation with your order ID on WhatsApp.</li>
+    <li><b>Packed plain</b>Sealed in a plain brown parcel — no product or brand name anywhere outside; invoice carries only the company's legal name.</li>
+    <li><b>Shipped</b>Tracking details arrive on WhatsApp. The courier sees a parcel, nothing more.</li>
+    <li><b>Delivered</b>Pay cash on delivery if you chose COD. If anything is wrong, reply on the same chat — <a href="refund.html">returns policy</a>.</li>
+  </ul>
+</div>
+
+<footer>
+  <div class="wrap seal">
+    <div class="sanskrit">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</div>
+    <div style="margin-top:4px">May all be happy; may all be free of disease.</div>
+    <div style="margin-top:7px;opacity:.75">© 2026 Khul Ke Pucho · <a href="privacy.html" style="color:var(--gold-l)">Privacy</a> · <a href="shipping.html" style="color:var(--gold-l)">Shipping</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var WA_NUMBER='919999999999'; // TODO: real WhatsApp business number
+  document.getElementById('trGo').addEventListener('click',function(){
+    var id=document.getElementById('trId').value.trim(),ph=document.getElementById('trPhone').value.trim();
+    if(!id){document.getElementById('trId').focus();return;}
+    if(!/^[6-9]\d{9}$/.test(ph)){document.getElementById('trPhone').focus();return;}
+    var msg='Namaste! Please share the status of my order.\nOrder ID: '+id+'\nPhone on order: '+ph;
+    window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');
+  });
+})();
+</script>
+</body>
+</html>

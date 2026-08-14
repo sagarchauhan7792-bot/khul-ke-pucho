@@ -1,10 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-  <rect width="300" height="300" fill="#F7EFDF"/>
-  <g fill="none" stroke="#B4694E" stroke-width="4" stroke-linecap="round">
-    <path d="M120 96 q30 20 30 54 q0 34 -30 54"/>
-    <path d="M150 96 q30 20 30 54 q0 34 -30 54"/>
-    <path d="M108 150 q42 -18 84 0"/>
-  </g>
-  <g fill="#8C4E38"><circle cx="132" cy="128" r="4"/><circle cx="168" cy="172" r="4"/><circle cx="150" cy="150" r="3"/></g>
-  <text x="150" y="244" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14.5" letter-spacing="1" fill="#7A5C46">Easy to clean &amp; care</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#A9CFE0" opacity=".10" filter="url(#glowf)"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  
+  <ellipse cx="500" cy="744" rx="170" ry="24" fill="#241419" opacity="0.18" filter="url(#soft)"/>
+  <path d="M500 262 C500 262 372 404 372 486 a128 128 0 0 0 256 0 C628 404 500 262 500 262 Z" fill="#A9CFE0" opacity=".85"/>
+  <path d="M452 424 C440 452 438 480 446 502" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" opacity=".6"/>
+  <circle cx="662" cy="330" r="34" fill="#A9CFE0" opacity=".55"/>
+  <circle cx="716" cy="404" r="20" fill="#A9CFE0" opacity=".4"/>
+  <text x="500" y="662" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="24" fill="#7A5C46">warm water · mild soap · air-dry</text>
+  <text x="500" y="906" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="30" letter-spacing="4" fill="#7A5C46">EASY TO CLEAN</text>
+
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

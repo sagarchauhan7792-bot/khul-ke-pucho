@@ -1,43 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
-  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
-  <ellipse cx="400" cy="690" rx="150" ry="20" fill="#241419" opacity=".14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
 
+  <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3A2233"/><stop offset=".5" stop-color="#4A1826"/><stop offset="1" stop-color="#1A0D14"/>
+  </linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset="1" stop-color="#EFE3CC"/>
+  </linearGradient></defs>
+
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#E8B4B8" opacity=".10" filter="url(#glowf)"/><circle cx="500" cy="452" r="318" fill="none" stroke="#C9962E" stroke-width="1.6" opacity=".32"/><circle cx="500" cy="452" r="352" fill="none" stroke="#C9962E" stroke-width="1" opacity=".16"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  <text x="500" y="92" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="7" fill="#C9962E" opacity=".9">AAROGYA · PRIVATE CONSULTATION</text>
+  <ellipse cx="500" cy="830" rx="180" ry="26" fill="#241419" opacity="0.24" filter="url(#soft)"/>
+  <!-- prescription card behind -->
+  <g transform="translate(672,556) rotate(9)">
+    <rect x="-130" y="-176" width="260" height="352" rx="12" fill="#F7EFDF" stroke="#C9962E" stroke-width="1.5"/>
+    <text x="0" y="-138" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="17" fill="#5E1F30">आपकी योजना</text>
+    <rect x="-96" y="-120" width="192" height="2" fill="#C9962E" opacity=".6"/>
+    <rect x="-96" y="-98" width="192" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/><rect x="-96" y="-68" width="160" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/><rect x="-96" y="-38" width="178" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/><rect x="-96" y="-8" width="130" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/><rect x="-96" y="22" width="186" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/><rect x="-96" y="52" width="148" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/><rect x="-96" y="82" width="168" height="9" rx="4.5" fill="#7A5C46" opacity=".3"/>
+  </g>
   <!-- phone -->
-  <rect x="270" y="110" width="260" height="560" rx="38" fill="#241419"/>
-  <rect x="282" y="122" width="236" height="536" rx="28" fill="#5E1F30"/>
-  <rect x="360" y="132" width="80" height="10" rx="5" fill="#241419"/>
-
-  <!-- live pill -->
-  <rect x="316" y="160" width="168" height="30" rx="15" fill="#4A1826" stroke="#C9962E"/>
-  <circle cx="336" cy="175" r="6" fill="#2F9D5C"/>
-  <text x="410" y="180" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12.5" font-weight="bold" letter-spacing="1" fill="#DDB967">PRIVATE CALL</text>
-
+  <rect x="326" y="176" width="348" height="620" rx="46" fill="url(#phone)"/>
+  <rect x="342" y="192" width="316" height="588" rx="34" fill="url(#screen)"/>
+  <rect x="452" y="204" width="96" height="14" rx="7" fill="#4A1826" opacity=".5"/>
   <!-- doctor avatar -->
-  <circle cx="400" cy="312" r="74" fill="#F7EFDF"/>
-  <circle cx="400" cy="290" r="26" fill="#5E1F30"/>
-  <path d="M352 360 q48 -40 96 0 l0 12 q-48 22 -96 0 Z" fill="#5E1F30"/>
-  <path d="M376 352 q24 16 48 0" stroke="#C9962E" stroke-width="4" fill="none"/>
-  <circle cx="400" cy="312" r="74" fill="none" stroke="#C9962E" stroke-width="3"/>
+  <circle cx="500" cy="316" r="66" fill="#EFE3CC"/>
+  <circle cx="500" cy="316" r="66" fill="none" stroke="#C9962E" stroke-width="2.5"/>
+  <circle cx="500" cy="296" r="24" fill="#5E1F30" opacity=".8"/>
+  <path d="M456 366 C462 336 480 324 500 324 C520 324 538 336 544 366 Z" fill="#5E1F30" opacity=".8"/>
+  <circle cx="546" cy="356" r="15" fill="#2F5D46"/>
+  <path d="M540 356 l4 5 8 -9" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="500" y="424" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="24" font-weight="bold" fill="#5E1F30">Registered doctor</text>
+  <text x="500" y="452" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="13" letter-spacing="2" fill="#7A5C46">BAMS · MD (AYURVEDA)</text>
+  <!-- call chips -->
+  <rect x="376" y="486" width="248" height="54" rx="27" fill="#2F5D46"/>
+  <text x="500" y="520" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="2" fill="#FFFFFF">PHONE OR VIDEO</text>
+  <rect x="376" y="556" width="248" height="54" rx="27" fill="none" stroke="#C9962E" stroke-width="2"/>
+  <text x="500" y="590" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="2" fill="#5E1F30">100% PRIVATE</text>
+  <!-- price -->
+  <text x="500" y="678" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="62" font-weight="bold" fill="#5E1F30">₹99</text>
+  <text x="500" y="712" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="12.5" letter-spacing="3" fill="#7A5C46">FIRST CONSULTATION</text>
+  <text x="500" y="750" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16" fill="#7A5C46" opacity=".8">plan in writing within 24 hours</text>
+  <text x="500" y="946" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="5" fill="#7A5C46" opacity="0.55">KHUL KE PUCHO</text>
 
-  <text x="400" y="428" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#F7EFDF">Dr. — वैद्य</text>
-  <text x="400" y="452" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" fill="#DDB967">Registered practitioner</text>
-
-  <!-- chat bubbles -->
-  <rect x="304" y="480" width="150" height="36" rx="12" fill="#F7EFDF"/>
-  <text x="318" y="503" font-family="Verdana,sans-serif" font-size="12" fill="#241419">Khul ke puchiye…</text>
-  <rect x="368" y="526" width="128" height="36" rx="12" fill="#C9962E"/>
-  <text x="382" y="549" font-family="Verdana,sans-serif" font-size="12" font-weight="bold" fill="#241419">Plan in 24 hrs</text>
-
-  <!-- call controls -->
-  <circle cx="352" cy="614" r="24" fill="#F7EFDF"/><path d="M344 610 q8 10 16 0 l0 10 -16 0 Z" fill="#5E1F30"/>
-  <circle cx="448" cy="614" r="24" fill="#A63A2A"/><rect x="438" y="610" width="20" height="8" rx="4" fill="#F7EFDF"/>
-
-  <text x="400" y="736" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

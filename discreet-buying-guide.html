@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khul Ke Pucho Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kkp.css">
+<script>
+window.KKP_GA4='TODO_GA4_ID';window.KKP_PIXEL='TODO_PIXEL_ID';
+(function(){var g=window.KKP_GA4;if(g&&g.indexOf('TODO')<0){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+g;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',g);}var p=window.KKP_PIXEL;if(p&&p.indexOf('TODO')<0){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',p);fbq('track','PageView');}})();
+</script>
+<style>
+.arthero{background:linear-gradient(120deg,var(--kumkum) 0%,var(--kumkum-deep) 60%,#3A2233 100%);color:var(--ivory);padding:44px 0 38px}
+.arthero .crumbs{font-size:12.5px;margin-bottom:14px;color:rgba(247,239,223,.75)}
+.arthero .crumbs a{color:rgba(247,239,223,.75);text-decoration:none}
+.arthero .kicker{font:700 11.5px/1 'Mukta',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l)}
+.arthero h1{color:var(--ivory);font-size:clamp(26px,4.2vw,40px);margin:12px 0 10px;max-width:26ch}
+.arthero .byline{font-size:13px;color:#D8BFA8}
+.artbody{max-width:720px;margin:0 auto;padding:36px 20px 10px;font-size:16.5px;line-height:1.75}
+.artbody h2{font-size:24px;margin-top:1.5em}
+.artbody p{margin:.9em 0}
+.artbody .shlq{font-family:'Tiro Devanagari Sanskrit',serif;font-size:19px;color:var(--kumkum);background:var(--chip);border-left:4px solid var(--kanchan);border-radius:0 12px 12px 0;padding:16px 20px;margin:1.4em 0}
+.artbody .shlq small{font:italic 500 13px/1.5 'EB Garamond',serif;color:#7A5C46;display:block;margin-top:6px}
+.artbody .pull{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-size:15px;margin:1.2em 0}
+.artbody ul{padding-left:22px}
+.artbody li{margin:.4em 0}
+.artcta{background:var(--gulab);border-radius:16px;padding:26px 28px;margin:2em 0;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.artcta > div{flex:1;min-width:220px}
+.artcta h3{margin:0 0 4px}
+.artcta p{margin:0;font-size:14px}
+.artmore{max-width:720px;margin:0 auto;padding:0 20px 50px}
+.artmore h3{margin-bottom:12px}
+.artmore a{display:block;padding:12px 0;border-bottom:1px dashed var(--line);text-decoration:none;font:600 15.5px/1.4 'EB Garamond',serif}
+.artmore a:hover{color:var(--tamra-d)}
+.artmore a span{display:block;font:400 12.5px/1.4 'Mukta',sans-serif;color:#7A5C46}
+</style>
+</head>
+<body>
+
+<div class="agegate" id="ageGate">
+  <div class="agebox">
+    <div class="sanskrit">॥</div>
+    <h2>Are you 18 or older?</h2>
+    <p>Khul Ke Pucho offers sexual wellness products and intimate care for adults. Please confirm your age to enter.</p>
+    <button class="btn btn-gold" id="ageYes">Yes, I am 18+</button>
+    <button class="btn btn-outline" style="border-color:var(--gold-l);color:var(--gold-l)" id="ageNo">No, exit</button>
+    <small>We ask this to keep intimate content away from minors. Nothing is stored beyond your choice on this device.</small>
+  </div>
+</div>
+
+<div class="announce"><b>KKP99</b> — first doctor consult at ₹99 · Free discreet delivery above ₹999 · <b>COD across India</b></div>
+
+<header class="hd">
+  <div class="wrap hd-main">
+    <a class="logo" href="index.html"><span class="sanskrit">खुल के पूछो</span><small>Khul Ke Pucho</small></a>
+    <div class="hd-acts">
+      <a class="btn btn-dark btn-sm hd-consult" href="consultation.html">Consult a doctor · ₹99</a>
+      <button class="cartbtn" id="cartOpen" aria-label="Open cart">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H8.7a1.5 1.5 0 0 1-1.5-1.3Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cartn" id="cartN">0</span>
+      </button>
+      <button class="navtgl" id="navTgl" aria-expanded="false" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="catnav" id="catnav" aria-label="Shop menus">
+    <div class="wrap catnav-in">
+      <div class="menu"><a href="index.html" style="color:var(--kumkum)">Home</a></div>
+      <div class="menu" data-menu>
+        <button aria-expanded="false">आरोग्य · Wellness <span class="car">▼</span></button>
+        <div class="dd">
+          <a href="aarogya.html"><span class="dico">आ</span><div><b>Aarogya overview</b><span>The wellness wing — doctors, courses, formulations</span></div></a>
+          <a href="timing.html"><span class="dico">का</span><div><b>Timing &amp; PE</b><span>Courses, kit and the honest plan</span></div></a>
+          <a href="erection-health.html"><span class="dico">ब</span><div><b>Erection health</b><span>Cause-first: circulation, sleep, stress</span></div></a>
+          <a href="vitality.html"><span class="dico">ऊ</span><div><b>Vitality &amp; energy</b><span>Classical formulations, lab-tested</span></div></a>
+          <a class="dd-cta" href="consultation.html">Consult a doctor · ₹99</a>
+        </div>
+      </div>
+      <div class="menu aan" data-menu>
+        <button aria-expanded="false">आनन्द · Pleasure <span class="car">▼</span></button>
+        <div class="dd">
+          <a href="aanand.html"><span class="dico">आ</span><div><b>Aanand overview</b><span>The pleasure wing — tasteful, body-safe</span></div></a>
+          <a href="devices.html"><span class="dico">यु</span><div><b>Devices</b><span>Medical-grade silicone, whisper-quiet</span></div></a>
+          <a href="intimate-care.html"><span class="dico">स्</span><div><b>Intimate care</b><span>Gels, oils and candles — body-safe</span></div></a>
+          <a href="couples.html"><span class="dico">मि</span><div><b>For couples</b><span>Sets, rituals and conversation</span></div></a>
+        </div>
+      </div>
+      <div class="menu"><a href="exercises.html">Exercises</a></div>
+      <div class="menu"><a href="journal.html" style="box-shadow:inset 0 -3px 0 var(--kanchan)">Journal</a></div>
+      <div class="menu"><a href="#" data-quiz-open>2-min self-check</a></div>
+    </div>
+  </nav>
+</header>
+
+<article>
+  <div class="arthero"><div class="wrap" style="max-width:760px">
+    <div class="crumbs"><a href="index.html">Home</a> › <a href="journal.html">Journal</a></div>
+    <div class="kicker" id="artKicker"></div>
+    <h1 id="artH1"></h1>
+    <div class="byline" id="artByline"></div>
+  </div></div>
+  <div class="artbody" id="artBody"></div>
+  <div class="artmore" id="artMore"></div>
+</article>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <div class="logo" style="margin-bottom:12px"><span class="sanskrit" style="color:var(--ivory);font-size:22px">खुल के पूछो</span><small style="color:var(--gold-l)">Khul Ke Pucho</small></div>
+      <p style="font-size:13.5px;max-width:34ch">Two wings, one house. Ayurvedic wellness &amp; modern intimacy — private, body-safe, and without shame.</p>
+      <p style="font-size:12px;opacity:.8">AYUSH License: <em>TODO — add number</em></p>
+    </div>
+    <div><h4>Aarogya · Wellness</h4><ul><li><a href="timing.html">Timing &amp; PE</a></li><li><a href="erection-health.html">Erection health</a></li><li><a href="vitality.html">Vitality &amp; energy</a></li><li><a href="consultation.html">Doctor consult</a></li></ul></div>
+    <div><h4>Aanand · Pleasure</h4><ul><li><a href="devices.html">Devices</a></li><li><a href="intimate-care.html">Intimate care</a></li><li><a href="couples.html">For couples</a></li></ul></div>
+    <div><h4>Learn &amp; practice</h4><ul><li><a href="exercises.html">Exercises</a></li><li><a href="journal.html">Journal</a></li><li><a href="track-order.html">Track my order</a></li></ul></div>
+  </div>
+  <div class="wrap seal">
+    <div class="sanskrit">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</div>
+    <div style="margin-top:4px">May all be happy; may all be free of disease.</div>
+    <div style="margin-top:9px;opacity:.75">Educational content for adults 18+ — not medical advice. Results vary; consult a registered practitioner for persistent concerns.</div>
+    <div style="margin-top:7px;opacity:.75">© 2026 Khul Ke Pucho · All rights reserved</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dhead"><h3>Your cart</h3><button class="dclose" id="cartClose" aria-label="Close cart">&times;</button></div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot">
+    <div class="dtot" id="dbund" style="display:none;color:var(--vana);font-size:14.5px;margin-bottom:2px"><span id="dbundl">Bundle savings</span><span id="dbundv"></span></div>
+    <div class="dtot"><span id="dtotl">Total</span><span id="dtot">₹0</span></div>
+    <div class="dnote">Plain brown parcel · No product name outside · COD available</div>
+    <a class="btn btn-gold" id="goCheckout" href="checkout.html">Proceed to checkout →</a>
+    <a class="btn btn-outline" id="waCheckout" href="#" target="_blank" rel="noopener" style="border-color:#25D366;color:#1a8a45">Order on WhatsApp</a>
+    <button class="btn btn-outline" id="cartClose2">Continue browsing</button>
+  </div>
+</aside>
+
+<div class="qmodal" id="qmodal" role="dialog" aria-modal="true" aria-label="Self check"><div class="qbox" id="qbox"></div></div>
+
+<a class="wa" href="https://wa.me/919999999999?text=Namaste%2C%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5a1.8 1.8 0 0 0 .3-.4.5.5 0 0 0 0-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.5 14.5 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="toast" id="toast">Added to cart</div>
+
+<button class="qexit" id="qexit" title="Leave this site instantly">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  Quick exit
+</button>
+
+<script>
+(function () {
+  'use strict';
+  var BASE='https://sagarchauhan7792-bot.github.io/khul-ke-pucho/';
+  function cta(h,p,btnLabel,key,href){
+    return '<div class="artcta"><div><h3>'+h+'</h3><p>'+p+'</p></div>'+(key?'<button class="btn btn-dark" data-add="'+key+'">'+btnLabel+'</button>':'<a class="btn btn-dark" href="'+href+'">'+btnLabel+'</a>')+'</div>';
+  }
+  var ARTICLES = {
+    'why-timing-happens': {
+      kicker:'Aarogya · Timing & PE', read:'5 min read',
+      title:'Why timing happens — and why it is one of the most fixable problems men have',
+      meta:'PE is a trained reflex, not a character flaw. What actually causes early finishing, what the evidence says helps, and the honest route to better control.',
+      body:'<p>Somewhere between a friend’s joke and a chemist’s knowing look, most Indian men learn to treat early finishing as a shameful secret. Here is what a doctor would tell you instead, if you ever felt free to ask: it is common, it is well understood, and it responds to training better than almost any other concern in sexual medicine.</p>'+
+      '<h2>It is a reflex — and reflexes can be retrained</h2>'+
+      '<p>Ejaculation is a spinal reflex. Your brain modulates it the way it modulates breathing: mostly automatically, but trainable with attention. In many men the reflex has simply been trained fast — by hurried early experiences, by stress, by the habit of treating arousal as something to race through rather than notice.</p>'+
+      '<p>That framing matters, because reflexes respond to practice. Sex-therapy programs built on the stop–start and squeeze techniques — first formalised in clinical practice decades ago and still the foundation today — teach men to recognise the point of no return and step back from it. Practised consistently, control improves in a matter of weeks for most men who stick with it.</p>'+
+      '<div class="shlq">अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते<small>“By practice it is mastered.” — Bhagavad Gita 6.35. The texts knew what sports science keeps rediscovering: repetition rewires reflexes.</small></div>'+
+      '<h2>What else is in the picture</h2>'+
+      '<p>Sometimes the reflex is not the whole story. High stress and poor sleep keep the nervous system on a hair trigger. An over-tight pelvic floor — common in men who sit all day — quietly speeds things up. Occasionally thyroid function or sensitivity plays a role. This is why an honest program starts with a doctor’s eyes on your whole picture, not with a miracle pill from a highway hoarding.</p>'+
+      '<div class="pull"><b>The red flag to avoid:</b> anything promising “results in 3 days” or a “100% permanent cure”. The Drugs &amp; Magic Remedies Act exists because of exactly those ads. Real progress is measured in weeks of practice — anyone honest will tell you that upfront.</div>'+
+      '<h2>The honest route</h2>'+
+      '<ul><li><b>Learn the drills.</b> Stop–start, squeeze, pelvic-floor training — all free, step-by-step, in our <a href="exercises.html">practice room</a>.</li>'+
+      '<li><b>Follow a structure.</b> The doctor-designed <a href="pme-course.html">PME Course</a> sequences those drills week by week, with tracking, so you always know what to do next.</li>'+
+      '<li><b>Get real eyes on it.</b> A <a href="consultation.html">₹99 private consultation</a> checks the causes drills can’t fix — privately, on your phone.</li></ul>'+
+      '<p>Most men wait years before doing any of this. The ones who start usually say the same thing afterwards: the hardest part was asking.</p>',
+      ctaBlock: cta('Start with the honest program','The PME Course — technique, weekly practice and tracking, designed by doctors. ₹1,499.','Add PME Course to cart','pme'),
+      related:['erection-circulation-story','discreet-buying-guide']
+    },
+    'erection-circulation-story': {
+      kicker:'Aarogya · Erection health', read:'5 min read',
+      title:'Your erection is a circulation report card',
+      meta:'Sleep, sugar, blood pressure and stress drive most erection concerns. Why weaker mornings are an early health signal — and the cause-first plan that respects it.',
+      body:'<p>Here is the sentence that changes how most men think about erection trouble: <b>an erection is a cardiovascular event.</b> It is hydraulics — blood, vessels and the calm nervous system that lets them work. Which means changes in erection strength are often the body’s earliest, most honest report card on circulation.</p>'+
+      '<h2>The four usual suspects</h2>'+
+      '<ul><li><b>Sleep.</b> Testosterone is made at night. Cut sleep to five hours and levels drop measurably within a week — along with morning erections.</li>'+
+      '<li><b>Sugar.</b> Elevated blood sugar stiffens and narrows the small vessels first — and penile arteries are among the smallest in the body.</li>'+
+      '<li><b>Blood pressure.</b> The same pressure that strains the heart strains the vessels erections depend on.</li>'+
+      '<li><b>Stress.</b> Adrenaline is the anti-erection hormone; a body braced for danger diverts blood away from exactly where you want it.</li></ul>'+
+      '<div class="pull"><b>Why this is good news:</b> every one of those four responds to change. Vascular studies consistently show erectile function improving over 8–12 weeks of regular aerobic exercise, better sleep and metabolic care — because the problem was never “weakness”. It was plumbing and signal.</div>'+
+      '<div class="shlq">शरीरमाद्यं खलु धर्मसाधनम्<small>“The body is the first instrument of dharma.” — Kalidasa, Kumarasambhava 5.33</small></div>'+
+      '<h2>The cause-first route</h2>'+
+      '<p>Start with a <a href="consultation.html">₹99 consult</a> — non-negotiable if you have BP, sugar or heart history, because the plan must fit around your health, not ignore it. Then the <a href="ed-course.html">ED Course</a> works the levers in order: circulation (the <a href="exercises.html">brisk-walk protocol</a>), sleep (4-7-8 breathwork), stress, and classical rasayana support where a doctor advises it.</p>'+
+      '<p>What we will never tell you: that a capsule alone fixes a circulation story. Anyone who says so is selling you the capsule, not the outcome.</p>',
+      ctaBlock: cta('Get the cause-first plan','ED Course — circulation, sleep, stress and practice in one guided program. ₹1,499.','Add ED Course to cart','ed'),
+      related:['why-timing-happens','shilajit-science']
+    },
+    'shilajit-science': {
+      kicker:'Aarogya · Vitality', read:'4 min read',
+      title:'Shilajit: what the texts claimed and what the lab can verify',
+      meta:'Himalayan shilajit appears in the classical rasayana chapters and in modern lab reports. What fulvic acid standardisation means and how to spot the real thing.',
+      body:'<p>Few substances carry two thousand years of reputation as comfortably as shilajit — the mineral resin that seeps from Himalayan rock and appears in Ayurveda’s rasayana chapters as a rejuvenator of first rank. Few substances are faked as often, either. Here is how to hold both facts at once.</p>'+
+      '<h2>The classical claim</h2>'+
+      '<div class="shlq">शिलाजतु — रसायनानां श्रेष्ठम्<small>Named across the samhitas as among the foremost rasayanas — substances taken to rebuild strength and vitality over time.</small></div>'+
+      '<p>Classical texts prescribe shilajit as a slow rebuilder: taken daily over weeks, for stamina and vigour. Note the honesty in the classical framing itself — rasayana was never described as instant. The 60-day course is not marketing; it is the tradition.</p>'+
+      '<h2>What the lab adds</h2>'+
+      '<p>Modern analysis identifies fulvic acid and a dense mineral profile as shilajit’s signature. Standardisation — ours is 40% fulvic acid — is what separates a measured, purified extract from tar of unknown origin. Purification matters even more: raw shilajit can carry heavy metals, which is why the classical <i>shodhana</i> process exists, and why every batch we sell carries an NABL lab report.</p>'+
+      '<div class="pull"><b>Buyer’s checklist:</b> fulvic-acid percentage stated · batch lab report available · AYUSH-licensed manufacturer · no “instant power” claims on the pack. If any of the four is missing, walk away.</div>'+
+      '<h2>Where it fits</h2>'+
+      '<p>Shilajit is a foundation, not a firework — it pairs with sleep, the <a href="exercises.html">daily practices</a>, and works best inside a plan a doctor has looked at. Ours is <a href="shilajit.html">purified per classical method, standardised, and lab-reported</a>, with the flagship <a href="shukra.html">Shukra</a> formulation built alongside it.</p>',
+      ctaBlock: cta('The real thing, lab-reported','Pure Himalayan Shilajit — classical purification, 40% fulvic acid, batch-tested. ₹2,400.','Add Shilajit to cart','shilajit'),
+      related:['erection-circulation-story','why-timing-happens']
+    },
+    'arousal-gap': {
+      kicker:'Aanand · The science of arousal', read:'5 min read',
+      title:'The arousal gap: the 15 minutes most couples skip',
+      meta:'Research puts average female arousal time at 15–20 minutes — far longer than most intercourse lasts. Understanding the gap changes everything about shared pleasure.',
+      body:'<p>There is a number that quietly explains an enormous amount of bedroom disappointment, and it appears in study after study: <b>most women need roughly 15–20 minutes of arousal</b> before intercourse feels its best — while average intercourse itself lasts a fraction of that. The space between those numbers is the arousal gap, and most couples have never once discussed it.</p>'+
+      '<h2>It is physiology, not preference</h2>'+
+      '<p>Female arousal is a full-body process — blood flow, lubrication, muscular relaxation, and a nervous system that has genuinely shifted out of daily-stress mode. None of that happens on command. It happens with time, warmth and attention: which is why the slow parts — massage, conversation, unhurried touch — are not the appetiser. Physiologically, they are the meal being cooked.</p>'+
+      '<div class="pull"><b>The second number:</b> large surveys consistently find a majority of women climax most reliably through external stimulation rather than intercourse alone — around 70% in the best-known research. This is anatomy, not a verdict on anyone. Couples who know it stop taking it personally and start working with it.</div>'+
+      '<div class="shlq">धर्मार्थकामेभ्यो नमः<small>The Kamasutra opens by honouring kama alongside dharma and artha — pleasure treated as a subject worth studying, not a secret worth hiding.</small></div>'+
+      '<h2>Closing the gap, together</h2>'+
+      '<ul><li><b>Give it the runway.</b> The <a href="exercises.html">partner massage ritual</a> builds the 15–20 minutes into the evening itself — warm oil, zero hurry.</li>'+
+      '<li><b>Comfort first.</b> Dryness is common and nothing to hide; a water-based, pH-balanced gel like <a href="snigdha.html">Snigdha</a> supports comfort and is condom-safe.</li>'+
+      '<li><b>Use the right tools.</b> Body-safe devices like <a href="tarang.html">Tarang</a> and <a href="bindu.html">Bindu</a> exist precisely because of that 70% figure — which is why modern couples’ counsellors discuss them without embarrassment.</li>'+
+      '<li><b>Talk about it once.</b> One honest conversation about the gap does more than any product. The <a href="khuli-baat.html">Khuli Baat</a> cards make it easy to start.</li></ul>'+
+      '<p>Personal-care tools and education, not medicine — and if discomfort or persistently low desire is part of the picture, that is a doctor conversation. Ours cost ₹99, and couples are welcome.</p>',
+      ctaBlock: cta('Built for the runway','Sparsh warm massage oil + Jyoti candle — the unhurried start the science recommends.','Explore intimate care','',  'intimate-care.html'),
+      related:['how-couples-start-talking','discreet-buying-guide']
+    },
+    'how-couples-start-talking': {
+      kicker:'Aanand · For couples', read:'4 min read',
+      title:'How couples actually start talking about desire',
+      meta:'Most Indian couples have never had one direct conversation about what they enjoy. A gentle, practical script for the first talk — and what changes after it.',
+      body:'<p>Ask a couples’ counsellor what single change helps intimate relationships most and the answer is rarely exotic: it is that the two people start talking. Not hinting, not hoping, not decoding sighs in the dark — talking. And yet for most Indian couples, one direct conversation about desire has simply never happened. Not once, in years of marriage.</p>'+
+      '<h2>Why the silence is so sticky</h2>'+
+      '<p>Nobody taught us the words. Films gave us songs instead of sentences; school gave us biology diagrams and embarrassment. So both partners privately conclude the same thing — <i>if I bring it up, I might hurt them, or embarrass myself</i> — and the silence renews itself for another year.</p>'+
+      '<div class="pull"><b>What the research says:</b> couples who communicate about intimacy report meaningfully higher satisfaction — the effect shows up consistently across studies. The conversation is not a nice-to-have; it is the active ingredient.</div>'+
+      '<h2>A first-conversation script that works</h2>'+
+      '<ul><li><b>Pick neutral ground.</b> A walk, a drive, chai after dinner — not the bedroom, not right after intimacy.</li>'+
+      '<li><b>Open with appreciation, not complaint.</b> “I love being close to you. I’d love for us to talk about it more openly” lands very differently from “we need to talk”.</li>'+
+      '<li><b>Trade one thing each.</b> One thing you enjoy, one thing you are curious about. Small and specific beats big and vague.</li>'+
+      '<li><b>Let a game carry the weight.</b> This is exactly why we built <a href="khuli-baat.html">Khuli Baat</a> — 100 cards that ask the questions so neither of you has to. Start at Level 1; laughing counts as progress.</li></ul>'+
+      '<div class="shlq">सह नाववतु<small>“May we be protected together” — the shanti mantra’s spirit of shared undertaking is exactly the right frame: this is something you do together, not to each other.</small></div>'+
+      '<p>After the first talk, the practical doors open: the <a href="exercises.html">sensate-focus rituals</a>, a shared look at the <a href="arousal-gap.html">arousal gap</a>, maybe the <a href="milan-kit.html">Milan Kit</a> for an anniversary. But those are chapter two. Chapter one is twenty minutes of honest sentences — and it costs nothing.</p>',
+      ctaBlock: cta('Let the cards ask first','Khuli Baat — 100 questions for couples, from easy to intimate. ₹799.','Add Khuli Baat to cart','khulibaat'),
+      related:['arousal-gap','discreet-buying-guide']
+    },
+    'discreet-buying-guide': {
+      kicker:'The house · Privacy', read:'4 min read',
+      title:'The discreet buyer’s guide: how private is private, really?',
+      meta:'Plain parcels, neutral invoices, quick-exit buttons and body-safe standards — how privacy-first sexual wellness shopping actually works in India.',
+      body:'<p>The question behind every first order on a site like ours is rarely about the product. It is: <b>who will know?</b> Fair question. Here is the complete, literal answer — and a checklist you can hold any wellness brand to, including us.</p>'+
+      '<h2>What the parcel looks like</h2>'+
+      '<p>A plain brown box. No brand name, no product name, no category hint — outside or on the shipping label. The invoice inside carries only the company’s legal name, which reveals nothing. The courier delivers a parcel; that is all the courier knows. Cash on Delivery works the same way — the amount is on the label, the contents are not.</p>'+
+      '<div class="pull"><b>The five-point privacy checklist</b> for any brand in this category: ① plain outer packaging, stated in writing · ② neutral legal name on the invoice · ③ no marketing SMS/calls after purchase · ④ a clear returns policy that does not require awkward conversations · ⑤ a privacy policy that says what happens to your data. Missing one? Order elsewhere.</div>'+
+      '<h2>What about the website itself?</h2>'+
+      '<p>Browse in your browser’s private mode if you share a phone. On our site, the <b>Quick exit</b> button (bottom-left) instantly replaces the page with a weather search and clears your cart — built for the reality of shared screens and sudden shoulders. Nothing you do here — the <a href="exercises.html">exercises</a>, the self-check quiz — is sent anywhere; it stays on your device.</p>'+
+      '<h2>Choosing a first product, sensibly</h2>'+
+      '<ul><li><b>Wellness first?</b> The <a href="consultation.html">₹99 consult</a> is the lowest-stakes, highest-value first order there is — it is a phone call, and the parcel question doesn’t even arise.</li>'+
+      '<li><b>First device?</b> Small and quiet wins: <a href="bindu.html">Bindu</a> is palm-sized and travel-safe. Check for body-safe silicone and a materials list — if a seller can’t name the material, that is your answer.</li>'+
+      '<li><b>For two?</b> The <a href="milan-kit.html">Milan Kit</a> arrives as a tasteful keepsake box inside the plain parcel — gift-ready without a single awkward label.</li></ul>'+
+      '<div class="shlq">आत्मनः प्रतिकूलानि परेषां न समाचरेत्<small>Treat others’ privacy as you would your own — the golden rule, and simply how this house operates.</small></div>'+
+      '<p>Privacy is not a feature we added. In this category, it is the product.</p>',
+      ctaBlock: cta('See how delivery works','Every step of the plain-parcel process, in writing.','Discreet delivery policy','','discreet-delivery.html'),
+      related:['arousal-gap','why-timing-happens']
+    }
+  };
+  var TITLES={'why-timing-happens':'Why timing happens','erection-circulation-story':'Your erection is a circulation report card','shilajit-science':'Shilajit: texts vs lab','arousal-gap':'The arousal gap','how-couples-start-talking':'How couples start talking','discreet-buying-guide':'The discreet buyer’s guide'};
+  var KICKS={'why-timing-happens':'Timing & PE','erection-circulation-story':'Erection health','shilajit-science':'Vitality','arousal-gap':'Science of arousal','how-couples-start-talking':'For couples','discreet-buying-guide':'Privacy'};
+
+  var art = 'discreet-buying-guide';
+  if (!ARTICLES[art]) art = 'why-timing-happens';
+  var A = ARTICLES[art];
+
+  document.title = A.title + ' | Khul Ke Pucho Journal';
+  (function(){
+    function meta(attr,name,content){var m=document.createElement('meta');m.setAttribute(attr,name);m.content=content;document.head.appendChild(m);}
+    var link=document.createElement('link');link.rel='canonical';link.href=BASE+art+'.html';document.head.appendChild(link);
+    meta('name','description',A.meta);
+    meta('property','og:type','article');meta('property','og:site_name','Khul Ke Pucho');
+    meta('property','og:title',A.title);meta('property','og:description',A.meta);
+    meta('property','og:url',BASE+art+'.html');
+    var ld={'@context':'https://schema.org','@type':'Article','headline':A.title,'description':A.meta,'author':{'@type':'Organization','name':'Khul Ke Pucho'},'publisher':{'@type':'Organization','name':'Khul Ke Pucho'},'mainEntityOfPage':BASE+art+'.html'};
+    var s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+  })();
+
+  document.getElementById('artKicker').textContent = A.kicker;
+  document.getElementById('artH1').textContent = A.title;
+  document.getElementById('artByline').textContent = 'Khul Ke Pucho Journal · ' + A.read + ' · Reviewed for compliance — education, not medical advice';
+  document.getElementById('artBody').innerHTML = A.body + A.ctaBlock;
+  document.getElementById('artMore').innerHTML = '<h3>Keep reading</h3>' + A.related.map(function(r){
+    return '<a href="'+r+'.html">'+TITLES[r]+'<span>'+KICKS[r]+' · Khul Ke Pucho Journal</span></a>';
+  }).join('') + '<a href="journal.html">All articles →<span>The Journal</span></a>';
+})();
+</script>
+<script src="assets/kkp.js"></script>
+</body>
+</html>

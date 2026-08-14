@@ -30,6 +30,8 @@ $enc=New-Object System.Text.UTF8Encoding($false)
 foreach($p in $pages){[IO.File]::WriteAllText("$root\$p.html",$src.Replace($needle,"var cat = '$p';"),$enc)}
 ```
 
+Journal articles are generated from `article.html` the same way (needle `var art = /*KKP_ART*/...`, pages: why-timing-happens, erection-circulation-story, shilajit-science, arousal-gap, how-couples-start-talking, discreet-buying-guide). Standalone pages: `exercises.html`, `journal.html`, `track-order.html`.
+
 After editing `product.html`, regenerate the 17 product pages:
 ```powershell
 # from repo root

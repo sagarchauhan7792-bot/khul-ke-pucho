@@ -1,25 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/></linearGradient>
-    <linearGradient id="btl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C97F5E"/><stop offset=".5" stop-color="#B4694E"/><stop offset="1" stop-color="#8C4E38"/></linearGradient>
-  </defs>
-  <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
-  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
-  <text x="400" y="150" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="6" fill="#C9962E">AANAND · INTIMATE CARE</text>
-  <ellipse cx="400" cy="648" rx="130" ry="22" fill="#241419" opacity=".12"/>
-  <!-- pump dispenser -->
-  <rect x="386" y="196" width="28" height="40" fill="#8C4E38"/>
-  <rect x="356" y="182" width="48" height="20" rx="8" fill="#DDB967"/>
-  <rect x="368" y="236" width="64" height="34" rx="8" fill="#C9962E"/>
-  <!-- rounded bottle -->
-  <path d="M348 270 L452 270 L452 300 Q492 330 492 400 L492 596 Q492 636 452 636 L348 636 Q308 636 308 596 L308 400 Q308 330 348 300 Z" fill="url(#btl)"/>
-  <rect x="330" y="356" width="18" height="240" rx="9" fill="#F7EFDF" opacity=".2"/>
-  <rect x="336" y="392" width="128" height="168" rx="12" fill="#F7EFDF"/>
-  <rect x="344" y="400" width="112" height="152" rx="8" fill="none" stroke="#C9962E" stroke-width="1.5"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="bold" letter-spacing="1" fill="#5E1F30">SPARSH</text>
-  <text x="400" y="494" text-anchor="middle" font-family="Verdana,sans-serif" font-size="10.5" letter-spacing="2" fill="#7A5C46">SENSUAL MASSAGE OIL</text>
-  <text x="400" y="528" text-anchor="middle" font-family="Verdana,sans-serif" font-size="10" letter-spacing="1" fill="#7A5C46"> ayurvedic-inspired · 100ml</text>
-  <text x="400" y="706" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" letter-spacing="2" fill="#7A5C46">स्पर्श</text>
-  <text x="400" y="750" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+
+  <linearGradient id="sil" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D89377"/><stop offset=".22" stop-color="#C97F5E"/><stop offset=".58" stop-color="#B4694E"/><stop offset=".88" stop-color="#7A422E"/><stop offset="1" stop-color="#A15C42"/>
+  </linearGradient>
+  <linearGradient id="blush" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F4CDD0"/><stop offset=".3" stop-color="#E8B4B8"/><stop offset=".72" stop-color="#D99AA0"/><stop offset="1" stop-color="#B9787E"/>
+  </linearGradient>
+  <radialGradient id="softhead" cx=".38" cy=".3" r=".78">
+    <stop offset="0" stop-color="#FBE3E0"/><stop offset=".55" stop-color="#E8B4B8"/><stop offset="1" stop-color="#C98A90"/>
+  </radialGradient>
+  <linearGradient id="oilb" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#E8B98A"/><stop offset=".22" stop-color="#D69C63"/><stop offset=".6" stop-color="#B87A46"/><stop offset=".9" stop-color="#8A5730"/><stop offset="1" stop-color="#C08A57"/>
+  </linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#B9895C"/><stop offset=".45" stop-color="#96693F"/><stop offset="1" stop-color="#6D4A2B"/>
+  </linearGradient></defs>
+
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#B4694E" opacity=".10" filter="url(#glowf)"/><circle cx="500" cy="452" r="318" fill="none" stroke="#C9962E" stroke-width="1.6" opacity=".32"/><circle cx="500" cy="452" r="352" fill="none" stroke="#C9962E" stroke-width="1" opacity=".16"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  <text x="500" y="92" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="7" fill="#B4694E" opacity=".9">AANAND · SENSUAL MASSAGE OIL</text>
+  <ellipse cx="500" cy="826" rx="158" ry="25" fill="#241419" opacity="0.24" filter="url(#soft)"/>
+  <!-- wooden cap -->
+  <rect x="428" y="186" width="144" height="92" rx="14" fill="url(#wood)"/>
+  <rect x="428" y="186" width="144" height="13" rx="6" fill="#FFFFFF" opacity=".2"/>
+  <g stroke="#6D4A2B" stroke-width="1.5" opacity=".35">
+    <line x1="440" y1="196" x2="440" y2="270"/><line x1="454" y1="196" x2="454" y2="270"/><line x1="468" y1="196" x2="468" y2="270"/><line x1="482" y1="196" x2="482" y2="270"/><line x1="496" y1="196" x2="496" y2="270"/><line x1="510" y1="196" x2="510" y2="270"/><line x1="524" y1="196" x2="524" y2="270"/><line x1="538" y1="196" x2="538" y2="270"/><line x1="552" y1="196" x2="552" y2="270"/>
+  </g>
+  <rect x="452" y="278" width="96" height="26" fill="#8A5730"/>
+  <!-- bottle -->
+  <rect x="384" y="300" width="232" height="466" rx="30" fill="url(#oilb)"/><rect x="402.56" y="323.3" width="30.16" height="396.09999999999997" rx="15.08" fill="#FFFFFF" opacity="0.3" filter="url(#soft3)"/><rect x="585.84" y="337.28" width="11.600000000000001" height="372.8" rx="5.800000000000001" fill="#FFFFFF" opacity=".16" filter="url(#soft3)"/>
+  <rect x="412" y="394" width="176" height="306" rx="12" fill="#F7EFDF"/><rect x="412" y="394" width="176" height="306" rx="12" fill="none" stroke="#C9962E" stroke-width="2" opacity=".75"/><rect x="421" y="403" width="158" height="288" rx="4" fill="none" stroke="#C9962E" stroke-width="1" opacity=".45"/>
+  <g fill="none" stroke="#B4694E" stroke-width="3.6" stroke-linecap="round" opacity=".9">
+    <path d="M500 462 C482 448 470 428 476 410 C490 418 496 430 500 444 C504 430 510 418 524 410 C530 428 518 448 500 462 Z"/>
+  </g>
+  <text x="500" y="518" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" fill="#7A5C46">स्पर्श</text>
+  <text x="500" y="564" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="32" font-weight="bold" letter-spacing="1" fill="#5E1F30">SPARSH</text>
+  <rect x="446" y="582" width="108" height="2" fill="#B4694E"/>
+  <text x="500" y="612" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="11.5" letter-spacing="2" fill="#7A5C46">MASSAGE OIL</text>
+  <text x="500" y="638" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="11.5" fill="#7A5C46">almond · classical herbs</text>
+  <text x="500" y="666" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="12" fill="#7A5C46">100 ml</text>
+  <g font-family="Verdana,Geneva,sans-serif" font-size="12" letter-spacing="2" fill="#7A5C46" text-anchor="middle">
+    <text x="500" y="884">WARMING · SLOW · FOR SHARED RITUAL</text>
+  </g>
+  <text x="500" y="936" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="5" fill="#7A5C46" opacity="0.5">KHUL KE PUCHO</text>
+
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

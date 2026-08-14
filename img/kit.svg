@@ -1,46 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
-    </linearGradient>
-    <linearGradient id="boxf" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6F2A3E"/><stop offset="1" stop-color="#4A1826"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="400" cy="400" r="265" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
-  <circle cx="400" cy="400" r="295" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
-  <ellipse cx="400" cy="668" rx="240" ry="28" fill="#241419" opacity=".14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
 
-  <!-- box -->
-  <path d="M180 300 L400 246 L620 300 L620 340 L400 288 L180 340 Z" fill="#5E1F30"/>
-  <path d="M180 336 L620 336 L620 640 Q620 660 598 660 L202 660 Q180 660 180 640 Z" fill="url(#boxf)"/>
-  <rect x="180" y="336" width="440" height="8" fill="#C9962E"/>
+  <linearGradient id="kbox" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#6F2A3E"/><stop offset=".5" stop-color="#5E1F30"/><stop offset="1" stop-color="#3F1420"/>
+  </linearGradient>
+  <linearGradient id="kjar" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7A3247"/><stop offset=".5" stop-color="#5E1F30"/><stop offset="1" stop-color="#3F1420"/>
+  </linearGradient>
+  <linearGradient id="kamb" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#B87A2E"/><stop offset=".5" stop-color="#8A5417"/><stop offset="1" stop-color="#5E3810"/>
+  </linearGradient>
+  <linearGradient id="kdark" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4B3A2A"/><stop offset=".5" stop-color="#2A2018"/><stop offset="1" stop-color="#1C150F"/>
+  </linearGradient></defs>
 
-  <!-- lotus emblem -->
-  <g fill="none" stroke="#C9962E" stroke-width="5" stroke-linecap="round">
-    <path d="M400 452 C382 452 366 440 360 421 C376 424 388 430 400 442 C412 430 424 424 440 421 C434 440 418 452 400 452 Z"/>
-    <path d="M400 442 C394 424 394 406 400 391 C406 406 406 424 400 442 Z"/>
-    <path d="M380 444 C376 428 379 413 388 404"/>
-    <path d="M420 444 C424 428 421 413 412 404"/>
-    <path d="M364 466 C380 475 420 475 436 466"/>
-    <circle cx="400" cy="378" r="5" fill="#C9962E" stroke="none"/>
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#5E1F30" opacity=".10" filter="url(#glowf)"/><circle cx="500" cy="452" r="318" fill="none" stroke="#C9962E" stroke-width="1.6" opacity=".32"/><circle cx="500" cy="452" r="352" fill="none" stroke="#C9962E" stroke-width="1" opacity=".16"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  <text x="500" y="92" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="7" fill="#C9962E" opacity=".9">AAROGYA · 60-DAY COMPLETE PLAN</text>
+  <ellipse cx="500" cy="828" rx="300" ry="32" fill="#241419" opacity="0.24" filter="url(#soft)"/>
+  <!-- keepsake box behind -->
+  <rect x="236" y="330" width="528" height="452" rx="20" fill="url(#kbox)"/>
+  <rect x="236" y="330" width="528" height="26" rx="12" fill="#FFFFFF" opacity=".10"/>
+  <rect x="266" y="366" width="468" height="380" rx="12" fill="none" stroke="#DDB967" stroke-width="1.6" opacity=".5"/>
+  <text x="500" y="716" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="14" letter-spacing="5" fill="#DDB967" opacity=".85">COMPLETE CARE KIT</text>
+  <!-- jar (left) -->
+  <rect x="286" y="410" width="184" height="46" rx="12" fill="#C9962E"/>
+  <rect x="296" y="452" width="164" height="252" rx="22" fill="url(#kjar)"/>
+  <rect x="306" y="464" width="16" height="226" rx="8" fill="#FFFFFF" opacity=".22"/>
+  <rect x="316" y="510" width="124" height="150" rx="8" fill="#F7EFDF"/>
+  <text x="378" y="576" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="21" font-weight="bold" fill="#5E1F30">SHUKRA</text>
+  <text x="378" y="604" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="11" letter-spacing="2" fill="#7A5C46">60 CAPS</text>
+  <!-- shilajit jar (centre, short) -->
+  <rect x="452" y="500" width="130" height="38" rx="10" fill="#C9962E"/>
+  <rect x="458" y="534" width="118" height="170" rx="18" fill="url(#kdark)"/>
+  <rect x="466" y="546" width="12" height="146" rx="6" fill="#FFFFFF" opacity=".16"/>
+  <rect x="472" y="580" width="90" height="94" rx="7" fill="#F7EFDF"/>
+  <text x="517" y="622" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" font-weight="bold" fill="#5E1F30">SHILAJIT</text>
+  <text x="517" y="644" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="10" letter-spacing="1" fill="#7A5C46">20g</text>
+  <!-- oil bottle (right) -->
+  <rect x="596" y="452" width="96" height="56" rx="12" fill="#C9962E"/>
+  <rect x="602" y="504" width="84" height="200" rx="16" fill="url(#kamb)"/>
+  <rect x="610" y="516" width="11" height="176" rx="5" fill="#FFFFFF" opacity=".24"/>
+  <rect x="614" y="556" width="60" height="104" rx="6" fill="#F7EFDF"/>
+  <text x="644" y="596" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" font-weight="bold" fill="#5E1F30">PAURUSH</text>
+  <text x="644" y="616" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="9.5" fill="#7A5C46">30ml</text>
+  <!-- consult card -->
+  <g transform="translate(500,772) rotate(-3)">
+    <rect x="-186" y="-34" width="372" height="68" rx="12" fill="#F7EFDF" stroke="#C9962E" stroke-width="1.6"/>
+    <text x="0" y="-4" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="bold" fill="#5E1F30">+ Private Doctor Consultation</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="12" letter-spacing="2" fill="#7A5C46">INCLUDED · PHONE OR VIDEO</text>
   </g>
+  <text x="500" y="946" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="5" fill="#7A5C46" opacity="0.55">KHUL KE PUCHO</text>
 
-  <text x="400" y="516" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="bold" letter-spacing="3" fill="#F7EFDF">COMPLETE CARE KIT</text>
-  <rect x="320" y="532" width="160" height="2" fill="#C9962E"/>
-  <text x="400" y="560" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="2" fill="#DDB967">60-DAY DOCTOR-GUIDED PLAN</text>
-
-  <!-- mini product icons row -->
-  <g opacity=".95">
-    <rect x="272" y="586" width="34" height="48" rx="7" fill="#F7EFDF"/><rect x="278" y="578" width="22" height="10" rx="3" fill="#C9962E"/>
-    <rect x="342" y="596" width="42" height="38" rx="8" fill="#F7EFDF"/><rect x="348" y="586" width="30" height="12" rx="4" fill="#C9962E"/>
-    <path d="M424 596 L444 596 L444 606 Q452 612 452 622 L452 628 Q452 634 446 634 L422 634 Q416 634 416 628 L416 622 Q416 612 424 606 Z" fill="#F7EFDF"/><rect x="428" y="588" width="12" height="8" fill="#C9962E"/>
-    <circle cx="502" cy="614" r="20" fill="#F7EFDF"/><path d="M494 614 a8 8 0 0 1 16 0 M502 606 l0 -6" stroke="#5E1F30" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <text x="308" y="628" font-family="Verdana,sans-serif" font-size="20" fill="#DDB967">+</text>
-    <text x="396" y="628" font-family="Verdana,sans-serif" font-size="20" fill="#DDB967">+</text>
-    <text x="468" y="628" font-family="Verdana,sans-serif" font-size="20" fill="#DDB967">+</text>
-  </g>
-
-  <text x="400" y="722" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

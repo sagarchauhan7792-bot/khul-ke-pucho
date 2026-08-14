@@ -1,19 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/></linearGradient>
-    <linearGradient id="cop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C97F5E"/><stop offset=".5" stop-color="#B4694E"/><stop offset="1" stop-color="#8C4E38"/></linearGradient>
-  </defs>
-  <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
-  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
-  <text x="400" y="150" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="6" fill="#C9962E">AANAND</text>
-  <ellipse cx="400" cy="560" rx="120" ry="20" fill="#241419" opacity=".12"/>
-  <!-- ring: torus with node -->
-  <circle cx="400" cy="418" r="104" fill="none" stroke="url(#cop)" stroke-width="52"/>
-  <circle cx="400" cy="314" r="26" fill="#D99AA0"/>
-  <circle cx="400" cy="314" r="26" fill="none" stroke="#DDB967" stroke-width="3"/>
-  <circle cx="368" cy="360" r="8" fill="#F7EFDF" opacity=".4"/>
-  <text x="400" y="626" text-anchor="middle" font-family="Georgia,serif" font-size="27" font-weight="bold" letter-spacing="1" fill="#5E1F30">BANDHAN</text>
-  <text x="400" y="652" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12.5" letter-spacing="2" fill="#7A5C46">COUPLES RING · बंधन</text>
-  <text x="400" y="704" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+
+  <linearGradient id="sil" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D89377"/><stop offset=".22" stop-color="#C97F5E"/><stop offset=".58" stop-color="#B4694E"/><stop offset=".88" stop-color="#7A422E"/><stop offset="1" stop-color="#A15C42"/>
+  </linearGradient>
+  <linearGradient id="blush" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F4CDD0"/><stop offset=".3" stop-color="#E8B4B8"/><stop offset=".72" stop-color="#D99AA0"/><stop offset="1" stop-color="#B9787E"/>
+  </linearGradient>
+  <radialGradient id="softhead" cx=".38" cy=".3" r=".78">
+    <stop offset="0" stop-color="#FBE3E0"/><stop offset=".55" stop-color="#E8B4B8"/><stop offset="1" stop-color="#C98A90"/>
+  </radialGradient></defs>
+
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#E8B4B8" opacity=".10" filter="url(#glowf)"/><circle cx="500" cy="452" r="318" fill="none" stroke="#C9962E" stroke-width="1.6" opacity=".32"/><circle cx="500" cy="452" r="352" fill="none" stroke="#C9962E" stroke-width="1" opacity=".16"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  <text x="500" y="92" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="7" fill="#B4694E" opacity=".9">AANAND · COUPLES RING</text>
+  <ellipse cx="500" cy="742" rx="150" ry="24" fill="#241419" opacity="0.24" filter="url(#soft)"/>
+  <!-- soft ring -->
+  <ellipse cx="500" cy="470" rx="196" ry="188" fill="none" stroke="url(#sil)" stroke-width="88"/>
+  <ellipse cx="500" cy="470" rx="196" ry="188" fill="none" stroke="#FFFFFF" stroke-width="14" opacity=".16" transform="translate(-14,-16)"/>
+  <ellipse cx="380" cy="366" rx="44" ry="26" fill="#FFFFFF" opacity=".32" filter="url(#soft3)" transform="rotate(-38 380 366)"/>
+  <!-- motor bump -->
+  <ellipse cx="500" cy="286" rx="86" ry="60" fill="url(#blush)"/>
+  <ellipse cx="500" cy="286" rx="86" ry="60" fill="none" stroke="#B9787E" stroke-width="2" opacity=".5"/>
+  <ellipse cx="474" cy="268" rx="26" ry="16" fill="#FFFFFF" opacity=".42" filter="url(#soft3)"/>
+  <circle cx="500" cy="286" r="17" fill="#DDB967"/>
+  <g font-family="Verdana,Geneva,sans-serif" font-size="12.5" letter-spacing="2" fill="#7A5C46" text-anchor="middle">
+    <text x="500" y="828">SOFT · STRETCHY · BODY-SAFE SILICONE</text>
+  </g>
+  <text x="500" y="884" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="5" fill="#7A5C46" opacity="0.5">KHUL KE PUCHO</text>
+
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

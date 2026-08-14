@@ -1,44 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
-    </linearGradient>
-    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3A2027"/><stop offset=".45" stop-color="#241419"/><stop offset="1" stop-color="#150B0E"/>
-    </linearGradient>
-    <linearGradient id="lid" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#DDB967"/><stop offset=".5" stop-color="#C9962E"/><stop offset="1" stop-color="#9E7420"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="400" cy="400" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
-  <circle cx="400" cy="400" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
-  <ellipse cx="400" cy="662" rx="200" ry="26" fill="#241419" opacity=".14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
 
-  <!-- squat jar -->
-  <rect x="288" y="238" width="224" height="74" rx="12" fill="url(#lid)"/>
-  <rect x="288" y="262" width="224" height="5" fill="#9E7420" opacity=".6"/>
-  <path d="M258 320 Q258 302 286 302 L514 302 Q542 302 542 320 L542 618 Q542 654 500 654 L300 654 Q258 654 258 618 Z" fill="url(#glass)"/>
-  <rect x="282" y="322" width="22" height="300" rx="11" fill="#FFFFFF" opacity=".09"/>
+  <linearGradient id="jar2" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4B3A2A"/><stop offset=".2" stop-color="#3A2C20"/><stop offset=".55" stop-color="#2A2018"/><stop offset=".88" stop-color="#1C150F"/><stop offset="1" stop-color="#3A2C20"/>
+  </linearGradient>
+  <linearGradient id="lid" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#E7CB8B"/><stop offset=".35" stop-color="#DDB967"/><stop offset=".7" stop-color="#C9962E"/><stop offset="1" stop-color="#8E6819"/>
+  </linearGradient>
+  <radialGradient id="resin" cx=".38" cy=".3" r=".8">
+    <stop offset="0" stop-color="#6B5033"/><stop offset=".6" stop-color="#33251A"/><stop offset="1" stop-color="#15100B"/>
+  </radialGradient></defs>
 
-  <!-- resin drip visible at jar mouth -->
-  <path d="M300 302 q20 26 42 8 q18 20 38 4 q22 22 40 2 q20 18 44 6 q16 14 36 4 l0 -22 -200 0 Z" fill="#150B0E"/>
-
-  <!-- label -->
-  <rect x="286" y="368" width="228" height="216" rx="14" fill="#F7EFDF"/>
-  <rect x="294" y="376" width="212" height="200" rx="10" fill="none" stroke="#C9962E" stroke-width="2"/>
-  <g fill="none" stroke="#C9962E" stroke-width="4" stroke-linecap="round">
-    <path d="M400 446 C388 446 378 438 374 426 C384 428 392 432 400 440 C408 432 416 428 426 426 C422 438 412 446 400 446 Z"/>
-    <path d="M400 440 C396 428 396 416 400 406 C404 416 404 428 400 440 Z"/>
-    <circle cx="400" cy="396" r="3" fill="#C9962E" stroke="none"/>
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#3A2C20" opacity=".10" filter="url(#glowf)"/><circle cx="500" cy="452" r="318" fill="none" stroke="#C9962E" stroke-width="1.6" opacity=".32"/><circle cx="500" cy="452" r="352" fill="none" stroke="#C9962E" stroke-width="1" opacity=".16"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  <text x="500" y="92" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="7" fill="#C9962E" opacity=".9">AAROGYA · CLASSICAL RASAYANA</text>
+  <ellipse cx="500" cy="812" rx="230" ry="30" fill="#241419" opacity="0.24" filter="url(#soft)"/>
+  <!-- spatula -->
+  <g transform="translate(742,690) rotate(-24)">
+    <rect x="-12" y="-190" width="24" height="250" rx="12" fill="#DDB967"/>
+    <rect x="-7" y="-180" width="6" height="220" rx="3" fill="#FFFFFF" opacity=".3"/>
+    <ellipse cx="0" cy="70" rx="30" ry="22" fill="#C9962E"/>
+    <ellipse cx="0" cy="66" rx="22" ry="14" fill="url(#resin)"/>
   </g>
-  <text x="400" y="482" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#7A5C46">शुद्ध शिलाजीत</text>
-  <text x="400" y="518" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-weight="bold" letter-spacing="3" fill="#5E1F30">SHILAJIT</text>
-  <rect x="330" y="534" width="140" height="2" fill="#C9962E"/>
-  <text x="400" y="558" text-anchor="middle" font-family="Verdana,sans-serif" font-size="13" letter-spacing="2" fill="#7A5C46">HIMALAYAN · 40% FULVIC ACID · 20g</text>
+  <!-- lid -->
+  <rect x="330" y="292" width="340" height="74" rx="16" fill="url(#lid)"/>
+  <rect x="330" y="292" width="340" height="14" rx="7" fill="#FFFFFF" opacity=".3"/>
+  <rect x="330" y="350" width="340" height="8" fill="#6F5114" opacity=".45"/>
+  <!-- squat jar -->
+  <rect x="342" y="356" width="316" height="372" rx="34" fill="url(#jar2)"/><rect x="367.28" y="374.6" width="41.08" height="316.2" rx="20.54" fill="#FFFFFF" opacity="0.18" filter="url(#soft3)"/><rect x="616.9200000000001" y="385.76" width="15.8" height="297.6" rx="7.9" fill="#FFFFFF" opacity=".16" filter="url(#soft3)"/>
+  <ellipse cx="500" cy="404" rx="140" ry="26" fill="url(#resin)"/>
+  <ellipse cx="470" cy="396" rx="42" ry="12" fill="#8A6A44" opacity=".35" filter="url(#soft3)"/>
+  <!-- label -->
+  <rect x="372" y="452" width="256" height="232" rx="16" fill="#F7EFDF"/><rect x="372" y="452" width="256" height="232" rx="16" fill="none" stroke="#C9962E" stroke-width="2" opacity=".75"/><rect x="381" y="461" width="238" height="214" rx="8" fill="none" stroke="#C9962E" stroke-width="1" opacity=".45"/>
+  <text x="500" y="502" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#7A5C46">शिलाजतु</text>
+  <text x="500" y="552" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="42" font-weight="bold" letter-spacing="2" fill="#5E1F30">SHILAJIT</text>
+  <rect x="420" y="570" width="160" height="2.4" fill="#C9962E"/>
+  <text x="500" y="604" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="14.5" letter-spacing="3" fill="#7A5C46">PURE HIMALAYAN RESIN</text>
+  <text x="500" y="634" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="14" fill="#2F5D46">40% fulvic acid · 20g</text>
+  <text x="500" y="662" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="12.5" letter-spacing="2" fill="#7A5C46">SHODHANA-PURIFIED · LAB TESTED</text>
+  <text x="500" y="946" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="5" fill="#7A5C46" opacity="0.55">KHUL KE PUCHO</text>
 
-  <!-- seal band -->
-  <rect x="258" y="600" width="284" height="34" fill="#4A1826"/>
-  <text x="400" y="623" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#DDB967">आरोग्यं मूलमुत्तमम्</text>
-  <text x="400" y="722" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>

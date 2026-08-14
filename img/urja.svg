@@ -1,42 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7EFDF"/><stop offset="1" stop-color="#EFE3CC"/>
-    </linearGradient>
-    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6F2A3E"/><stop offset=".45" stop-color="#5E1F30"/><stop offset="1" stop-color="#451523"/>
-    </linearGradient>
-    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#DDB967"/><stop offset=".5" stop-color="#C9962E"/><stop offset="1" stop-color="#9E7420"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="400" cy="380" r="255" fill="none" stroke="#C9962E" stroke-width="1.5" opacity=".35"/>
-  <circle cx="400" cy="380" r="285" fill="none" stroke="#C9962E" stroke-width="1" opacity=".18"/>
-  <ellipse cx="400" cy="672" rx="185" ry="26" fill="#241419" opacity=".13"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<defs>
+  <radialGradient id="studio" cx=".5" cy=".42" r=".78">
+    <stop offset="0" stop-color="#FFFDF8"/><stop offset=".55" stop-color="#F7EFDF"/><stop offset="1" stop-color="#E9DCC2"/>
+  </radialGradient>
+  <radialGradient id="spot" cx=".5" cy=".45" r=".5">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".72">
+    <stop offset=".6" stop-color="#241419" stop-opacity="0"/><stop offset="1" stop-color="#241419" stop-opacity=".13"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241419" stop-opacity=".07"/><stop offset="1" stop-color="#241419" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+  <filter id="soft3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glowf" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="34"/></filter>
+  <linearGradient id="specV" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
 
-  <!-- jar -->
-  <rect x="262" y="192" width="276" height="70" rx="14" fill="url(#cap)"/>
-  <rect x="262" y="214" width="276" height="6" fill="#9E7420" opacity=".55"/>
-  <rect x="248" y="258" width="304" height="410" rx="34" fill="url(#body)"/>
-  <rect x="270" y="272" width="26" height="380" rx="13" fill="#FFFFFF" opacity=".10"/>
+  <linearGradient id="jar" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7A3247"/><stop offset=".18" stop-color="#6F2A3E"/><stop offset=".52" stop-color="#5E1F30"/><stop offset=".85" stop-color="#3F1420"/><stop offset="1" stop-color="#572030"/>
+  </linearGradient>
+  <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#E7CB8B"/><stop offset=".3" stop-color="#DDB967"/><stop offset=".62" stop-color="#C9962E"/><stop offset="1" stop-color="#8E6819"/>
+  </linearGradient></defs>
 
-  <!-- label -->
-  <rect x="278" y="330" width="244" height="250" rx="14" fill="#F7EFDF"/>
-  <rect x="286" y="338" width="228" height="234" rx="10" fill="none" stroke="#C9962E" stroke-width="2"/>
-  <g fill="none" stroke="#C9962E" stroke-width="4" stroke-linecap="round">
-    <path d="M400 416 C388 416 378 408 374 396 C384 398 392 402 400 410 C408 402 416 398 426 396 C422 408 412 416 400 416 Z"/>
-    <path d="M400 410 C396 398 396 386 400 376 C404 386 404 398 400 410 Z"/>
-    <circle cx="400" cy="366" r="3" fill="#C9962E" stroke="none"/>
+  <rect width="1000" height="1000" fill="url(#studio)"/><ellipse cx="500" cy="440" rx="430" ry="400" fill="url(#spot)"/><circle cx="500" cy="452" r="330" fill="#5E1F30" opacity=".10" filter="url(#glowf)"/><circle cx="500" cy="452" r="318" fill="none" stroke="#C9962E" stroke-width="1.6" opacity=".32"/><circle cx="500" cy="452" r="352" fill="none" stroke="#C9962E" stroke-width="1" opacity=".16"/><rect x="0" y="812" width="1000" height="188" fill="url(#floor)"/>
+  <text x="500" y="92" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="7" fill="#C9962E" opacity=".9">AAROGYA · VITALITY</text>
+  <ellipse cx="500" cy="836" rx="215" ry="30" fill="#241419" opacity="0.24" filter="url(#soft)"/>
+  <!-- capsules -->
+  <g transform="translate(266,806) rotate(-14)"><rect x="-48.0" y="-19.0" width="48.0" height="38" rx="19.0" fill="#DDB967"/><rect x="0" y="-19.0" width="48.0" height="38" rx="19.0" fill="#5E1F30"/><rect x="-42.0" y="-13.0" width="84" height="7" rx="3.5" fill="#FFFFFF" opacity=".28"/></g>
+  <g transform="translate(742,812) rotate(11)"><rect x="-48.0" y="-19.0" width="48.0" height="38" rx="19.0" fill="#DDB967"/><rect x="0" y="-19.0" width="48.0" height="38" rx="19.0" fill="#5E1F30"/><rect x="-42.0" y="-13.0" width="84" height="7" rx="3.5" fill="#FFFFFF" opacity=".28"/></g>
+  <g transform="translate(690,780) rotate(-33)"><rect x="-42.0" y="-17.0" width="42.0" height="34" rx="17.0" fill="#DDB967"/><rect x="0" y="-17.0" width="42.0" height="34" rx="17.0" fill="#5E1F30"/><rect x="-36.0" y="-11.0" width="72" height="7" rx="3.5" fill="#FFFFFF" opacity=".28"/></g>
+  <!-- cap -->
+  <rect x="326" y="196" width="348" height="86" rx="18" fill="url(#cap)"/>
+  <rect x="326" y="196" width="348" height="16" rx="8" fill="#FFFFFF" opacity=".28"/>
+  <rect x="326" y="264" width="348" height="9" fill="#6F5114" opacity=".5"/>
+  <g stroke="#8E6819" stroke-width="2" opacity=".35">
+    <line x1="342" y1="204" x2="342" y2="264"/><line x1="358" y1="204" x2="358" y2="264"/><line x1="374" y1="204" x2="374" y2="264"/><line x1="390" y1="204" x2="390" y2="264"/><line x1="406" y1="204" x2="406" y2="264"/><line x1="422" y1="204" x2="422" y2="264"/><line x1="438" y1="204" x2="438" y2="264"/><line x1="454" y1="204" x2="454" y2="264"/><line x1="470" y1="204" x2="470" y2="264"/><line x1="486" y1="204" x2="486" y2="264"/><line x1="502" y1="204" x2="502" y2="264"/><line x1="518" y1="204" x2="518" y2="264"/><line x1="534" y1="204" x2="534" y2="264"/><line x1="550" y1="204" x2="550" y2="264"/><line x1="566" y1="204" x2="566" y2="264"/><line x1="582" y1="204" x2="582" y2="264"/><line x1="598" y1="204" x2="598" y2="264"/><line x1="614" y1="204" x2="614" y2="264"/><line x1="630" y1="204" x2="630" y2="264"/><line x1="646" y1="204" x2="646" y2="264"/><line x1="662" y1="204" x2="662" y2="264"/>
   </g>
-  <text x="400" y="452" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#7A5C46">शुक्र</text>
-  <text x="400" y="488" text-anchor="middle" font-family="Georgia,serif" font-size="31" font-weight="bold" letter-spacing="2" fill="#5E1F30">SHUKRA</text>
-  <rect x="330" y="504" width="140" height="2" fill="#C9962E"/>
-  <text x="400" y="530" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" letter-spacing="3" fill="#7A5C46">VITALITY FORMULATION</text>
-  <text x="400" y="556" text-anchor="middle" font-family="Verdana,sans-serif" font-size="13" fill="#7A5C46">60 capsules · 60-day course</text>
+  <!-- neck + body -->
+  <rect x="352" y="272" width="296" height="26" fill="#3F1420"/>
+  <rect x="310" y="288" width="380" height="496" rx="40" fill="url(#jar)"/><rect x="340.4" y="312.8" width="49.4" height="421.59999999999997" rx="24.7" fill="#FFFFFF" opacity="0.3" filter="url(#soft3)"/><rect x="640.6" y="327.68" width="19.0" height="396.8" rx="9.5" fill="#FFFFFF" opacity=".16" filter="url(#soft3)"/>
+  <!-- label -->
+  <rect x="346" y="372" width="308" height="330" rx="16" fill="#F7EFDF"/><rect x="346" y="372" width="308" height="330" rx="16" fill="none" stroke="#C9962E" stroke-width="2" opacity=".75"/><rect x="355" y="381" width="290" height="312" rx="8" fill="none" stroke="#C9962E" stroke-width="1" opacity=".45"/>
+  <g transform="translate(500,452) scale(1.05)" fill="none" stroke="#C9962E" stroke-width="4" stroke-linecap="round"><path d="M0 16 C-14 16 -26 6 -31 -8 C-19 -5 -9 0 0 10 C9 0 19 -5 31 -8 C26 6 14 16 0 16 Z"/><path d="M0 10 C-5 -3 -5 -17 0 -28 C5 -17 5 -3 0 10 Z"/><circle cx="0" cy="-36" r="3.4" fill="#C9962E" stroke="none"/></g>
+  <text x="500" y="522" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="24" fill="#7A5C46">शुक्र</text>
+  <text x="500" y="576" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="46" font-weight="bold" letter-spacing="3" fill="#5E1F30">SHUKRA</text>
+  <rect x="418" y="596" width="164" height="2.4" fill="#C9962E"/>
+  <text x="500" y="630" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="15" letter-spacing="4" fill="#7A5C46">VITALITY FORMULATION</text>
+  <text x="500" y="662" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-size="14.5" fill="#7A5C46">60 capsules · 60-day course</text>
+  <!-- base seal -->
+  <rect x="310" y="716" width="380" height="52" fill="#4A1826"/>
+  <text x="500" y="750" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" fill="#DDB967">आरोग्यं मूलमुत्तमम्</text>
+  <text x="500" y="946" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" letter-spacing="5" fill="#7A5C46" opacity="0.55">KHUL KE PUCHO</text>
 
-  <!-- seal band -->
-  <rect x="248" y="606" width="304" height="38" fill="#4A1826"/>
-  <text x="400" y="631" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#DDB967">आरोग्यं मूलमुत्तमम्</text>
-  <text x="400" y="726" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#7A5C46">KHUL KE PUCHO</text>
+<rect width="1000" height="1000" fill="url(#vig)"/>
 </svg>
